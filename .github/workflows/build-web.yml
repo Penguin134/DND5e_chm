@@ -19,10 +19,10 @@ env:
 
   SEARCH_API_BASE: "https://5echmsearch.kagangtuya.top"
 
-  SITE_REPOSITORY: "DND5eChm/5echm_web"
+  SITE_REPOSITORY: "Penguin134/5echm_web"
   SITE_BRANCH: "pages"
 
-  SEARCH_REPOSITORY: "DND5eChm/5echmweb_search"
+  SEARCH_REPOSITORY: "Penguin134/5echmweb_search"
 
   # webhelpsearch.htm 的来源分支。
   # 此分支只读，不会被 Action 修改。
@@ -70,7 +70,7 @@ jobs:
       - name: Checkout web templates
         uses: actions/checkout@v6
         with:
-          repository: DND5eChm/5echm_web_templates
+          repository: Penguin134/5echm_web_templates
           ref: main
           path: templates
           fetch-depth: 1
