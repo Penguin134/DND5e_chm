@@ -45,7 +45,7 @@ jobs:
       - name: Checkout DND5e_chm
         uses: actions/checkout@v6
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && 'main' || github.sha }}
+          ref: ${{ github.sha }}
           path: content
           fetch-depth: 1
           persist-credentials: false
