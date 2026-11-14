@@ -17,7 +17,7 @@ permissions:
 env:
   PYTHON_VERSION: "3.12"
 
-  SEARCH_API_BASE: "https://5echmsearch.kagangtuya.top"
+  SEARCH_API_BASE: "https://5echm.rollforhai.com"
 
   SITE_REPOSITORY: "Penguin134/5echm_web"
   SITE_BRANCH: "pages"
@@ -77,19 +77,44 @@ jobs:
           persist-credentials: false
 
       # ============================================================
-      # 4. 检查跨仓库发布 Token
+      # 4. 检查发布目标配置（GitHub 跨仓备份 / 阿里云推服）
       # ============================================================
 
-      - name: Verify publish token
+      - name: Check publish targets
+        id: publish_mode
         shell: bash
         env:
           WEB_PUBLISH_TOKEN: ${{ secrets.WEB_PUBLISH_TOKEN }}
+          ALIYUN_HOST: ${{ secrets.ALIYUN_HOST }}
+          ALIYUN_SSH_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
         run: |
           set -euo pipefail
+          set +x
 
-          if [ -z "${WEB_PUBLISH_TOKEN:-}" ]; then
-            echo "::error::Repository secret WEB_PUBLISH_TOKEN is not configured."
-            exit 1
+          if [ -n "${WEB_PUBLISH_TOKEN:-}" ]; then
+            echo "github_publish=true" >> "$GITHUB_OUTPUT"
+            echo "[INFO] WEB_PUBLISH_TOKEN is configured: GitHub cross-repo backup (${SITE_REPOSITORY}:${SITE_BRANCH}, ${SEARCH_REPOSITORY}:${SEARCH_INDEX_BRANCH}) is ENABLED."
+            echo "::debug::publish_mode.github_publish=true"
+          else
+            echo "github_publish=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Skip GitHub Cross-Repo Backup::WEB_PUBLISH_TOKEN is not configured; skipping GitHub backup to ${SITE_REPOSITORY} and ${SEARCH_REPOSITORY}, proceeding directly to build and Aliyun deployment."
+            echo "[INFO] WEB_PUBLISH_TOKEN is not configured: skipping GitHub cross-repo backup steps (${SITE_REPOSITORY}:${SITE_BRANCH}, ${SEARCH_REPOSITORY}:${SEARCH_INDEX_BRANCH})."
+            echo "::debug::publish_mode.github_publish=false (WEB_PUBLISH_TOKEN is empty)"
+          fi
+
+          if [ -n "${ALIYUN_HOST:-}" ] && [ -n "${ALIYUN_SSH_KEY:-}" ]; then
+            echo "aliyun_deploy=true" >> "$GITHUB_OUTPUT"
+            echo "[INFO] ALIYUN_HOST and ALIYUN_SSH_KEY are configured: Aliyun rsync deployment is ENABLED."
+            echo "::debug::publish_mode.aliyun_deploy=true"
+          else
+            echo "aliyun_deploy=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Skip Aliyun Deployment::ALIYUN_HOST or ALIYUN_SSH_KEY is not configured; Aliyun rsync deployment step will be skipped."
+            echo "[INFO] ALIYUN_HOST or ALIYUN_SSH_KEY is not configured: skipping Aliyun deployment step."
+            echo "::debug::publish_mode.aliyun_deploy=false"
+          fi
+
+          if [ -z "${WEB_PUBLISH_TOKEN:-}" ] && { [ -z "${ALIYUN_HOST:-}" ] || [ -z "${ALIYUN_SSH_KEY:-}" ]; }; then
+            echo "::warning title=No Publish Target Configured::Neither WEB_PUBLISH_TOKEN nor ALIYUN_HOST/ALIYUN_SSH_KEY is configured; workflow will only run build validation and upload reports."
           fi
 
       # ============================================================
@@ -99,6 +124,7 @@ jobs:
       # ============================================================
 
       - name: Verify branch configuration
+        if: steps.publish_mode.outputs.github_publish == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -125,6 +151,7 @@ jobs:
       # ============================================================
 
       - name: Checkout site repository
+        if: steps.publish_mode.outputs.github_publish == 'true'
         uses: actions/checkout@v6
         with:
           repository: ${{ env.SITE_REPOSITORY }}
@@ -150,7 +177,7 @@ jobs:
           ref: ${{ env.SEARCH_SOURCE_BRANCH }}
           path: search-source
           fetch-depth: 1
-          token: ${{ secrets.WEB_PUBLISH_TOKEN }}
+          token: ${{ secrets.WEB_PUBLISH_TOKEN || github.token }}
           persist-credentials: false
 
       # ============================================================
@@ -166,6 +193,7 @@ jobs:
       # ============================================================
 
       - name: Checkout search repository for index publishing
+        if: steps.publish_mode.outputs.github_publish == 'true'
         uses: actions/checkout@v6
         with:
           repository: ${{ env.SEARCH_REPOSITORY }}
@@ -345,7 +373,7 @@ jobs:
           report_dir = "../output/reports"
 
           [webhelp]
-          search_api_base = "https://5echmsearch.kagangtuya.top"
+          search_api_base = "https://5echm.rollforhai.com"
           search_template = "../search-source/webhelpsearch.htm"
           default_page = ""
           nav_width = 285
@@ -448,17 +476,25 @@ jobs:
             output/site/data.js \
             output/site/data.js.zip
 
-          if [ -e output/site/data.js ]; then
-            echo "::error::output/site/data.js still exists."
+          find output/site \
+            \( -name '.git' -o -name '.github' \) \
+            -prune -exec rm -rf {} +
+
+          find output/site -type f \
+            \( -name '.env*' -o -name '*.pem' -o -name '*.key' -o -name '*.pfx' -o -name '*.p12' -o -name '*.ppk' -o -name '*id_rsa*' -o -name '*id_ed25519*' -o -name 'authorized_keys' \) \
+            -delete
+
+          if [ -e output/site/data.js ] || [ -e output/site/data.js.zip ]; then
+            echo "::error::Search index still exists in output/site."
             exit 1
           fi
 
-          if [ -e output/site/data.js.zip ]; then
-            echo "::error::output/site/data.js.zip still exists."
+          if [ -e output/site/topics/.github ]; then
+            echo "::error::output/site/topics/.github still exists."
             exit 1
           fi
 
-          echo "Search index removed from site output."
+          echo "Search index and non-public metadata removed from site output."
 
       # ============================================================
       # 17. 生成 data.js.zip
@@ -471,6 +507,7 @@ jobs:
       # ============================================================
 
       - name: Create data.js ZIP
+        if: steps.publish_mode.outputs.github_publish == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -583,6 +620,7 @@ jobs:
       # ============================================================
 
       - name: Sync site output
+        if: steps.publish_mode.outputs.github_publish == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -598,10 +636,11 @@ jobs:
             output/site/ \
             publish-site/
 
-          # 删除 pages 中历史遗留的搜索数据。
+          # 删除 pages 中历史遗留的搜索数据和非公开元数据。
           rm -f \
             publish-site/data.js \
             publish-site/data.js.zip
+          rm -rf publish-site/topics/.github
 
           echo "===== Site repository changes ====="
 
@@ -612,6 +651,7 @@ jobs:
       # ============================================================
 
       - name: Verify site publish tree
+        if: steps.publish_mode.outputs.github_publish == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -626,6 +666,11 @@ jobs:
 
           if [ -e publish-site/data.js.zip ]; then
             echo "::error::5echm_web/pages must not contain data.js.zip."
+            exit 1
+          fi
+
+          if [ -e publish-site/topics/.github ]; then
+            echo "::error::5echm_web/pages must not contain topics/.github."
             exit 1
           fi
 
@@ -657,6 +702,7 @@ jobs:
       # ============================================================
 
       - name: Prepare search index branch
+        if: steps.publish_mode.outputs.github_publish == 'true'
         working-directory: publish-search-index
         shell: bash
         run: |
@@ -721,6 +767,7 @@ jobs:
       # ============================================================
 
       - name: Sync search index data
+        if: steps.publish_mode.outputs.github_publish == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -752,6 +799,7 @@ jobs:
       # ============================================================
 
       - name: Publish search data to index
+        if: steps.publish_mode.outputs.github_publish == 'true'
         working-directory: publish-search-index
         shell: bash
         run: |
@@ -803,6 +851,7 @@ jobs:
       # ============================================================
 
       - name: Publish site to pages
+        if: steps.publish_mode.outputs.github_publish == 'true'
         working-directory: publish-site
         shell: bash
         run: |
@@ -835,7 +884,60 @@ jobs:
             "HEAD:${SITE_BRANCH}"
 
       # ============================================================
-      # 24. 保存构建报告
+      # 24. 同步构建产物到阿里云服务器（配置密钥后自动生效）
+      # ============================================================
+
+      - name: Deploy to Aliyun server via rsync
+        if: steps.publish_mode.outputs.aliyun_deploy == 'true'
+        env:
+          ALIYUN_HOST: ${{ secrets.ALIYUN_HOST }}
+          ALIYUN_SSH_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +x
+
+          umask 077
+          install -m 700 -d "$HOME/.ssh"
+          trap 'rm -f "$HOME/.ssh/aliyun_deploy_key" "$HOME/.ssh/known_hosts"' EXIT
+
+          printf '%s\n' "${ALIYUN_SSH_KEY}" | tr -d '\r' > "$HOME/.ssh/aliyun_deploy_key"
+          ssh-keyscan -T 10 -H "${ALIYUN_HOST}" >> "$HOME/.ssh/known_hosts" 2>/dev/null
+          if [ ! -s "$HOME/.ssh/known_hosts" ]; then
+            echo "::error::Failed to fetch SSH host key for Aliyun server."
+            exit 1
+          fi
+
+          SSH_CMD="ssh -i $HOME/.ssh/aliyun_deploy_key -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts -o LogLevel=ERROR"
+
+          echo "[INFO] Syncing static site to Aliyun server (/var/www/5echm/) ..."
+          rsync -az --delete \
+            --no-owner --no-group \
+            --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.well-known/' \
+            --exclude='.env*' \
+            --exclude='*.pem' \
+            --exclude='*.key' \
+            --exclude='data.js' \
+            --exclude='data.js.zip' \
+            -e "${SSH_CMD}" \
+            output/site/ \
+            "root@${ALIYUN_HOST}:/var/www/5echm/"
+
+          echo "[INFO] Syncing search index data.js to Aliyun server (/opt/5echmweb_search/data.js) ..."
+          rsync -az --delay-updates \
+            --no-owner --no-group \
+            --chmod=F644 \
+            -e "${SSH_CMD}" \
+            output/search/data.js \
+            "root@${ALIYUN_HOST}:/opt/5echmweb_search/data.js"
+
+          echo "[INFO] Aliyun deployment completed."
+
+      # ============================================================
+      # 25. 保存构建报告
       # ============================================================
 
       - name: Upload build reports
