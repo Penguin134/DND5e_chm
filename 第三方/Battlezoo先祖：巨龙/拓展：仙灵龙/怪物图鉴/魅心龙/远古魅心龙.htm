@@ -1,0 +1,265 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古魅心龙 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古魅心龙 Ancient Allure Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="魅心龙.htm">返回魅心龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Allure_Dragon"><FONT color=#800000>远古魅心龙 Ancient Allure Dragon</FONT></H5>
+<div class="sub-line">超巨型龙类，中立善良</div>
+<table>
+<tr><td><strong>AC </strong>22（天生护甲）</td><td width="44%"><strong>先攻 </strong>+0（10）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>462（25d20+200）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+8</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">10</td><td class="c2">+0</td><td class="c2">+7</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+15</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">20</td><td class="c4">+5</td><td class="c4">+12</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">26</td><td class="c4">+8</td><td class="c4">+15</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>洞悉 +12，自然 +10，察觉 +19，表演 +15，游说 +15，求生 +12</td></tr>
+<tr><td><strong>免疫 </strong>心灵</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 29</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、木族语</td></tr>
+<tr><td><strong>CR </strong>24（XP 62,000；PB +7）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果该巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，该巨龙在一名生物身上的激励随之结束。<br>
+<strong>激励 Inspiration。</strong>身处自身圣所期间，巨龙可以激励其60尺内一个能听见它的生物。只要该生物仍身处巨龙的圣所内且依然深得巨龙欢心，该生物在使用工匠工具所作的属性检定、魅力（表演）检定以及感知豁免上均具有优势。巨龙同时至多可使10个生物受到激励。如果巨龙在超出此上限后激励新的生物，最早受到激励的那个生物便会失去其激励。<br>
+<strong>魔法抗性 Magic Resistance。</strong>该巨龙在对抗法术和其他魔法效应所作的豁免检定上具有<strong>优势</strong>。<br>
+<strong>自然共情 Nature Empathy。</strong>当该巨龙用龙语交谈时，它能够与野兽和植物进行简单的沟通。<br>
+<strong>滋养大地 Nurture Land。</strong>该巨龙与一处特定地域（例如洞窟、森林、冰川、岛屿、草原或山脉）缔结了联结。这片地域称为它的圣所。只要该巨龙留在其圣所之内，圣所就会保持生机勃勃、沃野千里、草木葱茏，并具备超乎寻常的韧性。在圣所范围内，当除该巨龙以外的生物施展枯萎术这类会伤害自然环境的法术时，该生物必须成功通过一次DC 23 感知豁免，否则该法术失败。该巨龙可以在距离当前圣所至少1英里、且未被任何其他统治者或守护者宣称占有的新地域停留7日，与这片新地域缔结联结，并以新圣所取代旧圣所。当该巨龙以此方式建立新圣所时，其旧圣所会因失去庇护而受损，在枯萎凋零30日后恢复至原本的自然状态与生态平衡。<br>
+<strong>圣所合一 One with the Sanctuary。</strong>若该巨龙处于其圣所之内，它将自身感官与圣所融为一体，直至它以一个附赠动作终止该效应。与圣所融合期间，该巨龙处于目盲和耳聋状态，但能够借助其圣所内任意野兽或植物的感官来感知周围环境。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其魅心气场。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+15 命中，触及 15 尺，单一目标。<em>命中：</em>30（4d10 + 8）点穿刺伤害，外加 5（1d10）点心灵伤害。<br>
+<strong>爪击 Claws。</strong><em>近战武器攻击：</em>+15 命中，触及 5 尺，单一目标。<em>命中：</em>17（2d8 + 8）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+15 命中，触及 20 尺，单一目标。<em>命中：</em>26（4d8 + 8）点钝击伤害。 命中时，该巨龙将目标向远离自身的方向直线推离至多10尺。<br>
+<strong>魅心气场 Alluring Presence。</strong>该巨龙90尺内由其选择的、且察觉到它的每个生物都必须成功通过一次DC 23 感知豁免，否则被该巨龙魅惑1分钟。该生物必须在其每个回合开始时重复此豁免，豁免成功则结束其身上的该效应。豁免成功的目标在接下来的24小时内免疫魅心气场。若处于魅惑状态的生物对抗魅心气场的任何豁免失败且差值达到5或更高，则该生物陷入失能状态直至其下一回合开始，且在其回合内必须沿着避开明显危险的最短路径向该巨龙移动，一旦移动至该巨龙5尺内便结束其回合。<br>
+<strong>变形 Change Shape。</strong>该巨龙以魔法化为一名小型或中型类人生物，或一头大型或更小体型的野兽形态，或是变回其真实形态。它着装或携带的任何装备不会随之转化。在新形态下，若该形态没有利爪，该巨龙爪击攻击的伤害类型可能会变为钝击；若该形态没有尾巴，则失去其尾击攻击。除体型外，该巨龙的其余游戏数据保持不变。该巨龙死亡时会恢复其真实形态。<br>
+<strong>迷人真言 Charming Word。</strong>该巨龙对其30尺内一个能听见它声音的生物吐露话语。该生物必须成功通过一次DC 23 感知豁免，否则被该巨龙魅惑1分钟。每当该生物受到伤害时，它可以重复此豁免，豁免成功则提前结束该效应。<br>
+<strong>吐息武器 Breath Weapon（充能 5~6）。</strong>该巨龙使用以下吐息武器之一：<br><strong>魅心香雾。</strong>该巨龙喷出一团覆盖90尺锥状区域的馥郁香雾。该区域内的每个生物都必须进行一次DC 23 感知豁免。若豁免失败，该生物陷入震慑状态，直至其下一回合结束。<br><strong>悔恨香雾。</strong>该巨龙喷出一团覆盖90尺锥状区域、能勾起锥心悔恨之痛的香雾。该区域内的每个生物都必须进行一次DC 23 感知豁免，豁免失败者受到93（17d10）点心灵伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>斥退逼近 Rebuff Advance。</strong>当该巨龙30尺内一个它可见的生物将要移动至更靠近该巨龙的空间时，该巨龙会冷落对方，高昂龙吻望向天空，对逼近的生物视若无睹。该生物必须进行一次DC 23 感知豁免。豁免失败时，该生物因遭到该巨龙冷拒而悲恸欲绝，陷入恐慌状态，直至其下个回合结束。豁免成功时，该生物在24小时内免疫斥退逼近。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>变形 Change Shape。</strong>该巨龙使用变形。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>凝注魅惑 Focus Allure。</strong>巨龙将注意力集中在其90尺内一个它能看见的生物身上。该生物必须针对巨龙的魅心气场进行一次豁免。如果该生物已经被巨龙魅惑，则其进行该豁免时具有劣势。每轮之中，巨龙只能对同一个生物使用一次凝注魅惑。<br>
+<strong>爪击 Claws。</strong>该巨龙发动一次爪击攻击。<br>
+<strong>啃咬或尾击攻击 Bite or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult_allure.webp" type="image/webp"><img src="../../images/adult_allure.png" alt="远古魅心龙立绘" width="320"></picture><div class="dragon-art-caption">远古魅心龙（Ancient Allure Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

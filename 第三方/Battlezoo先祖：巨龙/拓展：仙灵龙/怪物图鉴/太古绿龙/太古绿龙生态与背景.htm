@@ -1,0 +1,215 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古绿龙 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古绿龙 Green Dragon Great Wyrm</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="太古绿龙.htm"><strong>太古绿龙</strong></a></td><td>Great Wyrm Green Dragon</td><td>CR 27</td></tr>
+<tr><td><a href="太古绿龙（施法者）.htm"><strong>太古绿龙（施法者）</strong></a></td><td>Great Wyrm Green Dragon (Spellcaster)</td><td>CR 27</td></tr>
+</table>
+<p>绿龙向来是学者、实验家、科学家、历史学家，更是包罗各色冷僻怪异知识的活体宝库——尤其是那些与它们偏执痴迷的学术课题息息相关的学问。而在这一行列之中，太古绿龙无疑是声名显赫的学术泰斗与领军巨擘：志趣相投的年轻绿龙或许会选择追随它们的爪印前行……又或许，某个血气方刚的后辈会毅然驳斥太古龙的学说，独自闯入一片完全属于自己的学术假说天地。</p><p>无论如何，不管是赞同还是反对，太古绿龙及其学术著作与见解都绝无可能被忽视。它们正是每一代新生绿龙赖以登高望远的学术巨人——唯有站在它们的肩膀之上，后辈方能一窥远方那无垠的可能性。</p><p>图书馆、学院、实验室、研究中心——太古绿龙会兴建起诸如此类的宏伟殿堂，作为铭刻自身执念与博学的丰碑。哪怕太古龙终有一日倒在劫掠成性的冒险者手下、失去了表面上的财宝宝库，它们真正的宝库与传承依然留存在这些神圣殿堂的书页之间。因此，只要这些殿堂本身未被摧毁，太古绿龙的记忆与遗泽便永远不会真正消亡。</p><p>在耗费大量光阴钻研深奥学术的同时，太古绿龙与自然的联结也愈发深厚紧密，尤其是与环绕其典型森林家园的繁茂草木。年轻绿龙固然能在自然林间悄无声息、不留痕迹且毫无阻碍地穿行，但唯有太古龙才能举重若轻地扭曲并改造周遭植物，将其化作困锁强敌、阻滞追兵的罗网陷阱。倘若一头太古绿龙已提前布置妥当，哪怕是其他巨龙，在面对遍地伸出藤蔓、枝条与根须死死缠住双翼将自己拖向地面的重重障碍时，也往往觉得追击这头猎物实在太过棘手费神。</p><p>当敌对的太古龙想要深入太古绿龙的内殿圣所发起挑战时，倘若不想一头撞进绿龙布下的重重机关诡计，往往必须先发制人地清理周边的繁茂林木。举例来说，一头太古红龙干脆可以把整片森林一把火烧个精光——要是那头绿龙为了阻止山火而主动现身，那就再妙不过了。</p><div class="dragon-callout"><h4><FONT color=#800000>绿爪园艺</FONT></h4><p>许多太古绿龙都是天生的园艺师或造景巨匠。极少有绿龙是有意培养这项爱好的，绝大多数都是出于本能投身其中——它们发现打理花木能够澄澈思绪、凝聚专注，正是在苦思冥想棘手学术难题时让一双龙爪有事可做的绝佳消遣。闯入者最好留神脚下，免得一脚踩坏了太古绿龙心爱的名贵兰花！</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/green_great_wyrm.webp" type="image/webp"><img src="../../images/green_great_wyrm.png" alt="太古绿龙" width="320"></picture><div class="dragon-art-caption">太古绿龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

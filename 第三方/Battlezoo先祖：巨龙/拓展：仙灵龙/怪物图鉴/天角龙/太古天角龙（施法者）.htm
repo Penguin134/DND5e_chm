@@ -1,0 +1,267 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古天角龙（施法者） - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古天角龙（施法者） Great Wyrm Alicorn Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="天角龙.htm">返回天角龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Great_Wyrm_Alicorn_Dragon_Spellcaster"><FONT color=#800000>太古天角龙（施法者） Great Wyrm Alicorn Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">超巨型龙类，中立善良</div>
+<table>
+<tr><td><strong>AC </strong>22（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>585（30d20+270）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">28</td><td class="c2">+9</td><td class="c2">+9</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+9</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">28</td><td class="c2">+9</td><td class="c2">+17</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">20</td><td class="c4">+5</td><td class="c4">+13</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">26</td><td class="c4">+8</td><td class="c4">+16</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>洞悉 +13，自然 +11，察觉 +21，表演 +16，游说 +16，隐匿 +9，求生 +13</td></tr>
+<tr><td><strong>抗性 </strong>火焰、光耀</td></tr>
+<tr><td><strong>免疫 </strong>毒素；恐慌、中毒</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 31</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、木族语</td></tr>
+<tr><td><strong>CR </strong>28（XP 120,000；PB +8）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>传奇抗性 Legendary Resistance（5/日）。</strong>如果该巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，该巨龙的璀璨虹彩盛装随之结束。<br>
+<strong>野兽共情 Animal Empathy。</strong>当该巨龙用龙语交谈时，它能与野兽进行简单的交流。<br>
+<strong>魔法抗性 Magic Resistance。</strong>该巨龙在对抗法术和其他魔法效应所作的豁免检定上具有<strong>优势</strong>。<br>
+<strong>净化灵光 Purifying Aura。</strong>该巨龙60尺内由它选择的生物，在对抗毒素、疾病以及会使其陷入恐慌状态的效应所进行的豁免上具有优势。<br>
+<strong>灵敏反应 Reactive。</strong>该巨龙在战斗中的每个回合都可以执行一次反应。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 24，法术攻击命中 +16）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>魅惑类人 Charm Person</em>、<em>英雄气概 Heroism</em>、<em>动物信使 Animal Messenger</em>、<em>次级复原术 Lesser Restoration</em>、<em>加速术 Haste</em>、<em>放逐术 Banishment</em>、<em>死者复活 Raise Dead</em>、<em>探知术 Scrying</em>、<em>真知术 True Seeing</em>、<em>预见术 Foresight</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为角击或尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+17 命中，触及 15 尺，单一目标。<em>命中：</em>25（3d10 + 9）点穿刺伤害，外加 11（2d10）点光耀伤害。<br>
+<strong>爪击 Claws。</strong><em>近战武器攻击：</em>+17 命中，触及 5 尺，单一目标。<em>命中：</em>18（2d8 + 9）点挥砍伤害。<br>
+<strong>角击 Horn。</strong><em>近战武器攻击：</em>+17 命中，触及 15 尺，单一目标。<em>命中：</em>20（2d10 + 9）点穿刺伤害，外加 11（2d10）点光耀伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+17 命中，触及 20 尺，单一目标。<em>命中：</em>22（3d8 + 9）点钝击伤害。 命中时，该巨龙将目标向远离自身的方向直线推离至多10尺。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由该巨龙选择的、位于该巨龙<strong>120尺内</strong>且知晓其存在的生物，都必须成功通过一次<strong>DC 24的感知豁免</strong>，否则陷入恐慌，持续<strong>1分钟</strong>。<br>该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫该巨龙的骇人威仪。<br>
+<strong>吐息武器 Breath Weapon（充能 5~6）。</strong>该巨龙从其龙角射出一道长120尺、宽5尺线状区域的璀璨虹光。该区域内的每个生物都必须进行一次DC 25 敏捷豁免，豁免失败者受到55（10d10）点火焰伤害外加55（10d10）点光耀伤害，豁免成功则伤害减半。邪魔与亡灵进行此豁免时具有劣势。若豁免失败且差值达到5或更高，该生物还会陷入目盲状态，直至其下一回合结束。<br>若此吐息的任何区域与7环或更低环阶法术创造的黑暗区域重叠，创造该黑暗的法术将被解除。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：5。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>璀璨虹彩盛装 Resplendent Rainbow Regalia。</strong>该巨龙使自身或自身60尺内一个它可见的生物周身环绕起一圈流光溢彩、星芒闪烁的变幻虹彩光轮。该光轮散发出半径20尺的明亮光照，以及额外20尺的微光光照。光轮持续期间，能看见该光轮的生物对目标发动攻击时具有劣势，且受光轮保护的目标获得下方的折射虹光反应。该效应在1分钟后或目标使用折射虹光时终止。一旦该效应终止，该生物在24小时内无法再次成为璀璨虹彩盛装的目标。<br><strong>折射虹光。</strong>当你可见的一个生物以攻击命中你时，盛装光轮随之迸裂。触发该反应的生物必须成功通过一次DC 25 体质豁免，否则陷入目盲状态1分钟。该生物可以在其每个回合结束时重复该豁免，豁免成功则提前终止该效应。<br>
+<strong>爪击 Claws。</strong>该巨龙发动一次爪击攻击。<br>
+<strong>治愈之角 Healing Horn（3/日）。</strong>巨龙用其龙角触碰触及范围内的另一个生物。该生物恢复 45（10d8）生命值。<br>
+<strong>净化涌流 Cleansing Surge（消耗 2 动作，短休或长休后充能）。</strong>该巨龙摆出如画般优美的姿态并释放出一阵绚烂彩光，光流席卷战场，净化该天角龙及其盟友。60尺内由该天角龙选择的每个生物各恢复70点生命值。此效应同时结束目标身上的目盲、魅惑、耳聋、恐慌、麻痹与中毒状态，以及折磨目标的任何疾病。<br>
+<strong>啃咬、角撞或尾击攻击 Bite, Horn, or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬、角击或尾击发动攻击。<br>
+<strong>太古狂乱 Great Wyrm Frenzy（消耗 3 动作）。</strong>巨龙使其吐息武器立即充能完毕并使用它，随后巨龙受到20点伤害。<br>
+<strong>传送冲锋 Teleporting Charge（消耗 3 动作）。</strong>该巨龙借由魔法传送至自身90尺内一个它可见的生物5尺内的一处未被占据空间，随后对该生物发动一次角击攻击。该巨龙进行的此次攻击具有优势，且目标在对抗该巨龙角击所进行的豁免上具有劣势。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/alicorn_great_wyrm.webp" type="image/webp"><img src="../../images/alicorn_great_wyrm.png" alt="太古天角龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">太古天角龙（施法者）（Great Wyrm Alicorn Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

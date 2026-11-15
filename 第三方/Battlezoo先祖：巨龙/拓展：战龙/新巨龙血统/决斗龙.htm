@@ -1,0 +1,212 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>决斗龙 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>决斗龙 Duel Dragon</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>巨龙是强横非凡的存在，无论血统或年龄如何，都能在战场上建立赫赫战功。然而其中有一类巨龙截然不同——它们不仅善于战斗，更是为战而生。这些战龙精通百般武艺与各类兵法战事，无论是单打独斗的决战，还是动辄数万大军交锋的宏大战役皆能游刃有余。每一条战龙体内都潜藏着无穷无尽的未开发潜能……而当一场强大的仪式将这份潜能彻底释放时，又会发生什么？</p><p>你是一条决斗龙，出身于一脉热衷决斗与公平较量的世系——无论是近身肉搏还是魔法对决，也无论是单挑独斗还是以一敌众。你属于战龙家族的一员。你的关联伤害类型为雷鸣，且你的吐息武器为 15 尺锥状，需进行敏捷豁免。</p><h2><FONT color=#800000>巨龙特质</FONT></h2><p><strong>属性值提升。</strong>你的力量或敏捷值提升 2 点。</p><p><strong>年龄。</strong>任何年龄段的巨龙都可以举行永恒之光仪式，因此哪怕是一条刚完成仪式的初生永光龙，严格来说也可能已经活了数千岁。不过，仪式澎湃的魔法能量会洗去衰老的痕迹。从仪式中苏醒的初生永光龙洋溢着青春活力与无限潜能。尽管部分学者持不同看法，但只要不死于暴力或其他灾祸，永光龙的寿命与传统派巨龙同样漫长。</p><p><strong>阵营。</strong>永光龙的龙族血统会强烈影响其信念，但影响程度远不如同血统的传统派巨龙。例如，银永光龙往往是善良的捍卫者，而黑永光龙则往往狡诈刻薄。然而，永光龙深知龙脉并非不可违逆的宿命。任何永光龙都可以完全抛弃先祖的旧习，去开拓属于自己的道路。</p><p><strong>体型。</strong>除非一条永光龙将自身魔力专注于增大体型（许多永光龙都会这样做），否则它们的体型并不会比常见的类人种族更大。你的体型可在小型或中型之间自选。</p><p><strong>速度。</strong>你的基础步行速度为 30 尺。</p><p><strong>黑暗视觉。</strong>你同样具备传统派巨龙的敏锐感官。在距离你 60 尺范围内，你可以将微光光照视作明亮光照，将黑暗视作微光光照。你在黑暗中无法分辨颜色，只能看到灰度的影像。</p><p><strong>龙之馈赠。</strong>你从巨龙职业所列的龙之馈赠中获得一项龙之馈赠。如果某项馈赠具有先决条件，你必须满足其先决条件才能获得它。</p><p><strong>龙类。</strong>你的生物种类为龙类，而非类人生物。</p><p><strong>天生武器。</strong>除常规的徒手打击外，你还获得两种天生武器攻击：啃咬攻击与爪击攻击。你的啃咬攻击造成 1d6 点穿刺伤害；你的爪击攻击造成 1d4 点挥砍伤害。</p><p>你必须至少有一只手空闲才能发动爪击攻击。</p><p>你在进行爪击攻击的攻击检定和伤害掷骰时可以使用敏捷代替力量，但啃咬攻击不适用。</p><p><strong>语言。</strong>你能够说、读、写通用语和龙语。</p><p><strong>死战不倒。</strong>你在累计四次（而非三次）死亡豁免失败后才会死亡。</p><p><strong>增厚坚皮。</strong>在激战正酣之际，你的外皮在伤口愈合再生时会变得愈发厚实。当你的当前生命值低于生命值上限的一半时，你对非魔法的穿刺和挥砍伤害具有抗性；但作为代价，你对黯蚀伤害具有易伤。</p>
+<h2 id="永光决斗龙背景设定"><span id="永光决斗龙"></span><FONT color=#800000>永光决斗龙背景设定</FONT></h2>
+<p>决斗龙是一群桀骜好斗的家伙，无论属于传统派还是永光龙，都以纯粹为了打架而寻衅滋事闻名遐迩。青年决斗龙更是尤为热衷挑起斗殴，专门借此让自己挂彩负伤，好让鳞皮在伤口愈合再生时变得愈发厚实。决斗龙酷爱四处游历，常常一头扎进短寿生物及其文明的熙攘人群之中。在那里，受限于短暂寿数而野心勃勃的凡人往往以远超传统派巨龙的速度飞速成长，令决斗龙时刻都能邂逅颇具潜力的劲敌。</p><p>对于那些在短寿生物——尤其是智慧类人生物——中间寻觅下一场较量的决斗龙而言，永恒之光仪式不过是达成目的的手段，好让自己跟上凡人劲敌突飞猛进的步伐。甚至有少数决斗龙专门为了追赶某位被自己视作毕生宿敌的个体，而毅然举行了永恒之光仪式。永光决斗龙在非龙族文明中开办决斗武馆绝非罕事，这样一来，宿敌便能轻易找上门来，巨龙自己也无需长途跋涉去寻觅挑战者。此外，也曾有过几起永光决斗龙对宿敌执着过头、硬是不请自来地挤进宿敌所在冒险小队（或是挤进整支被其视作宿敌的冒险小队）的先例。至于小队究竟是否欢迎这位新入伙的巨龙成员，那就因人而异了。</p><p>在永恒之光仪式刚问世之初，传统派决斗龙起初颇为看不起自己的永光同族，认为它们甘愿接受仪式简直是急功近利与贪婪无度的恶劣典型，甚至可能是源于孩童般不愿吃苦耐劳、懒得完成基础训练来打磨决斗技艺的惰性。反过来，永光决斗龙则将传统派决斗龙视作闭门造车的隐士——只为维系家族传统或门面文化而死练武艺，却高傲得不肯与世间顶尖的决斗家切磋交流，更不敢让自身技艺接受真正的实战检验。它们有时甚至会出言挑衅，嘲讽传统派巨龙“皮薄怕疼”，而这自然而然地引发了一场又一场永光派与传统派之间的巨龙混战。</p><p>数代之前，这类分歧曾一度演变得极为激烈恶毒，据传还酿成了一场臭名昭著、足以载入史册的决斗龙大乱斗。时至今日，是否举行仪式已不再那么水火不容，甚至有不少传统派决斗龙会主动寻找永光龙发起挑战，反之亦然。这一良性局面的形成，主要归功于昔日一场场斗殴所打出来的共识。决斗龙们逐渐意识到，永光龙能够演化出截然不同的战斗风格——这意味着一个同时容纳永光龙与传统派巨龙的决斗龙社群，能够提供丰富多样的挑战者来磨砺自身武艺。例如，永光决斗龙往往侧重于灵巧迅捷的身法，而传统派决斗龙则更仰仗排山倒海的蛮力；与此同时，传统派巨龙通常会历经漫长刻苦的演练，直至一招一式皆化作本能，而永光龙则更偏爱随机应变，让每一次出招都饱含明确意图。</p><div class="dragon-callout"><h4><FONT color=#800000>应急良方</FONT></h4><p>促使双方进一步相互接纳的另一个原因在于，永恒之光仪式曾数次挽救过决斗龙的性命——有些决斗龙由于天生缺陷或后天变故（无论是出于狂妄自大，还是遭强敌重创），其与生俱来的自愈能力彻底失效，最终靠仪式才逃过一劫。既然每一条决斗龙都能理解那种“只求活下去再战一场”的渴望，这场仪式在传统派眼中自然也就不再是不可触碰的禁忌了。</p></div>
+<p class="dragon-nav-links"><strong>延伸阅读：</strong><a href="../怪物图鉴/决斗龙/决斗龙.htm">对应怪物图鉴：决斗龙</a> · <a href="../../第二章：巨龙种族/巨龙种族特质.htm">主书通用巨龙种族特质</a> · <a href="../../第三章：巨龙职业与范型/巨龙/巨龙.htm">巨龙职业</a> · <a href="../龙之馈赠.htm">本卷新增龙之馈赠</a></p>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/duel-3.webp" type="image/webp"><img src="../images/duel-3.png" alt="决斗龙立绘" width="320"></picture><div class="dragon-art-caption">决斗龙（Duel Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

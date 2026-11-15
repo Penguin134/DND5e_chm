@@ -1,0 +1,325 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>龙之馈赠 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>龙之馈赠 Draconic Gifts（莱希龙新增）</FONT></H1>
+<p>本页收录<em>《Battlezoo 巨龙：莱希龙》</em>全新引入的<strong>龙之馈赠</strong>，按先决等级（1级、5级、9级、13级、19级）分节，同一等级内依英文名称首字母 A-Z 排序。通用基础龙之馈赠请查阅<a href="../第四章：龙之馈赠/龙之馈赠.htm">主书第四章：龙之馈赠</a>；<a href="../第二章：巨龙种族/毒蕈龙.htm">毒蕈龙</a>血统详见主书第二章，<a href="../第五章：装备与随机表/孢子吐息随机效应表.htm">孢子吐息随机效应表</a>详见主书第五章。</p>
+<p class="dragon-nav-links"><strong>等级跳转：</strong><a href="#1级">1级龙之馈赠</a> · <a href="#5级">5级龙之馈赠</a> · <a href="#9级">9级龙之馈赠</a> · <a href="#13级">13级龙之馈赠</a> · <a href="#19级">19级龙之馈赠</a> · <a href="#巨龙蹂躏者战技">侧边栏：巨龙蹂躏者战技</a> · <a href="#调制芳瓣熏香">侧边栏：调制芳瓣熏香</a></p>
+<hr>
+<h2 id="1级"><FONT color=#800000>1级龙之馈赠 1st-Level Draconic Gifts</FONT></h2>
+<p id="水下耐力"><a name="水下耐力"></a><span id="Aquatic Endurance"></span><span id="Aquatic_Endurance"></span><STRONG><FONT color=#800000>水下耐力 Aquatic Endurance</FONT></STRONG><BR><EM>先决：繁花龙血统</EM><BR>
+尽管你并非完全水生或水陆两栖，但你能控制呼吸以长时间停留在水下，并从水中汲取部分氧气。你可以屏息的小时数等于1 + 你的体质调整值（至少30分钟）；如果你是在水下屏息，则可屏息上述两倍的小时数。</p>
+<p id="吐息武器"><a name="吐息武器"></a><span id="Breath Weapon"></span><span id="Breath_Weapon"></span><STRONG><FONT color=#800000>吐息武器 Breath Weapon</FONT></STRONG><BR>
+当你使用吐息武器时，你可以改为吃下一颗从自己身上摘下的巨型浆果以替代吐息的原本效应，获得2d10点临时生命值。随后，你从口中将如子弹般的果籽呈线状喷射而出，该线状区域的长度为你吐息武器原本锥状长度的一半（例如，若你的吐息武器原本为30尺锥状，则该线状区域长15尺）。区域内的每个生物都必须进行一次敏捷豁免，豁免失败时受到等同于你吐息武器正常伤害骰数减一颗的穿刺伤害，豁免成功则伤害减半。一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="巨龙丰饶"><a name="巨龙丰饶"></a><span id="Dragon's Bounty"></span><span id="Dragon_s_Bounty"></span><STRONG><FONT color=#800000>巨龙丰饶 Dragon's Bounty</FONT></STRONG><BR><EM>先决：丰收龙血统</EM><BR>
+你的身躯上长满了丰盛的水果与蔬菜，可供你和盟友采摘。每当你完成一次长休时，你可以选择为自己身上的一颗水果或蔬菜注入复原魔力。任何生物都可以用一个动作吃下这颗水果或蔬菜，恢复等同于你等级一半（向上取整）数量d8的生命值。未被食用的水果或蔬菜会在从你身上摘下1小时后腐坏并失去魔力。</p>
+<div class="dragon-callout"><h4 id="巨龙蹂躏者战技"><FONT color=#800000>侧边栏：巨龙蹂躏者战技 Draconic Ravager Techniques</FONT></h4><p>莱希龙之中的巨龙蹂躏者在武艺招式的运用以及将不断进化的魔力导引全身的方式上各具千秋。绝大多数巨龙蹂躏者都会锤炼出独树一帜的魔法武技，借此与其他永光龙区分开来。这些招式与流派在实战中不断演进，因龙而异。有些永光龙还会根据自己在沙场上的作战姿态，为自创的巨龙蹂躏者流派冠以名号。举例来说，一条永光乔木龙巨龙蹂躏者或许会施展“万枝参天势”——这一战斗流派讲究连绵不绝的攻势与超远的触及范围；一条永光毒蕈龙巨龙蹂躏者或许会施展“主厨特选势”——这一流派强调莫测的变化与随机应变，随时调整招数，端出恰好克制敌手的妙招；而一条永光丰收龙巨龙蹂躏者则可能运用“种因收果势”——这一流派擅于设局诱敌，令对手自食其果，借其自身冲势将其一举放倒。</p></div>
+<p id="药草丛生"><a name="药草丛生"></a><span id="Herbal Growths"></span><span id="Herbal_Growths"></span><STRONG><FONT color=#800000>药草丛生 Herbal Growths</FONT></STRONG><BR><EM>先决：巨藻龙血统</EM><BR>
+生长在你全身各处的藻类与其他水生植物具有药用功效，可经采摘制成天然药膏与疗伤药剂。你获得草药工具的熟练，并且可以将自己的身体当作一套草药工具使用。</p>
+<p id="空瓠宝库"><a name="空瓠宝库"></a><span id="Hollow Hoard"></span><span id="Hollow_Hoard"></span><STRONG><FONT color=#800000>空瓠宝库 Hollow Hoard</FONT></STRONG><BR><EM>先决：丰收龙血统</EM><BR>
+你身体的某个显著部位（例如头部或躯干）是一只巨大的中空葫芦，你可以将宝库中最珍贵的宝贝安全地藏在里面。你可以在自己的葫芦内储存一件重量不超过5磅的小巧手持物件。其他生物在尝试偷走储存在你葫芦内的物品时，所进行的敏捷（巧手）检定具有劣势。</p>
+<p id="药剂师学徒"><a name="药剂师学徒"></a><span id="Potionmaker's Apprentice"></span><span id="Potionmaker_s_Apprentice"></span><STRONG><FONT color=#800000>药剂师学徒 Potionmaker's Apprentice</FONT></STRONG><BR><EM>先决：丰收龙血统</EM><BR>
+你的村庄曾居住着数位技艺精湛的炼金术士，你也抓住机会向他们学习了如何采摘与储藏草药、调配强效药剂并将其装瓶。你获得由你选择的炼金工具或酿酒工具熟练项，以及由你选择的奥秘或自然技能熟练项。</p>
+<p id="纤尘不染"><a name="纤尘不染"></a><span id="Pristine Raiment"></span><span id="Pristine_Raiment"></span><STRONG><FONT color=#800000>纤尘不染 Pristine Raiment</FONT></STRONG><BR><EM>先决：繁花龙血统</EM><BR>
+恰似出淤泥而不染的莲花，你的鳞片与花瓣总是闪烁着柔和的晨露光泽，不沾半点烟尘污渍。你的身体、衣物与装备始终保持洁净，任何原本会弄脏它们的寻常血迹、泥泞或其他污秽都会瞬间消散洁净，如同受到<em>奇术</em>戏法的清洁一般。这并不会保护你免受与接触血液、泥浆、毒素或其他此类环境及魔法威胁相关的危害或危险。</p>
+<div class="dragon-callout"><h4 id="调制芳瓣熏香"><FONT color=#800000>侧边栏：调制芳瓣熏香 Creating Floriet Incense</FONT></h4><p>繁花龙仪式师有时会用生长在自己体表的花朵作为原料，亲手调制熏香来充抵仪式耗材；这不仅能提升熏香的价值，还能强化熏香与自身之间的形而上联结——正如某些施法者会将自己的鲜血融入仪式材料以增强法术威能一般。繁花龙会将自身的花朵风干、碾碎花瓣，再与蜂蜜和蜂蜡调和揉制，搓成名为“芳瓣熏香”的小香丸。繁花龙可以利用休整期“制造”活动来制作这种熏香，将其充作任何需要价值 1 gp 或以上材料成分之法术的施法材料。以此方式使用时，熏香会像常规魔法材料一样被消耗掉。对于绝大多数需要按标价在商店购置昂贵材料成分的法术，芳瓣熏香均可替代生效；但对于市面上无法买到的特殊或唯一性材料成分，则无法替代。</p></div>
+<p id="石雕匠师"><a name="石雕匠师"></a><span id="Stonecarver"></span><STRONG><FONT color=#800000>石雕匠师 Stonecarver</FONT></STRONG><BR><EM>先决：巨藻龙血统</EM><BR>
+你是一名技艺精湛的雕塑家——无论是无师自通，还是曾在另一位艺术家门下学艺有成。虽然你也能以沙土或坚冰这类易逝媒材进行创作，但你绝大部分的经验都倾注于雕琢与塑形石灰岩、大理石及其他石材之上。你拥有石匠工具熟练项。每当你使用石匠工具进行属性检定时，你可以在检定中加上两倍的熟练加值，而非正常的熟练加值。</p>
+<p id="翠叶缓冲"><a name="翠叶缓冲"></a><span id="Verdant Cushion"></span><span id="Verdant_Cushion"></span><STRONG><FONT color=#800000>翠叶缓冲 Verdant Cushion</FONT></STRONG><BR><EM>先决：乔木龙血统</EM><BR>
+你的身躯覆满宽大扁平的叶片，哪怕并未振翅飞行也能借风缓冲。只要你保持清醒，无论从多高处坠落，你都不会受到坠落伤害，并且总是稳稳双足着地。</p>
+<p id="古龙学徒"><a name="古龙学徒"></a><span id="Wyrm's Apprenticeship"></span><span id="Wyrm_s_Apprenticeship"></span><STRONG><FONT color=#800000>古龙学徒 Wyrm's Apprenticeship</FONT></STRONG><BR><EM>先决：乔木龙血统</EM><BR>
+你曾拜在一位木艺大师门下学徒，习得了培育与采伐良木以供雕琢的龙族秘传技艺。你获得求生技能和木雕工具的熟练项。</p>
+<hr>
+<h2 id="5级"><FONT color=#800000>5级龙之馈赠 5th-Level Draconic Gifts</FONT></h2>
+<p id="毁灭啃咬"><a name="毁灭啃咬"></a><span id="Devastating Bite"></span><span id="Devastating_Bite"></span><STRONG><FONT color=#800000>毁灭啃咬 Devastating Bite</FONT></STRONG><BR><EM>先决：5级，巨龙蹂躏者范型</EM><BR>
+你的啃咬攻击在掷出19或20时即可造成重击（前提是该攻击命中目标的AC）。</p>
+<p id="静水浮莲"><a name="静水浮莲"></a><span id="Pool of the Tranquil"></span><span id="Pool_of_the_Tranquil"></span><STRONG><FONT color=#800000>静水浮莲 Pool of the Tranquil</FONT></STRONG><BR><EM>先决：5级，繁花龙血统</EM><BR>
+宛如恬静的睡莲一般，你轻盈地浮于湖泊与河川的水面之上。你可以在静水及其他无伤害液体的表面行走，如同行于困难地形。你也可以尝试在流水表面行走，不过你可能需要进行一次对抗由GM决定DC的特技检定以保持平衡。检定失败时，你会落入水中，且你的移动随之结束。</p>
+<p id="反应角击"><a name="反应角击"></a><span id="Reactive Horn"></span><span id="Reactive_Horn"></span><STRONG><FONT color=#800000>反应角击 Reactive Horn</FONT></STRONG><BR><EM>先决：5级，乔木龙血统，巨龙蹂躏者范型，强化天生武器进化（角击）</EM><BR>
+当敌人放松防备时，你可以用龙角将其刺穿。当你触及范围内的一个生物进行远程攻击或施展法术时，你可以用反应对该生物发动一次角击攻击。如果你的这次攻击打出重击，触发该反应的攻击或法术将直接失败且不产生任何效应，该生物的动作也随之浪费。</p>
+<p id="腐藤败果"><a name="腐藤败果"></a><span id="Rotten on the Vine"></span><span id="Rotten_on_the_Vine"></span><STRONG><FONT color=#800000>腐藤败果 Rotten on the Vine</FONT></STRONG><BR><EM>先决：5级，丰收龙血统</EM><BR>
+你的身躯上挂满了腐烂的蔬果，黏腻恶臭的汁液顺着你的腿部滴淌而下，在你走过的地面留下一道细细的软泥痕迹。你在敏捷（隐匿）和魅力（游说）检定中具有劣势，但在为影响拥有嗅觉的生物而进行的魅力（威吓）检定中具有优势。以一个动作，你可以从身上摘下一枚腐烂果实，掷向你周围30尺内一个你能看见的生物。使用由你选择的力量或敏捷对该目标进行一次远程武器攻击。命中时，目标受到等同于1d4 + 你的力量或敏捷调整值的毒素伤害。重击时，腐果爆裂开来，目标还会陷入中毒状态，直至你的下一回合结束。</p>
+<p id="海藻缠卷"><a name="海藻缠卷"></a><span id="Sea's Coil"></span><span id="Sea_s_Coil"></span><STRONG><FONT color=#800000>海藻缠卷 Sea's Coil</FONT></STRONG><BR><EM>先决：5级，巨藻龙血统</EM><BR>
+你可以用一个附赠动作令巨藻与其他海草从你身上蜿蜒滑出，铺满你周围半径10尺范围内的地面。直至你的下一回合结束前，除你以外的生物将该区域内的地面视为困难地形。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<p id="魂途先知"><a name="魂途先知"></a><span id="Seer of the Soul's Path"></span><span id="Seer_of_the_Soul_s_Path"></span><STRONG><FONT color=#800000>魂途先知 Seer of the Soul's Path</FONT></STRONG><BR><EM>先决：5级，繁花龙血统</EM><BR>
+你与幽魂及闹鬼之地打交道的经历，赋予了你察觉灵魂离开凡世途中残留回响的能力。你可以无需消耗法术位地施展<em>识破隐形</em>。一旦你使用此馈赠施展了<em>识破隐形</em>，在完成一次长休前你不能再次如此做。</p>
+<p id="风暴护卫"><a name="风暴护卫"></a><span id="Stormguard"></span><STRONG><FONT color=#800000>风暴护卫 Stormguard</FONT></STRONG><BR><EM>先决：5级，巨藻龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击）</EM><BR>
+当一个你能看见的生物即将以一次攻击命中你时，你可以用反应扬起龙尾招架来袭的一击。若你如此做，你针对该次触发攻击的AC获得+2加值。</p>
+<p id="攀树穿林"><a name="攀树穿林"></a><span id="Tree Climb"></span><span id="Tree_Climb"></span><STRONG><FONT color=#800000>攀树穿林 Tree Climb</FONT></STRONG><BR><EM>先决：5级，乔木龙血统</EM><BR>
+身为乔木龙，蜿蜒穿梭于林木之间、攀援树冠之上对你而言犹如天性。你获得等同于你速度的攀爬速度，但仅在攀爬树木与藤蔓时生效。此外，你无视由灌木、藤蔓、林下灌丛等非魔法植物造成的困难地形。</p>
+<hr>
+<h2 id="9级"><FONT color=#800000>9级龙之馈赠 9th-Level Draconic Gifts</FONT></h2>
+<p id="繁叶披风"><a name="繁叶披风"></a><span id="Cloak of Leaves"></span><span id="Cloak_of_Leaves"></span><STRONG><FONT color=#800000>繁叶披风 Cloak of Leaves</FONT></STRONG><BR><EM>先决：9级，乔木龙血统</EM><BR>
+你可以使用一个附赠动作，将自身裹入一层由茂密枝叶与荨麻织就的披风之中，在为你提供防护的同时也令你容易着火。繁叶披风持续1分钟，直至你陷入昏迷状态，或直至你使用一个附赠动作将其解散。披风持续期间，你的AC获得+2加值，但你具有火焰伤害易伤。一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="仙环传送"><a name="仙环传送"></a><span id="Fairy Ring Transport"></span><span id="Fairy_Ring_Transport"></span><STRONG><FONT color=#800000>仙环传送 Fairy Ring Transport</FONT></STRONG><BR><EM>先决：9级，毒蕈龙血统，巨龙法师范型</EM><BR>
+你掌握了一种借由蘑菇圈（亦称仙女环或仙女圈）传送自身的方法。你可以施展树跃术而无需消耗法术位。当你以此方式施展树跃术时，你并非在两棵树木之间穿行，而是必须在两个仙女环之间穿行。一旦你使用此馈赠施展了树跃术，在完成一次长休前你无法再次如此做。</p>
+<p id="波涛挚友"><a name="波涛挚友"></a><span id="Friend Beneath the Waves"></span><span id="Friend_Beneath_the_Waves"></span><STRONG><FONT color=#800000>波涛挚友 Friend Beneath the Waves</FONT></STRONG><BR><EM>先决：9级，巨藻龙血统</EM><BR>
+身为巨藻龙，你早已习惯在海面之上与波涛之下自如生活，无论冒险将你引向何处都游刃有余。尽管你的冒险同伴未必拥有这份天赋，但你专门研习了所需的水系魔法，以便在水下冒险招手时带上朋友们同行。你可以施展水下呼吸法术而无需消耗法术位。一旦你以此方式施展了该法术，在完成一次长休前你无法再次如此做。</p>
+<p id="落英粉尘"><a name="落英粉尘"></a><span id="Petal Dust"></span><span id="Petal_Dust"></span><STRONG><FONT color=#800000>落英粉尘 Petal Dust</FONT></STRONG><BR><EM>先决：9级，繁花龙血统，巨龙蹂躏者范型</EM><BR>
+当你被一次造成钝击、穿刺或挥砍伤害的攻击命中时，你可以用反应从花瓣上抖落一团闪烁微光的花粉云，覆盖你周围15尺内的每个生物。生物身上的花粉会持续残留1分钟，或直至其用一个动作将花粉拂去为止。身上覆有花粉的生物在其每个回合开始时受到1d6毒素伤害。此毒素伤害在14级时提升至2d6，并在18级时提升至3d6。</p>
+<p id="毒莓吐息"><a name="毒莓吐息"></a><span id="Poisonberry Breath"></span><span id="Poisonberry_Breath"></span><STRONG><FONT color=#800000>毒莓吐息 Poisonberry Breath</FONT></STRONG><BR><EM>先决：9级，丰收龙血统，吐息武器</EM><BR>
+当你使用吐息武器时，你可以取代吐息的正常效应，改为将吐息化作黏稠的剧毒浆果汁液。对抗你吐息豁免失败的每个生物不再受到伤害，而是改为陷入中毒状态，直至其下一回合结束。以此方式中毒期间，该生物进行的敏捷豁免还具有劣势。<BR>
+一旦你使用了此馈赠，在完成一次长休前你不能再次使用。</p>
+<p id="海玻璃结界"><a name="海玻璃结界"></a><span id="Seaglass Ward"></span><span id="Seaglass_Ward"></span><STRONG><FONT color=#800000>海玻璃结界 Seaglass Ward</FONT></STRONG><BR><EM>先决：9级，巨藻龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击），风暴护卫龙之馈赠</EM><BR>
+当你遭受重击时，你可以用反应将覆盖在龙尾上的海玻璃鳞片与棘刺当作盾牌架起；即便未能完全偏转这次攻击，也能缓冲来袭重击的致命杀伤。投一次d20；若结果为10或更高，将该次重击改为视为普通命中。</p>
+<hr>
+<h2 id="13级"><FONT color=#800000>13级龙之馈赠 13th-Level Draconic Gifts</FONT></h2>
+<p id="生死阈界"><a name="生死阈界"></a><span id="At the Threshold"></span><span id="At_the_Threshold"></span><STRONG><FONT color=#800000>生死阈界 At the Threshold</FONT></STRONG><BR><EM>先决：13级，繁花龙血统</EM><BR>
+你可以将灵魂分隔于多个存在位面之间，同时存在于物质位面与以太位面。你可以施展闪现术而无需消耗法术位。一旦你以此方式施展了该法术，在完成一次短休或长休前你无法再次如此做。</p>
+<p id="浆果籽炮"><a name="浆果籽炮"></a><span id="Berryseed Cannon"></span><span id="Berryseed_Cannon"></span><STRONG><FONT color=#800000>浆果籽炮 Berryseed Cannon</FONT></STRONG><BR><EM>先决：13级，丰收龙血统</EM><BR>
+当你使用吐息武器时，你可以改为吃下一颗从自己身上摘下的巨型浆果以替代吐息的原本效应，获得2d10点临时生命值。随后，你从口中将如子弹般的果籽呈线状喷射而出，该线状区域的长度为你吐息武器原本锥状长度的一半（例如，若你的吐息武器原本为30尺锥状，则该线状区域长15尺）。区域内的每个生物都必须进行一次敏捷豁免，豁免失败时受到等同于你吐息武器正常伤害骰数减一颗的穿刺伤害，豁免成功则伤害减半。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="孢子覆毯"><a name="孢子覆毯"></a><span id="Blanket of Spores"></span><span id="Blanket_of_Spores"></span><STRONG><FONT color=#800000>孢子覆毯 Blanket of Spores</FONT></STRONG><BR><EM>先决：13级，毒蕈龙血统</EM><BR>
+你身上的菌体增生物会不断散落有毒孢子。每当有生物在你周围10尺内结束其回合时，你可以迫使该生物进行一次对抗你吐息武器DC的体质豁免。豁免失败时，该生物陷入中毒状态，直至其下个回合结束。豁免成功或该效应对其终止时，该生物在接下来的1分钟内免疫此馈赠。</p>
+<p id="春华绽放"><a name="春华绽放"></a><span id="Blossoms of Spring"></span><span id="Blossoms_of_Spring"></span><STRONG><FONT color=#800000>春华绽放 Blossoms of Spring</FONT></STRONG><BR><EM>先决：13级，繁花龙血统</EM><BR>
+你可以令长满全身的花朵绚烂绽放，为四肢注入超自然的速度。你可以对自己施展加速术而无需消耗法术位。一旦你以此方式施展了该法术，在完成一次短休或长休前你无法再次如此做。</p>
+<p id="丰饶赐福"><a name="丰饶赐福"></a><span id="Bountiful Harvest"></span><span id="Bountiful_Harvest"></span><STRONG><FONT color=#800000>丰饶赐福 Bountiful Harvest</FONT></STRONG><BR><EM>先决：13级，丰收龙血统</EM><BR>
+你可以使用一个动作凝聚体内的丰收能量，向自己与盟友迸发出一大批美味点心。你恢复7d8点生命值，随后向你周围60尺内至多七个你可见的生物射出美味的疗愈点心。每个生物都可以使用反应直接吃下点心；如果其有一只空闲的手，也可以接住点心，并在接下来1小时内以一个动作吃下。如果该生物既没有可用反应也没有空闲的手，点心会落在其所在空间的地面上，供其稍后拾取。吃下点心的生物恢复3d8点生命值。此外，每份点心都能提供足以维持一个中型或更小体型生物一整天所需的营养。只有由你投喂该点心的目标生物才能通过吃下它恢复生命值，不过任何人吃下它都能获得营养。<BR>
+在15级以及之后的每两个等级（17级、19级），你和盟友获得的治疗量均各增加一颗骰子，在19级时达到上限：你恢复10d8点生命值，其他生物恢复6d8点生命值。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="荆棘吐息"><a name="荆棘吐息"></a><span id="Briar's Breath"></span><span id="Briar_s_Breath"></span><STRONG><FONT color=#800000>荆棘吐息 Briar's Breath</FONT></STRONG><BR><EM>先决：13级，乔木龙血统，吐息武器</EM><BR>
+你的吐息是一片盘根错节的带刺藤蔓，能够暂时迟滞被其吞没的敌人。当一个生物对抗你吐息武器的豁免失败时，该生物的速度减半，直至你的下个回合开始。</p>
+<p id="号令荆棘"><a name="号令荆棘"></a><span id="Command the Briar"></span><span id="Command_the_Briar"></span><STRONG><FONT color=#800000>号令荆棘 Command the Briar</FONT></STRONG><BR><EM>先决：13级，乔木龙血统，巨龙法师范型</EM><BR>
+你借助原初草木魔法的力量活化一棵树木为你作战。以一个附赠动作，你令你周围120尺内一棵你可见的大型或更大体型的非魔法树木活化，成为一棵启蒙树木。这棵树会立即作为你的盟友执行一个回合，随后变回非魔法树木并在原地重新扎根。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="梦花吐息"><a name="梦花吐息"></a><span id="Dreamblossom Breath"></span><span id="Dreamblossom_Breath"></span><STRONG><FONT color=#800000>梦花吐息 Dreamblossom Breath</FONT></STRONG><BR><EM>先决：13级，繁花龙血统，吐息武器</EM><BR>
+当你使用吐息武器时，你可以将吐息转化为一片由花粉与浓香交织的迷雾，以替代吐息的原本效应。区域内的每个生物不再进行体质豁免，而是必须进行一次对抗你吐息武器DC的感知豁免。豁免失败时，该生物陷入目盲状态，直至其下个回合结束。若豁免失败且差值达到5或更高，则该生物改为陷入昏迷状态，直至其下个回合结束。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="繁花毒素"><a name="繁花毒素"></a><span id="Floral Toxin"></span><span id="Floral_Toxin"></span><STRONG><FONT color=#800000>繁花毒素 Floral Toxin</FONT></STRONG><BR><EM>先决：13级，繁花龙血统</EM><BR>
+你可以使用一个附赠动作，令自身环绕一层由有毒花粉与花瓣组成的灵光。该灵光环绕你周围10尺半径区域，并随你一同移动。该效应持续1分钟，直至你陷入昏迷状态，或直至你使用一个附赠动作将其解散。在该效应持续期间，每当有生物在灵光内结束其回合时，你可以迫使该生物进行一次对抗你吐息武器DC的体质豁免。豁免失败时，该生物受到2d8点毒素伤害，并陷入中毒状态，直至其下个回合结束。该毒素伤害在14级时提升至3d8，在18级时提升至4d8。豁免成功时，该生物受到一半伤害，且不会陷入中毒状态。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="攫抓吐息"><a name="攫抓吐息"></a><span id="Grasping Breath"></span><span id="Grasping_Breath"></span><STRONG><FONT color=#800000>攫抓吐息 Grasping Breath</FONT></STRONG><BR><EM>先决：13级，丰收龙血统，吐息武器</EM><BR>
+当你使用吐息武器时，你可以将吐息转化为一团纠缠盘结的海藻，以替代吐息的原本效应。若如此做，区域内的每个生物都必须进行一次对抗你吐息武器DC的敏捷豁免。豁免失败时，该生物陷入束缚状态，直至其下个回合结束，或直至其使用一个动作挣脱海藻。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="翠林之门"><a name="翠林之门"></a><span id="Green Gate"></span><span id="Green_Gate"></span><STRONG><FONT color=#800000>翠林之门 Green Gate</FONT></STRONG><BR><EM>先决：13级，乔木龙血统</EM><BR>
+每一片森林中都遍布着莱希与树精之类的自然精魂，而你深谙向它们请求协助之道。你可以施展树跃术而无需消耗法术位。一旦你以此方式施展了该法术，在完成一次长休前你无法再次如此做。</p>
+<p id="猎手荨麻"><a name="猎手荨麻"></a><span id="Hunter's Nettle"></span><span id="Hunter_s_Nettle"></span><STRONG><FONT color=#800000>猎手荨麻 Hunter's Nettle</FONT></STRONG><BR><EM>先决：13级，乔木龙血统，吐息武器，巨龙蹂躏者范型</EM><BR>
+当一个你可见的生物在你周围30尺内开始其回合时，你可以使用反应蓄势待发，准备向其射出一簇锋利的树针。如果触发反应的生物在其回合结束时仍留在同一空间内，该生物受到2d8点穿刺伤害，若其对抗你吐息武器DC的敏捷豁免成功则伤害减半。该伤害在18级时提升至4d8点穿刺伤害。如果该生物移动并在另一处空间结束其回合，即使原本的空间内有其他生物，树针也会无害地落到地上，而你的反应就此落空。</p>
+<p id="蕈菇爆裂"><a name="蕈菇爆裂"></a><span id="Mushroom Burst"></span><span id="Mushroom_Burst"></span><STRONG><FONT color=#800000>蕈菇爆裂 Mushroom Burst</FONT></STRONG><BR><EM>先决：13级，毒蕈龙血统，巨龙蹂躏者范型</EM><BR>
+当你周围5尺内一个你能看见的生物以造成穿刺或挥砍伤害的攻击命中你时，生长在你身上的蘑菇会随之爆裂，令触发该效应的生物暴露在剧毒孢子之中。该生物受到等同于你等级的毒素伤害；若其成功通过对抗你吐息武器DC的体质豁免，则伤害减半。</p>
+<p id="海玻璃迸碎"><a name="海玻璃迸碎"></a><span id="Seaglass Shatter"></span><span id="Seaglass_Shatter"></span><STRONG><FONT color=#800000>海玻璃迸碎 Seaglass Shatter</FONT></STRONG><BR><EM>先决：13级，巨藻龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击），海玻璃结界龙之馈赠</EM><BR>
+当你用海玻璃鳞片与棘刺护住自身时，部分碎裂迸溅的海玻璃会反伤你的攻击者。当你使用海玻璃结界成功将一次重击转化为普通命中时，只要对你发动该次攻击的生物位于你周围5尺内，该生物就会受到等同于所造成伤害一半的穿刺伤害。</p>
+<p id="攫取生机"><a name="攫取生机"></a><span id="Seize Life"></span><span id="Seize_Life"></span><STRONG><FONT color=#800000>攫取生机 Seize Life</FONT></STRONG><BR><EM>先决：13级，丰收龙血统，巨龙法师范型</EM><BR>
+当你周围30尺内一个你能看见的生物成为一道即将恢复生命值的法术的目标时，你可以用反应虹吸这股治疗能量并将其纳入自身。如果该法术为3环或更低环阶，你将自动虹吸该法术的治疗能量：原目标不会恢复任何生命值，而你将如同自身是该法术的目标一般恢复生命值。如果该法术为4环或更高环阶，请使用你的施法关键属性进行一次属性检定，DC等于该法术的环阶；检定成功时，你将虹吸这股治疗能量。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="感知魔法"><a name="感知魔法"></a><span id="Sense Magic"></span><span id="Sense_Magic"></span><STRONG><FONT color=#800000>感知魔法 Sense Magic</FONT></STRONG><BR><EM>先决：13级，繁花龙血统，巨龙法师范型</EM><BR>
+你作为繁花龙的敏锐洞见使你几乎能凭本能感知魔法在周遭的脉动，宛如聆听昔日仪式的余响。你可以感知你周围30尺内魔法的存在，如同你始终处于使用<em>侦测魔法</em>法术的状态一般。</p>
+<p id="纠缠海草"><a name="纠缠海草"></a><span id="Snarling Weeds"></span><span id="Snarling_Weeds"></span><STRONG><FONT color=#800000>纠缠海草 Snarling Weeds</FONT></STRONG><BR><EM>先决：13级，巨藻龙血统</EM><BR>
+当你周围60尺内一个你能看见的生物移动时，你可以用反应令魔法海藻与其他海洋植物从地面破土而出，抓向该触发生物并阻碍其移动。该触发生物必须进行一次对抗你吐息武器DC的敏捷豁免。豁免失败时，直至其当前回合结束前，目标将所有地面视为困难地形；此外，若该生物在其当前回合结束时移动距离不足10尺，它将陷入束缚状态，直至其下一回合结束。以此方式被束缚的生物可以用其动作进行一次对抗你吐息武器DC的力量检定，成功则自行挣脱。<BR>
+一旦你使用了此馈赠，在完成一次长休前你不能再次使用。</p>
+<p id="险恶荆棘"><a name="险恶荆棘"></a><span id="Treacherous Brambles"></span><span id="Treacherous_Brambles"></span><STRONG><FONT color=#800000>险恶荆棘 Treacherous Brambles</FONT></STRONG><BR><EM>先决：13级，乔木龙血统</EM><BR>
+你可以用一个动作令锋利叶片与带刺藤蔓交织而成的魔法荆棘丛从你身上疯长而出。这片荆棘灵光以你为中心环绕半径10尺范围，并在你移动时随你一同移动。该效应持续1分钟，直至你陷入昏迷，或直至你用附赠动作将其解散为止。在此效应持续期间，灵光范围内由你选择的生物将地面视为困难地形。每当有生物在灵光范围内开始其回合时，你可以迫使该生物进行一次对抗你吐息武器DC的敏捷豁免；豁免失败时，该生物受到等同于你等级的穿刺伤害，豁免成功则伤害减半。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<hr>
+<h2 id="19级"><FONT color=#800000>19级龙之馈赠 19th-Level Draconic Gifts</FONT></h2>
+<p id="藻疫之噬"><a name="藻疫之噬"></a><span id="Algae Scourge"></span><span id="Algae_Scourge"></span><STRONG><FONT color=#800000>藻疫之噬 Algae Scourge</FONT></STRONG><BR><EM>先决：19级，巨藻龙血统，巨龙蹂躏者范型</EM><BR>
+当你啃咬一个生物时，你能令藻类在其血肉中生根蔓延。以一个动作，发动一次啃咬攻击。命中时，目标必须进行一次对抗你吐息武器DC的体质豁免。豁免失败时，目标全身覆满藻类，持续1分钟。覆满藻类期间，目标处于中毒状态，且必须在其每个回合结束时重复该体质豁免，成功则终止自身承受的该效应。能够移除疾病的法术同样可以移除该效应。如果目标对抗此效应的豁免累计失败三次，藻类就会长满该生物的口部，使其开始窒息。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="无尽荆棘"><a name="无尽荆棘"></a><span id="Endless Brambles"></span><span id="Endless_Brambles"></span><STRONG><FONT color=#800000>无尽荆棘 Endless Brambles</FONT></STRONG><BR><EM>先决：19级，乔木龙血统，险恶荆棘龙之馈赠</EM><BR>
+你的荆棘再生速度比大多数永光乔木龙更快。你在完成一次短休后即可再次使用险恶荆棘（而非必须完成长休）。</p>
+<p id="狂怒势能"><a name="狂怒势能"></a><span id="Furious Momentium"></span><span id="Furious_Momentium"></span><STRONG><FONT color=#800000>狂怒势能 Furious Momentium</FONT></STRONG><BR><EM>先决：19级，吐息武器或巨龙势能龙之馈赠，巨龙蹂躏者范型</EM><BR>
+当你因巨龙势能而重获吐息武器的使用权时，你可以使用反应立即释放吐息武器。</p>
+<p id="蕈菇风暴"><a name="蕈菇风暴"></a><span id="Mushroom Storm"></span><span id="Mushroom_Storm"></span><STRONG><FONT color=#800000>蕈菇风暴 Mushroom Storm</FONT></STRONG><BR><EM>先决：19级，毒蕈龙血统，巨龙蹂躏者范型，蕈菇爆裂龙之馈赠</EM><BR>
+每当你受到穿刺或挥砍伤害时，你可以用反应掀起一场孢子风暴。若你如此做，你周围15尺内由你选择的每个生物都会受到等同于你等级的毒素伤害；若其成功通过对抗你吐息武器DC的体质豁免，则伤害减半。如果对你造成该触发伤害的生物处于区域内，则它改为受到等同于你等级两倍的毒素伤害（此伤害不与你的蕈菇爆裂馈赠造成的伤害叠加）。此外，对该毒素伤害豁免失败的生物会陷入中毒状态，直至其下一回合结束。</p>
+<p id="毒莓啃咬"><a name="毒莓啃咬"></a><span id="Poisonberry Bite"></span><span id="Poisonberry_Bite"></span><STRONG><FONT color=#800000>毒莓啃咬 Poisonberry Bite</FONT></STRONG><BR><EM>先决：19级，丰收龙血统，巨龙蹂躏者范型，毁灭啃咬龙之馈赠</EM><BR>
+你在毁灭性的啃咬中伴入浓缩的毒莓提取液。当你的啃咬攻击打出重击时，你可以选择将毒莓提取液注入该生物的伤口。若你如此做，该生物必须进行一次对抗你吐息武器DC的体质豁免。豁免失败时，目标陷入中毒状态，持续1分钟。以此方式中毒期间，该生物进行的敏捷豁免还具有劣势。目标可以在其每个回合结束时重复进行该豁免，成功则结束中毒状态。<BR>
+如果你拥有爆裂啃咬馈赠，当你的啃咬攻击打出重击时请选择使用其中之一；你不能在同一次啃咬中同时使用这两项馈赠。</p>
+<p id="操木为兵"><a name="操木为兵"></a><span id="Wrest Wood"></span><span id="Wrest_Wood"></span><STRONG><FONT color=#800000>操木为兵 Wrest Wood</FONT></STRONG><BR><EM>先决：19级，乔木龙血统，巨龙法师范型，号令荆棘龙之馈赠</EM><BR>
+你以魔力夺取一件木制物件的控制权，借其痛击敌人。你可以用一个动作活化你周围120尺内你能看见的一棵树木或一件木制物件，将木材化为凶器，随后如同你正身处该被活化物件所在的空间一般发动一次爪击攻击。</p>
+</body>
+</html>

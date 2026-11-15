@@ -1,0 +1,262 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古乔木龙 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古乔木龙 Ancient Arboreal Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="乔木龙.htm">返回乔木龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Arboreal_Dragon"><FONT color=#800000>远古乔木龙 Ancient Arboreal Dragon</FONT></H5>
+<div class="sub-line">超巨型龙类，绝对中立</div>
+<table>
+<tr><td><strong>AC </strong>24（天生护甲）</td><td width="44%"><strong>先攻 </strong>+2（12）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>481（26d20+208）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，攀爬 40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">28</td><td class="c2">+9</td><td class="c2">+9</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">14</td><td class="c2">+2</td><td class="c2">+9</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">27</td><td class="c2">+8</td><td class="c2">+15</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+10</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">26</td><td class="c4">+8</td><td class="c4">+15</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>自然 +10，察觉 +17，隐匿 +9，求生 +10</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 27</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、德鲁伊语、木族语</td></tr>
+<tr><td><strong>CR </strong>23（XP 50,000；PB +7）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>繁叶披风 Cloak of Leaves。</strong>该巨龙披覆着一层由枝叶与荨麻交织而成的浓密披风，既能保护巨龙，也使其容易起火燃烧。每当该巨龙受到本特性以外来源造成的火焰伤害时，其身上的枝叶便会起火，在其每个回合开始时对其额外造成1d6点火焰伤害，直至该巨龙使用一个附赠动作扑灭火焰。若单次法术或攻击对该巨龙造成至少40点火焰伤害，其枝叶披风将被烧毁，使其护甲等级降至21。<br>
+<strong>林间穿行 Forest Passage。</strong>由非魔法枝叶构成的困难地形不会消耗巨龙额外的移动力。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。该巨龙无法使用传奇抗性对抗造成火焰伤害的效应。<br>
+<strong>树木共情 Tree Empathy。</strong>当该巨龙用龙语交谈时，它能够与树木进行简单的沟通。<br>
+<strong>翠叶缓冲 Verdant Cushion。</strong>由非魔法枝叶构成的困难地形不会消耗该巨龙额外的移动力。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动三次攻击：一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+16 命中，触及 15 尺，单一目标。<em>命中：</em>31（4d10 + 9）点穿刺伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+16 命中，触及 10 尺，单一目标。<em>命中：</em>16（2d6 + 9）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+16 命中，触及 20 尺，单一目标。<em>命中：</em>27（4d8 + 9）点钝击伤害。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 23 感知豁免，否则陷入恐慌状态，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>藤蔓吐息 Vine Breath（充能 5~6）。</strong>该巨龙喷吐出一片种子，迅速绽放为长90尺、宽10尺线状区域内荆棘密布、互相纠缠的藤蔓丛。该区域内的每个生物都必须进行一次DC 23 体质豁免，豁免失败者受到99（18d10）点穿刺伤害，豁免成功则伤害减半。此外，豁免失败的生物陷入束缚状态，直至其自身或另一个生物使用动作或附赠动作将其解救。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>猎手荨麻 Hunter's Nettle。</strong>当巨龙30尺内一个它能看见的生物开始其回合时，巨龙会蓄势准备向触发该反应的生物射出锋利的树针。在触发生物的回合结束时，如果该生物未从其起始空间移动至少5尺，巨龙便会射出树针。该生物必须进行一次DC 25 敏捷豁免，豁免失败受到 22（5d8）穿刺伤害，豁免成功则伤害减半。<br>
+<strong>险恶荆棘 Treacherous Brambles（1/日）。</strong>当该巨龙受到近战攻击造成的伤害时，一丛锋利叶片与生满尖刺的藤蔓从其躯体倾泻而下。在接下来的1分钟内，该巨龙10尺内的地面视为困难地形。在该区域地面上开始其回合的生物必须进行一次DC 25 体质豁免，豁免失败时受到27（5d10）点穿刺伤害，豁免成功则伤害减半。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>爪击攻击 Claw Attack。</strong>该巨龙使用其爪击发动攻击。<br>
+<strong>号令荆棘 Command the Briar。</strong>该巨龙短暂活化其120尺内一棵可见的大型或更大体型的非魔法树木。这棵树变为一株启蒙树木。该启蒙树木立即作为该巨龙的盟友执行一个回合，随后变回非魔法树木。<br>
+<strong>侦查 Detect。</strong>巨龙进行一次感知（察觉）检定。<br>
+<strong>纠缠藤蔓 Entangling Vines。</strong>纠缠的藤蔓破土而出。巨龙120尺内一个它能看见的生物必须成功通过一次DC 23 力量豁免，否则陷入束缚状态，直至该生物下个回合结束。被藤蔓束缚的生物可以用其动作进行一次DC 15的力量检定，成功则挣脱束缚。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>啃咬或尾击攻击 Bite or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult-arboreal.webp" type="image/webp"><img src="../../images/adult-arboreal.png" alt="远古乔木龙立绘" width="320"></picture><div class="dragon-art-caption">远古乔木龙（Ancient Arboreal Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

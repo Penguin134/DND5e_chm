@@ -1,0 +1,263 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古狂怒龙（施法者） - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古狂怒龙（施法者） Ancient Rage Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="狂怒龙.htm">返回狂怒龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Rage_Dragon_Spellcaster"><FONT color=#800000>远古狂怒龙（施法者） Ancient Rage Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">超巨型龙类，混乱中立</div>
+<table>
+<tr><td><strong>AC </strong>20（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>546（28d20+252）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 90尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">29</td><td class="c2">+9</td><td class="c2">+9</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+8</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">28</td><td class="c2">+9</td><td class="c2">+9</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">17</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">20</td><td class="c4">+5</td><td class="c4">+12</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+6</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>威吓 +13，察觉 +19，隐匿 +8</td></tr>
+<tr><td><strong>免疫 </strong>火焰</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 29</td></tr>
+<tr><td><strong>语言 </strong>通用语、深潜语、龙语</td></tr>
+<tr><td><strong>CR </strong>24（XP 62,000；PB +7）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>狂怒行进 Enraged Movement。</strong>当狂怒龙怒火正炽时，它会不惜一切代价冲向目标或目的地。处于狂怒期间，巨龙获得等于其速度的攀爬速度和游泳速度，并无视困难地形。<br>
+<strong>点燃狂怒 Ignite Rage。</strong>当生命值已降至其生命值上限一半或更低的巨龙受到伤害时，巨龙会进入狂怒状态。处于狂怒期间，巨龙在其每个回合开始时获得等于其挑战等级两倍的临时生命值，其AC承受-1减值，无法专注于法术，且其攻击检定具有优势。当巨龙在未于本回合攻击过任何生物的情况下结束其回合时，狂怒随之结束。在狂怒期间，巨龙难以分清敌我：它会优先攻击明显的敌人与袭击者，但随后会继续攻击旁观者与盟友，直到他们避开锋芒并等待巨龙怒火平息为止。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。如果它在处于狂怒期间如此做，其狂怒随即结束。<br>
+<strong>狂怒视觉 Rage Vision。</strong>当该巨龙处于狂怒状态时，它在为寻找或观察过去1分钟内曾对它造成过伤害的任何生物而进行的感知（察觉）检定上获得+1加值。若该生物正处于任何会改变其情绪的效应影响下（例如魅惑或恐慌状态，或是困惑术），该加值提升至+2。<br>
+<strong>怒火显化 Wrath Made Manifest。</strong>当该巨龙处于狂怒状态时，它任由胸中怒火化作实体形态，炽烈火焰从其龙鳞之下喷薄而出。该巨龙的近战攻击额外造成10（3d6）点火焰伤害。此外，每个回合首次当该巨龙15尺内的一个生物触碰该巨龙或以近战攻击命中它时，该生物受到10（3d6）点火焰伤害。以一个附赠动作，该巨龙可以熄灭这股火焰，提前终止其狂怒。由于强行压抑自身怒火需要耗费巨大精力，若该巨龙以此方式终止狂怒，它会在10分钟内获得1级力竭。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 21，法术攻击命中 +13）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>治愈真言 Healing Word</em>、<em>灼热金属 Heat Metal</em>、<em>次级复原术 Lesser Restoration</em>、<em>防护能量 Protection from Energy</em>、<em>火焰护盾 Fire Shield</em>、<em>石墙术 Wall of Stone</em>、<em>连锁闪电 Chain Lightning</em>、<em>医疗术 Heal</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+16 命中，触及 10 尺，单一目标。<em>命中：</em>27（4d8 + 9）点穿刺伤害，外加 19（3d12）点火焰伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+16 命中，触及 10 尺，单一目标。<em>命中：</em>19（3d6 + 9）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+16 命中，触及 15 尺，单一目标。<em>命中：</em>35（4d12 + 9）点钝击伤害。<br>
+<strong>火球吐息 Fireball Breath（充能 5~6）。</strong>巨龙吐出一团爆裂烈焰，在巨龙120尺内它能看见的一点为中心形成半径30尺的球状区域。该区域内的每个生物都必须进行一次DC 24的敏捷豁免，豁免失败受到 99（22d8）火焰伤害，豁免成功则伤害减半。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 21的感知豁免，否则陷入恐慌，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>怒火充能吐息 Rage-Charged Breath（短休或长休后充能）。</strong>若火球吐息可用，该巨龙使用其火球吐息。该吐息的区域变为长60尺、宽5尺的线状区域，并在该线状区域末端空间的任一格角处为中心形成一个半径30尺的球状区域。除该吐息的其他效应外，在对抗该吐息时豁免失败的生物还会起火燃烧。燃烧期间，该生物在其每个回合开始时受到10（3d6）点火焰伤害。生物可以使用一个动作扑灭自身或自身5尺内另一个生物身上的火焰。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>掌控狂怒 Control Rage。</strong>（狂怒期间）该巨龙收束自身的怒火。在接下来的1分钟内，它可以在处于狂怒状态期间维持专注。<br>
+<strong>猛扑 Pounce。</strong>该巨龙移动至多等于其速度一半的距离，并发动一次爪击攻击。<br>
+<strong>啃咬或尾击 Bite or Tail（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>狂怒冲锋 Enraged Charge（消耗 2 动作）。</strong>（处于狂怒期间）巨龙移动、攀爬或游泳至多等于其速度的距离，随后在移动结束时对位于其触及范围内的每个生物各发动一次爪击攻击。<br>
+<strong>狂怒传染咬 Infectious Bite（消耗 2 动作）。</strong>巨龙发动一次啃咬攻击。命中时，目标必须成功通过一次DC 21的感知豁免，否则进入狂怒状态，直至其回合结束。处于狂怒期间，该生物的攻击检定具有优势，AC承受-1减值，且无法专注于法术。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult-rage.webp" type="image/webp"><img src="../../images/adult-rage.png" alt="远古狂怒龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">远古狂怒龙（施法者）（Ancient Rage Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

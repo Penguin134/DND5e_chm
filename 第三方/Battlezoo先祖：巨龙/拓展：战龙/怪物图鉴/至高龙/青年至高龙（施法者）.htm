@@ -1,0 +1,243 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>青年至高龙（施法者） - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>青年至高龙（施法者） Young Sovereign Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="至高龙.htm">返回至高龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Young_Sovereign_Dragon_Spellcaster"><FONT color=#800000>青年至高龙（施法者） Young Sovereign Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">大型龙类，绝对中立</div>
+<table>
+<tr><td><strong>AC </strong>20（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>168（16d10+80）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 90尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">21</td><td class="c2">+5</td><td class="c2">+5</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+5</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">20</td><td class="c2">+5</td><td class="c2">+5</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">13</td><td class="c4">+1</td><td class="c4">+1</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+7</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">18</td><td class="c4">+4</td><td class="c4">+4</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +8，威吓 +8，察觉 +11，隐匿 +5</td></tr>
+<tr><td><strong>免疫 </strong>心灵</td></tr>
+<tr><td><strong>感官 </strong>盲视 30尺，黑暗视觉 120尺，被动察觉 21</td></tr>
+<tr><td><strong>语言 </strong>深渊语、气族语、天界语、通用语、龙语、火族语、炼狱语、土族语</td></tr>
+<tr><td><strong>CR </strong>10（XP 5,900；PB +4）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 16，法术攻击命中 +8）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>命令术 Command</em>、<em>侦测善恶 Detect Evil and Good</em>、<em>暗示术 Suggestion</em>、<em>回避侦测 Nondetection</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>若辉光圣铠可用，该青年至高龙可以使用其辉光圣铠。随后该青年至高龙按任意顺序发动一次啃咬攻击和两次爪击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+9 命中，触及 10 尺，单一目标。<em>命中：</em>14（2d8 + 5）点穿刺伤害，外加 6（1d12）点心灵伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+9 命中，触及 5 尺，单一目标。<em>命中：</em>9（1d8 + 5）点挥砍伤害。<br>
+<strong>辉光圣铠 Gleaming Armor（短休或长休后充能）。</strong>青年至高龙的黄金甲胄闪耀起守护性的金色辉光。直到该青年至高龙下个回合结束为止，针对该青年至高龙的攻击均具有劣势，且该巨龙获得对强酸、寒冷、火焰、力场、闪电、黯蚀、毒素、心灵、光耀和雷鸣伤害的抗性。<br>
+<strong>心灵吐息 Psychic Breath（充能 5~6）。</strong>该青年至高龙发出一声饱含心灵能量的咆哮，覆盖30尺锥状区域。该区域内的每个生物都必须进行一次DC 17感知豁免，豁免失败时受到59（17d6）点心灵伤害，豁免成功则伤害减半。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/sovereign-great-wyrm.webp" type="image/webp"><img src="../../images/sovereign-great-wyrm.png" alt="青年至高龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">青年至高龙（施法者）（Young Sovereign Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>暗影龙 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>暗影龙 Umbral Dragons</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="暗影龙雏龙.htm"><strong>暗影龙雏龙</strong></a></td><td>Umbral Dragon Wyrmling</td><td>CR 3</td></tr>
+<tr><td><a href="青年暗影龙.htm"><strong>青年暗影龙</strong></a></td><td>Young Umbral Dragon</td><td>CR 11</td></tr>
+<tr><td><a href="青年暗影龙（施法者）.htm"><strong>青年暗影龙（施法者）</strong></a></td><td>Young Umbral Dragon (Spellcaster)</td><td>CR 11</td></tr>
+<tr><td><a href="成年暗影龙.htm"><strong>成年暗影龙</strong></a></td><td>Adult Umbral Dragon</td><td>CR 20</td></tr>
+<tr><td><a href="成年暗影龙（施法者）.htm"><strong>成年暗影龙（施法者）</strong></a></td><td>Adult Umbral Dragon (Spellcaster)</td><td>CR 20</td></tr>
+<tr><td><a href="远古暗影龙.htm"><strong>远古暗影龙</strong></a></td><td>Ancient Umbral Dragon</td><td>CR 24</td></tr>
+<tr><td><a href="远古暗影龙（施法者）.htm"><strong>远古暗影龙（施法者）</strong></a></td><td>Ancient Umbral Dragon (Spellcaster)</td><td>CR 24</td></tr>
+<tr><td><a href="太古暗影龙.htm"><strong>太古暗影龙</strong></a></td><td>Great Wyrm Umbral Dragon</td><td>CR 29</td></tr>
+<tr><td><a href="太古暗影龙（施法者）.htm"><strong>太古暗影龙（施法者）</strong></a></td><td>Great Wyrm Umbral Dragon (Spellcaster)</td><td>CR 29</td></tr>
+</table>
+<div class="dragon-callout"><h4><FONT color=#800000>黯蚀珍馐</FONT></h4><p>绝大多数其他生物都一致认为，坏死腐朽的血肉与其他亡灵残躯往好了说也是令人作呕的秽物，而且在大多数情况下还会严重危害活物的健康。因此，其他生物——哪怕是其他巨龙——都很难理解暗影龙高级料理的精妙之处。不过暗影龙对此毫不在意，依然乐此不疲地将家族秘传食谱代代相传；它们心里很清楚，世上唯有敌对的暗影龙家族（以及极度古怪的龙类学狂热学者）才会费尽心机想要偷走这些食谱。暗影龙坚称，自家祖传食谱能够彻底激发亡灵食材中的绝妙风味，其中便包括“腐鲜”——这是它们在甜、酸、咸、苦、鲜五味之外额外添上的第六种味道。</p></div><p>所有其他原初龙皆起源于元素位面，唯有其中实力最为强横的暗影龙，最初诞生于暗影位面最幽暗深邃的渊薮。</p><p>残忍而狡诈的暗影龙常常先将猎物百般戏耍很长一段时间，最后才慢条斯理地了结对方。而由于它们最钟爱的点心当属生命力超自然顽强的亡灵生物，这类猫捉老鼠的游戏往往能持续相当漫长的工夫。</p><p>正如人们对暗影位面生灵所预期的一样，暗影龙体态修长流丽、行踪诡秘无声，漆黑的鳞片与蜿蜒灵巧的身躯使它们能轻而易举地融入阴影，在猎物的视线内外鬼魅般闪现穿梭。它们惯于从暗处发动伏击，得手后又能同样轻松地隐回幽暗之中；待猎物以为巨龙终于离去、彻底放下戒备之时，便再度暴起发难。</p><p>当然，若是对手当真棘手危险，暗影龙多半是真的已经悄然撤离战场了。它们只喜欢打胜算完全倒向自己一边的战斗，一旦察觉局势趋近势均力敌的公平对决，便会毫不犹豫地远遁千里。随后，它们会指派爪牙与盟友出马，甚至暗中操纵第三方势力去解决威胁，宛如藏身幕后的傀儡师一般精心编排强敌的覆灭。</p><p>在一些饱受海量亡灵肆虐之苦的地区，部分了解暗影龙食性的学者曾提议故意引诱暗影龙迁居当地，指望借巨龙之口替他们解决亡灵灾患。诚然，暗影龙对亡灵的贪婪食欲确实完全有可能在无意间保护周遭的活物免遭亡灵涂炭。</p><p>然而，暗影龙的一举一动中绝无半点舍己为人或仁慈良善可言；因此，任何此类试图“驱虎吞狼”、引入一桩恐怖灾星去消灭另一桩祸患的计划，从长远来看都注定会酿成灾难性的惨败。毕竟，一旦暗影龙吃光了成群结队的亡灵，只要它已经在当地筑稳了巢穴，就绝不会就此罢手、拍拍翅膀离开。至于巨龙接下来会采取什么行动，往往因个体性格而异、花样百出，但无论哪一种都同样骇人听闻。</p><div class="dragon-callout"><h4><FONT color=#800000>幽暗陵墓</FONT></h4><p>在所有原初龙之中，暗影龙的巢穴类型最为丰富多样。大体而言，只要某处地点能够遮蔽阳光，且所处区域容易源源不断地滋生大量亡灵，便有潜力成为一处上佳的巢穴。比起眼下是否聚集着大群亡灵，该地区能否自然孕育出新的亡灵其实更为关键——毕竟对于前一种地方，暗影龙只需登门光顾、大快朵颐到心满意足即可。古墓、地下墓穴与死灵之城都是绝佳的筑巢选址，尤其是那些地基或魔网地脉中奔涌着浓郁死灵能量的场所；此外，幽深洞窟、阴森古堡，或是任何其他能够隔绝阳光的庇护所，对暗影龙而言也都十分称心。</p></div><p>有些暗影龙会勉为其难地凑合享用不那么合口味的替代餐食，转而冲入生者聚居地大肆肆虐；而另一些要么更有耐心多花点工夫、要么美食家眼光太高而不肯屈就次等货色的暗影龙，则会不辞辛劳地亲自唤起大批新亡灵，好让自己继续享用最爱的美味。后一类暗影龙管理当地亡灵种群的作派，与自然资源保护主义者有着令人毛骨悚然的相似之处——就像猎人绝不过度捕猎鹿群、伐木工绝不在补种新树前过度采伐林木一样。</p><p>令不少龙类观察者大感意外的是，尽管暗影龙对待其他生物冷酷歹毒，它们自身却怀有极为深厚的传统观念与家族意识。它们不仅深深敬重暗影龙世代相传的本族传统，甚至对了解凡人社会的文化传统也颇感兴趣。当然，这未必会妨碍它们在听完故事后顺口吃掉那名凡人；但它们确实会先耐下性子向对方问清某件重要传家宝的历史渊源与价值，以便日后自家亲族登门拜访、在宝库中看到这件藏品时，自己能够娓娓道来。在凡人与龙族世代传承、承载着悠久历史的古物面前，暗影龙总是抱有格外的欣赏。</p><div class="dragon-callout"><h4><FONT color=#800000>暗影传统</FONT></h4><p>暗影龙对传统怀有崇高的敬意，太古龙或其他年长巨龙会将形形色色的习俗代代相传，使每一个暗影龙家族都独具特色。以下便列举了几则颇具个性的家族习俗，每一条都仅由某一个特定的暗影龙家族恪守奉行：</p><ul><li>享用一群能够制造衍体的亡灵时，务必先吃掉衍体作为开胃前菜，永远把品质最佳、实力最强的亡灵主菜留到最后压轴享用。</li><li>在自己的宝库中开设一座文化博物馆，专门陈列被自己吞食过的亡灵生前所属的各种古代与现代文明。若条件允许，应展出代表性的文化遗物；若无遗物，则展出颅骨或其他醒目的遗骸残片，并附上所涉各个文化与文明的考据说明。</li><li>踏入有数条巨龙在场的洞窟时，务必严格按照从最年长到最年幼的顺序依次致意问候。</li><li>践行可持续狩猎准则：切勿赶尽杀绝，每次进食后务必留下几只能够繁衍新衍体的亡灵，以免食源枯竭；同时还应设法制造一些新亡灵，以补充被自己吃掉的份额。</li></ul></div><h2><FONT color=#800000>太古暗影龙</FONT></h2><p>令各地亡灵绝望沮丧的是，在所有偏属“邪恶”的巨龙之中，暗影龙是最有可能一路存活并晋升为太古龙的族群之一。促成这一点的因素有很多，但最关键的两条在于：它们将强横实力与极度谨慎完美结合，以及它们对传统与家族的紧密羁绊。</p><p>暗影龙是最强大的原初龙，在各大巨龙谱系中也稳居顶尖强者之列；然而与红龙（顺带一提，红龙的实际实力其实弱于暗影龙）不同，暗影龙绝不会让这份相对优势冲昏头脑。相反，暗影龙通常谨慎到了极点，绝不肯卷入任何哪怕只有一丝公平对决意味的战斗。正因如此，真正能威胁到暗影龙的，往往只有它们完全未曾料到的突发奇袭，或是洞察力极其敏锐、韧性惊人，能够一路碾碎或绕过外围爪牙、直接揪出幕后真身的强敌。</p><p>虽然黑龙同样行事谨慎且从不讲公平对决，但暗影龙凭借尊崇传统与家族的文化，斩断了一大内耗冲突之源：黑龙在同一家族内部尚且尔虞我诈、背刺不断，暗影龙却敬重自家亲族，有时甚至会联手保护家族成员——当然，依然是从暗影中出手。这乍看之下似乎算不了什么，但要知道，藏身幕后的阴谋家往往恰恰最容易栽在最亲近、最了解自己的身边人手里。</p><div class="dragon-callout"><h4><FONT color=#800000>传家珍宝</FONT></h4><p>由于比起崭新闪亮的华美俗物，暗影龙更偏爱承载历史的传家宝，它们的宝库有时会透出一股宛如博物馆或古董店般尘封庄重的沧桑气息。当然，能够世代流传而不朽的器物往往本身便做工精良、坚固耐用；再加上背后厚重的历史渊源，暗影龙宝库中的藏品对于历史学家或是当年传承该遗物的家族后人而言，往往具有极其高昂的价值。因此，有幸击败暗影龙的屠龙者常常会发现：只要肯停下脚步逐一考证每件藏品的来历并寻访最合适的买家，最终换取的金钱回报往往能比随便找第一家店铺统货贱卖翻上一倍有余。</p></div><p>太古暗影龙通常要么是一个绵延数代、枝繁叶茂的庞大家族的主母或族长，要么是扮演着同等角色、备受敬爱的太姑祖母或太叔祖父（无论它们在血缘上真是其他暗影龙共同先祖的同胞手足，还是被尊认的义辈“叔祖”或“姑婆”）。既然多元宇宙中几乎没有多少生灵敢与一条太古暗影龙正面抗衡，对报复的恐惧便足以庇护其羽翼下的年轻暗影龙，而这又进一步巩固了后辈对年长古龙及其家族传统的敬畏与尊崇。就这样，太古暗影龙跨越漫长的龙族世代，引领着家族独有的礼仪规制、亡灵珍馐烹饪秘方以及其他种种独特的文化习俗。对年轻暗影龙而言，能够获赠一件由本族太古龙（无论在世还是已故）传下的传家宝收入自己宝库，是无出其右的至高荣耀。</p><p>太古暗影龙虽令自家亲族倍感安心，对亡灵生物而言却是活生生、会呼吸的灭世天灾——放眼世间万物，它们是极少数能让最古老强大的巫妖与最狡诈老辣的吸血鬼宗主都打从心底战栗恐惧的存在之一。</p><p>对任何妄想讨伐太古暗影龙或从其爪下逃生的亡灵而言，更糟糕的消息是：你几乎永远不可能撞见落单的太古暗影龙。无论是登门串门的亲戚，还是麾下数不清的爪牙仆从，它们身边总有充足的帮手——顺便正好让暗影龙们聚在一起，享用一场以亡灵点心佐餐的即兴野餐会。</p><div class="dragon-callout"><h4><FONT color=#800000>暗影之王</FONT></h4><p>与琥珀龙或黄铜龙不同，暗影龙对流言蜚语与秘密交织的情报网本身并没有多大兴趣。然而，长期潜伏于暗影之中的生存方式，加上操纵更危险对手的手腕，使它们无论是否主动打探，都会不可避免地接触到大量隐秘。大多数暗影龙都深谙此类秘密的分量，既会拿来小敲一笔竹杠，也会将其转卖给更看重这条秘密的其他巨龙，以此换取对方日后效劳的人情，或是换来某件自己垂涎已久、历史渊源迷人的古物遗珍。唯一的例外是尘封的秘史与古老传统：琥珀龙和黄铜龙认为当下可直接利用的现代流言与情报实用得多，暗影龙却总是忍不住对历史秘辛心生好奇——那些陈年往事对眼下或许毫无用处，却最能勾起暗影龙的探究欲。</p></div><h2><FONT color=#800000>特拉克辛布里安，暗影主母</FONT></h2><p>尽管绝大多数太古暗影龙都会与庞大的宗族亲眷保持往来，但论及家族网络的紧密与深广，没有谁能与“暗影主母”特拉克辛布里安相提并论。</p><p>出人意料的是，她这一名号的由来并非单纯因为家族规模庞大——尽管平心而论，单凭规模本身也已足够令人叹为观止：她与六位不同的伴侣共育有十二名子女，其中大多数如今本身便已是远古暗影龙；而这些子女又各自繁衍后代，算上几年前刚刚破壳的第一位八世玄孙女，如今整个家族已绵延整整十代之众。顺带一提，为了省去那一长串繁琐拗口的“曾、玄、来、晜”辈分前缀，暗影主母更喜欢让血脉中除直系子女外的所有后裔一律直接称呼她为“祖母”，而她也一律称呼它们为“孙儿”“孙女”或“孙辈”。</p><p>真正让特拉克辛布里安独树一帜的，是她<em>对待</em>家族的方式——哪怕以暗影龙的标准来衡量，她也把家族圈子维系得格外紧密。其他暗影龙往往将家族与传统归入私人生活的一端，而将爪牙、棋子与代理人归入对外活动、阴谋布局及猎食亡灵的另一端；暗影主母却将二者融为一体：她的整个家族，便是她的代理人情报网。</p><p>正因如此，世人很容易低估与特拉克辛布里安及其血脉族群为敌究竟有多么恐怖。一条巨龙已然足够危险，一条背后有大批类人爪牙撑腰的巨龙更加危险……但一条背后站着大群<em>其他巨龙</em>的太古龙，则是一场彻头彻尾的梦魇——更何况那群助阵巨龙中的每一条，背后还可能各自统领着一帮仆从部属。这股力量的规模叠加起来，膨胀得快到令人窒息。</p><p>暗影主母治家极严，凭借严谨的传统与家规约束年轻后辈，同时也让它们安于各自的职责与地位。对于那些觉得家族规矩束缚难耐的子孙，家族会与之展开坦诚直率的对话；归根结底，倘若家族生活实在不适合它们，家族也欢迎它们离开巢穴独自闯荡——每一代后裔中也确实都有几条年轻暗影龙选择单飞。主家对这些旁支后裔总体保持着客气友好的态度，但比起留在族内的同伴，始终会维持一定的距离。每隔百余年左右，族中也难免会出现既不肯离开、又不听劝诫的捣乱分子；一旦它们企图在族内挑拨纷争，特拉克辛布里安便会予以严厉惩处，公开杀一儆百，以儆效尤。</p><p>将如此众多的暗影龙聚集在同一个组织严密的大家族中，最显著的弊端莫过于它们惊人的食量：要想喂饱全族上下，需要海量的亡灵生物，其消耗量甚至超过了暗影位面本地所能供应的极限。为此，特拉克辛布里安专门建造了一座通往负能量位面无垠虚空的特殊暗影传送门，且唯有动用她本人的魔力方可开启运作。她与子孙后代可以穿过传送门前往负能量位面狩猎，再顺着各自的影子原路折返，将寻获的美味亡灵带回家中；但从负能量位面一侧，唯有原本便从主家一侧过去的存在才能激活通道返回。因此，这座传送门并不会对整个家族那横跨无数洞窟的庞大巢穴聚落构成严重的安全漏洞，不过微小的风险依然存在。不止一只夜影怪或远古巫妖曾企图从负能量位面一侧用魔法强行破解这座传送门，妄想率领麾下亡灵大军发动跨位面入侵。只可惜对它们而言不幸的是，这种动手脚的举动会立刻惊动特拉克辛布里安——她既可以选择亲自跨过传送门把不速之客轰杀至渣，也可以干脆放任对方把门打开。每当她选择后者时，看着那支满心以为即将突袭毫无防备的凡人聚落、兴冲冲跨界杀来的亡灵大军，结果一头扎进满屋子饥肠辘辘的暗影龙老巢里，她总会为这绝妙的戏剧性讽刺放声大笑。</p><div class="dragon-callout"><h4><FONT color=#800000>夏洛克桑瑟斯，初代守望者</FONT></h4><p>作者：小加里·波利（Gary Polley Jr.）</p><p>性情快活、好奇心重且体态略显发福的夏洛克桑瑟斯，平生一大爱好便是深入亡灵横行的险地四处探访，只为亲眼瞧瞧那些地方究竟是什么光景，并将其详尽记录在自己那许多本厚实的考察日志里。与大多数暗影龙一样，尽管他自身实力深不可测，却对抛头露面抱有极高的戒心，总是小心翼翼地避开那些会让自己沦为众矢之的的区域；哪怕偶尔按捺不住好奇心涉足险境，他也会确保自己绝不会被人察觉或抓个正着。</p><p>暗影龙普遍擅长培植爪牙、棋子与替罪羊为自己奔走效命，以便安稳隐居幕后，夏洛克桑瑟斯自然也不例外。事实上，他设计了一条尤为高明的妙计，不仅能满足他的一切所需，甚至还绰绰有余：他化身为名为“夏洛克”的人类身份，开办了一所专门培养吸血鬼猎人的学院。夏洛克的学院为入学的猎人们提供极其高效的训练与后勤支援，因此在所有有理由痛恨吸血鬼的人群中声名远扬，成了一座备受尊崇的学府。只不过，由于高阶强力吸血鬼往往极难被彻底杀死，夏洛克便教导门下猎人：一旦生擒了强大的吸血鬼，务必将其押回学院，由学院采取永久销毁的处置手段。这话可没有半句虚言——那些被押回来的吸血鬼确实再也回不去了，只不过原因在于它们全都被夏洛克桑瑟斯吃进了肚子里：他开办的这所猎人学院本质上就是一家免费上门送餐服务机构，而且猎人们还对他感恩戴德呢！</p><p>这位“初代守望者”收藏着一件用吸血鬼宗主的獠牙，外加数百年来被他吃掉的其他足够令人印象深刻的强力亡灵残骸缝制而成的背心。与大多数太古暗影龙一样，他也拥有一大家子儿女与子孙后代，并打算日后将这件背心拆分成数份，分别传给自己的每一个孩子，作为跨越龙族世代流传的珍贵传家宝。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/umbral-great-wyrm.webp" type="image/webp"><img src="../../images/umbral-great-wyrm.png" alt="暗影龙" width="320"></picture><div class="dragon-art-caption">暗影龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古黄铜龙 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古黄铜龙 Brass Dragon Great Wyrm</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="太古黄铜龙.htm"><strong>太古黄铜龙</strong></a></td><td>Great Wyrm Brass Dragon</td><td>CR 25</td></tr>
+<tr><td><a href="太古黄铜龙（施法者）.htm"><strong>太古黄铜龙（施法者）</strong></a></td><td>Great Wyrm Brass Dragon (Spellcaster)</td><td>CR 25</td></tr>
+</table>
+<p>即便成长为威能无匹的太古龙，黄铜龙通常也依然对凡人及其功业造物怀有近乎孩童般的好奇心。它们依旧会把喜怒哀乐毫不掩饰地表现在鳞片色泽上。不过，较年轻的黄铜龙多以异想天开、无忧无虑著称；而太古黄铜龙由于深深投入凡俗事务之中，在数千年间亲历了无数生老病死的更迭轮回，因此比其他任何太古龙都更容易陷入深沉的抑郁与其他消极心理定式之中。</p><p>正因为黄铜龙对凡人社会及其间的芸芸众生了如指掌，它们对这些凡人的生命倾注了非比寻常的情感，因而也会为他们的逝去而格外伤怀。出于这一缘故，太古黄铜龙往往会饲养长寿的奇花异草或珍奇生灵作为宠物；它们借照料宠物的契机转移注意力，让自己摆脱阴郁低落的思绪，同时也为自己寻得一位长久相伴的伙伴。</p><p>其他巨龙有时会轻蔑地宣称，太古黄铜龙只是在寻找一种更长久的宠物，好填补那些转瞬即逝的凡人“宠物”离世后留下的空缺；但在黄铜龙自己看来，这两者根本不能相提并论。不过，它们对这些长寿宠物倾注了极深的情感这一点确是毋庸置疑的，因此它们也会不惜一切地守护自己的爱宠。倘若有哪个不长眼的敌人胆敢动它们心爱的万古幼猫一根毫毛，便有可能激怒一条太古黄铜龙，引来一场势不可挡的死亡与毁灭狂潮。</p><p>尽管其中的凶险显而易见，仍有一些走投无路或愚蠢透顶的阴谋家动过歪脑筋，妄图绑架其宠物充当人质，借此挟制太古黄铜龙的行动。起初这一手或许确实能够奏效——巨龙为了不让爱宠陷入险境，往往会先答应绑匪的初步要求——但这些绑架者实实在在是在玩火自焚，如此胆大包天的行径最终几乎注定会遭到惨烈的反噬。</p><p>这些短命的勒索者，连同其他形形色色的恶棍与敌手，往往严重低估了一条典型太古黄铜龙的人脉究竟有多么深广。无论一场阴谋掩藏得多么严密，太古黄铜龙庞大的情报网也必定早有眼线或触角埋设在相隔不过几层关系的知情人身边。太古黄铜龙只需抓住一丝线索或一个微小的破绽，便能瞬间激活整张情报网络，分毫不差地揪出所需的一切消息。大多数黄铜龙哪怕贵为太古龙也依旧摆出的那副天真无邪的姿态，不过是一层伪装罢了；一旦反击的时刻到来，它们便会毫不犹豫地褪去这层假面。</p><div class="dragon-callout"><h4><FONT color=#800000>爱管闲事的邻居</FONT></h4><p>黄铜龙堪称登峰造极的“包打听邻居”——它们对住在附近的每一个人闲聊、八卦、窥探、打听，甚至明目张胆地暗中监视，不仅亲自上阵满足旺盛的好奇心，还会动用消息灵通的情报网、预言法术，乃至无辜小动物们的叽喳闲谈来互为补充。所幸黄铜龙通常并非横加干涉或幕后操纵之辈，不会刻意去左右或摆布他人的生活与计划。但只要周遭有什么风吹草动，你大可以打赌当地的黄铜龙早就一清二楚——无论是北境凶险暴君大举入侵的军情，还是镇上面包师家里的夫妻矛盾，没有任何秘密能瞒过一条黄铜龙的耳目！</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/brass-great-wyrm.webp" type="image/webp"><img src="../../images/brass-great-wyrm.png" alt="太古黄铜龙" width="320"></picture><div class="dragon-art-caption">太古黄铜龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

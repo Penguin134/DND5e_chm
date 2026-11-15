@@ -1,0 +1,214 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>王庭龙 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>王庭龙 Court Dragon</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>巨龙亘古长存，伟力堪比传说，令世间万族为之敬畏、战栗与向往。在某些文化中，巨龙本身便是力量的象征；而在另一些文化里，它们则是王权的先驱。但对巨龙而言，这不过是它们的本色而已。这一朴素的真理从根本上塑造了巨龙与其他种族之间的关系。然而，并非所有巨龙都像人类故事书中所描绘的那样，终日沉睡在堆满财宝的洞窟里，坐等某个鲁莽的冒险者斗胆前来觊觎它们的宝库。有时候，冒险者正是巨龙自己！</p><p><a href="../../第二章：巨龙种族/巨龙种族特质.htm">巨龙种族</a></p><p>你出身于一脉精明老辣的精类政客世系。你属于仙灵龙家族的一员。你的关联伤害类型为挥砍，且你的吐息武器为 15 尺锥状的参差碎镜片，需进行敏捷豁免。</p><h2><FONT color=#800000>巨龙特质</FONT></h2><p><strong>属性值提升。</strong>你的魅力值提升 2 点。你自选的一项属性值提升 1 点。</p><p><strong>年龄。</strong>任何年龄段的巨龙都可以举行永恒之光仪式，因此哪怕是一条刚完成仪式的初生永光龙，严格来说也可能已经活了数千岁。不过，仪式澎湃的魔法能量会洗去衰老的痕迹。从仪式中苏醒的初生永光龙洋溢着青春活力与无限潜能。尽管部分学者持不同看法，但只要不死于暴力或其他灾祸，永光龙的寿命与传统派巨龙同样漫长。</p><p><strong>阵营。</strong>永光龙的龙族血统会强烈影响其信念，但影响程度远不如同血统的传统派巨龙。例如，银永光龙往往是善良的捍卫者，而黑永光龙则往往狡诈刻薄。然而，永光龙深知龙脉并非不可违逆的宿命。任何永光龙都可以完全抛弃先祖的旧习，去开拓属于自己的道路。</p><p><strong>体型。</strong>除非一条永光龙将自身魔力专注于增大体型（许多永光龙都会这样做），否则它们的体型并不会比常见的类人种族更大。你的体型可在小型或中型之间自选。</p><p><strong>速度。</strong>你的基础步行速度为 30 尺。</p><p><strong>黑暗视觉。</strong>你同样具备传统派巨龙的敏锐感官。在距离你 60 尺范围内，你可以将微光光照视作明亮光照，将黑暗视作微光光照。你在黑暗中无法分辨颜色，只能看到灰度的影像。</p><p><strong>龙之馈赠。</strong>你从巨龙职业所列的龙之馈赠中获得一项龙之馈赠。如果某项馈赠具有先决条件，你必须满足其先决条件才能获得它。</p><p><strong>龙类。</strong>你的生物种类为龙类，而非类人生物。</p><p><strong>天生武器。</strong>除常规的徒手打击外，你还获得两种天生武器攻击：啃咬攻击与爪击攻击。你的啃咬攻击造成 1d6 点穿刺伤害；你的爪击攻击造成 1d4 点挥砍伤害。</p><p>你必须至少有一只手空闲才能发动爪击攻击。</p><p>你在进行爪击攻击的攻击检定和伤害掷骰时可以使用敏捷代替力量，但啃咬攻击不适用。</p><p><strong>语言。</strong>你能够说、读、写通用语和龙语。</p><p><strong>个人叙事。</strong>你背负着一段个人叙事，无论是决意拥抱它、改写它，还是将其彻底抛诸脑后。无论如何，对自身叙事的洞悉令你对自己的能力充满自信、深知自身弱点，并在重压之下依然冷静沉着。你对抗会使你陷入恐慌状态的效应时进行的豁免具有优势。</p>
+<h2><FONT color=#800000>永光王庭龙背景设定</FONT></h2>
+<p>大多数王庭龙都热衷于精心构筑属于自己的魔法领地、建立自己的王庭，并对一切途经此地的生灵行使生杀予夺的权柄。坐镇于这处安全港湾之中，他们尽情演绎着自身的叙事，一头扎进精类政治、王庭交锋与传奇故事交织而成的错综巨网。成为永光龙与这些本能冲动及传统规范并非水火不容，但确实是一场严峻挑战。许多永光王庭龙在渡过这段蜕变期时都会暂时舍弃自己的王庭，以免在力量暂时衰弱的状态下勉强周旋于尔虞我诈的王庭权谋之中。</p><p>传统派王庭龙认为，成为永光龙之举无异于企图将自身原有的叙事偷换为另一段叙事——这表明该永光龙正在违逆自身宿命，不仅搅乱了自己的既有格局，更打乱了所有叙事与之交织缠绕之人的命运轨迹。除了这种根深蒂固的排斥心态之外，任何打算成为永光龙的王庭龙还必须时刻提防致命危险：他们命中注定的仇敌与宿敌必定会趁永光龙初成时的虚弱期发难，抓住这一千载难逢的机会发动袭击、强占永光龙的王庭……甚至做出更残酷的举动。尽管有些王庭龙试图向同侪隐瞒自己的蜕变，打算在数年乃至数十年间暗中积蓄力量，但精类王庭的本质决定了这一计策极难成功。包括希族与王庭龙在内的精类无不好奇多事、耳目灵通；流言蜚语与奇闻轶事本就是精类王庭的命脉所在，任何秘密在此都出了名地难以保守——更何况是永恒之光仪式这等势必引发剧变、动摇政治平衡的惊天秘闻。</p><p>大多数永光王庭龙都将永恒之光仪式视作一场解脱——一种改写自身叙事与宿命、甚至将其彻底蜕去的途径，从而重塑为某种焕然一新的存在。部分经历蜕变的个体仍会保留先前的叙事，只是换以全新的方式将其延续下去；但大多数永光王庭龙都会采纳一段由自己亲手构思的新叙事，待自认实力足以捍卫并统治领地时再另行开辟一座新王庭，又或者干脆将“叙事”这一整套概念彻底抛诸脑后。无论一条王庭龙抱有怎样的理念与规划，他们几乎无一例外都会暂时离开精类王庭一段时日，或者至少暂缓建立属于自己的王庭，以免在早期虚弱阶段树敌过多。相反，他们往往会迈向更广阔的世界，去体验一段摆脱沉重期许束缚的快意冒险人生。</p><p>王庭龙长袖善舞、机敏狡黠，深谙操纵人心与达成所愿之道。他们能迅速结交盟友，且很少为道德困境所羁绊，因而是一类适应力极强的可靠同伴。不过相处日久之后，王庭龙也可能成为令人头疼的合作对象——因为他们总是习惯性地夺取领导地位，向同伴强加规矩，并在不知不觉间把所在的社交团体改造成属于自己的微型王庭，而他们自己通常根本意识不到其中的相似与呼应之处。由于王庭龙不太在意世俗道德，却素有信守契约的良好声誉，只要他们不介意听从雇主调遣，往往能成为极其出色的雇佣兵。</p><p>王庭龙在战术风格与热忱喜好上千姿百态，恰与他们丰富多样的叙事相得益彰，因此他们可能会涉足形形色色的职业。不过，大多数王庭龙更偏爱那些要么张扬夺目、气势恢宏，要么暗藏机锋、运筹帷幄的职业。吟游诗人在他们之中尤为普遍，因为这一职业与故事传说渊源深厚，既具备左右叙事的力量，又精通纵横捭阖的政治手腕。术士同样相当常见，游荡者亦然——尤其是在那些热衷于权谋博弈的王庭龙之中。</p><div class="dragon-callout"><h4><FONT color=#800000>王庭对簿之日</FONT></h4><p>永光王庭龙身处一个充斥着仙灵权谋与暗算倾轧的世界，因此他们想要隐瞒自己的永光龙身份以及随之而来的暂时虚弱，实在是顺理成章之举——尽管这听起来未免令人惋惜：还请体谅一下那些苦苦想要统计永光王庭龙确切数量的可怜学者吧！话虽如此，要想守住这个秘密绝非易事，他们的伪装往往会在某场王庭盛会上迎来摊牌时刻——那可能是一场无法推脱的宴会或社交应酬，亦或是一道不容抗命的君王传召。这场戏剧究竟如何收场，对每条王庭龙而言各不相同：轻则不过是当众出丑、沦为笑柄，重则可能演变为决斗、公开谴责，乃至惨遭流放。</p></div>
+<p class="dragon-nav-links"><strong>延伸阅读：</strong><a href="../怪物图鉴/王庭龙/王庭龙.htm">对应怪物图鉴：王庭龙</a> · <a href="../../第二章：巨龙种族/巨龙种族特质.htm">主书通用巨龙种族特质</a> · <a href="../../第三章：巨龙职业与范型/巨龙/巨龙.htm">巨龙职业</a> · <a href="../龙之馈赠.htm">本卷新增龙之馈赠</a></p>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/court2.webp" type="image/webp"><img src="../images/court2.png" alt="王庭龙立绘" width="320"></picture><div class="dragon-art-caption">王庭龙（Court Dragon）</div></div>
+<div class="dragon-art-card"><picture><source srcset="../images/court3.webp" type="image/webp"><img src="../images/court3.png" alt="王庭龙立绘" width="320"></picture><div class="dragon-art-caption">王庭龙</div></div>
+<div class="dragon-art-card"><picture><source srcset="../images/adult_court.webp" type="image/webp"><img src="../images/adult_court.png" alt="王庭龙立绘" width="320"></picture><div class="dragon-art-caption">王庭龙</div></div>
+</td>
+</tr></table>
+</body>
+</html>

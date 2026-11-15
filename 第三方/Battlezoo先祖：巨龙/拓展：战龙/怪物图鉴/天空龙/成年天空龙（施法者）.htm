@@ -1,0 +1,261 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>成年天空龙（施法者） - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>成年天空龙（施法者） Adult Sky Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="天空龙.htm">返回天空龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Adult_Sky_Dragon_Spellcaster"><FONT color=#800000>成年天空龙（施法者） Adult Sky Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">巨型龙类，守序善良</div>
+<table>
+<tr><td><strong>AC </strong>19（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>225（18d12 + 108）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 120尺（悬浮）</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">25</td><td class="c2">+7</td><td class="c2">+7</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+6</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">22</td><td class="c2">+6</td><td class="c2">+6</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">13</td><td class="c4">+1</td><td class="c4">+1</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+8</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">19</td><td class="c4">+4</td><td class="c4">+4</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +9，威吓 +9，察觉 +13，宗教 +6，隐匿 +6</td></tr>
+<tr><td><strong>免疫 </strong>闪电</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 23</td></tr>
+<tr><td><strong>语言 </strong>气族语、天界语、通用语、龙语、炼狱语、木族语</td></tr>
+<tr><td><strong>CR </strong>15（XP 13,000；PB +5）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>受火相克 Countered by Fire。</strong>若成年天空龙受到火焰伤害，其体内的金行元素魔法会被烈焰淬炼抑制。直至其下一回合结束，成年天空龙的啃咬不再造成闪电伤害，且成年天空龙的吐息武器仅在投出6时充能。<br>
+<strong>神圣雷霆 Divine Lightning。</strong>信仰神祇的成年天空龙能够将神圣力量导引至其所有攻击与特殊能力之中。每当成年天空龙造成闪电伤害时，若改为造成光耀伤害能造成更高伤害，该成年天空龙便可以改为造成光耀伤害。<br>
+<strong>得土相生 Fed by Earth。</strong>每当成年天空龙成为任何影响泥土或岩石的法术（由GM裁定）的目标时，该成年天空龙都会留下一团粉碎的尘土与碎砾云，随着巨龙飞行的涡流盘旋翻涌。在接下来的1分钟内，只要该成年天空龙处于飞行状态，该成年天空龙便处于轻度遮蔽，且所有针对该成年天空龙的攻击均具有劣势。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果成年天空龙在一次豁免中失败，它可以选择将该次豁免改为成功。如果它如此做，任何被该巨龙擒抱的生物不再被它擒抱。<br>
+<strong>薄雾视觉 Mist Vision。</strong>浓雾与薄雾不会遮蔽该巨龙的视线。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 17，法术攻击命中 +9）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>羽落术 Feather Fall</em>、<em>卜筮术 Augury</em>、<em>造风术 Gust of Wind</em>、<em>隐形术 Invisibility</em>、<em>解除魔法 Dispel Magic</em>、<em>气化形体 Gaseous Form</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该天空龙可以使用其骇人威仪。随后该天空龙按任意顺序发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+12 命中，触及 10 尺，单一目标。<em>命中：</em>20（3d8 + 7）点穿刺伤害，外加 9（2d8）点闪电伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+12 命中，触及 10 尺，单一目标。<em>命中：</em>14（2d6 + 7）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+12 命中，触及 15 尺，单一目标。<em>命中：</em>23（3d10 + 7）点钝击伤害。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 17的感知豁免，否则陷入恐慌，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>球状闪电吐息 Ball Lightning Breath（充能 5~6）。</strong>该巨龙以自身50尺内一处可见点为中心，射出一团半径20尺球状区域的球状闪电。该区域内的每个生物都必须进行一次DC 19的敏捷豁免，豁免失败者受到59（17d6）点闪电伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>绞缠 Constrict。</strong>被该巨龙擒抱的一个生物受到14（2d6 + 7）点钝击伤害。<br>
+<strong>猛扑 Pounce。</strong>该巨龙移动至多等于其速度一半的距离，并发动一次爪击攻击。<br>
+<strong>啃咬或尾击 Bite or Tail（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>盘绕狂袭 Coiling Frenzy（消耗 3 动作）。</strong>该巨龙对同一目标发动一次爪击攻击和一次尾击攻击。若两次攻击均命中，目标被擒抱（逃脱DC 17）。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/sky-great-wyrm.webp" type="image/webp"><img src="../../images/sky-great-wyrm.png" alt="成年天空龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">成年天空龙（施法者）（Adult Sky Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

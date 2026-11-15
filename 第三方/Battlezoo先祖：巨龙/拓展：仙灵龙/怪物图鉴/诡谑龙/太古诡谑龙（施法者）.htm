@@ -1,0 +1,269 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古诡谑龙（施法者） - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古诡谑龙（施法者） Great Wyrm Mischief Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="诡谑龙.htm">返回诡谑龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Great_Wyrm_Mischief_Dragon_Spellcaster"><FONT color=#800000>太古诡谑龙（施法者） Great Wyrm Mischief Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">超巨型龙类，混乱邪恶</div>
+<table>
+<tr><td><strong>AC </strong>20（天生护甲）</td><td width="44%"><strong>先攻 </strong>+2（12）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>585（30d20+270）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>60尺，掘穴 25尺，飞行 90尺，游泳 60尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+8</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">14</td><td class="c2">+2</td><td class="c2">+10</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">28</td><td class="c2">+9</td><td class="c2">+17</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+14</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">26</td><td class="c4">+8</td><td class="c4">+16</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +16，威吓 +16，自然 +11，巧手 +10，隐匿 +10，求生 +14</td></tr>
+<tr><td><strong>感官 </strong>黑暗视觉 120尺，真实视觉 60尺，被动察觉 16</td></tr>
+<tr><td><strong>语言 </strong>通用语、深潜语、龙语、木族语</td></tr>
+<tr><td><strong>CR </strong>26（XP 90,000；PB +8）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>传奇抗性 Legendary Resistance（5/日）。</strong>如果该巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，会随机触发一个诡谑陷阱。<br>
+<strong>水陆两栖 Amphibious。</strong>该巨龙可以在空气和水中呼吸。<br>
+<strong>野兽共情 Animal Empathy。</strong>当该巨龙用龙语交谈时，它能与野兽进行简单的交流。<br>
+<strong>魔法抗性 Magic Resistance。</strong>该巨龙在对抗法术和其他魔法效应所作的豁免检定上具有<strong>优势</strong>。<br>
+<strong>乘虚而入 Opportunist。</strong>该巨龙每轮获得一次额外反应，该反应仅可用于执行残酷嘲弄或怨毒诅咒。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 24，法术攻击命中 +16）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>油腻术 Grease</em>、<em>黑暗术 Darkness</em>、<em>隐形术 Invisibility</em>、<em>沉默术 Silence</em>、<em>气化形体 Gaseous Form</em>、<em>死云术 Cloudkill</em>、<em>剑刃护壁 Blade Barrier</em>、<em>棘墙术 Wall of Thorns</em>、<em>预见术 Foresight</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为角击或尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+16 命中，触及 15 尺，单一目标。<em>命中：</em>24（3d10 + 8）点穿刺伤害，外加 5（1d10）点毒素伤害。<br>
+<strong>爪击 Claws。</strong><em>近战武器攻击：</em>+16 命中，触及 5 尺，单一目标。<em>命中：</em>17（2d8 + 8）点挥砍伤害。<br>
+<strong>角击 Horn。</strong><em>近战武器攻击：</em>+16 命中，触及 15 尺，单一目标。<em>命中：</em>30（4d10 + 8）点钝击伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+16 命中，触及 20 尺，单一目标。<em>命中：</em>21（3d8 + 8）点钝击伤害。 命中时，该巨龙将目标向远离自身的方向直线推离至多10尺。<br>
+<strong>变形 Change Shape。</strong>该巨龙以魔法化为一名小型或中型类人生物，或一头大型或更小体型的野兽形态，或是变回其真实形态。它着装或携带的任何装备不会随之转化。在新形态下，若该形态没有利爪，该巨龙爪击攻击的伤害类型可能会变为钝击；若该形态没有尾巴，则失去其尾击攻击。除体型外，该巨龙的其余游戏数据保持不变。该巨龙死亡时会恢复其真实形态。<br>
+<strong>虚幻造像 Figment。</strong>巨龙创造出一个物件的视觉幻影。该虚幻造像出现在巨龙30尺内的一处空间中，且大小必须能容纳于一个15尺立方区域内。该虚幻造像持续1分钟，直至巨龙受到伤害、用一个附赠动作将其解除，或再次使用虚幻造像为止。与该影像发生的任何物理交互也会使其消失。生物可以用一个动作进行一次DC 25的智力（调查）检定，检定成功即可判定该虚幻造像为幻象。如果一个生物看穿了该虚幻造像的本质，则该虚幻造像对该生物变为半透明。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由该巨龙选择的、位于该巨龙<strong>120尺内</strong>且知晓其存在的生物，都必须成功通过一次<strong>DC 24的感知豁免</strong>，否则陷入恐慌，持续<strong>1分钟</strong>。<br>该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫该巨龙的骇人威仪。<br>
+<strong>诡谑陷阱 Mischievous Snare。</strong>巨龙以魔法在其30尺内一处未被占据的10尺方形区域中创造一个隐形陷阱。该陷阱持续存在，直至被触发或巨龙用一个附赠动作将其解除。生物可以用一个动作进行一次DC 19的智力（调查）或感知（察觉）检定，检定成功即可发现该陷阱。除该巨龙外的任何生物进入该区域时都会触发陷阱，且必须成功通过一次DC 19 敏捷豁免，否则受到 70（20d6）强酸、穿刺或毒素伤害（由巨龙在创造陷阱时选择）。巨龙每次只能布设一个诡谑陷阱，且同时至多维持6个陷阱。如果在超出此上限后创造新的陷阱，此前创造的一个陷阱会随机消失。<br>
+<strong>吐息武器 Breath Weapon（充能 6）。</strong>该巨龙使用以下吐息武器之一：<br><strong>恶臭吐息。</strong>该巨龙喷出一股覆盖120尺锥状区域的污秽恶臭气息。该区域内的每个生物都必须进行一次DC 25 体质豁免，豁免失败者受到99（18d10）点毒素伤害，豁免成功则伤害减半。此外，若豁免失败，该生物还会陷入中毒状态，直至其下一回合结束。<br><strong>喷射呕吐。</strong>该巨龙喷出一条长150尺、宽5尺线状区域的腐蚀性强酸与胃内容物的污秽混合物。该区域内的每个生物都必须进行一次DC 25 敏捷豁免，豁免失败者受到110（20d10）点强酸伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>残酷嘲弄 Cruel Mockery。</strong>当该巨龙布置的诡谑陷阱对一个生物造成伤害时，该巨龙会发出残忍的大笑并嘲弄该生物。该生物必须进行一次DC 24 感知豁免。免疫恐慌状态的生物自动成功通过此豁免。若豁免失败，该生物在1分钟内进行的攻击检定、属性检定和豁免具有劣势。若该生物成功通过一次检定，其身上的此效应提前结束。<br>
+<strong>怨毒诅咒 Spiteful Curse。</strong>当该巨龙10尺内一个它可见的生物以攻击命中该巨龙时，该巨龙啐出一道歹毒的报复诅咒。直到触发该反应的生物下个回合结束为止，该生物进行的攻击检定具有劣势。若该生物在此效应终止前有一次攻击失手未中，则它必须不带劣势地重投这次攻击，且改为以它自身为目标。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：5。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>变形 Change Shape。</strong>该巨龙使用变形。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>爪击 Claws。</strong>该巨龙发动一次爪击攻击。<br>
+<strong>啃咬、角撞或尾击攻击 Bite, Horn, or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬、角击或尾击发动攻击。<br>
+<strong>太古狂乱 Great Wyrm Frenzy（消耗 3 动作）。</strong>巨龙使其吐息武器立即充能完毕并使用它，随后巨龙受到20点伤害。<br>
+<strong>诡谑陷阱 Mischievous Snare（消耗 3 动作）。</strong>该巨龙使用诡谑陷阱。<br>
+<strong>终极浩劫 Ultimate Mayhem（消耗 3 动作）。</strong>该巨龙在一场彻底混乱与灾厄的盛大时刻同时引爆其所有诡谑陷阱。位于任一陷阱20尺内除该巨龙以外的每个生物都会成为该陷阱的目标。此外，任何能看见至少两个陷阱同时触发的生物都必须成功通过一次DC 24感知豁免，否则陷入恐慌状态，直至其下个回合结束。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/mischief_great_wyrm.webp" type="image/webp"><img src="../../images/mischief_great_wyrm.png" alt="太古诡谑龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">太古诡谑龙（施法者）（Great Wyrm Mischief Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

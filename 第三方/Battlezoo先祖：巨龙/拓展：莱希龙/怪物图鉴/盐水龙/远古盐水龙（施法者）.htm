@@ -1,0 +1,262 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古盐水龙（施法者） - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古盐水龙（施法者） Ancient Brine Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="盐水龙.htm">返回盐水龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Brine_Dragon_Spellcaster"><FONT color=#800000>远古盐水龙（施法者） Ancient Brine Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">超巨型龙类，守序中立</div>
+<table>
+<tr><td><strong>AC </strong>19（天生护甲）</td><td width="44%"><strong>先攻 </strong>+2（12）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>396（24d20+144）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺，游泳 60尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+8</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">14</td><td class="c2">+2</td><td class="c2">+9</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">22</td><td class="c2">+6</td><td class="c2">+13</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+6</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">20</td><td class="c4">+5</td><td class="c4">+12</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+13</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +13，威吓 +13，自然 +13，察觉 +19，求生 +12</td></tr>
+<tr><td><strong>免疫 </strong>强酸</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 29</td></tr>
+<tr><td><strong>语言 </strong>水族语、通用语、龙语、木族语</td></tr>
+<tr><td><strong>CR </strong>21（XP 33,000；PB +7）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>水陆两栖 Amphibious。</strong>该巨龙可以在空气和水中呼吸。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，直至其下个回合开始前，它无法呼吸空气、说话或使用盐水唾击。<br>
+<strong>魔法抗性 Magic Resistance。</strong>该巨龙在对抗法术和其他魔法效应所作的豁免检定上具有<strong>优势</strong>。<br>
+<strong>苦痛抓击 Painful Strikes。</strong>该巨龙的身躯覆满咸涩而带有强酸性的盐晶。当该巨龙以近战攻击命中一个生物时，该生物必须成功通过一次DC 23 体质豁免，否则陷入震慑状态，直至其下个回合结束。若目标豁免成功或身上的该效应终止，则其在接下来的1分钟内免疫苦痛抓击。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 21，法术攻击命中 +13）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>造水/枯水术 Create or Destroy Water</em>、<em>侦测魔法 Detect Magic</em>、<em>云雾术 Fog Cloud</em>、<em>迷踪步 Misty Step</em>、<em>气化形体 Gaseous Form</em>、<em>操控水体 Control Water</em>、<em>死云术 Cloudkill</em>、<em>寒冰锥 Cone of Cold</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动三次攻击：一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+15 命中，触及 15 尺，单一目标。<em>命中：</em>24（3d10 + 8）点穿刺伤害，外加 4（1d8）点强酸伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+15 命中，触及 10 尺，单一目标。<em>命中：</em>15（2d6 + 8）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+15 命中，触及 20 尺，单一目标。<em>命中：</em>21（3d8 + 8）点钝击伤害。 该巨龙将目标向远离自身的方向直线推离至多10尺。目标必须成功通过一次DC 26 力量豁免，否则被击倒并陷入倒地状态。<br>
+<strong>倾覆舟船 Capsize。</strong>该巨龙尝试掀翻其5尺内一艘体型不小于自身的船只。该巨龙必须用一次力量检定与掌舵者的敏捷检定进行对抗，对抗成功即可掀翻该船只。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 21 感知豁免，否则陷入恐慌状态，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>盐水吐息 Brine Breath（充能 5~6）。</strong>该巨龙喷出一条长90尺、宽10尺线状区域的强酸性盐水激流。该区域内的每个生物都必须进行一次DC 21 敏捷豁免，豁免失败者受到99（18d10）点强酸伤害，豁免成功则伤害减半。此外，若豁免失败，除非该生物能够在水中呼吸，否则它直至其下一回合结束前无法呼吸或说话。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>盐水唾击 Brine Spit。</strong>当该巨龙30尺内一处可见的生物开始维持法术专注时，该巨龙向该生物吐出一团腐蚀性盐水。该生物进行一次DC 21 敏捷豁免。若豁免失败，该生物受到17（5d6）点强酸伤害并失去专注。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>爪击攻击 Claw Attack。</strong>该巨龙使用其爪击发动攻击。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>啃咬或尾击攻击 Bite or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>枯萎啃咬 Desiccating Bite（消耗 3 动作）。</strong>巨龙用其啃咬攻击一个生物。命中时，目标立即额外受到 10（3d6）强酸伤害，并在其下个回合结束时再受到 10（3d6）强酸伤害。此外，该生物陷入中毒状态，直至其下个回合结束。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/brine-great-wyrm.webp" type="image/webp"><img src="../../images/brine-great-wyrm.png" alt="远古盐水龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">远古盐水龙（施法者）（Ancient Brine Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

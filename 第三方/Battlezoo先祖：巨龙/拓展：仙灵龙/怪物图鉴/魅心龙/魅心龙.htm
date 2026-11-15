@@ -1,0 +1,225 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>魅心龙 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>魅心龙 Allure Dragon</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="魅心龙雏龙.htm"><strong>魅心龙雏龙</strong></a></td><td>Allure Dragon Wyrmling</td><td>CR 3</td></tr>
+<tr><td><a href="青年魅心龙.htm"><strong>青年魅心龙</strong></a></td><td>Young Allure Dragon</td><td>CR 11</td></tr>
+<tr><td><a href="青年魅心龙（施法者）.htm"><strong>青年魅心龙（施法者）</strong></a></td><td>Young Allure Dragon (Spellcaster)</td><td>CR 11</td></tr>
+<tr><td><a href="成年魅心龙.htm"><strong>成年魅心龙</strong></a></td><td>Adult Allure Dragon</td><td>CR 18</td></tr>
+<tr><td><a href="成年魅心龙（施法者）.htm"><strong>成年魅心龙（施法者）</strong></a></td><td>Adult Allure Dragon (Spellcaster)</td><td>CR 18</td></tr>
+<tr><td><a href="远古魅心龙.htm"><strong>远古魅心龙</strong></a></td><td>Ancient Allure Dragon</td><td>CR 24</td></tr>
+<tr><td><a href="远古魅心龙（施法者）.htm"><strong>远古魅心龙（施法者）</strong></a></td><td>Ancient Allure Dragon (Spellcaster)</td><td>CR 24</td></tr>
+<tr><td><a href="太古魅心龙.htm"><strong>太古魅心龙</strong></a></td><td>Great Wyrm Allure Dragon</td><td>CR 29</td></tr>
+<tr><td><a href="太古魅心龙（施法者）.htm"><strong>太古魅心龙（施法者）</strong></a></td><td>Great Wyrm Allure Dragon (Spellcaster)</td><td>CR 29</td></tr>
+</table>
+<p>魅心龙是美丽而善良的巨龙，其内在之美会以超自然的方式映照在周遭万物之中。这份魅力使它们对形形色色的生灵都具有难以抗拒的吸引力与感召力——从最微小的昆虫到最强大的巨龙，乃至介于二者之间的一切生灵莫不如此。魅心龙为自身存在能激发他人的积极反响而自豪，乐于培植草木、抚育走兽，并激励智慧生物与凡人突破平庸的极限，成就远超自身想象的非凡自我。</p><p>魅心龙会与一片未经玷污的自然地域缔结超自然纽带；那通常是一片荒野，其范围大小随巨龙的年龄而异——雏龙的领地不过是一方小小林间空地，太古龙的领地则可囊括整片广袤森林。这片区域便是它们的巢穴，不过大多数魅心龙更愿意称之为自己的领地或圣所。魅心龙单凭自身的存在便能滋养并赋予圣所勃勃生机；尽管离开圣所对它们自身并无大碍，但一旦缺少它们的坐镇，这片土地便会逐渐衰败。因此，大多数魅心龙一生中的大部分时光都会留在圣所之内。它们自视为圣所的守护者，悉心维护着那里的田园诗意与盎然生机。大多数魅心龙的圣所内都坐落着蕴含原初力量或风景绝佳的胜地，例如魔法泉眼、魔网脉络交汇处或神圣遗迹。凭借远播的声名，许多魅心龙的圣所甚至成了人们竞相前往的朝圣之地。</p><div class="dragon-callout"><h4><FONT color=#800000>阿玛拉西妮</FONT></h4><p>阿玛拉西妮将整座玛拉特里萨亚岛划为自己的圣所，并将其打造成了靛青群岛中最为苍翠葱茏、宁静祥和的地域之一。作为声名远扬的艺术家赞助人——尤其是对雕塑家而言——来自周边各地的人们纷纷慕名造访玛拉特里萨亚岛，与阿玛拉西妮畅谈，并亲眼观摩研习她的艺术藏品。岛屿海滩上点缀着一座主要由旅店和公共艺术工坊组成的小型聚落，构成了世人眼中相当于她巢穴的地方——尽管她自己绝不会如此称呼它。虽然她热情好客，却不允许任何人逗留超过一个月，而且极少准许故地重游。尽管并非硬性要求，但她乐于收下访客献上的任何礼物或演出，似乎颇为享受这种众星捧月的关注，只是绝不肯公开承认这一点。每当新客登岛，她都会亲自迎接每一位访客，并在他们离岛之日亲自送别。阿玛拉西妮的岛屿是一座琳琅满目的艺术宝库，珍藏着众多后来名满天下、备受尊崇的艺术大师当年留下的恢弘画作与雕塑；获准造访玛拉特里萨亚岛，更被世人视作一生难求的珍贵体验。</p></div><p>每条魅心龙周身都萦绕着一股强大而超自然的唯美灵光，表现为从龙鳞表面散发出的璀璨微光；这层光辉会扭曲观者的感知，唤起人们发自内心的好感与赞叹。魅心龙色彩明艳绚丽，鳞片呈现出由一种色调自然过渡到另一种色调的渐变色泽。大多数魅心龙以粉红或橙色为主调，鳞色如朝霞或晚霞般层层晕染过渡；而栖息于地底的魅心龙则呈明亮的绿松石色，鳞片在深浅不一的蓝色与紫色之间渐变流转。魅心龙钟爱具有自然之美的事物，例如鲜花、宝石与海贝，并常将这些点缀融入自己的装束与居所之中。</p><p>它们以激发欢愉之举、催生艺术杰作与创造力为傲，但只要能够避免，便不愿用暴力或粗重体力活弄脏自己的爪子，而是更倾向于借助心灵魔法与鼓舞人心的气场赢得他人的协助，由他人代劳。遗憾的是，对魅心龙而言，它们的存在固然能感召纯良之心，却也同样容易引动邪念；许多魅心龙都不得不应对那些与自己价值观相悖、或是拒不尊重其意愿的狂热仰慕者。无论是宁静圣所内突如其来的危机激起了巨龙的怒火，还是单纯为了保护圣所内的其他居民免遭邪恶侵害，魅心龙通常都不得不亲自出面收拾这些闯入者留下的烂摊子。尽管偏爱和平与美好，魅心龙归根结底依然是巨龙，任何招惹它们的人都要冒承受龙威震怒的风险。</p><div class="dragon-callout"><h4><FONT color=#800000>灵感与痴迷</FONT></h4><p>魅心龙天生便是众多生灵汲取灵感与倾注爱慕的源泉。然而魅心龙也深知，灵感与依赖之间、爱慕与痴迷之间往往只有一线之隔。大多数魅心龙在年少时便已明白：若不加干预，前来寻访它们的人几乎都不肯离去，反而会魂牵梦萦地围着魅心龙虚度一生，并用千篇一律的礼物把圣所堆得杂乱不堪。随着造访人数的增加，这一问题会迅速恶化，促使魅心龙开始立下规矩。等到步入成年时，大多数魅心龙都已摸索出一套适合自己的管理制度，通常包括在规定期限后礼送访客离开、限制同时进入圣所的人数，或是限制单个生物向巨龙献礼的数量。</p></div><p>随着岁月流逝，魅心龙对自身圣所的掌控力日益增强，并能从圣所弥漫的环境魔力中汲取个人力量。许多魅心龙都能与圣所内的花草鸟兽交谈、化形为动物，或是随心所欲地催动大地变幻迁移。更为罕见的个体则具备在领地内瞬间移动、甚至与整片大地彻底融为一体的能力；在这种情况下，那片土地往往也会逐渐染上魅心龙自身的特质。</p><div class="dragon-callout"><h4><FONT color=#800000>魅心宝库</FONT></h4><p>魅心龙为自己能够激励人们缔造更伟大的创作壮举而自豪——尽管来访者所擅长的具体技艺五花八门、千差万别。无论创作出的是何种工艺品或作品，魅心龙都会将其视作珍贵礼物欣然接纳；久而久之，这些礼物便汇聚成规模庞大、包罗万象的宝库，散布在圣所的各个角落。虽然其中有些礼物是无形的——例如一首歌谣、一首诗篇或一个故事，也有些是难以长久保存的——例如一丛修剪精美的灌木或一顿美味佳肴，但绝大多数礼物都是有形实物。魅心龙珍视身边的每一件物品，无论是令人叹为观止的雕塑、价值连城的项链、手工编织的围巾，还是一只做工完美的马车车轮。它们看重这些物品，并非出于其美观、价值或实用性，而是因为创作者在倾力打造它们时所倾注的真挚热爱。</p></div><h2><FONT color=#800000>“百艺赞助人”海亚西鲁斯</FONT></h2><p>随着时间推移，来自世界各地的人们源源不断地涌向魅心龙，它们的圣所与影响力也随之不断壮大。太古龙“百艺赞助人”海亚西鲁斯，便代表了历经数百年此类发展后最为典型的终极形态。与科兹利格露那样扮演假想反派的古怪太古魅心龙不同，海亚西鲁斯堪称魅心龙的典范缩影——只是在各个层面上都成长到了超凡绝伦的传奇境界。</p><p>海亚西鲁斯最初的圣所，不过是浩瀚古林深处一片繁花盛开的僻静小天地；此后，他通过不断启发与资助画家、音乐家、诗人和作家，令自己的声名日渐远播。年轻时的他会主动向引起自己兴趣的创作者发出邀请，请他们分批结伴前来参加启迪灵感的艺术静修。随着岁月流转、圣所不断扩张，无需他再主动招揽，富有创造力的灵魂便已纷纷慕名而来，而他为访客提供的天然休憩设施也随之日益丰富。随着圣所囊括的森林版图越来越广，泥浴池、温泉疗养池等诸多景致相继涌现。如今他已成长为太古龙，整片广袤森林皆化作了海亚西鲁斯的圣所，被他重塑为一处供人沉思冥想、汲取灵感并绽放璀璨创造力的圣地。</p><div class="dragon-callout"><h4><FONT color=#800000>香水工坊</FONT></h4><p>魅心龙自身便能分泌天然芬芳的香氛；因此毫不奇怪，许多奢侈香水品牌与香水工坊之所以能够大获成功，其幕后秘诀正是有一条魅心龙在暗中支持——不仅提供香氛样本，还会指点本季最能撩人心弦的流行香调。</p></div><p>只要来访者不怀存占便宜的歹心，百艺赞助人对一切寻求他慷慨资助的人都极为大方。几乎任何类型的艺术企划都能吸引他的目光，只要其中蕴含新颖有趣的巧思，或是能够道出创作者独一无二的人生阅历与灵魂感悟。到了如今这般岁数，海亚西鲁斯早已阅尽千帆，但对传统形式的巧妙翻新依然能令他惊叹不已；而一件表面看似与远古旧作相仿的艺术品，或许也能借由创作者自身的经历与内心世界展现出潜藏的深邃意蕴。</p><p>身负如此盛名自然并非毫无风险，而与大多数其他太古龙相比，百艺赞助人在戒备心上可谓粗心大意到了极点。他不经事先审查便任由宾客簇拥在自己身边，所处场所也全是为了舒适与灵感而建，毫无安防可言。他身边通常既没有陷阱也没有护卫爪牙，满堂宾客反而成了额外的累赘。只要海亚西鲁斯不愿看到宾客遇害，面对任何哪怕勉强能威胁到他自身的强敌，他就必须耗费巨大的精力去护住这些脆弱的凡人——而这些精力原本大可用于全力反击或从容脱身。</p><p>正因如此，他甚至遭遇过一两次暗杀企图；然而他的圣所实在太过辽阔，潜在盟友的人脉更是深不可测，以至于刺客们还来不及将他的圣所彻底破坏殆尽，他便已在数日后安然复苏、登门复仇，让行刺者悔恨自己当初为何竟敢向他下手。</p><div class="dragon-callout"><h4><FONT color=#800000>科兹利格露</FONT></h4><p>作者：罗赫略·高纳</p><p>在魅心龙之中，科兹利格露向来是个异类——她热衷于编织波澜壮阔的宏大剧本，并在现实世界中将其搬演成真，让其他生物在不知不觉间充当她暗中铺陈的故事线里的演员。历经数百年岁月，她一路存活下来并成长为太古龙，也将自己这套导演计谋锤炼成了一门艺术。首先，她会布下一条若无人阻止便会得逞的“邪恶阴谋线”；接着，她会物色一群看似不大靠谱的潜在英雄，并为他们铺平击败威胁的道路。这通常包括化身为一条年轻得多的魅心龙混入队伍之中，在旅途中适时提供援助、建议或其他关键助力。对科兹利格露而言，这场游戏的乐趣就在于暗中扶持这群“英雄”，看他们能否逆转胜算、战胜“邪恶”。在此过程中，他们或许真能获得人格上的成长；就算没有，单是旁观事态发展也足以令科兹利格露乐在其中了。她唯一真正的宿敌是“捣局者”米克西格维亚，后者最大的乐趣便是眼睁睁看着科兹利格露精心策划的剧本功亏一篑。这两条龙素来惯于斗智设局，并常以赌约来解决彼此的争端，而这些赌局又往往会失控升级，演变成一场局中之局。</p></div>
+<hr>
+<h2 id="魅影沉思：贝尔莎与迷雾"><FONT color=#800000>魅影沉思：贝尔莎与迷雾 Reflections of Allure: Belsa and the Mist</FONT></h2>
+<div class="dragon-letter"><p>如今身处凡世，每当回想起在迷雾王庭与远古魅心龙贝尔莎共度的时光，我有时仍会不禁遐想：倘若当时多留片刻，又会发生什么？平心而论，那里的冥想与静思是如此宁静祥和，让我觉得自己的思绪比以往任何时候都更为井然有序。在经历了一连串惊心动魄的磨难之后，我在那里短暂驻留的时光令我重归沉静，无疑使我的最终著作获益良多……但倘若我一直留在那里直到写完全书，是否还能攀上更高的境界？归根结底，我相信那不过是一曲塞壬之歌——一旦听从，便会将我永远困在彼处。</p><p class="dragon-signature">——永光贤者卡利赞德雷克斯</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/allure_great_wyrm.webp" type="image/webp"><img src="../../images/allure_great_wyrm.png" alt="魅心龙" width="320"></picture><div class="dragon-art-caption">魅心龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

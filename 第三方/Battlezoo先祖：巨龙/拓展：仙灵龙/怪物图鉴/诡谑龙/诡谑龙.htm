@@ -1,0 +1,225 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>诡谑龙 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>诡谑龙 Mischief Dragon</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="诡谑龙雏龙.htm"><strong>诡谑龙雏龙</strong></a></td><td>Mischief Dragon Wyrmling</td><td>CR 3</td></tr>
+<tr><td><a href="青年诡谑龙.htm"><strong>青年诡谑龙</strong></a></td><td>Young Mischief Dragon</td><td>CR 8</td></tr>
+<tr><td><a href="青年诡谑龙（施法者）.htm"><strong>青年诡谑龙（施法者）</strong></a></td><td>Young Mischief Dragon (Spellcaster)</td><td>CR 8</td></tr>
+<tr><td><a href="成年诡谑龙.htm"><strong>成年诡谑龙</strong></a></td><td>Adult Mischief Dragon</td><td>CR 15</td></tr>
+<tr><td><a href="成年诡谑龙（施法者）.htm"><strong>成年诡谑龙（施法者）</strong></a></td><td>Adult Mischief Dragon (Spellcaster)</td><td>CR 15</td></tr>
+<tr><td><a href="远古诡谑龙.htm"><strong>远古诡谑龙</strong></a></td><td>Ancient Mischief Dragon</td><td>CR 21</td></tr>
+<tr><td><a href="远古诡谑龙（施法者）.htm"><strong>远古诡谑龙（施法者）</strong></a></td><td>Ancient Mischief Dragon (Spellcaster)</td><td>CR 21</td></tr>
+<tr><td><a href="太古诡谑龙.htm"><strong>太古诡谑龙</strong></a></td><td>Great Wyrm Mischief Dragon</td><td>CR 26</td></tr>
+<tr><td><a href="太古诡谑龙（施法者）.htm"><strong>太古诡谑龙（施法者）</strong></a></td><td>Great Wyrm Mischief Dragon (Spellcaster)</td><td>CR 26</td></tr>
+</table>
+<p>诡谑龙是满怀恶意的恶作剧者，以制造破坏与混乱为乐。它们明明完全有能力降下腐蚀强酸或剧毒瘴气的风暴，将死亡倾泻在敌人头上，却更偏爱在数年乃至数十年的岁月里慢慢折磨周围的生灵——或是暗中破坏、捣毁他人创造的心血，或是耍弄危险的把戏，而且往往选在大庭广众之下酿成死亡、断肢或群体惨剧。一旦被激起骤然怒火，它们也会倾泻更直接的毁灭，但通常会在彻底灭绝一处聚落或一脉家族前收手，故意让自己被“击退”，放任人们休养生息、重建家园——好让诡谑龙能在他们重拾希望与喜悦之后卷土重来，将他们再折磨一遍。</p><div class="dragon-callout"><h4><FONT color=#800000>斯克拉奇</FONT></h4><p>斯克拉奇，又名“捣蛋鬼领主”，数百年来一直在折磨威弗贝克这座小镇，尽管镇民们对自己接连不断的厄运根源浑然不觉。尚是雏龙之时，一名英雄剿灭了斯克拉奇一家的整窝同胞，唯有他侥幸逃生。尽管斯克拉奇始终没能找到害死家人的那名英雄，但他足够聪明，明白究竟谁才是这桩罪行的罪魁祸首：雇佣那名英雄的小镇。早年间，斯克拉奇在镇子周边翻找残羹冷炙，并尽可能破坏各种小巧器具——拧松马车车轮、往粮仓里丢死动物都是他的拿手好戏。随着年龄渐长，斯克拉奇招募了一群追随他的捣蛋鬼为自己效命，并在镇外的沼泽中筑起巢穴。数个世纪以来，他持续向小镇施加报复，降下一桩又一桩厄运，却从不造成足以迫使小镇废弃的毁灭，也从未繁衍过自己的子嗣。斯克拉奇已将一生彻底奉献给折磨威弗贝克镇的事业，并打算将这场恼人的恐怖统治一直延续到自己大限将至之时——届时，他将倾泻强酸与积压已久的狂怒，亲自掀起一场毁灭狂潮，将整座小镇彻彻底底夷为平地。</p></div><p>诡谑龙长着绿褐相间的斑驳鳞片，使它们能够融入各式各样的环境。它们生有尖锐而棱角分明的颈褶、隆起的骨质眉脊，以及保护着全身大多数关节的板状凸起。它们的尾巴强健而锋利，常饰有刀片、金属脊刃或尖刺，以进一步增强杀伤力。尽管体型庞大，诡谑龙却有着惊人的隐蔽能力，不仅能悄无声息地移动和飞行，还能在各种荒野环境与城市街巷中巧妙伪装。许多诡谑龙拥有隐形或变形成无害小动物的能力，使其得以神不知鬼不觉地实施破坏——随着体型不断增大，这项本领也变得愈发不可或缺！虽然诡谑龙属于昼行生物，但它们倾向于在夜幕掩护下实施恶作剧，并在白昼阳光最盛的时段酣睡。它们不会在干燥处产卵，而是将黏滑的龙卵产在死水或污浊水洼之中，且孵化期极短。短短数年间，一头诡谑龙就能繁衍出一窝幼龙（尽管许多幼龙会在出生后的头几年里死于意外横祸）；这些年轻的诡谑龙会迅速扩散到整片区域，年幼时常以2至6头的小群体结伙行动，成年后则各自圈定领地定居。由于如此旺盛的繁殖力，再加上酷爱恶作剧、耍花招与搞破坏的天性，相当一部分其他巨龙都将诡谑龙视作害虫。</p><div class="dragon-callout"><h4><FONT color=#800000>民间迷信</FONT></h4><p>民间流传着无数关于如何驱避诡谑龙、如何安抚诡谑龙，以及如何引诱诡谑龙转而对付他人的迷信说法。这类迷信几乎全属无稽之谈，而且追根溯源，往往正是诡谑龙自己散布出来的。诡谑龙最喜欢在毫无希望之处赐予虚假的希望，并挑拨邻里自相残杀。因此，在折磨一座城镇一段时间后，许多诡谑龙便会在民众间散播流言，传授所谓保护自身与财产免受诡谑龙迁怒、赢得诡谑龙欢心，或是唆使诡谑龙去袭击仇敌的偏方。在它们眼中，这番骗局既是令人捧腹的把戏，又是向受害者榨取贡品的手段，其本身更是一场绝妙的破坏——毕竟，当街坊邻里争相算计着把恶龙引向彼此时，由此引发的动荡与精神摧残，堪称操纵人心的真正杰作。</p></div><p>诡谑龙在破坏之道上有着惊人的创造力，大多数人在面对它们制造混乱的巧思时，无不既惊骇万分又叹为观止。无论是摧毁有形之物——比如一枚传家怀表或一座宏伟庄园，还是摧毁无形之物——比如一段同盟、一份情谊或一个人的名誉，都能带给它们同等的快感。无论破坏欲的目标是什么，诡谑龙都偏爱通过暗中破坏来动手，将毁灭爆发的那一刻拉长延展，细细品味余波所造成的每一处伤痛与损失。附带损害越惨重越好！</p><p>诡谑龙极少建立长期关系，因为它们大多嗜虐、骄傲且睚眦必报。它们对工程师、工匠、建筑师和其他手艺人可谓又爱又恨：没有这些人的服务与劳作，诡谑龙就没有值得破坏的东西；可偏偏也正是工匠或工程师最有可能干扰它们的阴谋、修复它们破坏造成的损伤，并彻底挫败它们的恶作剧。它们极其记仇，有时甚至会跨越数代人慢慢清算旧账，让对先祖及其罪过一无所知的远代子孙承受恶果。比起干脆利落、十拿九稳的成功，它们远更偏爱错综复杂、刻意雕琢的复仇大计。</p><p>捣蛋鬼们深爱并尊崇诡谑龙，因为二者除了体型与力量之外有着太多共同点。诡谑龙在大多数情况下也对捣蛋鬼颇有好感，将它们视作私人大军，因此最乐意将它们放进聚落或社区之中，掀起史诗级的恶作剧大战。</p><div class="dragon-callout"><h4><FONT color=#800000>囤积癖恶龙</FONT></h4><p>从最字面、最低俗的意义上说，诡谑龙都是彻头彻尾的囤积狂。每当完成一次恶作剧、把戏、暗中破坏或毁灭行动时，大多数诡谑龙都会顺手偷走一件小玩意或财宝，作为铭记自身机敏与残忍的私人纪念品。它们将这些物件收纳在宝库之中，通常藏匿于巢穴内，或掩埋在附近的秘密藏宝点。当然，它们还会用亲手打造的致命陷阱来保护这些宝库与巢穴。除了布置陷阱外，大多数诡谑龙还会同时维护不止一处宝库以分散财富，并额外布置一两处假宝库来戏耍盗贼。尽管诡谑龙宝库中确实有部分财宝价值不菲，但绝大多数都一文不值，而且许多还暗藏凶险。洗劫诡谑龙的宝库，极少值得为此付出的辛劳与伤痛。</p></div><h2><FONT color=#800000>华丽恶徒玛莱菲卡尔</FONT></h2><p>在童话故事里，反派总是毫无来由地滑稽作恶，仿佛只是为了凸显自己作为对立面的身份。而在现实生活中，几乎没有生灵会真正认为自己是“反派”。相反，他们会陷入狂热的自我合理化，哪怕要为此做出五花八门的道德扭曲，也要将自己置于个人叙事的中心，把自己塑造成自身故事里的主角——“那家伙纯粹是咎由自取。”“我的敌人是邪恶的，所以我双手沾满鲜血的所作所为完全正当。”“每个人都在拼命争抢自己能抓到的东西，所以我不过是腐朽体制下一个好斗又讨喜的弱者罢了。”然而，太古诡谑龙玛莱菲卡尔——或者按他向那些被自己折磨戏弄的“朋友们”自称的那样，叫他“卡尔”——却是这条规律的例外。自封为“华丽恶徒”的玛莱菲卡尔，尽情沉醉于卡通反派身上一切最浮夸、最矫揉造作的行头与做派。每一个老掉牙的反派俗套，他都兴高采烈地付诸实践——甚至在每次策划阴谋时，都会在脸上贴一撇对巨龙而言毫无道理、尺寸还不合身的假小胡子，专门用来捻着坏笑。</p><p>要在玛莱菲卡尔的恶行背后寻找什么深层含义或隐秘图谋是徒劳的，因为那根本就不存在。他沉溺于作恶，纯粹是为了作恶本身，为了把反派角色演到极致。这也使得这头太古龙的胡闹行径，往往比那些出于自身利益考量而采取的行动更加难以预测。</p><div class="dragon-callout"><h4><FONT color=#800000>祸乱巧匠</FONT></h4><p>诡谑龙会变着花样寻衅滋事、掀起浩劫，但大多数个体都会专精于某一种特定类型的恶作剧或破坏，随着年龄增长更是如此。最常见的专长方向包括机关陷阱、暗中破坏，以及挑拨离间的社会工程手段。一旦涉及它们的拿手领域，在残忍而可怖的恶作剧技艺上，世间几乎无人能令诡谑龙黯然失色。</p></div><p>一头巨龙明明一头扎进每一个能想到的反派套路里——哪怕这些套路多么容易弄巧成拙、多么容易作茧自缚——却依然能活到成为太古龙，这乍看之下或许显得不可思议。但从某种意义上说，这恰恰将“华丽恶徒”推上了另一个层次：在木偶戏、连载短篇故事和其他媒介中，那些反复登场充当主角陪衬的滑稽反派，往往能够一遍又一遍地卷土重来。反派滑稽到没人把他们真正当成死敌，他们的计划也总会因老套的反派做派而败露……但他们每次都能成功溜走，一次又一次地酝酿下一场阴谋。这本就是此类叙事成功公式中密不可分的一环。</p><p>而这或许正是玛莱菲卡尔真正堪称天才的地方——又或者，他只是一个运气好到逆天、爱出风头的傻瓜。没人说得准真相究竟如何，他自己也绝口不提。平心而论，通过化身滑稽反派的标志性象征，他为自己披上了一层通常只有其他叙事中的英雄才拥有的“不倒翁式剧情护甲”。按照故事的走向，他总能先痛痛快快地找足乐子，接着认输退场，最后全身而退、改日再谋东山再起。对于更虚荣自负的巨龙而言，这种剧本简直不可理喻——毕竟，尽管身为强横的太古龙，玛莱菲卡尔干什么都必定以失败告终。但在华丽恶徒看来，落败不过是乐趣的另一部分罢了；面对自己狼狈出丑的败绩，他向来有着极佳的幽默感。</p><p>尽管玛莱菲卡尔恶意满满、嗜虐成性、总体上令人深恶痛绝，但他身上那种独特的格调与幽默感，却令他反常地比自己理应获得的评价讨喜得多——甚至吸引了一批追捧他荒唐行径与美学的拥趸，就连一些被他折磨的“朋友”，也觉得这个亲昵称呼不只是嘲讽或戏仿。不过，那些觉得他“无害”或有趣的人，一旦等他的恶作剧真正烧到自己头上，往往就会立刻改口了。</p><div class="dragon-callout"><h4><FONT color=#800000>米克西格薇娅</FONT></h4><p>作者：卡洛斯·卡罗（Carlos Caro）</p><p>被称作“搅局祸首”的米克西格薇娅是一头强大的太古龙，统治着“残破玩具箱”——一座充斥着坏掉的玩偶匣、缺了眼珠的洋娃娃、锈蚀齿轮以及诸如此类美学的精类王庭。登临力量巅峰之后，米克西格薇娅渐渐感到了无聊。全力出手时，绝大多数对手都太容易被碾压；而去寻找真正足以挑战自己的强敌，又既繁琐又危险。于是，她转而以制造毁灭性却又并非不可避免的灾祸来自娱自乐。通过驱使从最弱小的米特弗利特到最强大的灾厄捣蛋鬼在内的各色捣蛋鬼仆从，“搅局祸首”得以玩起一场小游戏：陆续派出愈发强悍的爪牙前去侦察并执行阴谋。与此同时，她又会暗中埋下恰到好处的线索，让足够聪慧而坚毅的人有机会阻止这场阴谋——要是每次都赢，游戏可就没意思了。无论结局如何，她都能玩得尽兴无比……唯独当外人胆敢违背她设定的游戏规则时除外。一旦有人犯规，她的好脾气便会在暴怒中粉碎，往往当场掀翻棋盘，将“作弊者”彻底毁灭。有时她也会化作无害的形态亲自旁观事态发展，顺手推波助澜一番，由衷地乐在其中。她最大的宿敌是太古魅心龙科兹利格卢，二者已在一连串迷宫般繁复的阴谋博弈中交锋过不止一次。而在不曾冷酷角力的闲暇时分，这两头太古龙偶尔还会出人意料地聚在一起，和睦地享用一场茶会。</p></div>
+<hr>
+<h2 id="凋零王庭：德卡伦之影"><FONT color=#800000>凋零王庭：德卡伦之影 Court of Decay: Dercallen's Shadow</FONT></h2>
+<div class="dragon-letter"><p>万幸的是，我从未亲眼遇见过诡谑龙德卡伦，但她那漫长的阴影却笼罩着整座凋零王庭——那里曾经是一片明媚而欢快的森林。身处其中时我曾忧心忡忡，但如今既然已平安归家，我反而庆幸自己曾亲历那片土地。它让我真切体会到德卡伦的崛起究竟对那个可怜的国度造成了何等破坏，进而让我对仙灵龙与精类王庭的生态有了更为深刻的理解。</p><p>从长居当地的居民口中，我拼凑出些许旧闻：此地曾被称为澄明王庭，得名于那些用于各类占卜的澄澈池水——人们曾借其探知遥远的国度，并解读过去、现在与未来。然而，当时的统治者遇见了自己的死兆替身——一种会化作注定将死之生灵模样现身、预示死期将近的精类。那位君主从此对自己的死亡执迷不休，试图借助池水寻找避死之法。归根结底，即便是精类君王也无法轻易欺瞒命运；一名无头骑士作为命运的代行者降临，以阻止撕毁剧本所将引发的动乱。那位统治者在随后的搏杀中丧生……那么，这究竟算是一则自我实现的预言吗？</p><p>无论如何，昔日的澄明王庭失去了自身存在的意义，而仙境从不容许权力真空。这让德卡伦得以将阴影投射于此地，将其腐化改造以迎合自身所需。澄澈的池水化作死水，事物的真相变得浑浊不堪，就连植物与真菌也变幻色彩，以此戏弄疏忽大意的旅人。唉，妄图欺骗命运极少能有善终——可这桩教训，世人似乎总要等到悔之晚矣时才肯领悟。</p><p class="dragon-signature">——永光贤者卡利赞德雷克斯</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/mischief_great_wyrm.webp" type="image/webp"><img src="../../images/mischief_great_wyrm.png" alt="诡谑龙" width="320"></picture><div class="dragon-art-caption">诡谑龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

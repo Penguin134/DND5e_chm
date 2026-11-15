@@ -1,0 +1,203 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>巨龙索引 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>巨龙索引 Dragon Index</FONT></H1>
+<p>以下条目列出了五种战龙血统的概要信息，以便查阅参考。</p><h2><FONT color=#800000>巨龙名称</FONT></h2><p><strong>巨龙家族：</strong>该巨龙所属的家族，在本书中均为战龙。</p><p><strong>吐息形状：</strong>该巨龙吐息的形状。</p><p><strong>伤害类型：</strong>该巨龙关联的伤害类型。若伤害类型存在变化，可能会附有额外说明。</p><p><strong>属性提升：</strong>该巨龙可提升2点的属性值。</p><p><strong>馈赠：</strong>该巨龙可选用、但并非所有巨龙皆可选用的龙之馈赠。</p><h2><FONT color=#800000>决斗龙</FONT></h2><p><strong>巨龙家族：</strong>战龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>雷鸣</p><p><strong>属性提升：</strong>敏捷</p><p><strong>馈赠：</strong><a href="../龙之馈赠.htm#战意激昂">战意激昂</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#借机啃咬">借机啃咬</a>、<a href="../龙之馈赠.htm#震聋咆哮">震聋咆哮</a>、<a href="../龙之馈赠.htm#挫志战吼">挫志战吼</a>、<a href="../龙之馈赠.htm#旋身卸力">旋身卸力</a>、<a href="../龙之馈赠.htm#仁慈制胜">仁慈制胜</a>、<a href="../龙之馈赠.htm#灵巧机动">灵巧机动</a>、<a href="../龙之馈赠.htm#赞誉对手">赞誉对手</a>、<a href="../龙之馈赠.htm#扬翼架势">扬翼架势</a>、<a href="../龙之馈赠.htm#蹂躏者活力">蹂躏者活力</a>、<a href="../龙之馈赠.htm#以礼还礼">以礼还礼</a>、<a href="../龙之馈赠.htm#厚实坚皮">厚实坚皮</a>、<a href="../龙之馈赠.htm#强健翼挡">强健翼挡</a>、<a href="../龙之馈赠.htm#翼卫格挡">翼卫格挡</a></p><h2><FONT color=#800000>狩猎龙</FONT></h2><p><strong>巨龙家族：</strong>战龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>毒素</p><p><strong>属性提升：</strong>感知</p><p><strong>馈赠：</strong><a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#借机啃咬">借机啃咬</a>、<a href="../龙之馈赠.htm#猎物悬赏">猎物悬赏</a>、<a href="../龙之馈赠.htm#骇人炫示">骇人炫示</a>、<a href="../龙之馈赠.htm#狩猎战利品">狩猎战利品</a>、<a href="../龙之馈赠.htm#嗜杀狂喜">嗜杀狂喜</a>、<a href="../龙之馈赠.htm#自然陷阱">自然陷阱</a>、<a href="../龙之馈赠.htm#完美伪装">完美伪装</a>、<a href="../龙之馈赠.htm#掠食学识">掠食学识</a>、<a href="../龙之馈赠.htm#掠食突袭">掠食突袭</a>、<a href="../龙之馈赠.htm#老练猎手">老练猎手</a>、<a href="../龙之馈赠.htm#嗅探恐惧">嗅探恐惧</a>、<a href="../龙之馈赠.htm#战利品大师">战利品大师</a>、<a href="../龙之馈赠.htm#真言通语者">真言通语者</a>、<a href="../龙之馈赠.htm#毒刺鳞甲">毒刺鳞甲</a></p><h2><FONT color=#800000>佣兵龙</FONT></h2><p><strong>巨龙家族：</strong>战龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>力场</p><p><strong>属性提升：</strong>智力</p><p><strong>馈赠：</strong><a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#借机啃咬">借机啃咬</a>、<a href="../龙之馈赠.htm#契约谈判家">契约谈判家</a>、<a href="../龙之馈赠.htm#尽忠援护">尽忠援护</a>、<a href="../龙之馈赠.htm#脱身条款">脱身条款</a>、<a href="../龙之馈赠.htm#豁免条款">豁免条款</a>、<a href="../龙之馈赠.htm#力场墙吐息">力场墙吐息</a>、<a href="../龙之馈赠.htm#永续条款">永续条款</a>、<a href="../龙之馈赠.htm#立约许诺">立约许诺</a>、<a href="../龙之馈赠.htm#真言通语者">真言通语者</a></p><h2><FONT color=#800000>狂怒龙</FONT></h2><p><strong>巨龙家族：</strong>战龙</p><p><strong>吐息形状：</strong>爆发</p><p><strong>伤害类型：</strong>火焰</p><p><strong>属性提升：</strong>体质</p><p><strong>馈赠：</strong><a href="../龙之馈赠.htm#战意激昂">战意激昂</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#借机啃咬">借机啃咬</a>、<a href="../龙之馈赠.htm#炽燃狂怒">炽燃狂怒</a>、<a href="../龙之馈赠.htm#狂怒冲锋">狂怒冲锋</a>、<a href="../龙之馈赠.htm#狂怒焚身">狂怒焚身</a>、<a href="../龙之馈赠.htm#狂怒施法">狂怒施法</a>、<a href="../龙之馈赠.htm#渐涨狂怒">渐涨狂怒</a>、<a href="../龙之馈赠.htm#怒火充能吐息">怒火充能吐息</a>、<a href="../龙之馈赠.htm#寻仇索敌">寻仇索敌</a>、<a href="../龙之馈赠.htm#狂怒啃咬">狂怒啃咬</a>、<a href="../龙之馈赠.htm#怒火显化">怒火显化</a></p><h2><FONT color=#800000>督军龙</FONT></h2><p><strong>巨龙家族：</strong>战龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>雷鸣</p><p><strong>属性提升：</strong>魅力</p><p><strong>馈赠：</strong><a href="../龙之馈赠.htm#生死沙场">生死沙场</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#借机啃咬">借机啃咬</a>、<a href="../龙之馈赠.htm#灵伴低语者">灵伴低语者</a>、<a href="../龙之馈赠.htm#掩护盟友">掩护盟友</a>、<a href="../龙之馈赠.htm#宣示凯旋">宣示凯旋</a>、<a href="../龙之馈赠.htm#威慑爪牙">威慑爪牙</a>、<a href="../龙之馈赠.htm#扬翼架势">扬翼架势</a>、<a href="../龙之馈赠.htm#开战！">开战！</a>、<a href="../龙之馈赠.htm#真言通语者">真言通语者</a>、<a href="../龙之馈赠.htm#强健翼挡">强健翼挡</a>、<a href="../龙之馈赠.htm#督军集结">督军集结</a>、<a href="../龙之馈赠.htm#翼卫格挡">翼卫格挡</a>、<a href="../龙之馈赠.htm#翼盾护身">翼盾护身</a></p>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古森林龙（施法者） - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古森林龙（施法者） Great Wyrm Forest Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="森林龙.htm">返回森林龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Great_Wyrm_Forest_Dragon_Spellcaster"><FONT color=#800000>太古森林龙（施法者） Great Wyrm Forest Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">超巨型龙类，混乱邪恶</div>
+<table>
+<tr><td><strong>AC </strong>23（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>702（36d20+324）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>60尺，飞行 90尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">30</td><td class="c2">+10</td><td class="c2">+10</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+9</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">29</td><td class="c2">+9</td><td class="c2">+9</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">19</td><td class="c4">+4</td><td class="c4">+4</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">24</td><td class="c4">+7</td><td class="c4">+15</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">25</td><td class="c4">+7</td><td class="c4">+7</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +15，威吓 +15，自然 +12，察觉 +23，隐匿 +9，求生 +15</td></tr>
+<tr><td><strong>免疫 </strong>毒素；中毒</td></tr>
+<tr><td><strong>感官 </strong>黑暗视觉 120尺，真实视觉 60尺，被动察觉 33</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、木族语</td></tr>
+<tr><td><strong>CR </strong>28（XP 120,000；PB +8）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>受金相克 Countered By Metal。</strong>当该巨龙受到金属武器造成的伤害，或成为影响金属的法术（由GM裁定）的目标时，该巨龙失去其林地行步特性，直至其下一回合结束。<br>
+<strong>无情吐息 Inexorable Breath。</strong>巨龙的吐息武器造成的伤害无视抗性，并将免疫视为抗性。<br>
+<strong>传奇抗性 Legendary Resistance（5/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。如果它如此做，它会失去其林地行步特质直至其下个回合结束，且若它当时正在使用化木形态，则会变回真实形态。<br>
+<strong>灵敏反应 Reactive。</strong>该巨龙在战斗中的每个回合都可以执行一次反应。<br>
+<strong>林地行步 Woodland Stride。</strong>该巨龙无视非魔法枝叶造成的困难地形。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 23，法术攻击命中 +15）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>每项 1/日：<em>侦测魔法 Detect Magic</em>、<em>纠缠术 Entangle</em>、<em>行动无踪 Pass without Trace</em>、<em>植物交谈 Speak with Plants</em>、<em>启蒙术 Awaken</em>、<em>通神术 Commune</em>、<em>树跃术 Tree Stride</em>、<em>寻路术 Find the Path</em>、<em>海市蜃楼 Mirage Arcane</em>、<em>动物形态 Animal Shapes</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+18 命中，触及 15 尺，单一目标。<em>命中：</em>32（4d10 + 10）点穿刺伤害，外加 22（4d10）点毒素伤害。 若此伤害使一个生物的生命值降至0，该生物的躯体将化为树木并陷入石化状态。这株木质躯体仍具生机，假以时日可能会长成一棵大树。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+18 命中，触及 10 尺，单一目标。<em>命中：</em>24（4d6 + 10）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+18 命中，触及 20 尺，单一目标。<em>命中：</em>36（4d12 + 10）点钝击伤害。<br>
+<strong>汲水枯萎 Draining Blight（1/日）。</strong>巨龙从周围的生物体内抽离水分，并用这股能量治愈自身的伤势。位于巨龙30尺内的每个生物都必须进行一次DC 25的体质豁免，豁免失败受到 71（13d10）黯蚀伤害，豁免成功则伤害减半。植物生物以及完全由水构成的生物进行该豁免时具有劣势。巨龙恢复等于此效应对单个生物所造成最高伤害量的生命值。此外，该区域内所有非生物的植物都会枯萎死亡，从而消除非魔法灌木丛及其造成的任何困难地形、掩护或隐蔽。水体也会以同样的方式被消耗，通常会使该区域内任何静止水体的水位下降1尺。<br>
+<strong>化木形态 Forest Shape（1/日）。</strong>巨龙以魔法化为一棵超巨型树木的形态。处于树木形态期间，巨龙无法移动或执行动作，只能用一个附赠动作变回其真实形态。处于树木形态期间，巨龙保留其所有游戏数据，但获得对火焰伤害的易伤。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 23的感知豁免，否则陷入恐慌，持续1分钟。野兽和植物进行该豁免时具有劣势。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>虫群吐息 Insect Breath（充能 5~6）。</strong>巨龙在120尺锥状区域内释放出一片虫群。该区域内的每个生物都必须进行一次DC 25的敏捷豁免，豁免失败受到 87（25d6）穿刺伤害，豁免成功则伤害减半。此外，豁免失败的生物陷入中毒状态，直至其下个回合结束。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>得水相生 Fed by Water（短休或长休后充能）。</strong>当巨龙浸没在水中或被泼洒至少10加仑的水时，它获得120点临时生命值。<br>
+<strong>原初惩戒 Primeval Rebuke。</strong>当该巨龙60尺内一个它可见的生物以攻击命中该巨龙，或以法术将该巨龙选为目标时，布满尖刺的藤蔓会在该生物周围破土而出，撕扯其血肉。该生物必须进行一次DC 25敏捷豁免。豁免失败时，该生物受到32（5d12）点挥砍伤害，被击倒在地，并被藤蔓擒抱（逃脱DC 20）。豁免成功时，该生物受到一半伤害，且不会被击倒在地或擒抱。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>绞缠 Constrict。</strong>被该巨龙擒抱的一个生物受到24（4d6 + 10）点钝击伤害。<br>
+<strong>猛扑 Pounce。</strong>该巨龙移动至多等于其速度一半的距离，并发动一次爪击攻击。<br>
+<strong>啃咬或尾击 Bite or Tail（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>盘绕狂袭 Coiling Frenzy（消耗 3 动作）。</strong>该巨龙对同一目标发动一次爪击攻击和一次尾击攻击。若两次攻击均命中，目标被擒抱（逃脱DC 20）。<br>
+<strong>太古狂乱 Great Wyrm Frenzy（消耗 3 动作）。</strong>（当生命值降至低于150时）巨龙使其虫群吐息立即充能完毕并使用它，随后巨龙受到20点伤害。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/forest-great-wyrm.webp" type="image/webp"><img src="../../images/forest-great-wyrm.png" alt="太古森林龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">太古森林龙（施法者）（Great Wyrm Forest Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

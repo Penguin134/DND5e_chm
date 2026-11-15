@@ -1,0 +1,215 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古蔚蓝龙 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古蔚蓝龙 Cerulean Dragon Great Wyrm</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="太古蔚蓝龙.htm"><strong>太古蔚蓝龙</strong></a></td><td>Great Wyrm Cerulean Dragon</td><td>CR 29</td></tr>
+<tr><td><a href="太古蔚蓝龙（施法者）.htm"><strong>太古蔚蓝龙（施法者）</strong></a></td><td>Great Wyrm Cerulean Dragon (Spellcaster)</td><td>CR 29</td></tr>
+</table>
+<p>蔚蓝龙极少能活到晋升太古龙的年岁。这一现象背后藏着一个再简单不过的事实：随着蔚蓝龙年岁渐长、探索欲愈发大胆无畏，它们踏足的地域也会变得越来越诡谲莫测、人迹罕至且凶险万分，甚至常常深入其他星球与异界位面。如此一来，它们便将自己暴露在了巨大的危险之下；有时候，哪怕是巨龙也会迎来好运耗尽的那一天。凡能成为太古蔚蓝龙者，无一不是一次又一次从现实边缘那些绝境险地中平安归来的幸存者——因此，早在获得太古龙的完整威能之前，它们就已在审时度势、择路避险与挑拣对手方面练就了登峰造极的本领。正因如此，它们继续造访的那些险恶之地对它们而言几乎已构不成半点威胁；这意味着一旦蔚蓝龙晋升太古龙，它们就几乎不可能再在远征途中失踪遇难——除非有某个极其可怕的强敌特意在半途设下天罗地网伏击它们，或是发生了其他同等惨烈的灭顶灾劫。</p><p>得益于这份超凡本领与执着痴迷，太古蔚蓝龙堪称探索现实世界中奇异未知领域的顶尖行家。话虽如此，每当邂逅怀有同样探索热忱的旅途同道时，它们通常都会表现出令人惊叹的大度与欣喜，绝不会心生嫉妒或摆出轻蔑之态。像太古相位龙“永恒漫游者”奥德赛阿纳提斯这样声名远扬的传奇旅者，在太古蔚蓝龙群体中永远备受欢迎；无论何时，只要这等贵客偶遇一位太古蔚蓝龙东道主，必定会受到热情洋溢的欢迎与盛情款待。</p><p>由于很少有蔚蓝龙会营建传统意义上的固定巢穴——这样它们便能无牵无挂地继续四海漫游，既不必定期折返同一地点，也无需提防盗宝贼光顾——绝大多数太古蔚蓝龙都各自开发出了独具特色的替代方案，而且往往带有浓厚的魔法色彩。异次元领域在它们之中极受欢迎，尤其是当蔚蓝龙能设法从多元宇宙的任何角落随时开启通往自家领域的传送门时更是如此。而在擅长施法的太古蔚蓝龙当中，另一个绝佳选择便是每逢决定暂停无休止的旅途、歇脚过夜之时，随手凭空筑起一座宏伟舒适、宛若华美巢穴般的璀璨豪宅。</p><p>尽管鲜有太古蔚蓝龙无端主动袭击他人的记载，但历史上确实发生过领地意识极强或惊弓之鸟般的社群，企图将恰巧飞越边境进入其领空的旅行太古蔚蓝龙击落，结果导致冲突急剧升级、酿成惨重伤亡的案例。太古蔚蓝龙不想像太古红龙那样肆意横行破坏，绝不代表它们软弱可欺。一旦结怨，它们会是令人胆寒的恐怖大敌——尤其是因为它们平日从不四处劫掠树敌，所以一旦激怒了它们，你很可能会成为承受其全部雷霆怒火的唯一目标。</p><div class="dragon-callout"><h4><FONT color=#800000>多元宇宙探险家</FONT></h4><p>莫说在这方世界，即便放眼整个多元宇宙，太古蔚蓝龙也是最为炉火纯青的顶尖探险家；因此，在半位面、口袋维度以及宇宙中近乎不可触及的偏远边陲里，许多最伟大、最隐秘的地理发现都要归功于某条太古蔚蓝龙。正因如此，你有时会发现这类秘境沿用了发现它的那条太古蔚蓝龙所起的龙语命名惯例。而另一些太古蔚蓝龙则单纯以抵达前人未至之境为傲，压根懒得停下脚步为自己的新发现命名。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/cerulean-great-wyrm.webp" type="image/webp"><img src="../../images/cerulean-great-wyrm.png" alt="太古蔚蓝龙" width="320"></picture><div class="dragon-art-caption">太古蔚蓝龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

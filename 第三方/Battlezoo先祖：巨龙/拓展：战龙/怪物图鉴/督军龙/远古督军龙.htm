@@ -1,0 +1,261 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古督军龙 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古督军龙 Ancient Warlord Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="督军龙.htm">返回督军龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Warlord_Dragon"><FONT color=#800000>远古督军龙 Ancient Warlord Dragon</FONT></H5>
+<div class="sub-line">超巨型龙类，绝对中立</div>
+<table>
+<tr><td><strong>AC </strong>24（天生护甲）</td><td width="44%"><strong>先攻 </strong>+2（12）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>518（21d20+224）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 90尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">30</td><td class="c2">+10</td><td class="c2">+10</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">14</td><td class="c2">+2</td><td class="c2">+10</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">27</td><td class="c2">+8</td><td class="c2">+8</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">19</td><td class="c4">+4</td><td class="c4">+4</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+14</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">24</td><td class="c4">+7</td><td class="c4">+7</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>威吓 +15，察觉 +22，游说 +15，宗教 +12，隐匿 +10</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 32</td></tr>
+<tr><td><strong>语言 </strong>龙语、矮人语、精灵语、巨人语、地精语、兽人语</td></tr>
+<tr><td><strong>CR </strong>25（XP 75,000；PB +8）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>穿众机动 Crowd Maneuver。</strong>该巨龙精于在成群生物之间穿行游走。该巨龙无视由体型小于自身的生物群所造成的困难地形。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。如果它如此做，对该巨龙陷入恐慌的生物不再对它恐慌。<br>
+<strong>金属双翼 Metallic Wings。</strong>巨龙覆鳞的双翼能够保护巨龙免受伤害。当一个生物用攻击命中巨龙时，该生物可以选择对巨龙的双翼或巨龙的躯体造成伤害。除伤害以外的任何攻击效应仅影响巨龙本体，而不影响双翼。如果巨龙的双翼累计受到120点或更多伤害，其双翼便会折损。双翼折损期间，巨龙的AC降低3，且其飞行速度减半。当巨龙处于满生命值状态时，它所受到的任何额外治疗改为作用于其双翼。<br>
+<strong>坐骑低语者 Mount Whisperer。</strong>该巨龙深谙如何仅凭自身气场安抚或震慑受过战斗训练的动物使其服从。只要目标动物是坐骑，它就可以用魅力（威吓或游说）代替感知（驯兽）来影响该动物。<br>
+<strong>开战！ To War!。</strong>投掷先攻时，每个由该巨龙选择的生物都可以使用该巨龙的先攻结果或其自身的先攻结果（取较高者）。任何采用该巨龙先攻结果的生物在其首个回合结束前速度获得+20尺加值。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+18 命中，触及 10 尺，单一目标。<em>命中：</em>28（4d8 + 10）点穿刺伤害，外加 19（3d12）点雷鸣伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+18 命中，触及 10 尺，单一目标。<em>命中：</em>20（3d6 + 10）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+18 命中，触及 15 尺，单一目标。<em>命中：</em>32（4d10 + 10）点钝击伤害。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 23的感知豁免，否则陷入恐慌，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>咆哮吐息 Roaring Breath（充能 5~6）。</strong>该巨龙发出一声震天咆哮，覆盖90尺锥状区域。该区域内的每个生物都必须进行一次DC 24敏捷豁免，豁免失败时受到77（22d6）点雷鸣伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>宣示凯旋 Display Triumph。</strong>当巨龙将一个生物的生命值降至0时，巨龙会高声宣告自己击倒强敌的胜绩。直到巨龙下个回合开始为止，位于巨龙60尺内的巨龙盟友在攻击检定或豁免检定上具有优势（由巨龙选择）。随后，巨龙可以使用作用范围为60尺的骇人威仪。暂时免疫骇人威仪的生物不会免疫此次骇人威仪的使用。<br>
+<strong>疾速翼盾 Quick Shield。</strong>当该巨龙的双翼未受损时，若有生物攻击该巨龙或该巨龙15尺内的一个生物，该巨龙会扬起覆鳞双翼护住自身或其盟友。对抗触发该反应的这次攻击时，该巨龙使自身或受其保护的生物的AC获得+8加值，这有可能使此次攻击失手未中。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>猛扑 Pounce。</strong>该巨龙移动至多等于其速度一半的距离，并发动一次爪击攻击。<br>
+<strong>督军集结 Warlord's Rally。</strong>该巨龙号召盟友向自身集结。60尺内每个由该巨龙选择、能听见并理解其语言的生物都可以使用反应移动至多等于其速度的距离；此次移动必须使该生物更靠近该巨龙。<br>
+<strong>啃咬或尾击 Bite or Tail（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>骑兵克星 Cavalry's Bane（消耗 2 动作）。</strong>该巨龙使用其骇人威仪。暂时免疫骇人威仪的生物不会免疫本次使用的骇人威仪。因本次骇人威仪陷入恐慌期间，每个等级或挑战等级不超过21的生物在其回合内都必须用其移动力沿着避开危险地形的最直接路径远离该巨龙。若该生物为坐骑且骑手在其逃跑期间试图阻拦其逃离，该坐骑会消耗其动作试图将骑手甩落，迫使骑手进行一次DC 18的力量（运动）或敏捷（杂技）检定。若检定失败，骑手将摔落在坐骑5尺内的一处空间中并陷入倒地状态。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult-warlord.webp" type="image/webp"><img src="../../images/adult-warlord.png" alt="远古督军龙立绘" width="320"></picture><div class="dragon-art-caption">远古督军龙（Ancient Warlord Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

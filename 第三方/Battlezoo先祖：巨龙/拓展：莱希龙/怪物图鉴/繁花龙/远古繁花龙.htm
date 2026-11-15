@@ -1,0 +1,264 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>远古繁花龙 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>远古繁花龙 Ancient Floral Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="繁花龙.htm">返回繁花龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Ancient_Floral_Dragon"><FONT color=#800000>远古繁花龙 Ancient Floral Dragon</FONT></H5>
+<div class="sub-line">超巨型龙类，绝对中立</div>
+<table>
+<tr><td><strong>AC </strong>22（天生护甲）</td><td width="44%"><strong>先攻 </strong>+4（14）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>445（27d20+162）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+8</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">18</td><td class="c2">+4</td><td class="c2">+11</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">22</td><td class="c2">+6</td><td class="c2">+13</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">26</td><td class="c4">+8</td><td class="c4">+8</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+13</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">28</td><td class="c4">+9</td><td class="c4">+16</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>奥秘 +15，自然 +15，察觉 +20，宗教 +15，求生 +13</td></tr>
+<tr><td><strong>免疫 </strong>毒素；中毒</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 30</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、德鲁伊语、木族语</td></tr>
+<tr><td><strong>CR </strong>22（XP 41,000；PB +7）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>花卉共情 Flower Empathy。</strong>当巨龙使用龙语交谈时，它能够以简单的方式与开花植物交流。<br>
+<strong>盛放之时 Full Bloom。</strong>只要巨龙浸没在水中，或自其上个回合结束以来曾被泼洒至少1加仑的水，巨龙就可以用一个附赠动作移动至多等于其速度的距离，或发动一次爪击攻击。<br>
+<strong>屏息 Hold Breath。</strong>该巨龙可以屏息<strong>1小时。</strong><br>
+<strong>敏锐嗅觉 Keen Smell。</strong>该巨龙依赖嗅觉进行的感知（察觉）检定具有<strong>优势</strong>。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，因该巨龙而陷入中毒状态的生物不再中毒。<br>
+<strong>感知魔法 Sense Magic。</strong>该巨龙能够感知自身<strong>30尺内</strong>的魔法，如同始终在使用侦测魔法一般。<br>
+<strong>踏水而行 Walk on Water。</strong>该巨龙可以选择在水面及其他液体表面行走，如同踏在无害的坚实地面上一般。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动三次攻击：一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+15 命中，触及 15 尺，单一目标。<em>命中：</em>24（3d10 + 8）点穿刺伤害，外加 5（1d10）点毒素伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+15 命中，触及 10 尺，单一目标。<em>命中：</em>17（2d8 + 8）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+15 命中，触及 20 尺，单一目标。<em>命中：</em>21（3d8 + 8）点钝击伤害，外加 4（1d8）点毒素伤害。 该巨龙将目标向远离自身的方向直线推离至多10尺。目标必须成功通过一次DC 26 力量豁免，否则被击倒并陷入倒地状态。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 24 感知豁免，否则陷入恐慌状态，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>吐息武器 Breath Weapons（充能 5~6）。</strong>该巨龙使用以下吐息武器之一：<br><strong>毒性吐息。</strong>该巨龙喷出一团覆盖90尺锥状区域的剧毒花粉云。该区域内的每个生物都必须成功通过一次DC 21 体质豁免，豁免失败者受到82（15d10）点毒素伤害，豁免成功则伤害减半。此外，若豁免失败，该生物陷入中毒状态，持续1分钟。处于中毒状态的生物必须在其每个回合结束时重复此豁免，豁免失败者受到16（3d10）点毒素伤害，豁免成功则结束其身上的中毒状态。<br><strong>沉眠吐息。</strong>该巨龙喷出一团覆盖90尺锥状区域、能引发骤然魔法沉眠的花粉云。该区域内的每个生物都必须进行一次DC 21 感知豁免。若豁免失败，该生物陷入昏迷状态，持续10分钟。若该生物受到伤害，或有人使用一个动作将其唤醒，该生物即会醒来。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>落英粉尘 Petal Dust。</strong>当一个生物以近战攻击命中该巨龙时，攻击的冲击力会从该巨龙的花瓣上震落一团闪耀的花粉云，笼罩该巨龙15尺内的一切。该区域内的每个生物都必须进行一次体质豁免，豁免失败时受到毒素伤害，豁免成功则伤害减半。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>爪击攻击 Claw Attack。</strong>该巨龙使用其爪击发动攻击。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>跨界凝视 Gaze Between Realms。</strong>巨龙窥视多元宇宙的奥秘，洞悉万物真貌。直到其下个回合结束为止，巨龙以魔法感知其60尺内的任何魔法灵光与魔法效应，以及位于以太位面上的生物。<br>
+<strong>啃咬或尾击攻击 Bite or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>沉眠吐息 Slumber Breath（消耗 2 动作）。</strong>该巨龙为其吐息武器完成充能并使用其沉眠吐息。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult-floral.webp" type="image/webp"><img src="../../images/adult-floral.png" alt="远古繁花龙立绘" width="320"></picture><div class="dragon-art-caption">远古繁花龙（Ancient Floral Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

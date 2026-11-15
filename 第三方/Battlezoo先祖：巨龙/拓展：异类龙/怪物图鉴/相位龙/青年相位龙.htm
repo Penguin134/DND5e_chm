@@ -1,0 +1,248 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>青年相位龙 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>青年相位龙 Young Phase Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="相位龙.htm">返回相位龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Young_Phase_Dragon"><FONT color=#800000>青年相位龙 Young Phase Dragon</FONT></H5>
+<div class="sub-line">大型龙类，绝对中立</div>
+<table>
+<tr><td><strong>AC </strong>14（天生护甲）</td><td width="44%"><strong>先攻 </strong>+4（14）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>114（12d10+48）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">16</td><td class="c2">+3</td><td class="c2">+3</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">19</td><td class="c2">+4</td><td class="c2">+7</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">18</td><td class="c2">+4</td><td class="c2">+7</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+3</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">14</td><td class="c4">+2</td><td class="c4">+5</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">14</td><td class="c4">+2</td><td class="c4">+5</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +5，察觉 +8，游说 +5，隐匿 +7</td></tr>
+<tr><td><strong>抗性 </strong>强酸、钝击、寒冷、火焰、闪电、黯蚀、穿刺、毒素、心灵、光耀、挥砍、雷鸣</td></tr>
+<tr><td><strong>感官 </strong>盲视 30尺，黑暗视觉 120尺，被动察觉 18</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语、矮人语、精灵语、侏儒语、地底通用语</td></tr>
+<tr><td><strong>CR </strong>8（XP 3,900；PB +3）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>相位跃步 Phase Step。</strong>若该巨龙在其回合内尚未移动，它可以借由魔法传送至其可见的一处未被占据空间，传送距离至多等于其速度。若如此做，其速度降至0，直至其下个回合开始。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击、闪烁穿行或萦绕力场。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+7 命中，触及 15 尺，单一目标。<em>命中：</em>15（2d10 + 4）点穿刺伤害，外加 4（1d8）点力场伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+7 命中，触及 10 尺，单一目标。<em>命中：</em>11（2d6 + 4）点挥砍伤害。<br>
+<strong>闪烁穿行 Blink Through。</strong>该巨龙部分虚化脱出当前相位并移动至多等于其速度的距离。此移动不会引发借机攻击。在此移动期间，该巨龙可以穿过一个生物的空间。该生物必须进行一次DC 15 敏捷豁免，豁免失败者受到18（3d8）点力场伤害，豁免成功则伤害减半。此外，若豁免失败，该生物还会应声倒地。<br>
+<strong>萦绕力场 Wreathing Force。</strong>该巨龙将奔涌于体内的能量凝聚成一层环绕四肢末梢的危险力场。直到其下个回合结束为止，其每次近战攻击都会额外造成4（1d8）点力场伤害。<br>
+<strong>力场吐息 Force Breath（充能 5~6）。</strong>巨龙呼出一股120尺锥状的纯粹力场冲击。该区域内的每个生物都必须进行一次DC 15 敏捷豁免，豁免失败受到 38（7d10）力场伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>相位防御 Phase Defense。</strong>当该青年相位龙10尺内一个它可见的生物以不会造成力场伤害的近战攻击命中该相位龙时，该巨龙本能地令受击部位闪烁虚化，使自身从这次攻击中受到的伤害减半。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/phase-2.webp" type="image/webp"><img src="../../images/phase-2.png" alt="青年相位龙立绘" width="320"></picture><div class="dragon-art-caption">青年相位龙（Young Phase Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

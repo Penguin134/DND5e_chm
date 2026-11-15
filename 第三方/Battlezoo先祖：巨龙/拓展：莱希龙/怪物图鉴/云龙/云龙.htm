@@ -1,0 +1,222 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>云龙 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>云龙 Cloud Dragons</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="云龙雏龙.htm"><strong>云龙雏龙</strong></a></td><td>Cloud Dragon Wyrmling</td><td>CR 3</td></tr>
+<tr><td><a href="青年云龙.htm"><strong>青年云龙</strong></a></td><td>Young Cloud Dragon</td><td>CR 9</td></tr>
+<tr><td><a href="青年云龙（施法者）.htm"><strong>青年云龙（施法者）</strong></a></td><td>Young Cloud Dragon (Spellcaster)</td><td>CR 9</td></tr>
+<tr><td><a href="成年云龙.htm"><strong>成年云龙</strong></a></td><td>Adult Cloud Dragon</td><td>CR 16</td></tr>
+<tr><td><a href="成年云龙（施法者）.htm"><strong>成年云龙（施法者）</strong></a></td><td>Adult Cloud Dragon (Spellcaster)</td><td>CR 16</td></tr>
+<tr><td><a href="远古云龙.htm"><strong>远古云龙</strong></a></td><td>Ancient Cloud Dragon</td><td>CR 23</td></tr>
+<tr><td><a href="远古云龙（施法者）.htm"><strong>远古云龙（施法者）</strong></a></td><td>Ancient Cloud Dragon (Spellcaster)</td><td>CR 23</td></tr>
+<tr><td><a href="太古云龙.htm"><strong>太古云龙</strong></a></td><td>Great Wyrm Cloud Dragon</td><td>CR 28</td></tr>
+<tr><td><a href="太古云龙（施法者）.htm"><strong>太古云龙（施法者）</strong></a></td><td>Great Wyrm Cloud Dragon (Spellcaster)</td><td>CR 28</td></tr>
+</table>
+<p>云龙是来自气元素位面的强大巨龙；尽管拥有无比漫长的寿命与典型的巨龙视野，它们却始终活在当下。</p><p>与狂野龙谱系中的蔚蓝龙十分相似，云龙是天生的漫游者与探险家；这两类巨龙在永无止境的云游旅途中不期而遇时，常常能找到许多共同语言。</p><p>云龙的鳞片多呈如天空般的浅蓝色或似流云般的乳白色，头部最具辨识度的特征是向两侧弯卷的粗壮龙角，以及短而厚实的吻部。</p><div class="dragon-callout"><h4><FONT color=#800000>宛若一缕轻云</FONT></h4><p>云龙的口味常常瞬息万变，随时受眼前所见事物的影响。它们总是忍不住幻想美味佳肴就摆在自己眼前。也有一些云龙对轻盈蓬松的食物情有独钟，比如那些无论外观、口感还是滋味都仿佛让人一口咬下一朵白云般的精致糕点。</p></div><p>严格来说，云龙在主物质位面会将巢穴筑于接天摩云的最高山巅之上，但它们本就极少待在巢里；而在气元素位面，它们的巢穴更是随处皆可安设。由于常年在外游历，云龙通常会随身携带最重要的珍宝，以免离家期间遭人盗窃。它们其余的藏品则往往是五花八门的旅途纪念品，而非专门搜罗的某一两类特定财宝或器物。</p><div class="dragon-callout"><h4><FONT color=#800000>孤峰绝顶之上</FONT></h4><p>在凡世间，云龙总是选择在最高耸的山巅之上尽可能靠近高空的地方筑巢。这一方面是为了更贴近云层与苍穹，好似身处气元素位面的故乡一般；但更深层的真正原因，则是为了确保巢穴尽可能与世隔绝——毕竟云龙动辄离家漫游很长一段时间，绝不希望自己的宝库屡屡遭人洗劫。</p></div><p>在绝大部分旅途中，云龙都会留在高空云端，疾速飞往下一个目的地。然而，谁也无法预料它们何时会瞥见某样勾起兴致的事物，继而俯冲至下方大地一探究竟，全然不顾地面上凡人的反应。这并不意味着云龙生性格外混乱，更不代表它们心怀恶意；它们只是单纯地活在当下，怎么顺应眼下的心意便怎么行事。它们的举动虽显随性奇想，却并非毫无章法；倘若有人能与某条云龙深入交谈并摸清它独特的内在逻辑，或许便能解读其行为动机，甚至预判它未来的反应。这一点相当实用，因为否则外人很难判断一条云龙面对心仪之物时究竟会诚心议价，还是干脆一把抓起扬长而去。只不过，由于云龙永远行踪不定，人们极少有机会在日后的重逢中派上自己对某条特定云龙所了解到的心得。</p><p>云龙并非阴谋家，但这绝不意味着它们缺乏深度思考的能力——它们的智识严谨程度丝毫不逊于任何其他原初龙，只是由衷热爱活在当下罢了。在阿拉卡世界，这意味着许多云龙尊奉司掌当下之神——“觉悟者”阿瓦娜，因为这位神祇秉持着相通的理念。</p><div class="dragon-callout"><h4><FONT color=#800000>天降奇举</FONT></h4><p>相较于年轻同胞，太古云龙往往会做出规模更宏大、行事更大胆的惊人之举，尽管有时就连这些伟力无边的巨龙也会停下脚步，细细品味微小的乐趣。以下便是几桩被归于太古云龙名下的荒诞奇事：</p><ul><li>掳走一位王子，只因巨龙想让这位王子学会拉小提琴——后来这位王子干脆退位让贤，成了享誉世界的小提琴大师。</li><li>因为嫌“底下吵得慌”而强行叫停了一场战争：巨龙将交战双方才华横溢的两位主帅双双掳到山顶，强迫他们通过一场茶话会化解分歧。两位将军最终推翻了各自好战的王室，并通过联姻将两国合并，携手成为新国家的共治君主——而那条云龙还亲自为他们主持了婚礼。</li><li>扭转整片地区的气候以遏止沙漠化蔓延，让森林与良田从不断扩张的荒漠中重焕生机，理由仅仅是“沙子钻进我的鳞片缝里，实在太痒了”。</li></ul></div><h2><FONT color=#800000>太古云龙</FONT></h2><p>太古云龙神秘莫测而又威能浩瀚，但归根结底仍由当下的兴致所支配。正因如此，吟游诗人们知晓无数太古云龙扮演“机械降神”（在那些将巨龙奉为神明崇拜的地区，这或许完全是字面意义上的降神）的传奇故事：每当冲突或危机酝酿之际，一条太古云龙便似乎毫无征兆地自九霄云端降临，留下一句睿智箴言，或是略展神威，令一切困局迎刃而解。</p><p>但另一方面，世间也流传着太古云龙扮演“机械降魔”的传说——它们猛然俯冲而下，抓走某样勾起自己兴致的事物，在身后留下一场轩然大波。</p><div class="dragon-callout"><h4><FONT color=#800000>包罗万象的奇珍</FONT></h4><p>云龙的宝库往往广度惊人却深度有限。这是因为它们在周游世界时会顺手搜集形形色色的事物，而且比起在同一处囤积大堆同类型的财宝，它们更偏爱捡拾自己前所未见（或者至少从未收入宝库）的独特奇珍。因此，有人暗地里称云龙为龙族世界里的“囤物癖”……当然，绝没人敢当着它们的面这么叫。</p></div><p>尽管云龙极少主动怀有恶意，但它们总是专注于此时此地，专注于自己眼下的欲望、感受与奇想。因此，即便只要稍加思索便完全具备预见后果的才智与远见，它们在做今日的决定时，也往往不会把日后对自己或他人造成的影响视为多么重要的考量。这并不是说它们会做出明显愚蠢的选择；相反，它们之所以随心选择当下想要的一切，是因为自信“未来的自己”足以摆平随之而来的后果——除非那后果显而易见地惨烈到连未来的自己也承受不起。</p><p>鉴于云龙如此执着于活在当下，有些巨龙不禁纳闷：为何云龙并非凤毛麟角地偶尔侥幸长寿，而是有相当一部分都能活到晋升太古龙的岁月？</p><p>龙类学者们最普遍认同的答案其实很简单：比起讨伐一条盘踞在宝库上酣睡的定居巨龙，想要猎杀一条行踪莫测、四海漫游、飞行速度快得惊人且能与云层融为一体，只是偶尔俯冲下来随性行事的巨龙，难度实在不可同日而语。世上本就鲜有生物能够挑战一条远古云龙，能够击败一条一心避战的远古云龙者更是寥寥无几；再加上根本无从预测在哪里才能找到它，云龙一头撞进自己既无法应对也无从脱身的绝境的概率自然微乎其微。</p><p>话虽如此，意外终究可能发生，也确实发生过；无论一条巨龙年岁几何、实力多强，数百年间哪怕只撞上一次灾难性的厄运，也足以断送性命。根据说书人立场与同情心的不同，一条强大云龙的意外陨落，既可能被传唱为一曲悲剧，也可能被编排成一出阴差阳错的荒诞喜剧。</p><p>太古云龙本质上便是一股自然伟力，如流云与天象般变幻莫测。那些因一条强大云龙一念之间的奇想而彻底改写了人生轨迹的凡人，往往会根据自己原有的信仰做出截然不同的反应：迷信之人或许会愈发笃信这场邂逅背后的宿命与机缘；而宿命论者则只是耸耸肩，坦然接受自己对巨龙之举毫无影响力——正如凡人无力左右一场突如其来的飓风或流星雨一般。</p><div class="dragon-callout"><h4><FONT color=#800000>心游云外</FONT></h4><p>云龙拥有极其敏锐的洞察力，但前提是它们愿意将这份敏锐感官投入到某项特定任务或目标上。当它们的思绪早已飘向下一桩新鲜事、不再留意眼前时，看上去便仿佛魂游天外、心不在焉。然而，谁若是以为这给了自己偷袭云龙的可乘之机，那就大错特错了！一旦危险袭来，云龙能以闪电般的速度将心神与感官瞬间拉回当下。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/cloud-great-wyrm.webp" type="image/webp"><img src="../../images/cloud-great-wyrm.png" alt="云龙" width="320"></picture><div class="dragon-art-caption">云龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

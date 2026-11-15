@@ -1,0 +1,214 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>异类龙之岛 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>异类龙之岛 The Island of Misfit Dragons</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>世上鲜有众多永光龙聚居之地，不过在我的旅途与考察中，倒也记录下了数十处颇具规模的定居点。但专门围绕某一个特定永光龙家族建立的聚落更是凤毛麟角（此处的“家族”指的是包含五种不同巨龙传承的谱系家族，而非具体的亲族血脉群体）。</p><p>这一现象背后自有缘由：一旦一条巨龙选择施行永恒之光仪式，从某种意义上说，他们便已背离了传统价值观。我们所有永光龙皆是如此。正因如此，这一共同经历将所有永光龙凝聚在了一起——哪怕只是微妙的一丝羁绊——同时也让他们与原本传承中的亲友同族拉开了一点距离。换言之，一条永光狂怒龙可能会觉得自己与一条永光皮克精龙更有共同语言，反倒胜过其他狂怒龙；尽管一条传统派狂怒龙与传统派皮克精龙之间往往毫无交集。</p><p>因此，听说世上竟存在着一处几乎完全由永光异类龙组成的定居点，或许会令人大感意外。他们自称为“异类龙之岛”。我私心觉得他们起这个名字多少带着点自嘲与调侃，但说不定他们只是想要一个直截了当的名字，好把这处聚落的性质与存在缘由写得明明白白，让任何旁观者都能一目了然。</p><p>无论这名字的真实来历如何，“异类龙之岛”不仅是研究永恒之光仪式整体的绝佳范例，更是深入了解异类龙的非凡宝库——尽管是从永光龙的视角出发。义体龙、厄运龙、流变龙、相位龙与魔泉龙在寻常情况下各自都极难寻觅；而在我的旅途中，我发现他们往往将巢穴筑于险恶或极其奇诡的僻远之地，不仅人迹罕至，靠近前还必须做足特殊的防范措施。然而在异类龙之岛上，我不仅能与这些不同传承的永光龙接连交谈，有时甚至能让他们同席共话，从而对比印证他们的回答与解释，并请他们当面阐明自己对彼此言论的看法。借此，我得以提炼出更为细腻入微的认知，看清究竟是什么将整个异类龙家族维系为一个整体。</p><p>显然，能为我关于永恒之光仪式与异类龙的两大课题找到如此丰富的一手素材，自然让我带着几分学者私心而兴奋不已。但异类龙之岛对我而言绝不仅仅是一座资料库。它更是一个充满活力的社群，汇聚了形形色色有趣的人物与不寻常的暗流。既然他们都是异类龙，聚落里几乎每一位居民身上都带着某种魔法怪癖或异状，而且有时还与我们对传统派异类龙的预期截然不同。诚然，拜永恒之光仪式所赐，永光异类龙有时会拥有唯独属于自身的独特魔法特征，宛如一枚专属的“魔法指纹”。而这还远不是他们岛上日常生活中唯一令人着迷的侧面。</p><p>岛上的聚落规模不大，严格来说并没有划分什么“城区”，居住于此的异类龙们跨越各自传承的界限彼此交往。据我对他们解释的理解，岛上的治理架构似乎主要围绕四大魔法传统建立，这意味着执政议会是按四方而非五脉来划分的——这也再次证明，血统传承在此地并不被视为决定性的因素。</p><p>聚落里居住的永光异类龙远不足百数，因此这里绝算不上规模宏大，但对于永光异类龙这样一个小众群体而言，这依然是个相当可观的数字。议会的运作方式是：理论上聚落里的每一条巨龙都是拥有投票权的议会成员；但在实际运作中，大多数巨龙并不想每次议会都全程列席，因此岛上会不定期召开要求全员出席的“全体会议”，进行重大表决并推选出四大魔法传统的代表领袖；而在日常例会中，任何巨龙都欢迎随时到场亲自投票，至于未出席的成员，其投票权则由其所属传统派系的代表领袖代为行使。亲爱的读者，你或许会以为巨龙们最终加入的魔法传统会与自身传承一一对应，从而形成事实上的血统分化；但实际上，这些派系更看重一条巨龙的个人成长方向与哲学理念，因此奥术派系中有不少义体龙法师，异能派系中也有许多魔泉龙吟游诗人，诸如此类，不胜枚举。</p><p>岛上的生活充分折射出永光龙的巧思与决断，以及他们对挑战永无止境的渴求——唯有不断将自身魔法逼至极限，才能实现永恒之光仪式设计之初所赋予的飞速成长。在这座孤悬海外的岛屿上，许多日常便利设施并非依靠大陆上习以为常的凡俗手段维持，而是仰仗着别出心裁的魔法配方与奇妙装置，专门用来引导并善用异类龙体内满溢而出的魔力。</p><p>话虽如此，倘若一切魔法都稳定可靠、分毫不差地按预期运转，那异类龙也就不叫异类龙了。即便在我短暂造访期间，我也亲历了好几桩古怪乃至无法解释的魔法小事故。通常它们不过是些无伤大雅的小麻烦，只要再试一次就能达成预期效果。这让它们给人的感觉更像是妙趣横生的奇想乃至滑稽插曲，而非令人恼火或焦虑的隐患——不过我也听闻过一些往事，据说过去曾发生过魔力彻底失控、酿成堪忧局面的先例。好在这类事件似乎寥寥无几，况且用非魔法手段处理日常事务也未必就绝对不会出岔子；只不过相比平庸惯例那悄无声息却同样致命的失误，一场声光绚烂的魔法灾难总是更容易吸引旁人的目光罢了。</p><p>异类龙之岛文化中最美妙的一点，无疑是他们旺盛的求知欲与实验精神——尽管在某些时候，就连我也觉得他们未免有点走火入魔了。忠实的读者，如你所知，我自己也算是个狂热学者。我不止一次受邀作为受试者参加某项试验研究，附带的免责声明与弃权书厚厚一叠，要求我签字放弃追究主持实验的那位永光异类龙的一切责任。这可让我不得不三思而行。其中最明目张胆的一次交锋，莫过于某条永光义体龙一本正经地问我，愿不愿意为了深入探索我独特的生理构造而接受“就一点点活体解剖”。他们信誓旦旦地向我保证，这将是“为了科学”而作出的崇高牺牲。挂念我的读者，自不必说，我断然谢绝了这些实验，因此鄙人至今依然身子骨硬朗、毫发无伤。</p><p style="text-align:right"><strong>——永光贤者卡利赞德雷克斯</strong></p><div class="dragon-callout"><h4><FONT color=#800000>成为巨龙！<br />永光异类龙概览</FONT></h4><p>本章包含了扮演一名异类龙所需的一切内容。<a href="../../第二章：巨龙种族/巨龙种族特质.htm">巨龙种族</a>详述了永恒之光仪式、可扮演巨龙，以及异类龙血统的额外选项。<a href="../../第三章：巨龙职业与范型/巨龙/巨龙蹂躏者.htm">巨龙蹂躏者</a>与<a href="../../第三章：巨龙职业与范型/巨龙/巨龙法师.htm">巨龙法师</a>范型允许你将自身的馈赠转化为强大的全新巨龙威能，充分拥抱角色的巨龙本色。最后，通过巨龙学者卡利赞德雷克斯执笔的<a href="异类龙与永恒之光仪式.htm">面向玩家的背景学识</a>条目，深入探索你所选血统的可扮演永光龙的内在动机。</p></div>
+
+<hr>
+<h2><FONT color=#800000>异类龙特色传统与职业专题补充</FONT></h2>
+<div class="dragon-callout"><h4><FONT color=#800000>异类龙蹂躏者</FONT></h4><p>异类龙出身的巨龙蹂躏者常常有意展现出传统派同族身上那种暴烈而难以捉摸的特质，主动回归他们在永恒之光仪式中一度抛诸脑后的心态。他们往往会发现，这种战斗方式就像一副套在龙爪上合手而亲切的旧手套——搁置良久后再度戴上依然得心应手……甚至比手套还要贴合，毕竟巨龙一生都在不断长大，手套总有戴不下的一天。无论如何，见到众多异类龙披上蹂躏者的战袍绝非怪事。</p></div>
+<div class="dragon-callout"><h4><FONT color=#800000>流变时刻！</FONT></h4><p>流变龙拥有丰富多样的手段来切换伤害类型或灵活痛击敌人。正因如此，他们足以应对五花八门的复杂战局；但由于他们并不总能自主掌控自身的形态流变，有时也会陷入偏偏抽到最不对路能力的窘境。每当这种情况发生时，流变龙切忌惊慌失措，而应让自己的战术计划如躯体一般随机应变、顺势流转。更老练或适应力更强的流变龙往往会提前备好后手，或是当场急中生智，从容化解撞上敌人伤害抗性或免疫的最坏局面。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/misfit-dragon-half-page-3.webp" type="image/webp"><img src="../images/misfit-dragon-half-page-3.png" alt="异类龙"></picture><div class="dragon-art-caption">异类龙之岛</div></div>
+</td>
+</tr></table>
+</body>
+</html>

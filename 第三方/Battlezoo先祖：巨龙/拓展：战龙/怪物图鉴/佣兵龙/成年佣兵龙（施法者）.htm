@@ -1,0 +1,259 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>成年佣兵龙（施法者） - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>成年佣兵龙（施法者） Adult Mercenary Dragon (Spellcaster)</FONT></H1>
+<p class="dragon-nav-links"><a href="佣兵龙.htm">返回佣兵龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Adult_Mercenary_Dragon_Spellcaster"><FONT color=#800000>成年佣兵龙（施法者） Adult Mercenary Dragon (Spellcaster)</FONT></H5>
+<div class="sub-line">巨型龙类，守序中立</div>
+<table>
+<tr><td><strong>AC </strong>18（天生护甲）</td><td width="44%"><strong>先攻 </strong>+1（11）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>230（20d12 + 100）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>40尺，飞行 80尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">22</td><td class="c2">+6</td><td class="c2">+6</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">12</td><td class="c2">+1</td><td class="c2">+6</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">21</td><td class="c2">+5</td><td class="c2">+5</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">15</td><td class="c4">+2</td><td class="c4">+2</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">16</td><td class="c4">+3</td><td class="c4">+8</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">21</td><td class="c4">+5</td><td class="c4">+5</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>威吓 +10，察觉 +13，游说 +10，隐匿 +6</td></tr>
+<tr><td><strong>感官 </strong>盲视 60尺，黑暗视觉 120尺，被动察觉 23</td></tr>
+<tr><td><strong>语言 </strong>天界语、通用语、龙语、炼狱语</td></tr>
+<tr><td><strong>CR </strong>14（XP 11,500；PB +5）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>豁免条款 Exclusion Clause。</strong>巨龙可以自动将与其缔结契约的任何生物（若契约中涵盖该生物的盟友，则一并包含在内）排除在外，使其免于因巨龙的骇人威仪而恐慌、免于受到其力场吐息的伤害，或免于被其力场护墙推离。这并不会允许被排除的生物穿过该力场墙。<br>
+<strong>传奇抗性 Legendary Resistance（3/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。如果它如此做，任何受巨龙的立约许诺传奇动作控制的生物都可以选择结束其身上的该效应。<br>
+<strong>交战规则 Rules of Engagement。</strong>佣兵龙将战斗中的诸多事务视作一系列契约协定。该巨龙可以进行一次游说检定来代替智力（历史）检定。<br>
+<strong>天生施法 Innate Spellcasting。</strong>该巨龙的施法关键属性为魅力（法术豁免 DC 18，法术攻击命中 +10）。该巨龙天生可施展以下法术，且无需任何材料成分：<br>随意：<em>传讯术 Message</em><br>每项 1/日：<em>治愈真言 Healing Word</em>、<em>护盾术 Shield</em>、<em>次级复原术 Lesser Restoration</em>、<em>诚实之域 Zone of Truth</em>、<em>生物定位术 Locate Creature</em>
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击或力场护墙。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+11 命中，触及 10 尺，单一目标。<em>命中：</em>19（3d8 + 6）点穿刺伤害，外加 7（2d6）点挥砍伤害。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+11 命中，触及 10 尺，单一目标。<em>命中：</em>13（2d6 + 6）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+11 命中，触及 15 尺，单一目标。<em>命中：</em>22（3d10 + 6）点钝击伤害。<br>
+<strong>力场吐息 Force Breath（充能 5~6）。</strong>巨龙吐出一股极具冲击力的60尺锥状力场脉冲。该区域内的每个生物都必须进行一次DC 18的敏捷豁免，豁免失败受到 52（15d6）力场伤害，豁免成功则伤害减半。<br>
+<strong>力场护墙 Force Wall。</strong>成年佣兵龙呼出一股60尺锥状的力场冲击。锥状区域的前缘随即化为一道<em>力场墙</em>，持续至巨龙下个回合开始。该区域内的每个生物都必须成功通过一次DC 18的力量豁免，否则被朝锥状区域的同一方向推离至多60尺。如果这次推离会使该生物穿过力场墙，该生物改为撞上力场墙，且原本剩余每5尺的推离距离都会使其受到 3（1d6）钝击伤害。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 18的感知豁免，否则陷入恐慌，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>履约护主 Duty As Called。</strong>当15尺内的一个生物对巨龙立约保护的生物发动攻击时，巨龙可以选择对触发该反应的生物发动一次近战攻击，或是横身阻拦以保护受约者，使触发该反应的攻击具有劣势。<br>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：3。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>猛扑 Pounce。</strong>该巨龙移动至多等于其速度一半的距离，并发动一次爪击攻击。<br>
+<strong>啃咬或尾击 Bite or Tail（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>立约许诺 Promises Made（消耗 2 动作）。</strong>该巨龙选择60尺内一个能听见并理解其语言的生物，向该生物许诺一份诱人的报酬，以换取该生物执行该巨龙要求的行动。该生物必须进行一次DC 18感知豁免。若所提报酬对该生物毫无价值，或报酬价值与所要求的任务不相称，GM可以决定让该生物在此豁免上具有优势。生物可以选择自愿在此豁免中失败。免疫魅惑状态的生物自动成功通过此豁免，除非其选择自愿失败。豁免失败时，该生物同意该巨龙的提议，由该巨龙控制其行动，持续1分钟。受控生物只执行该巨龙选择的行动，且不会做出任何未经该巨龙允许的举动。在此期间，该巨龙还可以令该生物使用反应，但这需要该巨龙同时消耗其自身的反应。若该生物愿意，它可以在其每个回合结束时重复该豁免，豁免成功则提前终止该效应。若该巨龙控制该生物满1分钟，该生物将获得所许诺的报酬。无论初始豁免结果如何，一旦该效应终止，该生物在24小时内免疫立约许诺。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/adult-mercenary.webp" type="image/webp"><img src="../../images/adult-mercenary.png" alt="成年佣兵龙（施法者）立绘" width="320"></picture><div class="dragon-art-caption">成年佣兵龙（施法者）（Adult Mercenary Dragon (Spellcaster)）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

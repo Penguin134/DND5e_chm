@@ -1,0 +1,216 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>仙灵龙战术与技艺 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>仙灵龙战术与技艺 Fairy Dragon Tactics and Techniques</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>仙境之旅虽让我对仙灵龙的栖息环境有了深刻的认识，但我也同样力求深入剖析他们在战斗中的交锋之道。在整个旅程中，我未曾与任何一条仙灵龙爆发正面恶战，这或许算是一桩幸事，但其副作用则是我没能以最直观的方式亲身领教那些高超技艺。</p><p>尽管如此，我仍从我的永光天角龙挚友卡凯恩那里搜集到了大量精彩战例——他在举行永恒之光仪式后，因仪式引发的后果而从居住过一段时日的仙境迁往凡间位面，并在随后的冒险生涯中持续往返于两界之间。</p><p>为何要向卡凯恩请教？首先，他此前为我提供的有关仙境的情报精准无比、细节详实，极大地充实了我浩繁的札记与档案。此外，要在仙境中寻获他的踪迹竟出奇地简单——要知道，在这片变幻莫测的国度里，找人可从来不是一件有把握的事。但更重要的是，他从一条永光天角龙的视角为我提供了珍贵见解，而这恰恰是我在仙境开展文化采风时最为匮乏的一环。游历期间，我虽与好几条极具魅力、见解独到的仙灵龙促膝长谈过，但他们无一例外全是传统派巨龙，这自然令我从他们口中获知的信息带有某种特定的倾向性。倒不是说永光龙就没有自己的偏见，只是在历经永恒之光仪式之后，巨龙眼中的世界以及与世界互动的方式都会呈现出截然不同的视角——而这正是我苦苦寻觅的视角。</p><p>于是，我请卡凯恩为我详述永光天角龙的种种能力，而事实证明，他的回答再一次超出了我的预期。他在过往岁月中曾与形形色色的其他永光仙灵龙并肩作战过——令人惊讶的是，其中甚至包括一条诡谑龙！借由那次通力合作，他对各类永光仙灵龙在战场内外所展现的本领都有了相当透彻的洞察。</p><p>一如既往，我带着审慎怀疑的态度倾听了他的讲述；每一条永光龙都各不相同，无论是仪式本身产生的具体效应，还是此后魔力在巨龙体内的成长轨迹皆有差异。不过，我仍将在下文中为你简要梳理他与其他几位永光仙灵龙的那场邂逅及随后的同行经历。</p><h2><FONT color=#800000>猎杀暗影巨狼</FONT></h2><p>在凡间世界里，狼通常是谨慎而善抓战机的猎手。它们专挑最孱弱的猎物下手，因此巨龙——哪怕只是刚破壳的幼雏——也绝不在它们的食谱之上。然而，有些野狼却胆敢猎杀凡人孩童，促使父母们向儿女绘声绘色地讲述“大恶狼”的恐怖故事，借以警醒孩童、防止他们在夜间擅闯林地。久而久之，这些凡间故事反过来塑造了仙境中的狼群，将它们化作了名副其实的恐怖梦魇。</p><p>卡凯恩便是在此时登场——当时他正与一位同为永光龙的魅心龙搭档合作，受当地某座王庭悬赏重金，追猎这样一头从童话故事中诞生的恶狼。两条巨龙一路追踪那头怪物穿过荒凉的沼原，继而深入幽暗森林，一直追到了一座阴森不祥的古堡前。这座城堡一直都在这里吗？它与那头恶狼又有着怎样的关联？卡凯恩当即想要上前一探究竟。</p><p>然而那头恶狼真如传说中一般狡猾奸诈，它利用古堡作为诱饵分散注意力，自己则顺着足迹绕回后方，反过来潜行追猎起两名猎手。就在卡凯恩驻足思索这座神秘建筑的来历之时，恶狼骤然发动突袭，双眸中闪烁着缕缕紫色能量幽光。</p><p>这头暗影巨狼是不折不扣的怪物。仙境孕育出的这个强敌本该远远超出他们二人所能应付的极限，所幸卡凯恩的灵光护住了他们，抵御了巨狼身上散发出的那股最可怕的原始恐惧灵光。两条巨龙迅速喷吐出各自的吐息：卡凯恩璀璨夺目的光束削弱了巨狼的暗影躯体，而他的魅心龙同伴喷出的馥郁吐息则扰乱了巨狼的平衡。巨狼凶狠地撕咬卡凯恩，他当即挥角迎击。万幸的是，天角龙的龙角足以刺穿如暗影巨狼这般由迷雾与暗影构成的生物——除非它在发动攻击的瞬间主动凝为实体，否则平时根本没有物质形体。双方你来我往激战不休，魅心龙不断施展法术保护卡凯恩，并抚平他们二人的心神创痛与肉体伤势。</p><p>然而，仅凭这些依然难以招架巨狼的凶残狂暴与连绵猛攻。当魅心龙孤注一掷地释出最后一道法术，而卡凯恩则以绚烂的虹彩能量护住手中法杖之时，巨狼眼看就要张开血盆大口向卡凯恩咬下致命一击。就在这千钧一发之际，两条巨龙猛然瞥见巨狼身后潜伏着一道身影——竟是一条诡谑龙！对方是巨狼的帮凶？还是这座古堡的主人？卡凯恩二人哪怕二打一也仅有微弱胜算，如今局势眼看就要向有利于巨狼的方向彻底倾斜。</p><p>然而……事情并非表面看起来那样！那条诡谑龙猛然俯冲而下，朝着巨狼喷出一大口强酸。巨狼本能地向后退缩以躲避这突如其来的新威胁，却不慎一脚踏进了诡谑龙事先巧妙布设的聚光陷阱之中。巨狼痛苦地惨嚎起来，再也无力给卡凯恩补上致命一击。</p><p>无论在战斗中还是在人生的诸多事务里，时机都是决定成败的关键，此战亦不例外。那决定性的一瞬无疑扭转了生死天平——卡凯恩的小队得以借由魔法从重伤中恢复过来，重整旗鼓发起全力猛攻。随着诡谑龙在强敌身后灵活穿梭、与卡凯恩形成夹击之势，这三位意想不到的盟友毫不费力地彻底解决了那头暗影巨狼。</p><p>战后，他们花了一番工夫与那条诡谑龙交谈商议——巧合的是，对方竟然也是一条永光龙！他原本盘算着独自设伏击败巨狼，交手后才意识到这头怪物的凶险程度远超预期。经过简短商议，三条巨龙一致同意平分这项委托的悬赏报酬。</p><p>这便是由三条强大的永光仙灵龙所组成的奇妙团队初次相逢的始末！在卡凯恩口中，这段故事原本还要更长、细节也更为详尽；借助当时记下的大量笔记，我不仅洞悉了有关永光仙灵龙的好几桩秘辛，还成功印证了自己的数项假说。在随本篇导言一并附上的手记中，我已竭尽所能将这些情报加以系统整理与量化呈现。但愿这些成果能为日后的其他学者提供参考，助我们将这一领域的学识打磨得愈发精深完善。</p><p>而倘若你正是一条在犹豫是否要追寻永恒之光仪式的仙灵龙，不妨让接下来的篇章成为你的灵感源泉！这便是你未来可能成为的模样；只要你肯为之奋力拼搏，所有这些强大的能力都将向你敞开大门。当然了，亲爱的读者，一旦你有朝一日成为声名远扬、令各地巨龙艳羡不已的永光龙英雄，我由衷希望你能在百忙之中抽空记起你的老朋友卡利赞德雷克斯——正是他为你提供了迈向成功的蓝图。届时若能获得对你的一场独家专访，世上便再没有什么事能让我更欣喜若狂了！</p><p style="text-align:right"><strong>——永光贤者卡利赞德雷克斯</strong></p><div class="dragon-callout"><h4><FONT color=#800000>化身巨龙！<br />永光仙灵龙概览</FONT></h4><p>本章囊括了扮演一条仙灵龙所需的全部内容。<a href="../../第二章：巨龙种族/巨龙种族特质.htm">巨龙种族</a>部分详述了永恒之光仪式、可扮演巨龙的基础规则，以及专为仙灵龙血统准备的额外选项。<a href="../../第三章：巨龙职业与范型/巨龙/巨龙蹂躏者.htm">巨龙蹂躏者</a>与<a href="../../第三章：巨龙职业与范型/巨龙/巨龙法师.htm">巨龙法师</a>范型允许你将自己的职业专长转化为强大的全新巨龙增益，尽情拥抱角色的巨龙本性。最后，你还可以阅读由巨龙学者卡利赞德雷克斯执笔的<a href="仙灵龙与永恒之光仪式.htm">面向玩家的背景学识</a>词条，深入探究你所选血统的可扮演永光龙的内心动机。</p></div>
+
+<hr>
+<h2><FONT color=#800000>仙灵龙特色传统与职业专题补充</FONT></h2>
+<div class="dragon-callout"><h4><FONT color=#800000>仙灵龙的幽默感</FONT></h4><p>仙灵龙几乎无一例外都拥有极其丰富的幽默感，然而不幸的是，能让仙灵龙捧腹大笑的事物，往往与凡人眼中觉得好笑的东西大相径庭。其中尤以诡谑龙的幽默感最为残忍恶毒，与凡人中最嗜虐成性的恶作剧者如出一辙。皮克精龙同样热衷于嬉闹取乐，但他们会格外留意被捉弄者的反应，绝不搞真正怀有恶意的捉弄。王庭龙偏爱高雅诙谐的幽默、讽刺与机锋妙语，魅心龙则常常在周遭世界的百态故事中寻得妙趣；至于天角龙，则热衷于展开妙语连珠的文字游戏交锋。</p></div>
+<div class="dragon-callout"><h4><FONT color=#800000>仙灵龙的契约交易</FONT></h4><p>尽管仙灵龙的性情天差地别——从相对和善可亲的魅心龙到歹毒阴损的诡谑龙不一而足——但即便在举行永恒之光仪式之后，依然鲜有仙灵龙能抵挡住传统精类契约交易的诱惑。日后的一份人情，或是一件玄妙奇特的报酬——例如垂死初恋的一声叹息、黎明哀恸的一滴眼泪，或是纯真逝去时的一串笑声——对他们而言都可能具有非同寻常的意义。从某种意义上说，永恒之光仪式本身就宛如一桩典型的童话契约：以牺牲眼下的既有实力为筹码，换取更为广阔的成长潜能。</p></div>
+<div class="dragon-callout"><h4><FONT color=#800000>当蹂躏者出击之时！</FONT></h4><p>与其他血统的巨龙蹂躏者相比，仙灵龙巨龙蹂躏者未必总会第一时间诉诸暴力手段解决问题……但这恰恰意味着，“骤然爆发的极端暴力威胁”成了它们工具箱里的又一件利器。惧怕激怒仙灵龙的对手在谈判桌上便已失了先机，从一开始就陷入被动。另一方面，一旦仙灵龙巨龙蹂躏者真正选择纵情释放暴力，其场面往往惊心动魄、令人永生难忘。从这个意义上说，前后的强烈反差反而让这份威慑更加深入人心。</p></div>
+<div class="dragon-callout"><h4><FONT color=#800000>吐息魔法与边缘情况</FONT></h4><p>在极少数情况下，改变一道法术的作用区域可能会导致不寻常的状况，使该法术不再产生与原本区域相仿的效应。在所有此类情况下，均由 GM 根据法术的设计意图来裁定如何处理；如果某道法术在改用巨龙吐息的新区域取代原本区域后已不再合乎常理，GM 也可以决定不允许对该法术使用吐息魔法。</p><p>例如，一道具有线状区域、造成伤害并将施法者传送至线状区域末端的法术原本效果十分明确，但如果你用吐息魔法将其区域从线状改为锥状，具体该如何结算就不那么直观了。在这种情况下，GM 可以裁定施法者沿着穿过锥状区域正中央的假想直线随法术效应一同行进，最终落脚在锥状区域远端的正中心位置。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/fairy_dragon_half_page_3.webp" type="image/webp"><img src="../images/fairy_dragon_half_page_3.png" alt="仙灵龙"></picture><div class="dragon-art-caption">仙灵龙战术与技艺</div></div>
+</td>
+</tr></table>
+</body>
+</html>

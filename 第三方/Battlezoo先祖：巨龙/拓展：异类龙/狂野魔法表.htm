@@ -1,0 +1,305 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>狂野魔法 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>狂野魔法 Wild Magic</FONT></H1>
+<p>魔泉龙极易通过各种方式引发狂野魔法浪涌。</p>
+<table class="dragon-table">
+<tr><th style="width:90px">1d100</th><th>随机效应</th></tr>
+<tr><td><strong>1</strong></td><td>一股尘卷风将施法者卷起，使其不受控制地向随机方向移动60尺。</td></tr>
+<tr><td><strong>2</strong></td><td>目标长出双翼，在1分钟内获得等同于其步行速度的飞行速度。若目标原本已拥有飞行速度，则在持续时间内其飞行速度改为提升30尺。</td></tr>
+<tr><td><strong>3</strong></td><td>施法者在1分钟内受到等同于法术“跳跃术”的效应影响。</td></tr>
+<tr><td><strong>4</strong></td><td>从施法者指向目标的一条5尺宽、60尺长的线状区域受到等同于法术“造风术”的效应影响。</td></tr>
+<tr><td><strong>5</strong></td><td>施法者在1小时内受到等同于法术“变巨／缩小术”中“缩小”效应的影响。</td></tr>
+<tr><td><strong>6</strong></td><td>目标长出异常健硕的肌肉体魄。在接下来的10分钟内，目标基于力量的攻击检定、属性检定和豁免检定具有优势。</td></tr>
+<tr><td><strong>7</strong></td><td>施法者在1分钟内受到等同于法术“变巨／缩小术”中“变巨”效应的影响。</td></tr>
+<tr><td><strong>8</strong></td><td>目标身体的不同部位发生扭曲与不对称生长。在1分钟内，目标基于敏捷的攻击检定、属性检定和豁免检定具有劣势。</td></tr>
+<tr><td><strong>9</strong></td><td>施法者陷入目盲，持续1分钟——周遭世界在其眼中悄然褪去，视野里只余一片漆黑。</td></tr>
+<tr><td><strong>10</strong></td><td>目标周身10尺半径范围内环绕着一圈魔法黑暗灵光，持续1分钟。具有黑暗视觉的生物无法看穿这片黑暗，非魔法光照也无法将其照亮。目标自身可以正常看穿这片黑暗。</td></tr>
+<tr><td><strong>11</strong></td><td>施法者在1分钟内获得120尺范围的黑暗视觉。在此期间，魔法黑暗不会阻碍施法者的黑暗视觉。</td></tr>
+<tr><td><strong>12</strong></td><td>目标必须进行一次体质豁免。豁免失败时，它在1小时内失去其拥有的任何黑暗视觉。</td></tr>
+<tr><td><strong>13</strong></td><td>施法者的生命力被抽离，获得1级力竭。</td></tr>
+<tr><td><strong>14</strong></td><td>目标的攻击变得无比致命。在1分钟内，目标的武器攻击在掷出19或20时即可造成重击。此外，当目标用徒手打击造成重击时，会对目标额外造成1d8点伤害。</td></tr>
+<tr><td><strong>15</strong></td><td>施法者受一层阴森的黯蚀能量帷幕保护。在1分钟内，施法者获得黯蚀伤害抗性，且进行的死亡豁免具有优势。</td></tr>
+<tr><td><strong>16</strong></td><td>目标遭到死神镰刀的索命宣判。在其下一回合结束时，触发此次效应的法术每有1环，目标就会受到1d12点黯蚀伤害；若成功通过一次体质豁免，则伤害减半。</td></tr>
+<tr><td><strong>17</strong></td><td>持续不断的震颤将施法者震至倒地，且震颤使其更难重新站起。在接下来的1分钟内，施法者下一次起身时必须消耗其全部移动力（而非一半移动力）才能站起。</td></tr>
+<tr><td><strong>18</strong></td><td>目标获得一面岩石护盾的保护，在1分钟内其AC获得+4加值。若目标在持续时间结束前遭受重击，该护盾即告损毁。</td></tr>
+<tr><td><strong>19</strong></td><td>施法者的身躯变得如岩石般坚硬。在1分钟内，施法者获得对非魔法的钝击、穿刺和挥砍伤害的抗性。</td></tr>
+<tr><td><strong>20</strong></td><td>以目标为中心、半径20尺范围内的地面剧烈震颤。站立在该区域内的每个生物都必须成功通过一次敏捷豁免，否则将被震至倒地。</td></tr>
+<tr><td><strong>21</strong></td><td>施法者全身产生电极化，将金属武器引向自身。在10分钟内，任何使用金属武器或造成闪电伤害的法术攻击施法者的生物，其攻击检定均具有优势。此外，施法者对抗造成闪电伤害的法术和魔法效应所进行的豁免检定具有劣势。</td></tr>
+<tr><td><strong>22</strong></td><td>在1分钟内，目标的近战攻击会如闪电般跃迁至额外目标身上。在此效应持续期间，每当目标用近战攻击命中一个生物时，还会对其15尺内由其选择的另一个不同目标造成数值减半的闪电伤害。</td></tr>
+<tr><td><strong>23</strong></td><td>施法者周身环绕着一层电场。任何触碰施法者或在距离施法者5尺内用近战攻击命中施法者的生物，都会受到等同于触发法术环阶的闪电伤害。此外，该生物会陷入感电状态，直至其下一回合结束。处于感电期间，使用金属武器或造成闪电伤害的法术针对该生物发动的攻击具有优势；同时，该生物对抗造成闪电伤害的法术和魔法效应所进行的豁免检定具有劣势。若该生物受到任何点数的闪电伤害，或用一个附赠动作将电流无害释放，则此效应提前终止。</td></tr>
+<tr><td><strong>24</strong></td><td>一道法术“闪电束”在施法者与目标之间的连线上劈落，影响线状区域内除施法者以外的所有生物（若施法者自身即为目标，则只有施法者受到伤害）。该“闪电束”以触发法术的环阶施展；若触发法术为2环或更低，则该“闪电束”在1环时造成2d6点伤害，在2环时造成4d6点伤害。</td></tr>
+<tr><td><strong>25</strong></td><td>施法者突然自燃并起火。起火期间，施法者在其每个回合结束时受到1d6点火焰伤害。包括施法者在内的任何生物都可以用一个动作扑灭火焰。</td></tr>
+<tr><td><strong>26</strong></td><td>在1分钟内，目标的近战攻击会引发爆炸。在此效应持续期间，每当目标用近战攻击命中一个生物时，都会对受击目标5尺内除攻击者自身以外的所有生物造成等同于触发法术环阶的火焰伤害。</td></tr>
+<tr><td><strong>27</strong></td><td>施法者周身环绕起一面蓝色火盾，具有法术“火焰护盾”中“寒火护盾”的效果。该效应持续10分钟。</td></tr>
+<tr><td><strong>28</strong></td><td>一发法术“火球术”以目标为中心爆开。该“火球术”以触发法术的环阶施展；若触发法术为2环或更低，则该“火球术”在1环时造成2d6点伤害，在2环时造成4d6点伤害。</td></tr>
+<tr><td><strong>29</strong></td><td>在1分钟内，施法者的移动会产生一股大小相等、方向相反的力场冲量反冲自身。在此效应持续期间，施法者每移动5尺就会受到1点力场伤害。</td></tr>
+<tr><td><strong>30</strong></td><td>在1分钟内，力场丝线缠绕在受击生物与目标的武器上；每当目标用近战攻击命中一个生物时，目标都可以将该生物向任意方向移动至多5尺。</td></tr>
+<tr><td><strong>31</strong></td><td>一层力场环绕着施法者，保护其免受伤害。触发法术每有1环，施法者便获得10点临时生命值。这些临时生命值持续1分钟，直至耗尽，或直至施法者遭受重击为止。</td></tr>
+<tr><td><strong>32</strong></td><td>目标必须进行一次体质豁免。豁免失败时，目标在1分钟内被力场丝线与施法者相连。在此效应终止前，每当施法者移动时，目标也会向相同方向移动相同距离，反之亦然。若施法者或目标中任意一方进行传送，力场丝线即会断裂，该效应提前终止。</td></tr>
+<tr><td><strong>33</strong></td><td>施法者被冻结在寒冰中。在1分钟内，其AC获得+4加值，但速度降低30尺。施法者或其5尺内的一个生物可以用一个动作凿除寒冰，使AC加值降低2点，并使施法者的速度减值减少15尺；执行第二次该动作即可彻底移除此效应。对施法者造成任意点数的火焰伤害，其效果等同于用一个动作凿除寒冰。</td></tr>
+<tr><td><strong>34</strong></td><td>在1分钟内，目标的近战攻击会冻结一切命中的对象。在此效应持续期间，每当目标用近战攻击命中一个生物时，该生物的速度便降低5尺。该速度减值可以累加，在六次命中后达到最高30尺减值。使用动作或受到火焰伤害可按上一条效应所述的方式每次减少15尺减值。</td></tr>
+<tr><td><strong>35</strong></td><td>翻涌的魔法飞雪环绕在施法者周围10尺半径范围内，持续1分钟。位于该区域内的生物处于重度遮蔽。施法者可以正常看穿这片风雪。</td></tr>
+<tr><td><strong>36</strong></td><td>目标周围20尺半径范围内降下冻雨（具有法术“雪雨暴”的效应），直至其下一回合结束。</td></tr>
+<tr><td><strong>37</strong></td><td>在10分钟内，每当法术或魔法效应为施法者恢复生命值时，施法者恢复的生命值仅为正常数值的一半。</td></tr>
+<tr><td><strong>38</strong></td><td>目标恢复生命值，如同受到与触发法术同环阶的法术“疗伤术”影响。</td></tr>
+<tr><td><strong>39</strong></td><td>一圈流转的生命能量缓冲层在施法者周身成形，触发法术每有1环，便赋予施法者6点临时生命值。这些临时生命值持续1分钟或直至耗尽。</td></tr>
+<tr><td><strong>40</strong></td><td>可怖的肉瘤、囊肿与息肉在目标体表疯长。这种失控的增生使目标陷入中毒，持续1分钟。目标可以在其每个回合结束时进行一次体质豁免，豁免成功则提前终止该效应。</td></tr>
+<tr><td><strong>41</strong></td><td>在10分钟内，施法者周身笼罩着一圈光晕，使其看上去宛如圣徒或天使，但也迫使其只能说出真话——无法说出任何谎言、误导性言辞，乃至隐瞒不报的半真之词。</td></tr>
+<tr><td><strong>42</strong></td><td>光线在目标周围发生偏折，在1分钟内赋予其法术“高等隐形术”的效应。</td></tr>
+<tr><td><strong>43</strong></td><td>施法者的双眸闪耀着虹彩光芒，使其得以看穿事物的真实面貌，在1分钟内获得真实视觉。</td></tr>
+<tr><td><strong>44</strong></td><td>频闪的强光环绕目标，持续1分钟。在接下来的1分钟内，目标必须在其每个回合开始时进行一次体质豁免。豁免失败时，目标陷入目盲，直至其下一回合开始；豁免成功时，该效应终止。</td></tr>
+<tr><td><strong>45</strong></td><td>在1小时内，施法者的背包、腰包、口袋以及所有其他可用空间里塞满了废金属制成的随机杂物。这些物品毫无价值，但加在一起的重量足以使施法者的速度减半。无论施法者以多快的速度丢弃这些杂物，都会立刻有新的废铁凭空出现继续拖累施法者。</td></tr>
+<tr><td><strong>46</strong></td><td>在1分钟内，目标的所有武器（包括徒手打击）都覆上一层奇异的秘法超金属。目标的近战武器攻击额外造成一粒与该攻击正常伤害类型相同的伤害骰，且在克服生物对非精金、非镀银攻击的免疫或抗性时视作精金与镀银武器。</td></tr>
+<tr><td><strong>47</strong></td><td>施法者的身体转化为其正常躯体的金属形态（若其原本即为金属之躯，则转化为密度更高的魔法金属形态），持续1分钟。身体处于金属化期间，施法者的速度降低5尺，且因密度过高无法浮于水面，其为游泳而进行的力量（运动）检定具有劣势。作为回报，施法者无需呼吸，使其能够在无空气的环境中生存并免受吸入型毒素侵害；此外，其AC提升2点，对抗中毒与麻痹状态的豁免检定具有优势；最后，其徒手打击改为造成1d10 + 其力量调整值的钝击伤害，取代原有的徒手打击伤害。</td></tr>
+<tr><td><strong>48</strong></td><td>一柄巨剑从天而降刺穿目标，随后消失无踪；触发法术每有1环，目标便受到2d8点穿刺伤害，若成功通过一次敏捷豁免则伤害减半。</td></tr>
+<tr><td><strong>49</strong></td><td>在1分钟内，施法者的思绪与幻想会显现在其身体周围，除施法者本人外的任何人都清晰可见。有意识的念头会化作漂浮在施法者头顶附近的文字，而想象中的画面则会化作朦胧的影像。若施法者察觉到此效应并希望隐藏特定念头，可以尝试对抗该效应的DC进行一次欺瞒检定，以在效应持续期间避免去想会暴露秘密的念头。</td></tr>
+<tr><td><strong>50</strong></td><td>目标的心智涌起澎湃的决意与勇气，在1分钟内其进行的攻击检定、属性检定和豁免检定均具有优势。免疫魅惑状态的生物免疫此效应。</td></tr>
+<tr><td><strong>51</strong></td><td>施法者看见一连串神秘的影像，为其正在设法解决的某个难题或谜团提供微妙的线索。</td></tr>
+<tr><td><strong>52</strong></td><td>目标不受控制地咯咯傻笑并胡言乱语。在1分钟内，目标进行的智力、感知和魅力属性检定具有劣势。</td></tr>
+<tr><td><strong>53</strong></td><td>在1小时内，施法者身边时刻伴随着响亮且应景的背景音乐。若没有消音手段，这通常会令潜行变得不可能，并可能使其他行动变得更困难（例如在试图欺瞒他人时，背景音乐却把施法者烘托得鬼祟可疑；或是音乐震天响时难以集中精力完成精密工作），不过偶尔也会令某些行动更容易（例如借用这段背景音乐进行一场演出）。</td></tr>
+<tr><td><strong>54</strong></td><td>在1分钟内，除非目标主动选择发出声音，否则目标保持绝对无声。这使其他生物无法单凭声音侦测或察觉目标。</td></tr>
+<tr><td><strong>55</strong></td><td>施法者身上奏响凯旋的号角声，持续1分钟，鼓舞施法者及其盟友的勇气。在此效应持续期间，每当一个生物在施法者30尺内开始其回合时，施法者都可以赋予该生物攻击检定与伤害掷骰+1加值，直至该生物下一回合开始。</td></tr>
+<tr><td><strong>56</strong></td><td>目标随着一段只有它自己能听见的曲调翩翩起舞。在1分钟内，目标的速度减半，且针对该生物发动的攻击具有优势。目标可以在其每个回合结束时进行一次体质豁免，豁免成功则提前终止该效应。</td></tr>
+<tr><td><strong>57</strong></td><td>流淌在施法者体内的魔力化作毒液。在1分钟内，施法者必须在其每个回合结束时进行一次体质豁免。豁免失败时，触发法术每有1环，施法者便受到2d6点毒素伤害；豁免成功时，该效应提前终止。</td></tr>
+<tr><td><strong>58</strong></td><td>目标的四肢末端变成绿色或紫色，并滴落致命毒素。在1分钟内，目标的徒手打击会额外造成等同于触发法术环阶的强酸或毒素伤害（由目标自选）。</td></tr>
+<tr><td><strong>59</strong></td><td>药性毒素涤荡了施法者的身躯。施法者受到等同于法术“次级复原术”的效应影响；若触发法术为5环或更高，则改为受到等同于法术“高等复原术”的效应影响。</td></tr>
+<tr><td><strong>60</strong></td><td>毒素抽走了目标的气力。在1分钟内，目标使用力量进行的武器攻击仅造成一半伤害。目标可以在其每个回合结束时重复该豁免，豁免成功则提前终止该效应。</td></tr>
+<tr><td><strong>61</strong></td><td>施法者与目标传送至彼此所在的空间，互换位置。</td></tr>
+<tr><td><strong>62</strong></td><td>在1分钟内，目标可以在其每个回合用一个附赠动作传送至其30尺内一处它可见且未被占据的空间。</td></tr>
+<tr><td><strong>63</strong></td><td>施法者在1分钟内受到等同于法术“闪现术”的效应影响。</td></tr>
+<tr><td><strong>64</strong></td><td>目标必须进行一次感知豁免。豁免失败时，目标会被随机向某个方向传送30尺；若豁免检定失败且差值达到5或更高，则目标改为被随机向某个方向传送1英里。</td></tr>
+<tr><td><strong>65</strong></td><td>施法者陷入灵魂出窍的体验。施法者的肉体陷入昏迷，直至其下一回合结束。在此期间，施法者的灵体漂浮在其昏迷肉体上方的同一空间内。施法者免疫除力场和心灵伤害以外的一切伤害，且可以继续施展法术与使用其他魔法能力，但无法执行移动或发动武器攻击等肉体行动。</td></tr>
+<tr><td><strong>66</strong></td><td>目标在1分钟内变为半实体形态。在此效应持续期间，它获得对非魔法的钝击、穿刺和挥砍伤害的免疫，并获得对除力场和心灵伤害以外所有其他伤害的抗性。</td></tr>
+<tr><td><strong>67</strong></td><td>施法者在10分钟内获得感知灵体存在的第六感。<br><strong>以太位面视觉。</strong>在此效应持续期间，施法者可以看见以太位面内部。此外，其针对虚体生物进行的攻击检定，以及为搜寻此类生物而进行的感知（察觉）检定均具有优势。</td></tr>
+<tr><td><strong>68</strong></td><td>目标遭受一股以太能量冲击。触发法术每有1环，目标便受到2d6点力场伤害；若成功通过一次体质豁免，则伤害减半。</td></tr>
+<tr><td><strong>69</strong></td><td>施法者猛然跌入未来，从当前所在的空间消失。在其下一回合结束时，施法者重新出现在原空间内；若该空间已被占据，则出现在最近的未被占据空间内。在施法者看来，时间仿佛毫无流逝，只是周遭世界突然卡顿并错位了短短几秒。</td></tr>
+<tr><td><strong>70</strong></td><td>目标窥见了一瞥未来。在其下一回合结束前，它可以选择在一次攻击检定、属性检定或豁免检定中获得优势（限一次），随后该效应终止。</td></tr>
+<tr><td><strong>71</strong></td><td>施法者看见若干吉光片羽般的未来片段，展现出在没有施法者或其盟友干预的情况下极可能发生的事态（由GM裁定）。</td></tr>
+<tr><td><strong>72</strong></td><td>目标陷入时间尾流之中，受自身过往拖累而变得迟缓。目标在1分钟内受到等同于法术“缓慢术”的效应影响。在目标的每个回合结束时，它可以进行一次感知豁免，豁免成功则提前终止该效应。</td></tr>
+<tr><td><strong>73</strong></td><td>一股强劲的高压水流将施法者向随机方向推开20尺。</td></tr>
+<tr><td><strong>74</strong></td><td>目标移动时，其周围的空气变得湿润并呈半液态，使目标得以在1分钟内在空气中游动。在此效应持续期间，目标获得等同于其游泳速度的飞行速度；若其没有游泳速度，则获得等同于其步行速度一半的飞行速度。</td></tr>
+<tr><td><strong>75</strong></td><td>施法者周身环绕着一个水泡，持续1分钟。在此效应持续期间，施法者获得强酸与火焰伤害抗性，且针对施法者发动的造成挥砍伤害的攻击具有劣势。</td></tr>
+<tr><td><strong>76</strong></td><td>一道巨浪裹挟着施法者沿直线冲出，将其送至越过目标所在空间后方5尺处的一处未被占据空间；若该空间已被占据，则送至最近的未被占据空间。巨浪路径上的所有生物都会受到等同于触发法术每环2d6点的钝击伤害，若成功通过一次力量豁免则伤害减半；豁免失败的生物还会被冲至倒地。若施法者自身即为目标，则只有施法者受到此伤害，且巨浪会将施法者向随机方向推开10尺。</td></tr>
+<tr><td><strong>77</strong></td><td>藤蔓、枝条与其他植物凭空生长出来，无论施法者走到哪里都会缠绕其双足。在1分钟内，施法者将距离地面、树木或其他植物10尺以内的所有空间均视作困难地形。</td></tr>
+<tr><td><strong>78</strong></td><td>在1小时内，目标身上长出树叶，皮肤也变为绿色。在此效应持续期间，每当目标在阳光直射下休息满10分钟，便恢复等同于触发法术环阶10倍的生命值。</td></tr>
+<tr><td><strong>79</strong></td><td>一棵大树在施法者5尺内的一处随机未被占据空间中拔地而起；若范围内没有可用空间，则在最近的未被占据空间长出。该树木提供半身掩护，且穿过该树木所在空间的生物将该空间视作困难地形。树木在10分钟后枯萎消亡。</td></tr>
+<tr><td><strong>80</strong></td><td>目标周围区域内的植物活化并缠住区域内的生物，产生以目标为中心的法术“纠缠术”效应。该效应持续1分钟。</td></tr>
+<tr><td><strong>81</strong></td><td>施法者与目标在1分钟内互换嗓音。</td></tr>
+<tr><td><strong>82</strong></td><td>目标与施法者在1分钟内互换身体，但这种互换仅作用于外观层面。除体型外，施法者与目标的各项能力与数据均不发生改变——哪怕是飞行、虚体、攻击触及范围等在视觉上极不协调的能力也照常保留。</td></tr>
+<tr><td><strong>83</strong></td><td>一道彩虹浮现，在1天内将施法者的皮肤、羽毛、鳞片、毛发及其他主要体表特征染成格外鲜艳夺目的色彩。</td></tr>
+<tr><td><strong>84</strong></td><td>目标周围30尺半径区域内的空间发生扭曲，持续1分钟。在此效应持续期间，区域内的生物可以顺着现实的缝隙滑行穿过空间以避开障碍物：位于该区域内时，生物可以如同穿过困难地形一般穿过其他生物与物体。若一个生物在物体内部结束其回合，则会受到5（1d10）点力场伤害，并被挤出至最近的未占据空间。</td></tr>
+<tr><td><strong>85</strong></td><td>在1分钟内，每当施法者开口说话时，话语都会化作彩虹色的泡泡飘出，每个泡泡破裂时才会吐出其中的字词，可能导致语序颠倒错乱。施法者可以用一个附赠动作确保自己的话语及时且按正确顺序传出，直至其下一回合开始。</td></tr>
+<tr><td><strong>86</strong></td><td>在1小时内，目标眼中的所有生物（包括野兽、构装体和亡灵，但不包括树木及其他非生物植物）看上去全都与目标自身一模一样。这会让目标很难区分不同生物，但目标仍能看清姿态、衣着等细节——也就是说，一只猫看上去可能像四脚着地的目标复制体，而一位君王看上去则像身着华服、头戴王冠的目标本人。</td></tr>
+<tr><td><strong>87</strong></td><td>施法者在1小时内变回其孩童时期的外貌。视生物种类而定，这可能会缩小其体型：例如许多中型生物会变为小型，而巨龙则会变为同种青年龙的体型。除体型外，该生物的各项数据均不改变。</td></tr>
+<tr><td><strong>88</strong></td><td>在10分钟内，从该狂野魔法效应生效时立即发生一次爆炸起，目标每隔1d4轮就会无害地爆炸一次。这种无害爆炸总会伴随着五彩光芒与一声巨响，还可能喷出彩纸屑、亮粉之类的东西。</td></tr>
+<tr><td><strong>89</strong></td><td>施法者在1小时内爱上目标，如同受到法术“魅惑类人”影响。</td></tr>
+<tr><td><strong>90</strong></td><td>在1小时内，目标陷入一种诡异的被害妄想，认定周围的一切都可能是伪装起来的敌人——盟友可能是变形怪，雕像可能是构装体，而其他物品可能是活化物件或拟身怪。这使得目标极难与他人合作：它将所有其他生物均视作敌人，且不愿成为有益法术或魔法效应的目标。作为回报，出于极度戒备，目标的AC获得+1加值，且先攻检定具有优势。</td></tr>
+<tr><td><strong>91</strong></td><td>施法者的衣着风格在1天内发生翻天覆地的变化，往往变成怪诞或令人难堪的款式。若这套衣物带有任何防护或魔法效果，款式变化不会改变这些效果。</td></tr>
+<tr><td><strong>92</strong></td><td>在1天内，无论目标本意如何，说话时都必须使用浮夸而古板的腔调。这可能会使目标在某些情境下进行的魅力（游说）检定具有劣势，而在另一些情境下进行的此类检定具有优势。</td></tr>
+<tr><td><strong>93</strong></td><td>施法者当众吐露出自己内心最深处的渴望。随后在接下来的1分钟内，每轮在其回合中，施法者都会脱口说出另一个令人尴尬的秘密（若未处于先攻轮中，则大约每6秒脱口说出一个尴尬秘密）。</td></tr>
+<tr><td><strong>94</strong></td><td>在1小时内，无论目标走到哪里，身后都会留下一串五彩斑斓的幽影花瓣踪迹。在持续时间内，这通常会让追踪目标变得轻而易举。</td></tr>
+<tr><td><strong>95</strong></td><td>在1天内，施法者会将所有其他智慧生物看成各式各样会说话的动物；唯独真正会说话的动物例外——施法者反而会将它们看成莱希或其他智慧植物生物。</td></tr>
+<tr><td><strong>96</strong></td><td>在1小时内，一束聚光灯如同舞台剧一般时刻追随着目标，甚至还会根据当时“场景”的情绪变换不同色彩的氛围灯光。这束聚光灯为仅照亮目标所在空间的明亮光照。</td></tr>
+<tr><td><strong>97</strong></td><td>施法者在1天内变化外貌，变得与其最崇敬的人物、生物或存在一模一样（若施法者是个自恋狂，则变为除自己以外最崇敬的对象）。这种变化仅限于外观，不会改变包括体型在内的任何数据。</td></tr>
+<tr><td><strong>98</strong></td><td>目标身上在1天内散发出浓烈的肉桂（或其他强烈香料）气味。其他生物通过气味追踪目标而进行的感知（求生）检定具有优势。</td></tr>
+<tr><td><strong>99</strong></td><td>施法者在1天内说话时全都使用押韵的对句。</td></tr>
+<tr><td><strong>100</strong></td><td>该法术正常生效，但其射程、作用区域和持续时间（若有）全部翻倍。若并非由法术触发此次狂野魔法效应，则改为由施法者自选一门其已知的法术受此增幅影响；若施法者未在接下来的1分钟内施展该受增幅法术，此效应即告浪费。</td></tr>
+</table>
+</body>
+</html>

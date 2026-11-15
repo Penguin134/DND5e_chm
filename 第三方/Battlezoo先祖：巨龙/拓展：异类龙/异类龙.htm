@@ -1,0 +1,256 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>Battlezoo 巨龙：异类龙 (5E) - 5e 不全书</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<div id="Battlezoo 巨龙：异类龙"></div><div id="异类龙"></div><div id="Battlezoo Dragons: Misfit Dragons"></div>
+<H1><FONT color=#800000>Battlezoo 巨龙：异类龙 Battlezoo Dragons: Misfit Dragons (5E)</FONT></H1>
+<p style="text-align: center; margin: 16px 0 24px;"><picture><source srcset="images/cover.webp" type="image/webp"><img src="images/cover.png" alt="Battlezoo 巨龙：异类龙 封面插图" style="max-width: 100%; width: 560px; height: auto; border-radius: 6px;"></picture></p>
+<H2><FONT color=#800000>本卷内容 Contents</FONT></H2>
+<ul class="dragon-nav-links">
+<li><a href="简介.htm"><strong>简介</strong></a> —— 卡利赞德雷克斯致巨龙霸主瑞扎尼瓦什的考察书信、全书导言、各章内容概览与<a href="简介.htm#袖珍术语表">袖珍术语表</a>。</li>
+<li><a href="异类龙文化.htm"><strong>第一章：异类龙文化</strong></a> —— 异类龙的历史渊源、社会生态、习俗信仰与卡利赞德雷克斯田野考察札记。</li>
+<li><strong>第二章：永光异类龙</strong> —— <a href="新巨龙血统/异类龙之岛.htm">异类龙之岛</a>、<a href="新巨龙血统/异类龙与永恒之光仪式.htm">异类龙与永恒之光仪式</a>、<a href="新巨龙血统/巨龙索引.htm">巨龙索引</a>；新巨龙血统：<a href="新巨龙血统/义体龙.htm">义体龙</a>、<a href="新巨龙血统/厄运龙.htm">厄运龙</a>、<a href="新巨龙血统/流变龙.htm">流变龙</a>、<a href="新巨龙血统/相位龙.htm">相位龙</a>、<a href="新巨龙血统/魔泉龙.htm">魔泉龙</a>。</li>
+<li><a href="龙之馈赠.htm"><strong>龙之馈赠（本卷新增）</strong></a> —— 按先决等级（1级、5级、9级、13级、19级）分类的异类龙专属龙之馈赠。</li>
+<li><a href="狂野魔法表.htm"><strong>狂野魔法表</strong></a> —— 异类龙专属 1d100 狂野魔法随机效应表。</li>
+<li><a href="怪物图鉴/怪物图鉴总览.htm"><strong>第三章与附录：怪物图鉴总览</strong></a> —— <a href="怪物图鉴/义体龙/义体龙.htm">义体龙</a>、<a href="怪物图鉴/厄运龙/厄运龙.htm">厄运龙</a>、<a href="怪物图鉴/流变龙/流变龙.htm">流变龙</a>、<a href="怪物图鉴/相位龙/相位龙.htm">相位龙</a>、<a href="怪物图鉴/魔泉龙/魔泉龙.htm">魔泉龙</a>、<a href="怪物图鉴/太古黄铜龙/太古黄铜龙生态与背景.htm">太古黄铜龙</a>、<a href="怪物图鉴/太古青铜龙/太古青铜龙生态与背景.htm">太古青铜龙</a>、<a href="怪物图鉴/太古赤铜龙/太古赤铜龙生态与背景.htm">太古赤铜龙</a>、<a href="怪物图鉴/太古金龙/太古金龙生态与背景.htm">太古金龙</a>、<a href="怪物图鉴/太古银龙/太古银龙生态与背景.htm">太古银龙</a>、<a href="怪物图鉴/太古蔚蓝龙/太古蔚蓝龙生态与背景.htm">太古蔚蓝龙</a>、<a href="怪物图鉴/太古靛青龙/太古靛青龙生态与背景.htm">太古靛青龙</a>、<a href="怪物图鉴/太古琥珀龙/太古琥珀龙生态与背景.htm">太古琥珀龙</a>、<a href="怪物图鉴/太古朱红龙/太古朱红龙生态与背景.htm">太古朱红龙</a>、<a href="怪物图鉴/太古丑角龙/太古丑角龙生态与背景.htm">太古丑角龙</a>。</li>
+<li><a href="../Battlezoo先祖：巨龙.htm"><strong>返回基础书《Battlezoo先祖：巨龙》</strong></a> —— 查阅<a href="../第二章：巨龙种族/巨龙种族特质.htm">巨龙种族特质</a>、<a href="../第三章：巨龙职业与范型/巨龙/巨龙.htm">巨龙职业</a>（<a href="../第三章：巨龙职业与范型/巨龙/巨龙进化.htm">巨龙进化</a>、<a href="../第三章：巨龙职业与范型/巨龙/巨龙蹂躏者.htm">巨龙蹂躏者</a>、<a href="../第三章：巨龙职业与范型/巨龙/巨龙法师.htm">巨龙法师</a>）、<a href="../第四章：龙之馈赠/龙之馈赠.htm">主书通用龙之馈赠</a>与<a href="../第五章：装备与随机表/巨龙天生武器与装备.htm">巨龙天生武器与装备</a>。</li>
+</ul>
+
+<div id="Credits"></div>
+<H2><FONT color=#800000>Credits &amp; License</FONT></H2>
+<P><STRONG>Authors:</STRONG> Jessica Catalan, William Fischer, Stephen Glicker, Jason Keeley, Paul Hughes, and Mark Seifter<BR>
+<STRONG>Developers:</STRONG> Stephen Glicker and Mark Seifter<BR>
+<STRONG>Editing:</STRONG> Stephen Glicker, S&eacute;bastien "Aleph" Greffier, and Mark Seifter<BR>
+<STRONG>Art Direction:</STRONG> Stephen Glicker<BR>
+<STRONG>Cover Artist:</STRONG> Brendan Lancaster<BR>
+<STRONG>Interior Artists:</STRONG> Brendan Lancaster, Joao Henrique Fraga Mileski, Mirco Paganessi, and Firat Solhan<BR>
+<STRONG>Cartographer:</STRONG> Dimitris Skaramagkas<BR>
+<STRONG>Playtesters/Proofreaders:</STRONG> Eric Dahlgren, David Greene, S&eacute;bastien "Aleph" Greffier, Jordan Karotkin, Ryan King, and Tony Saunders<BR>
+<STRONG>Foundry VTT Implementation:</STRONG> Ian Blackstone and Ian Hildebrandt<BR>
+<STRONG>Graphic Design:</STRONG> Stephen Glicker<BR>
+<STRONG>Layout:</STRONG> Stephen Glicker<BR>
+<STRONG>Director of Game Design:</STRONG> Mark Seifter<BR>
+<STRONG>Publisher:</STRONG> Stephen Glicker<BR>
+<STRONG>Special Thanks:</STRONG> All the Roll For Combat fans!<BR>
+<STRONG>Publisher Imprint:</STRONG> 16 Continental Road, Scarsdale, NY 10583 | rollforcombat.com</P>
+<P><EM>Battlezoo Dragons: Misfit Dragons (5E)</EM> &copy; 2024, Skyscraper Studios, Inc. All Rights Reserved. First Edition. Printed in China.<BR>
+<STRONG>Product Identity:</STRONG> The following items are hereby identified as Product Identity, as defined in the Open Game License version 1.0a, Section 1(e), and are not Open Game Content: All trademarks, registered trademarks, proper nouns (characters, deities, locations, etc., as well as all adjectives, names, titles, and descriptive terms derived from proper nouns), artworks, characters, dialogue, locations, organizations, plots, storylines, and trade dress. (Elements that have previously been designated as Open Game Content, or are exclusively derived from previous Open Game Content, or that are in the public domain are not included in this declaration.)<BR>
+<STRONG>Open Game Content:</STRONG> The Open Content in this book includes the species rules (base statistics, ancestries, and feats), as well as the monster statistics for the dragons. The lore sections and the remaining species information, including the introduction, physical description, society, and beliefs sections are not Open Content. No portion of this work other than the material designated as Open Game Content may be reproduced in any form without written permission.</P>
+<H3><FONT color=#800000>OPEN GAME LICENSE Version 1.0a</FONT></H3>
+<P>The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc. ("Wizards"). All Rights Reserved.</P>
+<P><STRONG>1. Definitions:</STRONG> (a) "Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b) "Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d) "Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts, creatures, characters, stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.</P>
+<P><STRONG>2. The License:</STRONG> This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.</P>
+<P><STRONG>3. Offer and Acceptance:</STRONG> By Using the Open Game Content You indicate Your acceptance of the terms of this License.</P>
+<P><STRONG>4. Grant and Consideration:</STRONG> In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.</P>
+<P><STRONG>5. Representation of Authority to Contribute:</STRONG> If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.</P>
+<P><STRONG>6. Notice of License Copyright:</STRONG> You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.</P>
+<P><STRONG>7. Use of Product Identity:</STRONG> You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.</P>
+<P><STRONG>8. Identification:</STRONG> If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.</P>
+<P><STRONG>9. Updating the License:</STRONG> Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.</P>
+<P><STRONG>10. Copy of this License:</STRONG> You MUST include a copy of this License with every copy of the Open Game Content You distribute.</P>
+<P><STRONG>11. Use of Contributor Credits:</STRONG> You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.</P>
+<P><STRONG>12. Inability to Comply:</STRONG> If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.</P>
+<P><STRONG>13. Termination:</STRONG> This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.</P>
+<P><STRONG>14. Reformation:</STRONG> If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.</P>
+<P><STRONG>15. COPYRIGHT NOTICE</STRONG><BR>
+Open Game License v 1.0a &copy; 2000, Wizards of the Coast, Inc.<BR>
+System Reference Document 5.1 &copy; 2016, Wizards of the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.<BR>
+Battlezoo Ancestries: Classic Creatures (5E) &copy; 2024, Skyscraper Studios, Inc.; Authors: William Fischer and Mark Seifter.<BR>
+Battlezoo Ancestries: Dragons (5E) &copy; 2022, Skyscraper Studios, Inc.; Authors: Mark Seifter, William Fischer, and Ginny Di.<BR>
+Battlezoo Dragons: Misfit Dragons (5E) &copy; 2024, Skyscraper Studios, Inc.; Authors: Jessica Catalan, William Fischer, Stephen Glicker, Paul Hughes, Jason Keeley, and Mark Seifter.</P>
+</body>
+</html>

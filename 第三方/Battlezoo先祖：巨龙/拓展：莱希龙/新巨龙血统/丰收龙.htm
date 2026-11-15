@@ -1,0 +1,212 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>丰收龙 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>丰收龙 Harvest Dragon</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>在众多类人种族的文化中，巨龙都是力量与强盛的象征。因此，再加上与生俱来的傲慢，巨龙往往很难承认事情出了差错。然而，有些巨龙体内奔涌着狂暴的魔法能量，这股能量一旦失控飙升，便会彻底改变它们的一生。有时，整支龙族血脉都会继承这种魔力，并在漫长的世代中延续下去。但对于这些所谓的“异类龙”而言，这股失控的能量究竟意味着什么？整个巨龙社会或许对它们不屑一顾，但它们强大的魔力却为其带来了无穷无尽的未开发潜能！</p><p>你是一条丰收龙，出身于一脉园艺师与庆典筹划者世系，既以高超的魔药酿造技艺闻名，也因热爱节庆盛会而著称。你是莱希龙家族的一员。你的关联伤害类型为毒素，你的吐息武器为15尺锥状，需要进行体质豁免。你可以选择是否获得日光之力。</p><h2><FONT color=#800000>巨龙特质</FONT></h2><p><strong>属性值提升。</strong>你的力量或智力值提升2点。</p><p><strong>年龄。</strong>任何年龄段的巨龙都可以举行永恒之光仪式，因此哪怕是一条刚完成仪式的初生永光龙，严格来说也可能已经活了数千岁。不过，仪式澎湃的魔法能量会洗去衰老的痕迹。从仪式中苏醒的初生永光龙洋溢着青春活力与无限潜能。尽管部分学者持不同看法，但只要不死于暴力或其他灾祸，永光龙的寿命与传统派巨龙同样漫长。</p><p><strong>阵营。</strong>永光龙的龙族血统会强烈影响其信念，但影响程度远不如同血统的传统派巨龙。例如，银永光龙往往是善良的捍卫者，而黑永光龙则往往狡诈刻薄。然而，永光龙深知龙脉并非不可违逆的宿命。任何永光龙都可以完全抛弃先祖的旧习，去开拓属于自己的道路。</p><p><strong>体型。</strong>除非一条永光龙将自身魔力专注于增大体型（许多永光龙都会这样做），否则它们的体型并不会比常见的类人种族更大。你的体型可在小型或中型之间自选。</p><p><strong>速度。</strong>你的基础步行速度为30尺。</p><p><strong>黑暗视觉。</strong>你同样具备传统派巨龙的敏锐感官。在距离你60尺范围内，你可以将微光光照视作明亮光照，将黑暗视作微光光照。你在黑暗中无法分辨颜色，只能看到灰度的影像。</p><p><strong>龙之馈赠。</strong>你从巨龙职业所列的龙之馈赠中获得一项龙之馈赠。如果某项馈赠具有先决条件，你必须满足其先决条件才能获得它。</p><p><strong>龙类。</strong>你的生物种类为龙类，而非类人生物。</p><p><strong>天生武器。</strong>除常规的徒手打击外，你还获得两种天生武器攻击：啃咬攻击与爪击攻击。你的啃咬攻击造成1d6点穿刺伤害；你的爪击攻击造成1d4点挥砍伤害。</p><p>你必须至少有一只手空闲才能发动爪击攻击。</p><p>你在进行爪击攻击的攻击检定和伤害掷骰时可以使用敏捷代替力量，但啃咬攻击不适用。</p><p><strong>语言。</strong>你能够说、读、写通用语和龙语。</p><p><strong>节庆常客。</strong>你具有游说技能的熟练项。你在派对或节庆期间进行的魅力（游说）检定具有优势。</p>
+<h2><FONT color=#800000>永光丰收龙背景设定</FONT></h2>
+<p>丰收龙体态圆润、健朗而明快。它们的身躯矮阔敦实，由秋日色调的累累瓜果与蔬菜构成，尾巴上生长着红橙相间的叶片。尽管体型敦实，它们却长着纤细的利爪手指，非常适合使用小型工具与处理精细活计。打理生长在自己身上的蔬果园圃是丰收龙日常清洁中最重要的一环；任由身上的作物腐烂变质，是丰收龙所能犯下的最严重的社交失仪之一。</p><p>大多数传统派丰收龙生活在庞大的龙族社区中，与琥珀龙、<a href="../../第二章：巨龙种族/毒蕈龙.htm">毒蕈龙</a>等其他注重群体与社交的巨龙比邻而居。它们和蔼可亲、举止克制，只是多少有些爱打听闲事，因此成了琥珀龙邻居获取新鲜流言的宝贵来源。丰收龙热衷于筹划精致考究的庆典与节日，但在它们能够提前排期并周密规划的正式庆典之外，许多丰收龙更喜欢远离聚光灯，保有自己的独处时光与隐私。</p><p>聚居着大量丰收龙的村落中往往生活着宴会司礼——这是一群专职的派对与庆典策划师，他们以庄重而虔敬的态度对待款待宾客的艺术。对丰收龙而言，司宴之道是一门严肃的事业，这一职位也享有崇高的权力与敬意。哪怕是不明白这一头衔含义或重要性的其他巨龙，也绝不会错过宴会司礼举办的派对，因为宴会司礼那传奇般派对的盛名，往往比丰收龙习俗本身流传得还要深远得多。</p><p>由于居住在规模较大的龙族城镇或村落中，丰收龙的巢穴通常是蜿蜒舒展的庄园，配有气派的工坊与宁静的花园小径。传统派丰收龙的家族通常会共同生活在同一片家园领地上，每条成年巨龙都会在领地内建造并打理属于自己的庄园。</p><p>丰收龙是狂热的园丁与农夫，在照料自身躯体上作物的同时，也悉心耕种土地里的庄稼。它们喜爱培育新品种的花卉、果实或其他植物，尤其热衷于精心选育全新的植物品系，并以自己和家族的名字为这些成果命名。许多传统派丰收龙还会在花园中栽种魔法草药与药用植物，将其与自身培育出的丰硕果实相搭配，酿造出效力强劲的美酒与药剂。</p><p>丰收龙家族十分注重隐私与礼数，即便在自家人之间也是如此——哪怕是最轻松的家庭内部聚会，它们也会事先规划并拟定详尽的日程表。那些比社区中其他同族更加随性、更爱交际的年轻巨龙，往往会觉得家族庄园里的生活令人窒息，进而被永恒之光仪式与冒险生涯所吸引。这些巨龙会成为充满活力的吟游诗人与剑客，周游世界以追寻永不落幕的盛宴。仍保有传统偏好的永光龙则往往成为德鲁伊、游荡者或圣武勇士；而那些依然秉持着丰收龙以利爪创造之热忱的个体，则会走上发明家的道路，将无数新奇构想化为创新造物，而非一味打磨家族传承的旧有技艺。</p><div class="dragon-callout"><h4><FONT color=#800000>共享丰收飨宴</FONT></h4><p>许多丰收龙喜欢与家人、朋友及冒险同伴分享生长在自己身上的水果与蔬菜。如果一条丰收龙主动向你奉上它的收成，拒绝这份馈赠会被视为严重的冒犯——这意味着受赠者认为这条巨龙的身体及其收成存在问题或不够洁净。容易焦虑的冒险巨龙即便内心很想分享，也极少把自己的果实递给非龙类同伴，因为它们实在太过害怕遭到这样的拒绝。</p></div>
+<p class="dragon-nav-links"><strong>延伸阅读：</strong><a href="../怪物图鉴/丰收龙/丰收龙.htm">对应怪物图鉴：丰收龙</a> · <a href="../../第二章：巨龙种族/巨龙种族特质.htm">主书通用巨龙种族特质</a> · <a href="../../第三章：巨龙职业与范型/巨龙/巨龙.htm">巨龙职业</a> · <a href="../龙之馈赠.htm">本卷新增龙之馈赠</a></p>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/harvest-3.webp" type="image/webp"><img src="../images/harvest-3.png" alt="丰收龙立绘" width="320"></picture><div class="dragon-art-caption">丰收龙（Harvest Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

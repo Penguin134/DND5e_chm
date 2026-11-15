@@ -1,0 +1,266 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古琥珀龙 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<link rel="stylesheet" href="../../../../../stat-block.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古琥珀龙 Great Wyrm Amber Dragon</FONT></H1>
+<p class="dragon-nav-links"><a href="太古琥珀龙生态与背景.htm">返回太古琥珀龙生态与数据表</a> · <a href="../怪物图鉴总览.htm">怪物图鉴总览</a></p>
+<table class="dragon-layout-table statblock-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<div class="stat-block">
+<H5 id="Great_Wyrm_Amber_Dragon"><FONT color=#800000>太古琥珀龙 Great Wyrm Amber Dragon</FONT></H5>
+<div class="sub-line">超巨型龙类，混乱中立</div>
+<table>
+<tr><td><strong>AC </strong>23（天生护甲）</td><td width="44%"><strong>先攻 </strong>+2（12）</td></tr>
+<tr><td colspan="2"><strong>HP </strong>536（29d20+232）</td></tr>
+<tr><td colspan="2"><strong>速度 </strong>60尺，飞行 90尺</td></tr>
+</table>
+<table class="stat-abilities">
+<tr><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th><td style="WIDTH: 5px"></td><th></th><th></th><th>调整</th><th>豁免</th></tr>
+<tr><td class="c1"><strong>力量</strong></td><td class="c1">29</td><td class="c2">+9</td><td class="c2">+9</td><td></td><td class="c1"><strong>敏捷</strong></td><td class="c1">14</td><td class="c2">+2</td><td class="c2">+10</td><td></td><td class="c1"><strong>体质</strong></td><td class="c1">26</td><td class="c2">+8</td><td class="c2">+16</td></tr>
+<tr><td class="c3"><strong>智力</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+6</td><td></td><td class="c3"><strong>感知</strong></td><td class="c3">22</td><td class="c4">+6</td><td class="c4">+14</td><td></td><td class="c3"><strong>魅力</strong></td><td class="c3">28</td><td class="c4">+9</td><td class="c4">+17</td></tr>
+</table>
+<table>
+<tr><td><strong>技能 </strong>欺瞒 +17，察觉 +22，游说 +17，隐匿 +10</td></tr>
+<tr><td><strong>免疫 </strong>闪电</td></tr>
+<tr><td><strong>感官 </strong>黑暗视觉 120尺，真实视觉 60尺，被动察觉 32</td></tr>
+<tr><td><strong>语言 </strong>通用语、龙语</td></tr>
+<tr><td><strong>CR </strong>26（XP 90,000；PB +8）</td></tr>
+</table>
+<h6>特质 Traits</h6>
+<p>
+<strong>电击反噬 Electric Shock。</strong>触碰巨龙或用近战攻击命中巨龙的生物必须进行一次DC 24 敏捷豁免，豁免失败受到 16（3d10）闪电伤害，豁免成功则伤害减半。若该攻击使用金属武器发动，则进行该豁免时具有劣势。如果豁免失败且差值达到5或更高，该生物还会陷入震慑状态，直至其下个回合开始。<br>
+<strong>流言学识 Gossip Lore。</strong>琥珀龙是极度爱管闲事的流言散播者，对流言蜚语的热衷使它们搜集了涵盖广泛话题的各类情报。当巨龙在为回忆某项事实所作的智力检定中失败时，它会同时回想起一点真实知识和一点错误知识，但无法分辨孰真孰假。如果检定失败且差值达到5或更高，巨龙就只会回想起错误信息。<br>
+<strong>无情吐息 Inexorable Breath。</strong>巨龙的吐息武器造成的伤害无视抗性，并将免疫视为抗性。<br>
+<strong>传奇抗性 Legendary Resistance（5/日）。</strong>如果巨龙在一次豁免中失败，它可以选择改为成功。当它如此做时，一处生效中的压电刻文或流沙陷阱会无害地闪耀消散并被解除。<br>
+<strong>灵敏反应 Reactive。</strong>该巨龙在战斗中的每个回合都可以执行一次反应。<br>
+<strong>风沙视觉 Sand Vision。</strong>该巨龙无视飞沙造成的遮蔽。
+</p>
+<h6>动作 Actions</h6>
+<p>
+<strong>多重攻击 Multiattack。</strong>该巨龙可以使用其骇人威仪。随后它发动三次攻击：一次啃咬攻击和两次爪击攻击。它可以将其中啃咬攻击替换为尾击攻击。<br>
+<strong>啃咬 Bite。</strong><em>近战武器攻击：</em>+17 命中，触及 15 尺，单一目标。<em>命中：</em>25（3d10 + 9）点穿刺伤害，外加 11（2d10）点闪电伤害。 若目标着装金属护甲且对闪电伤害既无抗性也无免疫，则该护甲会带上静电。直至该巨龙的下一回合结束或目标下一次受到闪电伤害为止，目标获得闪电伤害易伤。<br>
+<strong>爪击 Claw。</strong><em>近战武器攻击：</em>+17 命中，触及 10 尺，单一目标。<em>命中：</em>18（2d8 + 9）点挥砍伤害。<br>
+<strong>尾击 Tail。</strong><em>近战武器攻击：</em>+17 命中，触及 20 尺，单一目标。<em>命中：</em>22（3d8 + 9）点钝击伤害。 该巨龙将目标向远离自身的方向直线推离至多10尺。目标必须成功通过一次DC 25力量豁免，否则被击倒并陷入倒地状态。<br>
+<strong>惑心流言 Compelling Rumor。</strong>该巨龙向其90尺内一个可见生物连珠炮般倾泻关于对方的流言蜚语。若目标能听见并理解这些流言，则必须进行一次DC 25 感知豁免。若豁免失败，目标陷入魅惑状态，直至其下一回合结束。以此方式处于魅惑状态期间，该生物无法执行反应，且在其回合内除执行由该巨龙决定的一项行动外无所作为：靠近该巨龙、沿直线远离该巨龙、丢下手中持握之物、应声倒地或原地不动。<br>
+<strong>骇人威仪 Frightful Presence。</strong>每个由巨龙选择的、位于巨龙120尺内且知晓其存在的生物，都必须成功通过一次DC 21的感知豁免，否则陷入恐慌状态，持续1分钟。该生物可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。如果一个生物的豁免成功或其身上的该效应结束，则该生物在接下来的24小时内免疫巨龙的骇人威仪。<br>
+<strong>流沙陷阱 Sand Trap（充能 5~6）。</strong>该巨龙向自身60尺内一处未被占据的10尺方形地面区域喷吐压电狂沙。该区域视为困难地形。当一个生物首次进入该区域时，该生物必须进行一次DC 24 敏捷豁免，豁免失败时受到90（20d8）点闪电伤害，豁免成功则伤害减半。1分钟后，沙砾仍留在原地，但不再带有电荷。<br>
+<strong>狂沙吐息 Sand Breath（充能 5~6）。</strong>该巨龙呼出覆盖120尺锥状区域的压电狂沙。该区域内的每个生物都必须进行一次DC 24 敏捷豁免，豁免失败时受到90（20d8）点闪电伤害，豁免成功则伤害减半。
+</p>
+<h6>反应 Reactions</h6>
+<p>
+<strong>尾击 Tail。</strong>当一个该巨龙可见的生物以近战攻击命中该巨龙时，该巨龙对该生物发动一次尾击攻击。<br>
+<strong>振翅偏斜 Wing Deflection。</strong>当一个该巨龙可见的生物以远程攻击将该巨龙选为目标时，该巨龙使这次攻击检定具有劣势。
+</p>
+<h6>传奇动作 Legendary Actions</h6>
+<p>
+<font color="#808080">传奇动作次数：5。该巨龙可在另一生物的回合结束时立即消耗传奇动作执行以下选项，每次仅限一项，并于其自身回合开始时恢复全部已消耗次数。</font><br>
+<strong>爪击攻击 Claw Attack。</strong>该巨龙发动一次爪击攻击。<br>
+<strong>振翅飞行 Fly。</strong>巨龙飞行至多等于其速度一半的距离。在此移动期间，针对巨龙发动的借机攻击具有劣势。<br>
+<strong>压电刻文 Piezoelectric Glyph。</strong>该巨龙在自身10尺内的一处空间铭刻一枚微型的隐形刻纹，可刻于物体表面、可闭合的物品内部，或化作文本中的字词或图像。通过一次成功的DC 25智力（调查）或感知（察觉）检定可以发现该刻纹。当有生物移动至刻纹5尺内（若刻于表面）、打开或关闭该物品，或是阅读该文本时，刻纹即被触发。该巨龙可以指定任意数量的个体或种族不会触发该刻纹，也可以设定特定条件（例如说出特定口令）使其不被触发。刻纹一旦触发，或当该巨龙以一个附赠动作将其解除时，便会消失。该巨龙同一时间最多可维持三枚刻纹。<br>触发该刻纹的生物必须进行一次DC 25 敏捷豁免，豁免失败时受到90（20d8）点闪电伤害，豁免成功则伤害减半。<br>
+<strong>啃咬或尾击攻击 Bite or Tail Attack（消耗 2 动作）。</strong>该巨龙使用其啃咬或尾击发动攻击。<br>
+<strong>流言植念 Gossip Inception（消耗 2 动作）。</strong>巨龙用其爪击发动攻击。命中时，如果目标能够说至少一种语言，则必须进行一次DC 25 感知豁免。豁免失败时，目标陷入魅惑状态，持续1分钟。以此方式被魅惑期间，目标会在其每个回合开始时脱口说出一条自己听说过且信以为真的流言，话题由巨龙指定。目标可以在其每个回合结束时重复此豁免，豁免成功则结束其身上的该效应。<br>
+<strong>太古狂乱 Great Wyrm Frenzy（消耗 3 动作）。</strong>巨龙使其吐息武器立即充能完毕并使用它，随后巨龙受到20点伤害。
+</p>
+</div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/amber-great-wyrm.webp" type="image/webp"><img src="../../images/amber-great-wyrm.png" alt="太古琥珀龙立绘" width="320"></picture><div class="dragon-art-caption">太古琥珀龙（Great Wyrm Amber Dragon）</div></div>
+</td>
+</tr></table>
+</body>
+</html>

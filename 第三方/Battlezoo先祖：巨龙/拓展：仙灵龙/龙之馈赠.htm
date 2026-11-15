@@ -1,0 +1,319 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>龙之馈赠 - Battlezoo 巨龙：仙灵龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>龙之馈赠 Draconic Gifts（仙灵龙新增）</FONT></H1>
+<p>本页收录<em>《Battlezoo 巨龙：仙灵龙》</em>全新引入的<strong>龙之馈赠</strong>，按先决等级（1级、5级、9级、13级、19级）分节，同一等级内依英文名称首字母 A-Z 排序。通用基础龙之馈赠请查阅<a href="../第四章：龙之馈赠/龙之馈赠.htm">主书第四章：龙之馈赠</a>。</p>
+<p class="dragon-nav-links"><strong>等级跳转：</strong><a href="#1级">1级龙之馈赠</a> · <a href="#5级">5级龙之馈赠</a> · <a href="#9级">9级龙之馈赠</a> · <a href="#13级">13级龙之馈赠</a> · <a href="#19级">19级龙之馈赠</a></p>
+<hr>
+<h2 id="1级"><FONT color=#800000>1级龙之馈赠 1st-Level Draconic Gifts</FONT></h2>
+<p id="天角至诚"><a name="天角至诚"></a><span id="Alicorn Honesty"></span><span id="Alicorn_Honesty"></span><STRONG><FONT color=#800000>天角至诚 Alicorn Honesty</FONT></STRONG><BR><EM>先决：天角龙血统</EM><BR>
+你诚实到了极致，并以同样的标准要求他人。你在用于察觉他人是否说谎的感知（洞悉）检定上具有优势；当你说出真话时，你在用于说服他人相信你所言非虚的魅力（游说）检定上也具有优势。你在用于说谎的魅力（欺瞒）检定上具有劣势。</p>
+<p id="两栖戏谑"><a name="两栖戏谑"></a><span id="Amphibious Mischief"></span><span id="Amphibious_Mischief"></span><STRONG><FONT color=#800000>两栖戏谑 Amphibious Mischief</FONT></STRONG><BR><EM>先决：诡谑龙血统</EM><BR>
+无论在陆地还是水下，你都能尽情施展恶作剧。你获得等同于你步行速度的游泳速度，并且可以在空气和水中呼吸。</p>
+<p id="强酸蚀解"><a name="强酸蚀解"></a><span id="Caustic Corrosion"></span><span id="Caustic_Corrosion"></span><STRONG><FONT color=#800000>强酸蚀解 Caustic Corrosion</FONT></STRONG><BR><EM>先决：诡谑龙血统</EM><BR>
+你的撕咬能够熔毁坚固物件与其他防线。当你用啃咬攻击对物件或构装体造成重击时，你额外造成等同于你熟练加值的强酸伤害。</p>
+<p id="仙灵纽带"><a name="仙灵纽带"></a><span id="Fairy Bond"></span><span id="Fairy_Bond"></span><STRONG><FONT color=#800000>仙灵纽带 Fairy Bond</FONT></STRONG><BR><EM>先决：天角龙、魅心龙、王庭龙、诡谑龙或皮克精龙血统</EM><BR>
+你与精类有着深厚的联系。你在为影响精类生物而进行的魅力检定上具有优势。</p>
+<p id="宿命守御"><a name="宿命守御"></a><span id="Fated Defense"></span><span id="Fated_Defense"></span><STRONG><FONT color=#800000>宿命守御 Fated Defense</FONT></STRONG><BR><EM>先决：王庭龙血统</EM><BR>
+只要你的故事尚未抵达最终高潮，你就能摆脱挡路的次要威胁。当你需要进行豁免检定，且当前面对的并非战役最终反派（或由GM判定的其他在叙事上分量相当的反派）时，你可以使用反应使此次豁免检定具有优势。一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="激励盟友"><a name="激励盟友"></a><span id="Inspire Ally"></span><span id="Inspire_Ally"></span><STRONG><FONT color=#800000>激励盟友 Inspire Ally</FONT></STRONG><BR><EM>先决：魅心龙血统</EM><BR>
+你可以花费10分钟时间，对距你5尺内的一个自愿生物发表一番鼓舞人心的演说并倾注你全神贯注的关怀，以此激励对方。只要该生物与你保持友好关系，其进行的魅力（表演）检定以及使用工匠工具进行的属性检定便具有优势。该效应持续至你使用此馈赠激励另一个生物，或直至你决定收回这份激励（无需动作）。</p>
+<p id="自然之语"><a name="自然之语"></a><span id="Nature Tongue"></span><span id="Nature_Tongue"></span><STRONG><FONT color=#800000>自然之语 Nature Tongue</FONT></STRONG><BR><EM>先决：魅心龙血统</EM><BR>
+你天生擅长与类似自己昔日圣所环境中的植物交谈。选择一种类型的植物或真菌，例如落叶乔木、蔬菜或花卉。你可以像共通某种语言一样与该类型的植物交谈，并且在为影响它们而进行的魅力检定中具有优势。大多数非生物植物对周围世界抱有独特的视角，因此它们无法辨认生物的具体细节，对紧邻自身范围之外的世界也一无所知。狡黠的植物生物往往言辞简略、含糊其辞，而智力较低的植物生物则常常说出毫无意义的傻话。</p>
+<p id="迅捷破坏"><a name="迅捷破坏"></a><span id="Speedy Sabotage"></span><span id="Speedy_Sabotage"></span><STRONG><FONT color=#800000>迅捷破坏 Speedy Sabotage</FONT></STRONG><BR><EM>先决：诡谑龙血统</EM><BR>
+你是一名老练的破坏专家与陷阱巧匠，能在转瞬之间撬开锁具、破坏物件。你获得巧手技能和盗贼工具的熟练项。在4级时，你可以在自己的回合内用一个附赠动作进行一次巧手检定、使用盗贼工具解除陷阱或撬锁，或是执行使用物件动作。</p>
+<p id="灵能龙角"><a name="灵能龙角"></a><span id="Spiritual Horn"></span><span id="Spiritual_Horn"></span><STRONG><FONT color=#800000>灵能龙角 Spiritual Horn</FONT></STRONG><BR><EM>先决：天角龙血统</EM><BR>
+你的龙角闪耀着灵性之力，使你能更轻易地伤害精魂与其他虚体生物。在克服对非魔法伤害的抗性或免疫时，你对虚体生物造成的伤害视为魔法伤害。</p>
+<p id="编织叙事"><a name="编织叙事"></a><span id="Weave Narrative"></span><span id="Weave_Narrative"></span><STRONG><FONT color=#800000>编织叙事 Weave Narrative</FONT></STRONG><BR><EM>先决：王庭龙血统</EM><BR>
+你可以用一个动作高声宣告一项你意欲达成的目标，将其编织成一段故事，借自身叙事之势为己所用。在接下来的1分钟内，你对直接阻挠你达成所宣告目标的生物进行的攻击检定获得+1加值，且你在能够直接助你达成该目标的属性检定中也获得+1加值。如果你在该效应结束前达成了目标，一股自鸣得意的狂喜将涌上心头，使你获得等同于你等级的临时生命值；如果你未能达成目标，你则会陷入深深的失落沮丧之中，并陷入恐慌状态，持续1分钟。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<hr>
+<h2 id="5级"><FONT color=#800000>5级龙之馈赠 5th-Level Draconic Gifts</FONT></h2>
+<p id="祝圣临时圣所"><a name="祝圣临时圣所"></a><span id="Anoint Temporary Sanctuary"></span><span id="Anoint_Temporary_Sanctuary"></span><STRONG><FONT color=#800000>祝圣临时圣所 Anoint Temporary Sanctuary</FONT></STRONG><BR><EM>先决：5级，魅心龙血统，巨龙法师范型</EM><BR>
+以一个动作，你可以与一片荒野区域建立临时联结，使其在接下来的24小时内（或直至你祝圣另一处圣所前）成为你的圣所。该圣所为你进行祝圣时以自身为中心的10尺半径区域。除你以及你在创建圣所时指定的生物外，所有其他生物均将该区域视为困难地形。此外，区域内的植物会主动介入以保护你们免受伤害：当你或被指定的生物位于圣所内时，其他生物对处于圣所内的你或被指定生物发动的攻击检定具有劣势。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="强酸瓦解"><a name="强酸瓦解"></a><span id="Caustic Breakdown"></span><span id="Caustic_Breakdown"></span><STRONG><FONT color=#800000>强酸瓦解 Caustic Breakdown</FONT></STRONG><BR><EM>先决：5级，诡谑龙血统</EM><BR>
+你颚间的强酸能够轻易分解坚硬材质。当你用啃咬攻击命中物件或构装体时，你对目标额外造成等同于你熟练加值的强酸伤害（如果你同时拥有强酸蚀解馈赠，则在重击时额外造成两倍于你熟练加值的强酸伤害）。</p>
+<p id="护身翩飞"><a name="护身翩飞"></a><span id="Defensive Flutter"></span><span id="Defensive_Flutter"></span><STRONG><FONT color=#800000>护身翩飞 Defensive Flutter</FONT></STRONG><BR><EM>先决：5级，皮克精龙血统，巨龙蹂躏者范型</EM><BR>
+当一个你可见的生物对你的近战攻击未命中时，你可以使用反应拍动双翼，向触发反应的生物洒下一团闪亮的皮克精粉尘。该生物进行的攻击检定具有劣势，直至其当前回合结束。该生物可以通过移动离开当前位置至少10尺来提前终止此效应。</p>
+<p id="毁灭啃咬"><a name="毁灭啃咬"></a><span id="Devastating Bite"></span><span id="Devastating_Bite"></span><STRONG><FONT color=#800000>毁灭啃咬 Devastating Bite</FONT></STRONG><BR><EM>先决：5级，巨龙蹂躏者范型</EM><BR>
+你的啃咬攻击在掷出19或20时即可造成重击（前提是该攻击命中目标的AC）。</p>
+<p id="双毒吐息"><a name="双毒吐息"></a><span id="Dual Venomed Breath"></span><span id="Dual_Venomed_Breath"></span><STRONG><FONT color=#800000>双毒吐息 Dual Venomed Breath</FONT></STRONG><BR><EM>先决：5级，诡谑龙血统，吐息武器</EM><BR>
+你对吐息武器进行了千百次锤炼，终于重获了自永恒之光仪式以来失落的那部分力量。你的吐息武器可以造成强酸或毒素伤害，由你在每次使用吐息武器时选择。当你选择造成强酸伤害时，你的吐息武器要求目标进行敏捷豁免；当你选择造成毒素伤害时，则要求目标进行体质豁免。</p>
+<p id="宿命反击"><a name="宿命反击"></a><span id="Fated Counterstrike"></span><span id="Fated_Counterstrike"></span><STRONG><FONT color=#800000>宿命反击 Fated Counterstrike</FONT></STRONG><BR><EM>先决：5级，王庭龙血统，巨龙蹂躏者范型</EM><BR>
+凭借对你自身与攻击者双方命运叙事的洞悉，你抓住早已被预见的破绽，发动迅捷而果决的反击。当一个你可见的生物以你为目标发动近战攻击，且在攻击检定中掷出1时，你可以使用反应对该生物发动一次近战攻击。</p>
+<p id="耀光迸射"><a name="耀光迸射"></a><span id="Flare Light"></span><span id="Flare_Light"></span><STRONG><FONT color=#800000>耀光迸射 Flare Light</FONT></STRONG><BR><EM>先决：5级，天角龙血统，强化天生武器进化（角击）</EM><BR>
+你可以令龙角的光芒骤然暴涨，使敌人目眩神迷。当你用角击攻击命中一个生物时，你可以迫使该生物进行一次体质豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标陷入目盲状态，直至你的下个回合结束。一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="疾风触发"><a name="疾风触发"></a><span id="Gusting Trigger"></span><span id="Gusting_Trigger"></span><STRONG><FONT color=#800000>疾风触发 Gusting Trigger</FONT></STRONG><BR><EM>先决：5级，诡谑龙血统</EM><BR>
+你可以扇动双翼卷起一阵魔法疾风，从远处触发陷阱或撬开锁具。当你使用盗贼工具进行敏捷检定时，可以如同自己站在距你至多30尺外的一处空间中一般进行操作。</p>
+<p id="借势叙事"><a name="借势叙事"></a><span id="Leverage Narrative"></span><span id="Leverage_Narrative"></span><STRONG><FONT color=#800000>借势叙事 Leverage Narrative</FONT></STRONG><BR><EM>先决：5级，编织叙事龙之馈赠</EM><BR>
+你蓄势准备击倒直接阻挠你当前叙事的敌人。当你的编织叙事馈赠处于激活状态时，你可以使用一个附赠动作选择你可见的一个阻挠你既定目标的生物。在你的编织叙事馈赠结束前，你对该生物发动的下一次攻击具有优势。<BR>
+一旦你使用了此馈赠，你必须再次使用编织叙事馈赠后才能再次使用此馈赠。</p>
+<p id="万物合一"><a name="万物合一"></a><span id="One with Nature"></span><span id="One_with_Nature"></span><STRONG><FONT color=#800000>万物合一 One with Nature</FONT></STRONG><BR><EM>先决：5级，魅心龙血统</EM><BR>
+你可以花费1分钟将自身感官融入附近的一只动物或一株植物之中。选择你周围120尺内一个你能看见的野兽或植物生物。在接下来的1小时内，你可以用一个动作在自身感官与所选野兽或植物的感官之间切换。如果目标不情愿，它可以尝试进行一次感知豁免来抵抗此效应，DC等于8 + 你的熟练加值 + 你的魅力调整值，不过大多数动物和植物并不会尝试抵抗。</p>
+<p id="净化灵光"><a name="净化灵光"></a><span id="Purifying Aura"></span><span id="Purifying_Aura"></span><STRONG><FONT color=#800000>净化灵光 Purifying Aura</FONT></STRONG><BR><EM>先决：5级，天角龙血统</EM><BR>
+你可以用一个附赠动作使自己周身环绕起涤荡躯体、抚慰心智的净化灵光。灵光以你为中心笼罩半径15尺范围，并在你移动时随你一同移动。灵光持续1分钟，直至你陷入昏迷，或直至你用另一个附赠动作将其解散为止。在此效应持续期间，你以及灵光范围内由你选择的每个生物，在对抗毒素、疾病以及会使其恐慌的效应所作的豁免检定中具有优势。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="施法破坏者"><a name="施法破坏者"></a><span id="Spellcasting Saboteur"></span><span id="Spellcasting_Saboteur"></span><STRONG><FONT color=#800000>施法破坏者 Spellcasting Saboteur</FONT></STRONG><BR><EM>先决：5级，诡谑龙血统</EM><BR>
+你学会了借助魔法实施破坏行动。你可以施展<em>隐形术</em>与<em>粉碎术</em>法术。你施展这两道法术的施法关键属性为魅力。一旦你使用此馈赠施展了其中一道法术，在完成一次长休前你不能再次施展该道法术。</p>
+<p id="诡诈施法者"><a name="诡诈施法者"></a><span id="Tricky Spellcaster"></span><span id="Tricky_Spellcaster"></span><STRONG><FONT color=#800000>诡诈施法者 Tricky Spellcaster</FONT></STRONG><BR><EM>先决：5级，皮克精龙血统</EM><BR>
+你掌握了一些能让恶作剧更上一层楼的魔法。你可以施展<em>油腻术</em>与<em>无声幻影</em>法术。你施展这两道法术的施法关键属性为魅力。一旦你使用此馈赠施展了其中一道法术，你必须完成一次短休或长休才能再次施展它。</p>
+<hr>
+<h2 id="9级"><FONT color=#800000>9级龙之馈赠 9th-Level Draconic Gifts</FONT></h2>
+<p id="天角魔法"><a name="天角魔法"></a><span id="Alicorn Magic"></span><span id="Alicorn_Magic"></span><STRONG><FONT color=#800000>天角魔法 Alicorn Magic</FONT></STRONG><BR><EM>先决：9级，天角龙血统，巨龙法师范型</EM><BR>
+你拥有如独角兽般以魔法净化自身与他人的能力。你可以施展<em>安定心神</em>、以2环施展<em>疗伤术</em>，以及施展<em>驱逐善恶</em>。你施展这些法术的施法属性为魅力。一旦你使用此馈赠施展了其中某个法术，你必须完成一次长休才能再次以此方式施展该法术。</p>
+<p id="魅心气场"><a name="魅心气场"></a><span id="Alluring Presence"></span><span id="Alluring_Presence"></span><STRONG><FONT color=#800000>魅心气场 Alluring Presence</FONT></STRONG><BR><EM>先决：9级，魅心龙血统</EM><BR>
+你可以使用一个附赠动作激发内在之美，将其散发为一股魅惑灵光。该灵光环绕你周围20尺半径区域，并随你一同移动。灵光持续1分钟，直至你陷入昏迷状态，或直至你使用另一个附赠动作将其解散。在该效应持续期间，每当有生物在灵光内开始其回合时，你可以迫使该生物进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标受你魅惑，直至其回合结束。若豁免失败且差值达到5或更高，则目标改为受你魅惑1分钟。以此方式被魅惑期间，目标陷入失能状态，且必须在其回合内沿最直接的路线向你移动，试图靠近至距你5尺内。目标不会规避借机攻击，但在进入熔岩或深坑等危险地形前，以及每当其受到伤害时，都可以重复该豁免。被魅惑的目标也可以在其每个回合结束时重复该豁免。若豁免成功，其身上的该效应终止。成功豁免抵抗该效应的生物在接下来的24小时内免疫你的魅心气场。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="黏附星尘"><a name="黏附星尘"></a><span id="Clinging Dust"></span><span id="Clinging_Dust"></span><STRONG><FONT color=#800000>黏附星尘 Clinging Dust</FONT></STRONG><BR><EM>先决：9级，皮克精龙血统</EM><BR>
+以一个动作，你可以拍动双翼，向以自身为中心的15尺半径区域喷洒皮克精粉尘。区域内的每个生物都必须进行一次敏捷豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标全身覆满黏稠而闪亮的皮克精粉尘，持续1分钟。覆满粉尘期间，目标无法从隐形状态中获益。若豁免失败且差值达到5或更高，目标在覆满粉尘期间还会陷入目盲状态。任何生物都可以使用一个动作擦去受影响生物身上的粉尘，从而提前终止该生物身上的此效应。一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="欢愉吐息"><a name="欢愉吐息"></a><span id="Euphoric Breath"></span><span id="Euphoric_Breath"></span><STRONG><FONT color=#800000>欢愉吐息 Euphoric Breath</FONT></STRONG><BR><EM>先决：9级，皮克精龙血统，吐息武器</EM><BR>
+当你使用吐息武器时，你可以改变吐息武器中的毒素性质，使其引发迷醉欢愉而非造成毒素伤害。若如此做，区域内的每个生物都必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。免疫魅惑状态的生物自动成功通过此豁免。豁免失败时，目标陷入迟缓，持续1分钟。处于迟缓期间，目标的速度减半，AC与敏捷豁免承受-2减值，且无法使用反应；在其回合内，它只能使用一个动作或一个附赠动作，而不能同时使用两者；无论该生物拥有何种能力或魔法物品，它在自己的回合内都无法发动超过一次近战或远程攻击。陷入迟缓的目标可以在其每个回合结束时重复该豁免，成功则终止自身承受的该效应。一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="欢愉呼息"><a name="欢愉呼息"></a><span id="Euphoric Exhalation"></span><span id="Euphoric_Exhalation"></span><STRONG><FONT color=#800000>欢愉呼息 Euphoric Exhalation</FONT></STRONG><BR><EM>先决：9级，皮克精龙血统，毁灭啃咬龙之馈赠</EM><BR>
+当你用啃咬攻击造成重击时，你可以朝目标面部呼出一团致幻欢愉毒气。若如此做，目标必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标进行的攻击检定具有劣势，直至其下个回合结束。一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="精类肤质"><a name="精类肤质"></a><span id="Fey Skin"></span><span id="Fey_Skin"></span><STRONG><FONT color=#800000>精类肤质 Fey Skin</FONT></STRONG><BR><EM>先决：9级，天角龙、魅心龙、王庭龙、诡谑龙或皮克精龙血统</EM></p>
+<p>你通过永恒之光仪式重获了更多精类新陈代谢特质，以畏惧寒铁的弱点为代价换取了更强大的恢复力。每当你受到由铁制成的武器（大多数未特别注明由其他金属制成的金属武器）造成的伤害时，你会受到等同于你等级一半的额外伤害。作为回报，你获得以下增益：</p><ul><li>你的生命值上限提高等同于你当前等级的数值。此后每当你提升1个等级，你的生命值上限额外提高1点。</li><li>每经过1小时，你恢复等同于你等级的生命值。</li></ul>
+<p id="诡道施法者"><a name="诡道施法者"></a><span id="Guileful Spellcaster"></span><span id="Guileful_Spellcaster"></span><STRONG><FONT color=#800000>诡道施法者 Guileful Spellcaster</FONT></STRONG><BR><EM>先决：9级，皮克精龙血统，诡诈施法者龙之馈赠</EM><BR>
+你的施法造诣得到了精进。你可以施展<em>隐形术</em>与<em>迷踪步</em>法术。你施展这些法术的施法属性为魅力。一旦你使用此馈赠施展了其中一个法术，你必须完成一次短休或长休才能再次以此方式施法。</p>
+<p id="破暗光束"><a name="破暗光束"></a><span id="Illuminating Beam"></span><span id="Illuminating_Beam"></span><STRONG><FONT color=#800000>破暗光束 Illuminating Beam</FONT></STRONG><BR><EM>先决：9级，天角龙血统，吐息武器</EM><BR>
+你的吐息武器璀璨夺目，足以驱散一切幽暗。你的吐息武器会解除其穿过路径上任何由环阶不超过你等级一半（向下取整）的法术所创造的黑暗。</p>
+<p id="馨香吐息"><a name="馨香吐息"></a><span id="Perfumed Breath"></span><span id="Perfumed_Breath"></span><STRONG><FONT color=#800000>馨香吐息 Perfumed Breath</FONT></STRONG><BR><EM>先决：9级，魅心龙血统，吐息武器</EM><BR>
+你可以转变自己的吐息武器，喷吐出迷人的馨香而非心灵能量锥。当你使用吐息武器时，你可以取代造成心灵伤害，改为迫使区域内的每个生物进行一次感知豁免。豁免失败时，目标直至其下一回合结束前不能执行反应。如果豁免失败且差值达到5或更高，目标改为陷入震慑状态，直至其下一回合结束。</p>
+<p id="斥退逼近"><a name="斥退逼近"></a><span id="Rebuff Advance"></span><span id="Rebuff_Advance"></span><STRONG><FONT color=#800000>斥退逼近 Rebuff Advance</FONT></STRONG><BR><EM>先决：9级，魅心龙血统，巨龙蹂躏者范型</EM><BR>
+当你周围30尺内一个你能看见的生物即将向你移近时，你可以用反应冷落该触发生物——高高扬起龙吻朝向天空，对逼近的生物彻底视若无睹。该触发生物必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，该生物因你的拒斥而悲痛欲绝，直至其下一回合结束前，其进行的攻击检定和技能检定具有劣势。豁免成功时，该生物在接下来的24小时内免疫斥退逼近。</p>
+<p id="璀璨虹彩盛装"><a name="璀璨虹彩盛装"></a><span id="Resplendent Rainbow Regalia"></span><span id="Resplendent_Rainbow_Regalia"></span><STRONG><FONT color=#800000>璀璨虹彩盛装 Resplendent Rainbow Regalia</FONT></STRONG><BR><EM>先决：9级，天角龙血统，巨龙法师范型</EM><BR>
+你可以用一个附赠动作使你自己或你触碰的一个自愿生物周身笼罩起流光溢彩、璀璨夺目的星辉光晕。这袭盛装持续1分钟，直至你陷入昏迷，或直至你用另一个附赠动作将其解散为止（以三者中最先发生者为准）。在虹彩效应持续期间，依赖视觉感知该目标的生物对其发动的攻击具有劣势。此外，当一个生物以攻击命中该目标时，目标可以用其反应解散盛装。若目标以此方式解散盛装，盛装会在一阵刺目耀眼的强光爆发中消散；触发该反应的生物必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，该生物陷入目盲状态，直至你的下一回合结束。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="怨毒诅咒"><a name="怨毒诅咒"></a><span id="Spiteful Curse"></span><span id="Spiteful_Curse"></span><STRONG><FONT color=#800000>怨毒诅咒 Spiteful Curse</FONT></STRONG><BR><EM>先决：9级，诡谑龙血统，巨龙法师范型</EM><BR>
+当一个你能看见的生物以近战攻击命中你时，你可以用反应向该触发生物啐出一道恶毒诅咒。目标必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标遭受厄运诅咒，直至其下一回合开始。以此方式受诅咒期间，目标进行的攻击检定具有劣势；此外，每当目标的攻击未命中时，它都会误伤自己，对自身造成1d6点相应类型的伤害。此伤害在14级（2d6）和18级（3d6）时各增加1d6。</p>
+<p id="传送冲锋"><a name="传送冲锋"></a><span id="Teleporting Charge"></span><span id="Teleporting_Charge"></span><STRONG><FONT color=#800000>传送冲锋 Teleporting Charge</FONT></STRONG><BR><EM>先决：9级，天角龙血统，巨龙蹂躏者范型，强化天生武器进化（角击）</EM><BR>
+你在耀眼闪光中瞬间消失，又在战场另一端骤然现身，以龙角将一名敌人一举刺穿。你可以用一个动作传送至你周围60尺内一个你能看见的生物周围5尺内一处未被占据的空间，随后对该生物发动一次角击攻击。你进行的该次攻击具有优势；若攻击命中，你还会造成额外的1d6穿刺伤害。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="欲望引诱"><a name="欲望引诱"></a><span id="Tempt with Desires"></span><span id="Tempt_with_Desires"></span><STRONG><FONT color=#800000>欲望引诱 Tempt with Desires</FONT></STRONG><BR><EM>先决：9级</EM><BR>
+你可以用一个动作发表慷慨激昂的演说或讲述引人入胜的故事，勾起一个生物内心最深切的渴望，并暗示只要听从你的话语便有望达成所愿。你的讲述如此绘声绘色，以至于目标仿佛亲眼“看见”自己的渴望在眼前化为现实。进行一次魅力（表演）检定，与你周围60尺内一个能听见并看见你的生物所作的感知豁免进行对抗。若你在对抗中胜出，该生物被你魅惑，持续1分钟。以此方式被魅惑期间，该生物处于失能状态且速度变为0。该生物可以在其每个回合结束时重复进行该豁免，成功则结束该效应。如果受影响的生物受到伤害，或有其他生物用一个动作将其从恍惚中摇醒，该效应也会提前结束。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<hr>
+<h2 id="13级"><FONT color=#800000>13级龙之馈赠 13th-Level Draconic Gifts</FONT></h2>
+<p id="炫目吐息"><a name="炫目吐息"></a><span id="Dazzling Breath"></span><span id="Dazzling_Breath"></span><STRONG><FONT color=#800000>炫目吐息 Dazzling Breath</FONT></STRONG><BR><EM>先决：13级，天角龙血统，吐息武器</EM><BR>
+你的吐息武器化作一道炫目的彩虹光束自你的龙角射出。如果一个生物对抗你吐息武器的豁免失败且差值达到5或更高，该生物还会陷入目盲状态，直至你的下个回合结束。</p>
+<p id="吉运反击"><a name="吉运反击"></a><span id="Fortunate Counterstrike"></span><span id="Fortunate_Counterstrike"></span><STRONG><FONT color=#800000>吉运反击 Fortunate Counterstrike</FONT></STRONG><BR><EM>先决：13级，宿命反击龙之馈赠</EM><BR>
+当你发动反击时，你会运用自己对命运叙事的洞悉确保一击必中。你通过宿命反击馈赠发动的近战攻击具有优势。</p>
+<p id="余韵魅惑"><a name="余韵魅惑"></a><span id="Lingering Allure"></span><span id="Lingering_Allure"></span><STRONG><FONT color=#800000>余韵魅惑 Lingering Allure</FONT></STRONG><BR><EM>先决：13级，魅心气场龙之馈赠</EM><BR>
+你能够更频繁地唤醒自身的内在之美。你在完成一次短休后即可再次使用魅心气场（而非必须完成长休）。</p>
+<p id="揭露丑闻"><a name="揭露丑闻"></a><span id="Reveal Flaw"></span><span id="Reveal_Flaw"></span><STRONG><FONT color=#800000>揭露丑闻 Reveal Flaw</FONT></STRONG><BR><EM>先决：13级，王庭龙血统，巨龙法师范型</EM><BR>
+你可以用一个附赠动作揭露你周围30尺内一个你能看见的生物过往的丑闻秘辛，当众高声宣告其致命弱点。从以下伤害类型中选择一种：强酸、钝击、寒冷、火焰、力场、闪电、黯蚀、穿刺、毒素、心灵、光耀、挥砍或雷鸣。目标必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。豁免失败时，目标在接下来的1分钟内对该伤害类型获得宿命弱点：在此效应持续期间，每当目标受到你所选类型的伤害时，都会额外受到1d6点同类型伤害。在18级时，此额外伤害提升至2d6。豁免成功时，或当目标身上的该效应结束时，该目标在接下来的24小时内免疫此馈赠。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="恶臭喷吐"><a name="恶臭喷吐"></a><span id="Sickening Spray"></span><span id="Sickening_Spray"></span><STRONG><FONT color=#800000>恶臭喷吐 Sickening Spray</FONT></STRONG><BR><EM>先决：13级，诡谑龙血统，吐息武器</EM><BR>
+你的吐息污秽、腐臭且带有剧毒，足以令身陷其中的生物恶心不适。对抗你吐息武器豁免失败的生物还会陷入中毒状态，直至其下一回合结束。</p>
+<p id="缔结契约"><a name="缔结契约"></a><span id="Strike Bargain"></span><span id="Strike_Bargain"></span><STRONG><FONT color=#800000>缔结契约 Strike Bargain</FONT></STRONG><BR><EM>先决：13级，王庭龙血统，巨龙法师范型</EM><BR>
+经过10分钟的交涉，你与一个智力值为3或更高的自愿生物达成一项契约。接受此契约的生物身上某处会浮现出一枚如刺青般不可磨灭的魔法印记（代表你的王庭或真名）。如果目标日后违背了契约条款，该刺青会自动对目标施展<em>弱智术</em>或<em>石化术</em>法术。当你们双方商定契约条款时，由你决定刺青具体施展哪一道法术。目标对抗所选法术的所有豁免检定自动失败，不过该效应仍可如常被<em>高等复原术</em>、<em>医疗术</em>或<em>祈愿术</em>结束。</p>
+<p id="出奇现身"><a name="出奇现身"></a><span id="Surprising Appearance"></span><span id="Surprising_Appearance"></span><STRONG><FONT color=#800000>出奇现身 Surprising Appearance</FONT></STRONG><BR><EM>先决：13级，皮克精龙血统，巨龙蹂躏者范型</EM><BR>
+当你处于隐形或隐匿状态时，你可以用一个动作从藏身处跃出并显露身形（如果你原本处于隐形状态，该隐形随之结束），令周围所有人猝不及防。当你现身时位于你周围5尺内的每个生物都必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的魅力调整值。免疫恐慌状态的生物自动通过此豁免。豁免失败时，目标对你陷入恐慌状态，直至其下一回合结束。如果豁免失败且差值达到5或更高，目标还会径直向远离你的方向移动10尺并陷入倒地状态。一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="定向净化"><a name="定向净化"></a><span id="Targeted Purification"></span><span id="Targeted_Purification"></span><STRONG><FONT color=#800000>定向净化 Targeted Purification</FONT></STRONG><BR><EM>先决：13级，天角龙血统，巨龙法师范型，净化灵光龙之馈赠</EM><BR>
+当你完成一次短休或长休时，你可以再次使用你的净化灵光馈赠。此外，当处于你净化灵光范围内的一个生物在对抗毒素、疾病或会使其恐慌的效应所作的豁免检定中失败时，你可以用反应将净化魔力聚焦于该生物身上，强化其抵御侵蚀的防线。若你如此做，该生物可以重骰触发该反应的豁免检定。<BR>
+一旦你以此方式使用了此馈赠，在同一次<strong>净化灵光</strong>期间你不能再次使用它。</p>
+<hr>
+<h2 id="19级"><FONT color=#800000>19级龙之馈赠 19th-Level Draconic Gifts</FONT></h2>
+<p id="完美反击"><a name="完美反击"></a><span id="Perfect Counterstrike"></span><span id="Perfect_Counterstrike"></span><STRONG><FONT color=#800000>完美反击 Perfect Counterstrike</FONT></STRONG><BR><EM>先决：19级，宿命反击龙之馈赠</EM><BR>
+哪怕最微小的破绽也足以让你发起反击。每当有生物对你的近战攻击未命中时（而非仅在该生物的攻击检定骰出1时），你都可以尝试发动宿命反击。</p>
+<p id="突发灵感"><a name="突发灵感"></a><span id="Sudden Inspiration"></span><span id="Sudden_Inspiration"></span><STRONG><FONT color=#800000>突发灵感 Sudden Inspiration</FONT></STRONG><BR><EM>先决：19级，魅心龙血统</EM><BR>
+当你周围30尺内一个你能看见的生物在攻击检定、属性检定或豁免检定中失败时，你可以用反应激励该生物。该生物可以重骰触发该反应的攻击检定、属性检定或豁免检定，并使用新的结果。一旦你使用此馈赠激励了某个生物，在接下来的1分钟内你不能再次激励该生物。</p>
+<p id="绕圈诡辩"><a name="绕圈诡辩"></a><span id="Talk in Circles"></span><span id="Talk_in_Circles"></span><STRONG><FONT color=#800000>绕圈诡辩 Talk in Circles</FONT></STRONG><BR><EM>先决：19级，王庭龙血统，巨龙法师范型</EM><BR>
+你滔滔不绝地倾泻出毫无逻辑的诡辩、晦涩难懂的行话与令人费解的难题，将这些刻意的胡言乱语巧妙藏入独白、争辩、论战或歌声之中。你可以施展<em>困惑术</em>，施法关键属性为魅力。当你以此方式施展该法术时，无需材料成分或姿势成分，且该法术会影响你周围60尺内由你选择的所有生物。一旦你使用此馈赠施展了<em>困惑术</em>，你必须完成一次长休才能再次如此做。</p>
+</body>
+</html>

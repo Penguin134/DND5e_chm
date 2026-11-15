@@ -1,0 +1,215 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>太古青铜龙 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>太古青铜龙 Bronze Dragon Great Wyrm</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="太古青铜龙.htm"><strong>太古青铜龙</strong></a></td><td>Great Wyrm Bronze Dragon</td><td>CR 27</td></tr>
+<tr><td><a href="太古青铜龙（施法者）.htm"><strong>太古青铜龙（施法者）</strong></a></td><td>Great Wyrm Bronze Dragon (Spellcaster)</td><td>CR 27</td></tr>
+</table>
+<p>太古青铜龙比它们年轻的同族更加孤高冷峻、坚忍寡言；它们愈发深居简出，隐退于舒适安宁的图书馆巢穴深处，在那里妥善保存古老的知识与智慧，守护这些秘辛免遭形形色色窃贼的觊觎——其中也包括那最阴险、最无情的窃贼：时间。随着太古青铜龙一头扎进浩瀚书海、越陷越深，它们的博学才识与学术造诣固然变得愈发深不可测，但对时事动向的把握却日渐枯萎脱节——这一点恰好与生性合群、消息灵通的太古黄铜龙截然相反。</p><p>偶尔，一项意义重大的壮举也能惊动太古青铜龙出山行动。举例而言，较年轻的青铜龙常常担任海上向导，在危机四伏的汪洋航程中护送并保卫怀有崇高目标的船只。对于一艘船的船员来说，能够引来青铜龙的垂青就意味着能平安抵达目的地；这促使许多人刻意宣扬自己的善意初衷、夸大自身的美德，甚至向潜在的守护者献上厚礼。然而青铜龙对这种曲意逢迎嗤之以鼻，甚至一想到自己的眷顾竟能被“收买”，便会深感冒犯。</p><p>不过，真正品行高洁、怀揣正义之志的航海者，依然能在险恶大海上寻得青铜龙作为向导与守护者。但要想让一条太古青铜龙亲自为你的航程侧目，那必须是一场真正具有神话史诗格局的远征——譬如寻访一座据传可追溯至旧神纪元、藏有远古图书馆的失落孤岛，又或是远征某位妄图统治世界的强大恶魔领主孤悬海外的堡垒。即便如此，太古青铜龙同意担任海上向导，也绝不意味着它会包办随后的战斗。太古银龙或许会毫不犹豫地冲锋陷阵、与那位恶魔领主正面交锋；但绝大多数太古青铜龙更倾向于扮演辅助者的角色——它们会指引英雄们顺利抵达恶魔领主的海底宫殿，随后便将最终的决战留给那些前来寻求巨龙襄助、年轻无畏的凡人勇士自己去完成。</p><p>有时，也会有恳求者前来寻访太古青铜龙严密隔绝于外界视野之外的秘藏知识。想要说服一条固执的太古青铜龙吐露秘辛——尤其是那些被它判定为危险禁忌的知识——绝非易事。唯有心怀谦逊前来拜谒、献上罕见学识作为交换，并顺利通过太古龙考验的人，才更有希望得偿所愿。</p><div class="dragon-callout"><h4><FONT color=#800000>约林维洛里克斯</FONT></h4><p>作者：埃里克·库奇斯卡（Eric Kucskar）</p><p>青铜龙对于“何为治学正道”抱有一套在我看来颇难苟同的见解。不过，在它们之中，恐怕没有谁能像太古龙约林维洛里克斯这样持之以恒、条理清晰地阐述这套理念了——他至今仍与我保持着令人印象深刻的书信往来。尽管我们一致认同田野调查与亲身实验是理解这个世界不可或缺的基石，但约林维洛里克斯却想两头占尽便宜：他更喜欢让别人代劳去跑“田野调查”，自己则安坐于庞大无垠的水下图书馆中。在自己那方与世隔绝的气泡天地里，他悉心培育着设计精巧繁复的珊瑚花园，并招揽了一圈志同道合的研究者。在派遣这些人代自己外出考察之前，他会先确保他们全都像乖巧听话的小工蜂一样，认同他所推崇的正直、诚实与慷慨等价值观。这位太古龙绝非蠢材。他以自身所藏知识的守门人自居（搞得好像他真有这个权利似的），将任何可能滥用知识之徒统统拒之门外。但我始终认为，知识理应由世人共享。他将相当大一部分精力花在自己那尘埃不染的密室里，逐一核验他人的研究成果与结论，以抵制谬误信息的传播——毕竟他从不踏出洞窟半步，若不如此，便极易受假消息蒙蔽。每当发现错漏或他认为有悖常理之处，他总会迅速发表长篇大论予以驳斥。想要加入他的麾下？那就证明你的事业足够崇高，或者通过他的考验吧；届时他便会在某座隐秘仓库或珊瑚花园中接见你，进行最终的评估。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/bronze-great-wyrm.webp" type="image/webp"><img src="../../images/bronze-great-wyrm.png" alt="太古青铜龙" width="320"></picture><div class="dragon-art-caption">太古青铜龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>海龙 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>海龙 Sea Dragons</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<h2><FONT color=#800000>各年龄段数据卡</FONT></h2>
+<table class="dragon-table"><tr><th>中文名称</th><th>英文名称</th><th>挑战等级</th></tr>
+<tr><td><a href="海龙雏龙.htm"><strong>海龙雏龙</strong></a></td><td>Sea Dragon Wyrmling</td><td>CR 2</td></tr>
+<tr><td><a href="青年海龙.htm"><strong>青年海龙</strong></a></td><td>Young Sea Dragon</td><td>CR 7</td></tr>
+<tr><td><a href="青年海龙（施法者）.htm"><strong>青年海龙（施法者）</strong></a></td><td>Young Sea Dragon (Spellcaster)</td><td>CR 7</td></tr>
+<tr><td><a href="成年海龙.htm"><strong>成年海龙</strong></a></td><td>Adult Sea Dragon</td><td>CR 14</td></tr>
+<tr><td><a href="成年海龙（施法者）.htm"><strong>成年海龙（施法者）</strong></a></td><td>Adult Sea Dragon (Spellcaster)</td><td>CR 14</td></tr>
+<tr><td><a href="远古海龙.htm"><strong>远古海龙</strong></a></td><td>Ancient Sea Dragon</td><td>CR 21</td></tr>
+<tr><td><a href="远古海龙（施法者）.htm"><strong>远古海龙（施法者）</strong></a></td><td>Ancient Sea Dragon (Spellcaster)</td><td>CR 21</td></tr>
+<tr><td><a href="太古海龙.htm"><strong>太古海龙</strong></a></td><td>Great Wyrm Sea Dragon</td><td>CR 26</td></tr>
+<tr><td><a href="太古海龙（施法者）.htm"><strong>太古海龙（施法者）</strong></a></td><td>Great Wyrm Sea Dragon (Spellcaster)</td><td>CR 26</td></tr>
+</table>
+<p>海龙是水之力量的主宰——他们所统御的不仅是大洋、沧海与其他大型静水体中的水，更囊括了在整个水循环中流转不息的一切水体形态，包括云雾、甘霖、风暴与洪流。因此，凡人会向海龙虔诚祈祷，将其当作能够平息狂风怒涛、或是降下充沛甘霖以保五谷丰登的地方神明来供奉，也就不足为奇了。</p><p>无论是农夫、渔民还是水手，都因海龙的威能而对其顶礼膜拜；在大多数情况下，只要凡人态度恭敬并献上合宜的祭品，海龙都会和善地回应他们的恳求。然而，海龙的性情正如同大海一般变幻莫测，绝非如此轻易便能揣度。传说中不乏这样的故事：即便凡人在海龙面前痛哭流涕、赤诚祈求，海龙却在最后一刻突然改变主意，或是做出令人始料未及的惊人之举。</p><div class="dragon-callout"><h4><FONT color=#800000>海龙巢穴</FONT></h4><p>海龙性情多变、难以捉摸，时常横渡重洋或造访近岸陆地，但这绝不意味着他们不像其他巨龙那样喜爱回到巢穴中安然酣眠。条件允许时，海龙的巢穴通常设在水下海蚀洞中。年长的海龙，或是栖息在洞窟众多、可任凭挑选之海域的海龙，更偏爱选择那种在水下与海面皆完全封闭、唯有从高空飞入或历经惊险攀爬方能进入的海蚀洞——如此一来，海洋生物难以企及洞口，陆生生物又寸步难行于深水之下。</p></div><p>海龙将皇权龙典型的无翼修长蛇形躯体与深海生灵常见的多种特征融为一体，例如鱼鳞、带蹼龙爪，以及宽大的尾鳍与背鳍。他们仿佛一座活生生的珊瑚礁，绽放出绚丽多姿的色彩，随着岁月流逝，各类水生动植物也会在他们身上繁衍生息。每当海龙选择登上陆地行走或翱翔天际时，他们对水系魔法与生俱来的掌控力便能庇护寄居在身上的小小水生伙伴，使其在陆表空气中也不会因干涸而死。</p><p>在其他皇权龙之中，海龙与天空龙最为投缘——二者不仅理念相近，当并肩作战时，海龙也十分欣赏天空龙挚友以金元素力量对自己的相生助益。</p><div class="dragon-callout"><h4><FONT color=#800000>海龙宝库</FONT></h4><p>海龙热衷于在宝库中搜集各式各样精美绝伦的器物，主要偏爱那些产自水下地域、或至少能够长期浸泡在水中而不会受损变质的珍宝。由于许多海龙会收受凡人进献的贡品，作为替他们平息风浪、调顺气候的回报，随着年岁渐长，他们往往也会积攒起大批来自陆地的贵重物品。倘若海龙收到了一件令自己爱不释手、恨不得四处炫耀的陆地瑰宝，偏偏这件珍宝又经不起海水长久浸泡，那可就成了桩烦心事。遇到这种情况，海龙就不得不施展魔法保护藏品，或是将其封入某种透明容器内以便隔水鉴赏，又或者干脆在宝库中开辟出一处充满空气的密室，专门存放这些娇贵的陆地珍宝。</p></div><h2><FONT color=#800000>太古海龙</FONT></h2><p>太古海龙实力强横无匹，有时甚至会将整片大海划为自己的疆域——至少在名义上如此。而在实际运作中，提出如此广阔领地主张的太古海龙心里也很清楚，海域内自然会有其他海底文明繁衍生息；即便海龙名义上统管着整片生态体系，并能为前来拜谒大洋主宰水下龙宫的各方生灵裁决纷争，他也并不会事必躬亲。从这个意义上说，太古海龙乃是凌驾于海底帝王宝座之上的至高存在，近乎真正的海洋神明。也有些太古海龙不愿肩负如此繁重的责任，而是选择隐居在僻静却富丽堂皇的深海居所中，专心搜集宝库，极少接待访客。</p><div class="dragon-callout"><h4><FONT color=#800000>向沧海祈愿</FONT></h4><p>由于海龙素来喜怒无常——这一点在太古海龙身上表现得尤为淋漓尽致——在盛行海龙崇拜的地区，当地文化衍生出了五花八门的祈祷仪式与迷信习俗，人们深信遵循这些仪轨便能博取海龙的欢心与好心情，从而大大增加巨龙赐下风调雨顺、庇佑家园免遭天灾的机率。其中部分祈祷仪式，或凭侥幸猜中、或靠深刻洞见、又或源于对历史记载的缜密剖析，的确能让当地海龙心情大悦，进而提高如愿以偿的可能性；然而绝大多数习俗纯粹只是巧合的产物——不过是村民们某次碰巧尝试了某种仪轨，而海龙恰好在一两次仪式后有所行动，结果便让村民们世代相传、年年照办，最终演变成了历史悠久的传统。</p></div><p>太古海龙拥有操控广袤疆域天气的伟力，因此向他们顶礼膜拜的不仅有深海住民，往往还包括陆地上的生灵，尤其是水手、渔民以及沿海谋生之人。陆地居民会向当地的太古海龙进献贡品，祈盼减少气象灾害，并在农田急需灌溉时降下充沛雨水，以保庄稼五谷丰登。</p><div class="dragon-callout"><h4><FONT color=#800000>沧海珍馐</FONT></h4><p>毫不令人意外的是，大多数海龙最钟爱各类海鲜美食；不过他们向来随性善变，因此也很乐意尝鲜陆地菜肴，作为日常主食的调剂——话虽如此，到头来他们还是常会回到老口味的怀抱。无论是鱼、蟹、龙虾、海虾、章鱼、乌贼，还是更为奇特的水产，为了寻觅个人心头好、拓宽美食品鉴的眼界，海龙几乎什么都愿意尝上一口。有些海龙甚至会专门猎捕更加凶险的猎物，包括克拉肯或大海蛇之类的海怪，既是为了品尝新奇猎物的滋味，也是为了保护其他水生生物与航海者免受海怪肆虐之害。</p></div><p>只要凡人保持恭敬、且不会纠缠不休到令龙厌烦的地步，太古海龙往往颇为享受这些渺小凡人将自己奉若神明的尊崇目光。因此，他们通常会对恳求者以礼相待，并在心情合适时顺手应允部分请求。然而，海龙一族本就以反复无常的心血来潮著称，而这一倾向只会随着他们年岁渐长、步入太古龙之境而愈发明显。正因如此，谁也难以预料海龙何时会突然变卦，或是做出与信徒预期截然不同的回应。</p><p>大多数围绕海龙建立的宗教都能用各自教义中的种种说辞，将这些高深莫测的举动解释得头头是道——就像其他任何宗教试图解释自家崇拜的神明为何容许厄运降临在虔诚信徒头上、或是对某些祈求置若罔闻一样。尽管事实真相或许只是那位太古海龙当天单纯没那个兴致，压根没有什么深意，但他的追随者总能编造出某种迷信说辞来阐明巨龙的深意。说到底，这与真正神明阴晴不定的性情恐怕也相差无几。</p><p>哪怕是那些并未建立起专属宗教、也未曾统御整片海域的太古海龙，往往也会展现出同样威严尊贵的王者气派。有些太古海龙更是将头顶生长珊瑚冠冕的天性发挥到了极致，凝结出硕大无朋的华美王冠，向整个世界昭示自身的无上主权。</p><div class="dragon-callout"><h4><FONT color=#800000>沉船迷恋</FONT></h4><p>即便明知沉船意味着一场惨痛的灾祸，海底残骸身上总有某种难以言喻的魔力吸引着你的目光。除非面对专门出海猎龙的船只，或是威胁到海龙庇护对象的恶徒，否则海龙极少主动制造海难沉船——但这并不妨碍他们对沉船充满浓厚兴趣。每当发现一艘新的沉船，海龙几乎都会忍不住前去探索一番，查明海难背后的来龙去脉，并搜集船上任何引人入胜的器物。若是兴致来了，他们可能会挑几件物品收入宝库，也可能原样留在海底；倘若某件遗物的归属身份一目了然，他们甚至可能设法寻访其继承人并物归原主，好让生者了却心结。面对一条海龙，你永远猜不透他下一刻会怎么做。</p></div>
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../../images/sea-great-wyrm.webp" type="image/webp"><img src="../../images/sea-great-wyrm.png" alt="海龙" width="320"></picture><div class="dragon-art-caption">海龙</div></div>
+</td>
+</tr></table>
+<p><a href="../怪物图鉴总览.htm">返回怪物图鉴总览</a></p>
+</body>
+</html>

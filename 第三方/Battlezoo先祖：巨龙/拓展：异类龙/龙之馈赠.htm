@@ -1,0 +1,334 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>龙之馈赠 - Battlezoo 巨龙：异类龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>龙之馈赠 Draconic Gifts（异类龙新增）</FONT></H1>
+<p>本页收录<em>《Battlezoo 巨龙：异类龙》</em>全新引入的<strong>龙之馈赠</strong>，按先决等级（1级、5级、9级、13级、19级）分节，同一等级内依英文名称首字母 A-Z 排序。通用基础龙之馈赠请查阅<a href="../第四章：龙之馈赠/龙之馈赠.htm">主书第四章：龙之馈赠</a>。</p>
+<p class="dragon-nav-links"><strong>等级跳转：</strong><a href="#1级">1级龙之馈赠</a> · <a href="#5级">5级龙之馈赠</a> · <a href="#9级">9级龙之馈赠</a> · <a href="#13级">13级龙之馈赠</a> · <a href="#19级">19级龙之馈赠</a></p>
+<hr>
+<h2 id="1级"><FONT color=#800000>1级龙之馈赠 1st-Level Draconic Gifts</FONT></h2>
+<p id="专注调谐"><a name="专注调谐"></a><span id="Focused Modulation"></span><span id="Focused_Modulation"></span><STRONG><FONT color=#800000>专注调谐 Focused Modulation</FONT></STRONG><BR><EM>先决：流变龙血统</EM><BR>
+得益于永恒之光仪式的力量，你对自身不断变化的躯体获得了几分掌控力。当你的关联伤害类型与吐息武器形状随机改变时，你可以掷骰两次并任选其中一个结果。此外，你可以在完成一次短休时（而非仅在完成长休时）随机改变你的关联伤害类型与吐息武器形状。</p>
+<p id="黯蚀生理"><a name="黯蚀生理"></a><span id="Necrotic Biology"></span><span id="Necrotic_Biology"></span><STRONG><FONT color=#800000>黯蚀生理 Necrotic Biology</FONT></STRONG><BR><EM>先决：义体龙血统</EM><BR>
+成为永光龙阻止了你体内的黯蚀腐朽继续蔓延，但你选择有策略地放任腐朽推进少许，以此保护自身免受更深层的衰败侵害。每当一道法术或魔法效应即将为你恢复生命值时，你实际恢复的生命值减半。作为回报，你在对抗造成黯蚀伤害的效应所作的豁免检定中具有优势。</p>
+<p id="狂涌防护"><a name="狂涌防护"></a><span id="Surge Protection"></span><span id="Surge_Protection"></span><STRONG><FONT color=#800000>狂涌防护 Surge Protection</FONT></STRONG><BR><EM>先决：魔泉龙血统</EM><BR>
+狂野魔法早已融入你的生命本源，你也深知它无法真正伤及你分毫。你对狂野魔法效应（无论源自你自己还是他人）造成的所有伤害获得抗性。</p>
+<hr>
+<h2 id="5级"><FONT color=#800000>5级龙之馈赠 5th-Level Draconic Gifts</FONT></h2>
+<p id="炼金颚齿"><a name="炼金颚齿"></a><span id="Alchemical Jaws"></span><span id="Alchemical_Jaws"></span><STRONG><FONT color=#800000>炼金颚齿 Alchemical Jaws</FONT></STRONG><BR><EM>先决：5级，义体龙血统，巨龙蹂躏者范型</EM><BR>
+你已将牙齿替换为锋利的金属突刺，其中储有能模拟特定贵金属特性的炼金药液。你的颚齿攻击的伤害掷骰获得等同于你熟练加值一半的加值。此外，当你使用颚齿发动攻击时，在克服对非镀银、非精金攻击的抗性与免疫时，你可以选择将你的颚齿视为镀银武器或精金武器。</p>
+<p id="毁灭啃咬"><a name="毁灭啃咬"></a><span id="Devastating Bite"></span><span id="Devastating_Bite"></span><STRONG><FONT color=#800000>毁灭啃咬 Devastating Bite</FONT></STRONG><BR><EM>先决：5级，巨龙蹂躏者范型</EM><BR>
+你的啃咬攻击在掷出19或20时即可造成重击（前提是该攻击命中目标的AC）。</p>
+<p id="不祥凶兆"><a name="不祥凶兆"></a><span id="Foul Portents"></span><span id="Foul_Portents"></span><STRONG><FONT color=#800000>不祥凶兆 Foul Portents</FONT></STRONG><BR><EM>先决：5级，厄运龙血统，巨龙法师范型</EM><BR>
+你引导萦绕不散的阴郁气息，为他人招致厄运。你可以施展灾祸术。你施展该法术的施法属性为智力、感知或魅力（在你选择此馈赠时选定该属性）。从14级起，当你使用此馈赠施展灾祸术时，该法术的射程变为60尺。一旦你使用此馈赠施展了灾祸术，你必须完成一次短休或长休才能再次如此做。</p>
+<p id="本能涌流"><a name="本能涌流"></a><span id="Instinctual Upwelling"></span><span id="Instinctual_Upwelling"></span><STRONG><FONT color=#800000>本能涌流 Instinctual Upwelling</FONT></STRONG><BR><EM>先决：5级，魔泉龙血统</EM><BR>
+你可以使用一个动作引动浸润全身的魔力，以你周围120尺内一个你可见的生物为目标释放一次<a href="狂野魔法表.htm">狂野魔法</a>效应。当你使用此馈赠触发狂野魔法效应时，在对应的随机表上掷骰两次，并任选其中一个结果生效。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="塑形突袭"><a name="塑形突袭"></a><span id="Morphic Assault"></span><span id="Morphic_Assault"></span><STRONG><FONT color=#800000>塑形突袭 Morphic Assault</FONT></STRONG><BR><EM>先决：5级，流变龙血统，巨龙蹂躏者范型</EM><BR>
+你的身躯在移动时不断变幻扭曲，令敌人眼花缭乱，使你能以出其不意的方式发动痛击。你可以用一个动作移动至多等同于你速度的距离，且不会引发借机攻击。在该次移动期间，你可以对触及范围内的一个生物具有优势地发动一次攻击。这次攻击必须使用你的啃咬、爪击，或由强化天生武器进化赋予的攻击。</p>
+<p id="塑形百变"><a name="塑形百变"></a><span id="Morphic Versatility"></span><span id="Morphic_Versatility"></span><STRONG><FONT color=#800000>塑形百变 Morphic Versatility</FONT></STRONG><BR><EM>先决：5级，流变龙血统</EM><BR>
+你能在眨眼之间改变自身徒手打击的基本形态。以一个附赠动作，选择你的啃咬攻击、爪击攻击，或你从强化天生武器进化中获得的一项攻击。在接下来的1分钟内，直至你陷入昏迷，或直至你用附赠动作提前结束该效应为止，该攻击造成由你选择的钝击、穿刺或挥砍伤害。此外，在克服对非魔法伤害的免疫与抗性时，该攻击视为魔法攻击。当你使用此馈赠时，你徒手攻击的外形会发生肉眼可见的变化。例如，你的前爪可能会化作巨大的蟹钳、锋利如剃刀的猛禽利爪，或是硕大的钉头锤锤头。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="相位防御"><a name="相位防御"></a><span id="Phase Defense"></span><span id="Phase_Defense"></span><STRONG><FONT color=#800000>相位防御 Phase Defense</FONT></STRONG><BR><EM>先决：5级，相位龙血统</EM><BR>
+当一个你能看见的生物对你造成除力场以外的任何类型的伤害时，你可以用反应将该伤害减半。如果你正处于<em>闪现术</em>的效应影响下且当前不在以太位面，你可以改为将该伤害降至0。若你如此做，你会立即从当前所处的存在位面消失并出现在以太位面，并在你的下一回合开始时返回你离开时所在的空间。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="相位跃步"><a name="相位跃步"></a><span id="Phase Step"></span><span id="Phase_Step"></span><STRONG><FONT color=#800000>相位跃步 Phase Step</FONT></STRONG><BR><EM>先决：5级，相位龙血统</EM><BR>
+只要你足够集中精神，就能在转瞬之间完成移动。你可以施展<em>迷踪步</em>。你施展该法术的施法关键属性为智力、感知或魅力（由你在选择此馈赠时择定）。一旦你使用此馈赠施展了<em>迷踪步</em>，在完成一次长休前你不能再次如此做。</p>
+<p id="占验先知"><a name="占验先知"></a><span id="Soothsaying"></span><STRONG><FONT color=#800000>占验先知 Soothsaying</FONT></STRONG><BR><EM>先决：5级，厄运龙血统</EM><BR>
+你时刻接收着纷乱迷离的未来幻视，并借此解读过去与现在。每当你为回忆关于某一主题的知识而即将进行智力（历史、自然或宗教）检定时，你可以改为进行一次奥秘检定。无论何种情况，当你使用此馈赠回忆信息时，你所得知的内容总会蒙上一层阴郁、压抑或其他负面的色彩。</p>
+<p id="猛尾重砸"><a name="猛尾重砸"></a><span id="Tail Smash"></span><span id="Tail_Smash"></span><STRONG><FONT color=#800000>猛尾重砸 Tail Smash</FONT></STRONG><BR><EM>先决：5级，义体龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击）</EM><BR>
+当你使用尾击进行的借机攻击命中一个生物时，你可以迫使该生物进行一次敏捷豁免，DC等于8 + 你的熟练加值 + 你的力量调整值。如果你的该次借机攻击打出了重击，该生物在此豁免中具有劣势。豁免失败时，你将该生物击倒并使其陷入倒地状态。</p>
+<p id="武器挂载"><a name="武器挂载"></a><span id="Weapon Attachment"></span><span id="Weapon_Attachment"></span><STRONG><FONT color=#800000>武器挂载 Weapon Attachment</FONT></STRONG><BR><EM>先决：5级，义体龙血统</EM><BR>
+你在躯体的金属部件上加装了一处插槽，使你能够将一把武器挂载到自己身上。在一次短休期间，你可以将一把近战武器挂载到你两条带爪前肢中的一条上。该武器不能具有触及或两用词条。如果你原本并不熟练该类型的武器，只要该武器保持挂载状态，你便获得这把特定武器的熟练项（但不包括未挂载在你身上的同类型其他武器）。武器挂载期间，你始终视为正持用着该武器，不过你无法再使用该条前肢发动爪击、抓握任何物品，或执行需要精细手工灵巧度的作业。除非你在另一次短休期间将其拆卸下来，否则你无法丢下或放下该武器。</p>
+<hr>
+<h2 id="9级"><FONT color=#800000>9级龙之馈赠 9th-Level Draconic Gifts</FONT></h2>
+<p id="躯体加固"><a name="躯体加固"></a><span id="Anatomic Fortification"></span><span id="Anatomic_Fortification"></span><STRONG><FONT color=#800000>躯体加固 Anatomic Fortification</FONT></STRONG><BR><EM>先决：9级，义体龙血统</EM><BR>
+你躯体的绝大部分都已被替换为金属与其他无机材料，使你的要害得到了严密防护。当你遭受重击时，掷一次d20。若结果为10或更高，则将该重击改为视为普通命中。</p>
+<p id="闪烁穿行"><a name="闪烁穿行"></a><span id="Blink Through"></span><span id="Blink_Through"></span><STRONG><FONT color=#800000>闪烁穿行 Blink Through</FONT></STRONG><BR><EM>先决：9级，相位龙血统</EM><BR>
+你可以部分相位脱离现实，穿过一名敌人并对其造成伤害。以一个动作，你可以移动至多等同于你速度的距离。在此次移动期间的任意时刻，你可以穿过单个生物所在的空间。此次移动不会引发来自该生物的借机攻击。此外，该生物必须进行一次敏捷豁免，DC等于8 + 你的熟练加值 + 你的力量或敏捷调整值（在你选择此馈赠时选定该属性）。豁免失败时，该生物受到2d8点力场伤害。该伤害在14级时提升至4d8，在18级时提升至6d8。豁免失败的目标还会被击倒至倒地状态。豁免成功时，该生物受到一半伤害，且不会陷入倒地状态。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="厄运破绽"><a name="厄运破绽"></a><span id="Dooming Mistake"></span><span id="Dooming_Mistake"></span><STRONG><FONT color=#800000>厄运破绽 Dooming Mistake</FONT></STRONG><BR><EM>先决：9级，厄运龙血统</EM><BR>
+当你周围120尺内一个你可见的生物进行攻击检定或属性检定，且在d20掷骰中掷出1时，你可以使用反应宣告该生物的失误不过是未来厄运的序幕。触发反应的生物必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在你选择此馈赠时选定该属性）。豁免失败时，该生物受到诅咒，持续1分钟。受诅咒期间，该生物处于恐慌状态，且若其生命值降至0则会立即死亡。如果该生物攻击命中或属性检定成功，该诅咒提前终止。</p>
+<p id="纠缠擒抓"><a name="纠缠擒抓"></a><span id="Entangling Grasp"></span><span id="Entangling_Grasp"></span><STRONG><FONT color=#800000>纠缠擒抓 Entangling Grasp</FONT></STRONG><BR><EM>先决：9级，流变龙血统，巨龙蹂躏者范型</EM><BR>
+你可以使用一个动作伸长肢体，从远处发动攻击并实施擒抱。发动一次触及范围增加10尺的爪击攻击（如果你是典型的流变龙，总触及范围为15尺）。如果目标此前从未见过流变龙使用纠缠擒抓，则你此次攻击具有优势。命中时，你可以作为此次攻击的一部分尝试擒抱目标。如果你成功擒抱目标，你可以选择将该被擒抱的目标拉入距你5尺内的一处未占据空间。</p>
+<p id="闪烁残影"><a name="闪烁残影"></a><span id="Flicker Flash"></span><span id="Flicker_Flash"></span><STRONG><FONT color=#800000>闪烁残影 Flicker Flash</FONT></STRONG><BR><EM>先决：9级，相位龙血统</EM><BR>
+永恒之光仪式或许止住了你那不受控制的相位闪烁，但你仍能在需要时主动重现它。你可以施展闪现术。你施展该法术的施法属性为智力、感知或魅力，由你在选择此馈赠时选定。一旦你使用此馈赠施展了闪现术，在完成一次长休前你无法再次如此做。</p>
+<p id="预言灾厄"><a name="预言灾厄"></a><span id="Foretell Disaster"></span><span id="Foretell_Disaster"></span><STRONG><FONT color=#800000>预言灾厄 Foretell Disaster</FONT></STRONG><BR><EM>先决：9级，厄运龙血统，巨龙法师范型</EM><BR>
+你可以筛查所有可能的未来，以判断某项行动方针是否注定招致灾祸。你可以施展<em>卜筮术</em>。你施展该法术的施法属性为智力、感知或魅力（在你选择此馈赠时选定该属性）。当你使用此馈赠施展卜筮术时，你只能获知前方的凶险：任何“吉兆”结果均改为“无兆”，任何“吉凶参半”结果均改为“凶兆”。如果你得到了“无兆”的结果，这个相对而言的好消息会令你精神振奋，使你获得等同于你等级的临时生命值。<BR>
+一旦你使用此馈赠施展了卜筮术，你必须完成一次长休才能再次如此做。</p>
+<p id="动能法术"><a name="动能法术"></a><span id="Kinetic Spell"></span><span id="Kinetic_Spell"></span><STRONG><FONT color=#800000>动能法术 Kinetic Spell</FONT></STRONG><BR><EM>先决：9级，相位龙血统，巨龙法师范型</EM><BR>
+你可以使用一个附赠动作凝聚体内的相位魔力，将你法术的目标猛力推开。在你的当前回合结束前，当你下一次施展需要进行攻击检定的法术时，一旦命中，除该法术的正常效应外，你还可以将目标朝远离你的方向直线推离至多10尺。若造成重击，则改为可将目标推离至多20尺。</p>
+<p id="流变逆袭"><a name="流变逆袭"></a><span id="Metamorphic Turnabout"></span><span id="Metamorphic_Turnabout"></span><STRONG><FONT color=#800000>流变逆袭 Metamorphic Turnabout</FONT></STRONG><BR><EM>先决：9级，流变龙血统</EM><BR>
+凭借对自身形态的理解，你深知如何最有效地利用它去痛击其他形态可塑的对手。你对变形生物以及当前未处于自身真实形态的生物（例如正在使用荒野形态的德鲁伊）进行的武器攻击，造成等同于你熟练加值的额外伤害。</p>
+<p id="同病相怜"><a name="同病相怜"></a><span id="Misery Loves Company"></span><span id="Misery_Loves_Company"></span><STRONG><FONT color=#800000>同病相怜 Misery Loves Company</FONT></STRONG><BR><EM>先决：9级，厄运龙血统</EM><BR>
+你一贯宿命论般的气质令他人更难动摇你的心智；而一旦心智真的受到动摇，你周身便会笼罩起令人窒息的阴郁灵光。你在对抗会使你恐慌的效应所作的豁免检定中具有优势。此外，当你陷入恐慌状态时，你可以用反应迫使你周围20尺内你选择的一个生物进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在选择此馈赠时择定该属性）。豁免失败时，该生物对你陷入恐慌状态，直至你的下一回合结束。</p>
+<p id="异类魔法（义体）"><a name="异类魔法（义体）"></a><span id="Misfit Magic (Bionic)"></span><span id="Misfit_Magic_Bionic"></span><STRONG><FONT color=#800000>异类魔法（义体） Misfit Magic (Bionic)</FONT></STRONG><BR><EM>先决：9级，义体龙血统，巨龙法师范型</EM><BR>
+你失控的异类魔法赋予了你一道额外的法术。从任意职业法术列表中选择一道2环或更低环阶的死灵学派法术。你可以使用智力、感知或魅力作为施展该法术的施法关键属性（在选择此馈赠时择定该属性）。一旦你使用此馈赠施展了该法术，你必须完成一次短休或长休才能再次施展它。</p>
+<p id="异类魔法（厄运）"><a name="异类魔法（厄运）"></a><span id="Misfit Magic (Doom)"></span><span id="Misfit_Magic_Doom"></span><STRONG><FONT color=#800000>异类魔法（厄运） Misfit Magic (Doom)</FONT></STRONG><BR><EM>先决：9级，厄运龙血统，巨龙法师范型</EM><BR>
+你失控的异类魔法赋予了你一道额外的法术。从任意职业法术列表中选择一道2环或更低环阶的预言学派法术。你可以使用智力、感知或魅力作为施展该法术的施法关键属性（在选择此馈赠时择定该属性）。一旦你使用此馈赠施展了该法术，你必须完成一次短休或长休才能再次施展它。</p>
+<p id="异类魔法（流变）"><a name="异类魔法（流变）"></a><span id="Misfit Magic (Metamorphic)"></span><span id="Misfit_Magic_Metamorphic"></span><STRONG><FONT color=#800000>异类魔法（流变） Misfit Magic (Metamorphic)</FONT></STRONG><BR><EM>先决：9级，流变龙血统，巨龙法师范型</EM><BR>
+你失控的异类魔法赋予了你一道额外的法术。从任意职业法术列表中选择一道2环或更低环阶的变化学派法术。你可以使用智力、感知或魅力作为施展该法术的施法关键属性（在选择此馈赠时择定该属性）。一旦你使用此馈赠施展了该法术，你必须完成一次短休或长休才能再次施展它。</p>
+<p id="异类魔法（相位）"><a name="异类魔法（相位）"></a><span id="Misfit Magic (Phase)"></span><span id="Misfit_Magic_Phase"></span><STRONG><FONT color=#800000>异类魔法（相位） Misfit Magic (Phase)</FONT></STRONG><BR><EM>先决：9级，相位龙血统，巨龙法师范型</EM><BR>
+你失控的异类魔法赋予了你一道额外的法术。从任意职业法术列表中选择一道2环或更低环阶的咒法学派法术。你可以使用智力、感知或魅力作为施展该法术的施法关键属性（在选择此馈赠时择定该属性）。一旦你使用此馈赠施展了该法术，你必须完成一次短休或长休才能再次施展它。</p>
+<p id="异类魔法（魔泉）"><a name="异类魔法（魔泉）"></a><span id="Misfit Magic (Wellspring)"></span><span id="Misfit_Magic_Wellspring"></span><STRONG><FONT color=#800000>异类魔法（魔泉） Misfit Magic (Wellspring)</FONT></STRONG><BR><EM>先决：9级，魔泉龙血统，巨龙法师范型</EM><BR>
+你失控的异类魔法赋予了你一道额外的法术。从任意职业法术列表中选择一道2环或更低环阶的塑能学派法术。你可以使用智力、感知或魅力作为施展该法术的施法关键属性（在选择此馈赠时择定该属性）。一旦你使用此馈赠施展了该法术，你必须完成一次短休或长休才能再次施展它。</p>
+<p id="异变吐息"><a name="异变吐息"></a><span id="Mutating Breath"></span><span id="Mutating_Breath"></span><STRONG><FONT color=#800000>异变吐息 Mutating Breath</FONT></STRONG><BR><EM>先决：9级，流变龙血统，吐息武器</EM><BR>
+你可以将自己的吐息转化为一股令人痛苦的变化魔法喷流。当你使用吐息武器时，你可以取代吐息的正常效应，改为迫使每个目标进行一次体质豁免。豁免失败时，该生物发生肉眼可见的异变——骨骼扭曲重塑、畸形残肢在不寻常的部位滋生、肉质息肉遍布全身，并因此受到等同于你等级的钝击伤害。目标在接下来的1分钟内保持异变状态。处于异变期间，该生物进行的攻击检定具有劣势，且其速度减半。在其每个回合结束时，该生物可以重复进行该豁免，成功则结束其身上的此效应。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="未来幻怖"><a name="未来幻怖"></a><span id="Phantasm of the Future"></span><span id="Phantasm_of_the_Future"></span><STRONG><FONT color=#800000>未来幻怖 Phantasm of the Future</FONT></STRONG><BR><EM>先决：9级，厄运龙血统</EM><BR>
+你可以用一个动作在你周围60尺内一个你能看见的生物脑海中唤起凄惨宿命的幻象，化作强力的心灵冲击压垮其心智。目标必须进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在选择此馈赠时择定该属性）。豁免失败时，目标受到3d8心灵伤害。此伤害在14级时提升至5d8心灵伤害，并在18级时提升至7d8心灵伤害。同样在豁免失败时，在你的下一回合结束前下一个攻击该目标的生物进行的该次攻击具有优势。豁免成功时，目标受到一半伤害，且针对目标的攻击如常进行。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="反应通量"><a name="反应通量"></a><span id="Reactive Flux"></span><span id="Reactive_Flux"></span><STRONG><FONT color=#800000>反应通量 Reactive Flux</FONT></STRONG><BR><EM>先决：9级，魔泉龙血统</EM><BR>
+你借助狂野魔法通量保护自己免受秘法险境的侵害。当你对抗法术或其他魔法效应的豁免检定失败时，你可以用反应尝试将部分影响你的有害魔法驱散并转化为一道狂野魔法效应。若你如此做，重骰触发该反应的豁免检定。无论第二次豁免成功与否，随后你都会触发一次狂野魔法效应（见<a href="狂野魔法表.htm">狂野魔法表</a>），并以你自己同时作为施法者与目标。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="狂涌吐息"><a name="狂涌吐息"></a><span id="Surging Breath"></span><span id="Surging_Breath"></span><STRONG><FONT color=#800000>狂涌吐息 Surging Breath</FONT></STRONG><BR><EM>先决：9级，魔泉龙血统，吐息武器</EM><BR>
+你可以将吐息化作一团混沌的狂野魔法云雾。当你使用吐息武器时，你可以取代吐息的正常效应，改为令吐息区域内的每个生物分别成为一道不同的<a href="狂野魔法表.htm">狂野魔法</a>效应的目标。为每个目标分别投一次d100，若骰出奇数则重投，直至获得偶数结果为止（因为偶数结果作用于目标而非施法者）。通常具有作用区域、原本可能波及多个生物的效应（例如骰出28时触发的<em>火球术</em>）仅影响该目标本身或该目标所处的空间。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="狂涌重击"><a name="狂涌重击"></a><span id="Surging Critical"></span><span id="Surging_Critical"></span><STRONG><FONT color=#800000>狂涌重击 Surging Critical</FONT></STRONG><BR><EM>先决：9级，魔泉龙血统，巨龙蹂躏者范型</EM><BR>
+你最猛烈的重击会在你与遭你蹂躏的目标周围倾泻出狂野魔法。当你的近战武器攻击打出重击时，你还会触发一次<a href="狂野魔法表.htm">狂野魔法</a>效应，并以你该次攻击的目标作为该狂野魔法效应的目标。</p>
+<p id="狂涌法术"><a name="狂涌法术"></a><span id="Surging Spell"></span><span id="Surging_Spell"></span><STRONG><FONT color=#800000>狂涌法术 Surging Spell</FONT></STRONG><BR><EM>先决：9级，魔泉龙血统，巨龙法师范型</EM><BR>
+你可以用一个附赠动作将狂野魔法的碎片编织进自己的法术之中。在你的回合结束前，你下一次施展法术时，除了该法术的正常效应外，你还会触发一次<a href="狂野魔法表.htm">狂野魔法</a>效应。</p>
+<p id="伸缩长尾"><a name="伸缩长尾"></a><span id="Telescopic Tail"></span><span id="Telescopic_Tail"></span><STRONG><FONT color=#800000>伸缩长尾 Telescopic Tail</FONT></STRONG><BR><EM>先决：9级，义体龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击）</EM><BR>
+你的龙尾由可伸缩的节段构成，使你能够将其伸长发动攻击并趁势绊倒目标。你可以用一个动作对你周围30尺内一个你能看见的目标发动一次尾击攻击。若该次攻击命中并造成伤害，你可以迫使目标进行一次敏捷豁免，DC等于8 + 你的熟练加值 + 你的力量调整值。豁免失败时，你将目标击倒并使其陷入倒地状态。</p>
+<p id="削弱强敌"><a name="削弱强敌"></a><span id="Weaken Foe"></span><span id="Weaken_Foe"></span><STRONG><FONT color=#800000>削弱强敌 Weaken Foe</FONT></STRONG><BR><EM>先决：9级，义体龙血统，巨龙蹂躏者范型</EM><BR>
+你可以从被自己天生武器命中的敌人身上抽取生命力。当你以啃咬、爪击或由强化天生武器进化赋予的攻击命中一个生物时，你可以用一个附赠动作迫使该生物进行一次体质豁免，DC等于8 + 你的熟练加值 + 你的力量调整值。豁免失败时，直至该生物的下一回合结束前，其使用力量进行的武器攻击只造成一半伤害。</p>
+<p id="萦绕力场"><a name="萦绕力场"></a><span id="Wreathing Force"></span><span id="Wreathing_Force"></span><STRONG><FONT color=#800000>萦绕力场 Wreathing Force</FONT></STRONG><BR><EM>先决：9级，相位龙血统，巨龙蹂躏者范型</EM><BR>
+你将奔涌于体内的能量凝聚成危险的力场，萦绕在四肢尖端与利齿之上。直至你的下一回合开始前，你的啃咬攻击、爪击攻击以及你从强化天生武器进化中获得的任何攻击都会造成额外的1d6力场伤害。此伤害在14级时提升至2d6，并在18级时提升至3d6。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<hr>
+<h2 id="13级"><FONT color=#800000>13级龙之馈赠 13th-Level Draconic Gifts</FONT></h2>
+<p id="狂乱灵光"><a name="狂乱灵光"></a><span id="Aura of Pandemonium"></span><span id="Aura_of_Pandemonium"></span><STRONG><FONT color=#800000>狂乱灵光 Aura of Pandemonium</FONT></STRONG><BR><EM>先决：13级，魔泉龙血统</EM><BR>
+你可以使用一个动作，让狂野魔法能量环绕自身，干扰你附近的任何施法者。这股狂乱灵光环绕你周围30尺半径区域，并随你一同移动。该效应持续1分钟，直至你陷入昏迷状态，或直至你使用一个附赠动作将其解散。在该效应持续期间，每当有生物（包括你自己）在该区域内施展法术时，掷一次d20。若结果为4或更低，该生物会触发一次<a href="狂野魔法表.htm">狂野魔法</a>效应，且该法术失败、不产生任何效果。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="义体魔眼"><a name="义体魔眼"></a><span id="Bionic Eye"></span><span id="Bionic_Eye"></span><STRONG><FONT color=#800000>义体魔眼 Bionic Eye</FONT></STRONG><BR><EM>先决：13级，义体龙血统</EM><BR>
+在你的一只眼睛腐坏后，你在眼窝中安装了一枚魔法传感器来强化视力，使你得以看见对他人隐匿的事物。你可以看见隐形的生物和物件，如同它们可见一样。</p>
+<p id="凄郁气场"><a name="凄郁气场"></a><span id="Dismal Presence"></span><span id="Dismal_Presence"></span><STRONG><FONT color=#800000>凄郁气场 Dismal Presence</FONT></STRONG><BR><EM>先决：13级，厄运龙血统</EM><BR>
+你可以使用一个动作，令预示着未来惨剧的低语环绕自身，让周围生物充满麻木绝望的念头。这些低语环绕你周围15尺半径区域，并随你一同移动。低语持续1分钟，直至你陷入昏迷状态，或直至你使用一个附赠动作将其解散。在该效应持续期间，每当有生物在一个回合内首次进入该区域或在该区域内开始其回合时，你可以迫使该生物进行一次感知豁免，DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在你选择此馈赠时选定该属性）。豁免失败时，该生物对你陷入恐慌状态，直至你的下个回合结束。若豁免失败且差值达到5或更高，则该生物在处于恐慌状态期间还会同时陷入震慑状态。豁免成功时，该生物在接下来的24小时内免疫你的凄郁气场。<BR>
+一旦你使用了此馈赠，你必须完成一次长休才能再次使用。</p>
+<p id="无形反噬"><a name="无形反噬"></a><span id="Formless Backlash"></span><span id="Formless_Backlash"></span><STRONG><FONT color=#800000>无形反噬 Formless Backlash</FONT></STRONG><BR><EM>先决：13级，流变龙血统，巨龙蹂躏者范型</EM><BR>
+当你的躯体即将遭受打击时，它会本能地化作无定形的原生质。当距你10尺内的一个生物对你造成钝击、穿刺或挥砍伤害，或是造成与你当前关联伤害类型相同的伤害时，你可以使用反应使你即将受到的该次伤害减半。此外，你可以对触发反应的生物发动一次徒手打击。命中时，你可以选择改为造成与触发攻击相同的伤害类型的伤害，而非你徒手打击的正常伤害类型。</p>
+<p id="高等躯体加固"><a name="高等躯体加固"></a><span id="Greater Anatomical Fortification"></span><span id="Greater_Anatomical_Fortification"></span><STRONG><FONT color=#800000>高等躯体加固 Greater Anatomical Fortification</FONT></STRONG><BR><EM>先决：13级，义体龙血统，躯体加固龙之馈赠</EM><BR>
+你几乎已是一具纯粹的机械之躯。当你使用躯体加固馈赠时，掷出5或更高（而非10或更高）即可将该重击视为普通命中。</p>
+<p id="推定厄运"><a name="推定厄运"></a><span id="Presume Misfortune"></span><span id="Presume_Misfortune"></span><STRONG><FONT color=#800000>推定厄运 Presume Misfortune</FONT></STRONG><BR><EM>先决：13级，厄运龙血统，巨龙法师范型</EM><BR>
+尽管你窥见的幻视支离破碎，但你有时能看见气运之潮正转向不利于某个特定个体的方向；而每当你看见这一幕时，往往都预示着麻烦降临。以一个附赠动作，选择一个你能看见的生物。在你的回合结束前，你下一次施展迫使该生物进行豁免检定的法术时，该生物在该次豁免检定中具有劣势。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="昭示吉凶"><a name="昭示吉凶"></a><span id="Significant Omen"></span><span id="Significant_Omen"></span><STRONG><FONT color=#800000>昭示吉凶 Significant Omen</FONT></STRONG><BR><EM>先决：13级，厄运龙血统</EM><BR>
+你可以用一个附赠动作唤起一缕或吉或凶的未来预兆。投一次d20，该结果即为你的昭示吉凶。在你的回合结束前的任意时刻，当你即将进行一次攻击检定、属性检定或豁免检定时，你可以使用昭示吉凶的结果替代该次d20检定（而非正常投骰）。你会在自身回合结束时或使用该结果时失去昭示吉凶（以最先发生者为准）。如果你在回合结束时仍未使用昭示吉凶，你将对距离最近的敌对生物陷入恐慌状态，直至你的下一回合结束。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="扭曲地形"><a name="扭曲地形"></a><span id="Warped Terrain"></span><span id="Warped_Terrain"></span><STRONG><FONT color=#800000>扭曲地形 Warped Terrain</FONT></STRONG><BR><EM>先决：13级，流变龙血统，吐息武器</EM><BR>
+每当你使用吐息武器时，你可以选择在吐息武器的效应区域内创造一片困难地形。该困难地形持续1分钟。</p>
+<hr>
+<h2 id="19级"><FONT color=#800000>19级龙之馈赠 19th-Level Draconic Gifts</FONT></h2>
+<p id="反制能量"><a name="反制能量"></a><span id="Counteract Energy"></span><span id="Counteract_Energy"></span><STRONG><FONT color=#800000>反制能量 Counteract Energy</FONT></STRONG><BR><EM>先决：19级，流变龙血统，巨龙法师范型</EM><BR>
+当你周围120尺内一个你可见的生物施展一个造成与你关联伤害类型相同伤害的法术时，你可以使用反应来反制该法术。若触发反应的法术为3环或更低环阶，则该法术失败且不产生任何效果。若该法术为4环或更高环阶，则使用你的智力、感知或魅力进行一次属性检定（在你选择此馈赠时选定该属性），DC等于10 + 该法术的环阶。检定成功时，该生物的法术失败且不产生任何效果。</p>
+<p id="凄郁阴云"><a name="凄郁阴云"></a><span id="Dismal Cloud"></span><span id="Dismal_Cloud"></span><STRONG><FONT color=#800000>凄郁阴云 Dismal Cloud</FONT></STRONG><BR><EM>先决：19级，义体龙血统，凄郁气场龙之馈赠</EM><BR>
+你几乎无时无刻不被一团凄郁阴云笼罩，使你更容易以凄郁气场包裹自身。你在完成一次短休后即可再次使用凄郁气场馈赠（而非必须完成长休）。</p>
+<p id="驱散涌流打击"><a name="驱散涌流打击"></a><span id="Dispelling Surge Strike"></span><span id="Dispelling_Surge_Strike"></span><STRONG><FONT color=#800000>驱散涌流打击 Dispelling Surge Strike</FONT></STRONG><BR><EM>先决：19级，魔泉龙血统，巨龙蹂躏者范型</EM><BR>
+你的巨龙攻击能够撕裂持续中的法术，令残留的不稳定魔力逸散为一次<a href="狂野魔法表.htm">狂野魔法</a>效应。你可以使用一个动作对你触及范围内的一个生物发动一次攻击。此次攻击必须是啃咬攻击、爪击攻击或由强化天生武器进化赋予的攻击。若此次攻击命中并造成伤害，目标身上任何3环或更低环阶的法术立即终止，且你触发一次狂野魔法效应（见<a href="狂野魔法表.htm">狂野魔法表</a>）。对于目标身上每个4环或更高环阶的法术，进行一次智力、感知或魅力豁免（在你选择此馈赠时选定该属性）。若检定成功，该法术终止，且你触发一次狂野魔法效应。</p>
+<p id="狂怒势能"><a name="狂怒势能"></a><span id="Furious Momentium"></span><span id="Furious_Momentium"></span><STRONG><FONT color=#800000>狂怒势能 Furious Momentium</FONT></STRONG><BR><EM>先决：19级，吐息武器，巨龙势能龙之馈赠，巨龙蹂躏者范型</EM><BR>
+当你因巨龙势能而重获吐息武器的使用权时，你可以使用反应立即释放吐息武器。</p>
+<p id="完美躯体加固"><a name="完美躯体加固"></a><span id="Perfect Anatomical Fortification"></span><span id="Perfect_Anatomical_Fortification"></span><STRONG><FONT color=#800000>完美躯体加固 Perfect Anatomical Fortification</FONT></STRONG><BR><EM>先决：19级，义体龙血统，巨龙蹂躏者范型，高等躯体加固龙之馈赠</EM><BR>
+你的躯体经过强固改造，足以抵御敌人所能施予的最凶狠重击。针对你的任何重击均视为普通命中。</p>
+<p id="相位穿物"><a name="相位穿物"></a><span id="Phase Inside"></span><span id="Phase_Inside"></span><STRONG><FONT color=#800000>相位穿物 Phase Inside</FONT></STRONG><BR><EM>先决：19级，相位龙血统</EM><BR>
+你可以消耗10尺移动力穿过厚度至多10尺的固体表面，例如墙壁、地板或天花板。如果该表面厚度超过10尺、由木材、灰泥或石材以外的物质构成，或者其中包含哪怕薄薄一层金属，这次移动便会失败。</p>
+<p id="相位风暴"><a name="相位风暴"></a><span id="Phase Storm"></span><span id="Phase_Storm"></span><STRONG><FONT color=#800000>相位风暴 Phase Storm</FONT></STRONG><BR><EM>先决：19级，相位龙血统，巨龙法师范型</EM><BR>
+你可以用一个动作，以你周围120尺内你能看见的一点为中心，在半径30尺的区域内召来一场魔法相位能量风暴，使该区域内的地形与物件同现实发生错位。在接下来的1分钟内，该区域视为困难地形。此外，任何在该区域内开始其回合的生物都必须进行一次力量豁免，DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在选择此馈赠时择定该属性）。豁免失败时，该生物的身体会部分陷入半固态的地形之中；直至该生物的下一回合开始前，其速度减半，且针对该目标发动的攻击具有优势。<BR>
+一旦你使用了此馈赠，你必须完成一次短休或长休才能再次使用。</p>
+<p id="彻底狂乱"><a name="彻底狂乱"></a><span id="Total Pandemonium"></span><span id="Total_Pandemonium"></span><STRONG><FONT color=#800000>彻底狂乱 Total Pandemonium</FONT></STRONG><BR><EM>先决：19级，魔泉龙血统，狂乱灵光龙之馈赠</EM><BR>
+你在体内蓄积了一泓狂野魔法之泉，使你能比其他永光魔泉龙更频繁地倾泻狂乱之力。你可以在完成一次短休（而非长休）后再次使用狂乱灵光。</p>
+</body>
+</html>

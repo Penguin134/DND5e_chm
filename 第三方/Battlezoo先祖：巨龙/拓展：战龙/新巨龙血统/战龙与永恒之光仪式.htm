@@ -1,0 +1,218 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>战龙与永恒之光仪式 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>战龙与永恒之光仪式 Battle Dragons and the Lux Aeterna Ritual</FONT></H1>
+<table class="dragon-layout-table" role="presentation"><tr>
+<td class="dragon-text-col">
+<p>由于常年身处战火与纷争之中，战龙往往比其他巨龙更常被迫举行紧急的永恒之光仪式，以此从殊死决斗所留下的致命重创或其他恶疾中死里逃生。正因如此，在伤情评估断定别无活路之后，如何就地取材紧急完成仪式，几乎成了战龙群体中的一门独到绝活。我曾与多条永光战龙交谈，听闻了许多在仪式中随机应变、急中生智的惊人故事。有时，故事里那种山穷水尽的绝境令我震惊不已，不禁暗自思忖如此仓促的仪式成功几率何其渺茫……然而，那条永光龙却真真切切地站在我的面前。</p><p>那么，这究竟意味着什么呢？把这种反差单纯归咎于夸大其词或自我吹嘘固然轻巧省事。诚然，确实有不少永光战龙喜欢添油加醋地渲染自己的死里逃生，盼着能让自己的传奇事迹广为流传。但即便如此，若将这些故事一概打成夸张吹嘘与无稽轶闻，总让人觉得意犹未尽……这样的解释听起来未免太过苍白空洞。</p><p>相比之下，我认为真相更有可能是刻意夸张与另外两重因素共同作用的结果：其一是幸存者偏差，其二则是深埋在吹嘘与偏见底下、关乎永恒之光仪式本身的某种真实奥秘。幸存者偏差显而易见：任何能够活下来向我讲述经历的永光龙，其仪式必然取得了成功；因此我的走访调查很可能遗漏了大量在极其相似的绝境中同样鲁莽拼凑仪式、最终却惨遭失败的巨龙。但即便将这一切全都纳入考量，我依然相信其中存在着一粒隐匿的真相内核：要么是战龙身上存在着某种特质，使它们能够在战场绝境中以相当可观的成功率完成永恒之光仪式；要么就是仪式本身具备某种特性，能够顺应巨龙所处的境遇，因地制宜地为其提供渡过难关所需的一切。可一场仪式怎会具备这般能力？倘若它真能做到，又为何要这样做？难不成，这场仪式本身就“渴望”被举行吗？</p><p style="text-align:right"><strong>——永光贤者卡利赞德雷克斯</strong></p>
+<h2><FONT color=#800000>各血统永光战龙背景</FONT></h2>
+<ul>
+<li><a href="决斗龙.htm#永光决斗龙背景设定">永光决斗龙背景设定</a></li>
+<li><a href="狩猎龙.htm#永光狩猎龙背景设定">永光狩猎龙背景设定</a></li>
+<li><a href="佣兵龙.htm#永光佣兵龙背景设定">永光佣兵龙背景设定</a></li>
+<li><a href="狂怒龙.htm#永光狂怒龙背景设定">永光狂怒龙背景设定</a></li>
+<li><a href="督军龙.htm#永光督军龙背景设定">永光督军龙背景设定</a></li>
+</ul>
+
+</td>
+<td class="dragon-art-col">
+<div class="dragon-art-card"><picture><source srcset="../images/half-page-circle.webp" type="image/webp"><img src="../images/half-page-circle.png" alt="战龙"></picture><div class="dragon-art-caption">战龙与永恒之光仪式</div></div>
+</td>
+</tr></table>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>巨龙索引 - Battlezoo 巨龙：莱希龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>巨龙索引 Dragon Index</FONT></H1>
+<p>以下条目列出了五种莱希龙血统的概要信息，以便快速查阅。</p><h2><FONT color=#800000>巨龙名称</FONT></h2><p><strong>龙族谱系：</strong>该巨龙所属的龙族谱系，在本书中均为莱希龙。</p><p><strong>吐息形状：</strong>该巨龙吐息武器的区域形状。</p><p><strong>伤害类型：</strong>该巨龙关联的伤害类型。若伤害类型存在变化，可能会附带额外说明。</p><p><strong>可选属性提升：</strong>该巨龙可提供+2提升的属性值。</p><p><strong>专属馈赠：</strong>仅向该种巨龙开放、而非所有巨龙皆可选取的龙之馈赠专长。</p><h2><FONT color=#800000>乔木龙</FONT></h2><p><strong>龙族谱系：</strong>莱希龙</p><p><strong>吐息形状：</strong>线状</p><p><strong>伤害类型：</strong>穿刺</p><p><strong>可选属性提升：</strong>智力</p><p><strong>专属馈赠：</strong><a href="../../第四章：龙之馈赠/1级龙之馈赠.htm#化木形态">化木形态</a>、<a href="../龙之馈赠.htm#翠叶缓冲">翠叶缓冲</a>、<a href="../龙之馈赠.htm#古龙学徒">古龙学徒</a>、<a href="../龙之馈赠.htm#反应角击">反应角击</a>、<a href="../龙之馈赠.htm#攀树穿林">攀树穿林</a>、<a href="../龙之馈赠.htm#繁叶披风">繁叶披风</a>、<a href="../龙之馈赠.htm#荆棘吐息">荆棘吐息</a>、<a href="../龙之馈赠.htm#号令荆棘">号令荆棘</a>、<a href="../龙之馈赠.htm#翠林之门">翠林之门</a>、<a href="../龙之馈赠.htm#猎手荨麻">猎手荨麻</a>、<a href="../龙之馈赠.htm#险恶荆棘">险恶荆棘</a>、<a href="../龙之馈赠.htm#无尽荆棘">无尽荆棘</a></p><h2><FONT color=#800000>繁花龙</FONT></h2><p><strong>龙族谱系：</strong>莱希龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>毒素</p><p><strong>可选属性提升：</strong>智力</p><p><strong>专属馈赠：</strong><a href="../龙之馈赠.htm#水下耐力">水下耐力</a>、<a href="../龙之馈赠.htm#纤尘不染">纤尘不染</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#步入梦境">步入梦境</a>、<a href="../龙之馈赠.htm#静水浮莲">静水浮莲</a>、<a href="../龙之馈赠.htm#魂途先知">魂途先知</a>、<a href="../龙之馈赠.htm#落英粉尘">落英粉尘</a>、<a href="../龙之馈赠.htm#生死阈界">生死阈界</a>、<a href="../龙之馈赠.htm#春华绽放">春华绽放</a>、<a href="../龙之馈赠.htm#梦花吐息">梦花吐息</a>、<a href="../龙之馈赠.htm#繁花毒素">繁花毒素</a>、<a href="../龙之馈赠.htm#感知魔法">感知魔法</a></p><h2><FONT color=#800000>丰收龙</FONT></h2><p><strong>龙族谱系：</strong>莱希龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>毒素</p><p><strong>可选属性提升：</strong>智力</p><p><strong>专属馈赠：</strong><a href="../龙之馈赠.htm#巨龙丰饶">巨龙丰饶</a>、<a href="../龙之馈赠.htm#空瓠宝库">空瓠宝库</a>、<a href="../龙之馈赠.htm#药剂师学徒">药剂师学徒</a>、<a href="../龙之馈赠.htm#腐藤败果">腐藤败果</a>、<a href="../龙之馈赠.htm#毒莓吐息">毒莓吐息</a>、<a href="../龙之馈赠.htm#浆果籽炮">浆果籽炮</a>、<a href="../龙之馈赠.htm#丰饶赐福">丰饶赐福</a>、<a href="../龙之馈赠.htm#攫抓吐息">攫抓吐息</a>、<a href="../龙之馈赠.htm#攫取生机">攫取生机</a>、<a href="../龙之馈赠.htm#毒莓啃咬">毒莓啃咬</a></p><h2><FONT color=#800000>巨藻龙</FONT></h2><p><strong>龙族谱系：</strong>莱希龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>钝击</p><p><strong>可选属性提升：</strong>体质</p><p><strong>专属馈赠：</strong><a href="../龙之馈赠.htm#药草丛生">药草丛生</a>、<a href="../../第四章：龙之馈赠/1级龙之馈赠.htm#熄焰吐息">熄焰吐息</a>、<a href="../龙之馈赠.htm#石雕匠师">石雕匠师</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#绞缠">绞缠</a>、<a href="../龙之馈赠.htm#海藻缠卷">海藻缠卷</a>、<a href="../龙之馈赠.htm#风暴护卫">风暴护卫</a>、<a href="../龙之馈赠.htm#波涛挚友">波涛挚友</a>、<a href="../龙之馈赠.htm#海玻璃结界">海玻璃结界</a>、<a href="../../第四章：龙之馈赠/13级龙之馈赠.htm#鞭笞绞缠">鞭笞绞缠</a>、<a href="../龙之馈赠.htm#海玻璃迸碎">海玻璃迸碎</a>、<a href="../龙之馈赠.htm#纠缠海草">纠缠海草</a>、<a href="../龙之馈赠.htm#藻疫之噬">藻疫之噬</a></p><h2><FONT color=#800000>毒蕈龙</FONT></h2><p class="dragon-intro">毒蕈龙完整可玩血统与种族特质详见主书<a href="../../第二章：巨龙种族/毒蕈龙.htm">第二章：毒蕈龙</a>；<a href="../../第五章：装备与随机表/孢子吐息随机效应表.htm">孢子吐息随机效应表</a>详见主书第五章。</p><p><strong>龙族谱系：</strong>莱希龙</p><p><strong>吐息形状：</strong>锥状</p><p><strong>伤害类型：</strong>毒素</p><p><strong>可选属性提升：</strong>体质</p><p><strong>专属馈赠：</strong><a href="../../第四章：龙之馈赠/1级龙之馈赠.htm#协力援助">协力援助</a>、<a href="../../第四章：龙之馈赠/1级龙之馈赠.htm#莱希根须">莱希根须</a>、<a href="../../第四章：龙之馈赠/5级龙之馈赠.htm#非凡味蕾">非凡味蕾</a>、<a href="../龙之馈赠.htm#仙环传送">仙环传送</a>、<a href="../../第四章：龙之馈赠/9级龙之馈赠.htm#孢子吐息">孢子吐息</a>、<a href="../龙之馈赠.htm#孢子覆毯">孢子覆毯</a>、<a href="../龙之馈赠.htm#蕈菇爆裂">蕈菇爆裂</a>、<a href="../龙之馈赠.htm#蕈菇风暴">蕈菇风暴</a></p>
+
+</body>
+</html>

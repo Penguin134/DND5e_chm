@@ -1,0 +1,339 @@
+<!-- coding: gbk -->
+<html>
+<head>
+<title>龙之馈赠 - Battlezoo 巨龙：战龙</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../../style.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.dragon-layout-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 10px 0 18px;
+}
+.dragon-layout-table > tbody > tr > td,
+.dragon-layout-table > tr > td {
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+}
+.dragon-text-col {
+  padding-right: 22px !important;
+}
+.dragon-art-col {
+  width: 340px;
+}
+.dragon-art-card {
+  background: #faf7f2;
+  border: 1px solid #d7ccc0;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.dragon-art-card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.dragon-art-caption {
+  margin-top: 6px;
+  font-size: 0.88em;
+  color: #5c4b3b;
+}
+.dragon-float-art {
+  float: right;
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 14px 18px;
+  text-align: center;
+}
+.dragon-inline-art {
+  margin: 14px auto;
+  text-align: center;
+}
+.dragon-callout,
+.dragon-letter {
+  margin: 14px 0;
+  padding: 10px 16px;
+  background-color: #f6f4ef;
+  border: 1px solid #d4ccc0;
+  border-left: 4px solid #800000;
+  border-radius: 4px;
+}
+.dragon-lead {
+  font-style: italic;
+  color: #443a31;
+  border-left: 3px solid #b59e83;
+  padding: 4px 12px;
+  margin: 10px 0 14px;
+}
+.dragon-signature {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.dragon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+}
+.dragon-table th, .dragon-table td {
+  border: 1px solid #c9bfae;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.dragon-table th {
+  background-color: #ebe4d8;
+  color: #800000;
+}
+.dragon-table tr:nth-child(even) td {
+  background-color: #faf8f4;
+}
+.statblock-layout-table .dragon-text-col {
+  min-width: 0;
+}
+.statblock-layout-table div.stat-block {
+  width: 100% !important;
+  max-width: 580px;
+  margin-left: 0 !important;
+  margin-top: 4px;
+}
+.statblock-layout-table div.stat-block table {
+  width: 100% !important;
+  max-width: 100%;
+}
+.dragon-nav-links {
+  line-height: 1.8;
+}
+:root[data-webhelp-theme="dark"] .dragon-art-card,
+:root[data-webhelp-theme="dark"] .dragon-callout,
+:root[data-webhelp-theme="dark"] .dragon-letter {
+  background-color: var(--topic-surface-muted, #1e2125);
+  border-color: var(--topic-border, #34383e);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-art-caption,
+:root[data-webhelp-theme="dark"] .dragon-lead {
+  color: var(--topic-text-muted, #a8adb4);
+}
+:root[data-webhelp-theme="dark"] .dragon-table th {
+  background-color: var(--topic-surface-muted, #1e2125);
+  color: var(--topic-accent, #e16d6d);
+  border-color: var(--topic-border, #34383e);
+}
+:root[data-webhelp-theme="dark"] .dragon-table td {
+  border-color: var(--topic-border, #34383e);
+  background-color: var(--topic-surface, #17191c);
+  color: var(--topic-text, #e7e9ec);
+}
+:root[data-webhelp-theme="dark"] .dragon-table tr:nth-child(even) td {
+  background-color: var(--topic-surface-muted, #1e2125);
+}
+:root[data-webhelp-theme="dark"] div.stat-block {
+  background-color: var(--topic-surface-muted, #1e2125) !important;
+  border-color: var(--topic-border, #34383e) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block th,
+:root[data-webhelp-theme="dark"] div.stat-block td,
+:root[data-webhelp-theme="dark"] div.stat-block .c1,
+:root[data-webhelp-theme="dark"] div.stat-block .c2,
+:root[data-webhelp-theme="dark"] div.stat-block .c3,
+:root[data-webhelp-theme="dark"] div.stat-block .c4 {
+  background-color: var(--topic-surface, #17191c) !important;
+  color: var(--topic-text, #e7e9ec) !important;
+  border-color: var(--topic-border, #34383e) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block h5,
+:root[data-webhelp-theme="dark"] div.stat-block h6 {
+  color: var(--topic-accent, #e16d6d) !important;
+  border-bottom-color: var(--topic-accent, #e16d6d) !important;
+}
+:root[data-webhelp-theme="dark"] div.stat-block .sub-line,
+:root[data-webhelp-theme="dark"] table.stat-abilities th {
+  color: var(--topic-text-muted, #a8adb4) !important;
+}
+@media (max-width: 900px) {
+  .statblock-layout-table,
+  .statblock-layout-table > tbody,
+  .statblock-layout-table > tbody > tr,
+  .statblock-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .statblock-layout-table .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .statblock-layout-table div.stat-block {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .dragon-layout-table,
+  .dragon-layout-table > tbody,
+  .dragon-layout-table > tbody > tr,
+  .dragon-layout-table > tbody > tr > td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .dragon-text-col {
+    padding-right: 0 !important;
+    margin-bottom: 14px;
+  }
+  .dragon-float-art {
+    float: none !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 12px auto !important;
+  }
+}
+</style>
+</head>
+<body>
+<H1><FONT color=#800000>龙之馈赠 Draconic Gifts（战龙新增）</FONT></H1>
+<p>本页收录<em>《Battlezoo 巨龙：战龙》</em>全新引入的<strong>龙之馈赠</strong>，按先决等级（1级、5级、9级、13级、19级）分节，同一等级内依英文名称首字母 A-Z 排序。通用基础龙之馈赠请查阅<a href="../第四章：龙之馈赠/龙之馈赠.htm">主书第四章：龙之馈赠</a>。</p>
+<p class="dragon-nav-links"><strong>等级跳转：</strong><a href="#1级">1级龙之馈赠</a> · <a href="#5级">5级龙之馈赠</a> · <a href="#9级">9级龙之馈赠</a> · <a href="#13级">13级龙之馈赠</a> · <a href="#19级">19级龙之馈赠</a></p>
+<hr>
+<h2 id="1级"><FONT color=#800000>1级龙之馈赠 1st-Level Draconic Gifts</FONT></h2>
+<p id="契约谈判家"><a name="契约谈判家"></a><span id="Contract Negotiator"></span><span id="Contract_Negotiator"></span><STRONG><FONT color=#800000>契约谈判家 Contract Negotiator</FONT></STRONG><BR><EM>先决：佣兵龙血统</EM><BR>
+你熟稔正规契约谈判的来龙去脉，绝不会跌入常见的条文陷阱。你懂得如何争取更优厚的条款，也能看穿他人试图糊弄你的把戏。你获得欺瞒与游说技能的熟练。此外，每当你需要进行洞悉检定来判断某人是否在向你撒谎时，你可以改为进行欺瞒检定。</p>
+<p id="赞誉对手"><a name="赞誉对手"></a><span id="Praise the Opponent"></span><span id="Praise_the_Opponent"></span><STRONG><FONT color=#800000>赞誉对手 Praise the Opponent</FONT></STRONG><BR><EM>先决：决斗龙血统，游说熟练</EM><BR>
+你出人意料的称赞会令敌人阵脚大乱。当一个你能看见的生物成功通过一次豁免检定时，你可以用反应抛出一句见地独到的妙语来分散其注意力。如果该生物能听见并理解你的话语，它必须进行一次感知豁免，与你的魅力（游说）检定进行对抗。若该生物在对抗中落败，直至你的下一回合结束前，其进行的感知属性检定和感知豁免检定具有劣势。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<p id="老练猎手"><a name="老练猎手"></a><span id="Seasoned Hunter"></span><span id="Seasoned_Hunter"></span><STRONG><FONT color=#800000>老练猎手 Seasoned Hunter</FONT></STRONG><BR><EM>先决：狩猎龙血统</EM><BR>
+你深谙狩猎之道。你获得自然与求生技能的熟练项。此外，每当你为追踪足迹而进行求生检定时，你在检定中加上两倍的熟练加值，而非正常的熟练加值。</p>
+<p id="寻仇索敌"><a name="寻仇索敌"></a><span id="Seek Vengeance"></span><span id="Seek_Vengeance"></span><STRONG><FONT color=#800000>寻仇索敌 Seek Vengeance</FONT></STRONG><BR><EM>先决：狂怒龙血统</EM><BR>
+你的狂怒本能会死死锁定伤害过你的敌人。你在为侦测过去1分钟内对你造成过伤害的任何生物而进行的感知（察觉）检定中获得+1加值。如果你的当前生命值低于你生命值上限的一半，或者你是一名正处于狂暴中的野蛮人，此加值提升至+2。如果该生物正处于任何改变其情绪的效应影响下（例如魅惑或恐慌状态，或是<em>困惑术</em>），你能看见其身上散发出的情绪宛如涟漪波动，并且在该次感知（察觉）检定中具有优势。</p>
+<p id="翼卫格挡"><a name="翼卫格挡"></a><span id="Wing Parry"></span><span id="Wing_Parry"></span><STRONG><FONT color=#800000>翼卫格挡 Wing Parry</FONT></STRONG><BR><EM>先决：决斗龙或督军龙血统</EM><BR>
+你可以在自己的每个回合用一个附赠动作扬起一侧龙翼摆出守势，使你的AC增加1点，直至你的下一回合开始。</p>
+<hr>
+<h2 id="5级"><FONT color=#800000>5级龙之馈赠 5th-Level Draconic Gifts</FONT></h2>
+<p id="炽燃狂怒"><a name="炽燃狂怒"></a><span id="Burning Rage"></span><span id="Burning_Rage"></span><STRONG><FONT color=#800000>炽燃狂怒 Burning Rage</FONT></STRONG><BR><EM>先决：5级，狂怒龙血统</EM><BR>
+烈火焚身之时亦是你怒火燃起之际，你将这份痛楚一并蔓延给敌人。每当你受到火焰伤害时，你可以选择令自己全身起火。你会持续燃烧1分钟，或直至你或距你5尺内的另一个生物使用动作扑灭火焰。全身起火期间，你在自己每个回合开始时受到1d6点火焰伤害。作为回报，你的徒手打击额外造成1d6点火焰伤害，且任何正在擒抱你或被你擒抱的生物也会在你每个回合开始时受到1d6点火焰伤害。</p>
+<p id="掩护盟友"><a name="掩护盟友"></a><span id="Cover Ally"></span><span id="Cover_Ally"></span><STRONG><FONT color=#800000>掩护盟友 Cover Ally</FONT></STRONG><BR><EM>先决：5级，督军龙血统，巨龙蹂躏者范型，翼卫格挡龙之馈赠</EM><BR>
+当你使用翼卫格挡时，你可以改为保护盟友而非自己。若如此做，选择你触及范围内的一个生物。只要该生物仍留在你的触及范围内，就会获得翼卫格挡的增益。<BR>
+<strong>特殊：</strong>如果你拥有扬翼架势馈赠，当你进入该架势时，你可以选择将该架势所赋予的翼卫格挡持续增益提供给你触及范围内的一个生物。</p>
+<p id="震聋咆哮"><a name="震聋咆哮"></a><span id="Deafening Roar"></span><span id="Deafening_Roar"></span><STRONG><FONT color=#800000>震聋咆哮 Deafening Roar</FONT></STRONG><BR><EM>先决：5级，决斗龙血统，吐息武器</EM><BR>
+你的吐息武器能够震聋那些承受其正面冲击的敌人。对抗你吐息武器豁免失败的生物还会陷入耳聋状态，直至其下个回合结束。</p>
+<p id="毁灭啃咬"><a name="毁灭啃咬"></a><span id="Devastating Bite"></span><span id="Devastating_Bite"></span><STRONG><FONT color=#800000>毁灭啃咬 Devastating Bite</FONT></STRONG><BR><EM>先决：5级，巨龙蹂躏者范型</EM><BR>
+你的啃咬攻击在掷出19或20时即可造成重击（前提是该攻击命中目标的AC）。</p>
+<p id="尽忠援护"><a name="尽忠援护"></a><span id="Dutiful Interposition"></span><span id="Dutiful_Interposition"></span><STRONG><FONT color=#800000>尽忠援护 Dutiful Interposition</FONT></STRONG><BR><EM>先决：5级，佣兵龙血统，巨龙蹂躏者范型</EM><BR>
+当一个你可见的生物用攻击命中距你5尺内的另一个生物时，你可以使用反应侧身介入以保护盟友。目标对抗此次触发攻击的AC提高2点，有可能使该次攻击转而未命中。</p>
+<p id="仁慈制胜"><a name="仁慈制胜"></a><span id="Merciful Defeat"></span><span id="Merciful_Defeat"></span><STRONG><FONT color=#800000>仁慈制胜 Merciful Defeat</FONT></STRONG><BR><EM>先决：5级，决斗龙血统</EM><BR>
+你更偏爱留敌人一命，好让他们变得更强，以便日后再度交锋，献上一场更加辉煌的战斗。每当你即将把一个生物降至0生命值或将其直接杀死时，你可以选择改为将其降至1生命值。与此同时，你还可以迫使该生物丢下其所持握的任何武器。当你以此方式将一个生物降至0生命值时，该生物陷入失能状态，直至其恢复至少1点生命值为止。</p>
+<p id="灵巧机动"><a name="灵巧机动"></a><span id="Nimble Maneuvers"></span><span id="Nimble_Maneuvers"></span><STRONG><FONT color=#800000>灵巧机动 Nimble Maneuvers</FONT></STRONG><BR><EM>先决：5级，决斗龙血统，特技熟练</EM><BR>
+你在战场上穿梭自如。针对你发动的借机攻击具有劣势。此外，每当你为保持平衡而进行特技检定时，你在检定中加上两倍的熟练加值，而非正常的熟练加值。</p>
+<p id="掠食突袭"><a name="掠食突袭"></a><span id="Predatory Strike"></span><span id="Predatory_Strike"></span><STRONG><FONT color=#800000>掠食突袭 Predatory Strike</FONT></STRONG><BR><EM>先决：5级，狩猎龙血统，巨龙蹂躏者范型</EM><BR>
+当你触及范围内一个此前通过自身行动对你隐匿的生物显露在你视线中时，你可以在看见猎物的瞬间用反应发动攻击。使用你的啃咬、爪击，或由强化天生武器进化赋予的攻击，对该触发生物进行一次近战攻击。</p>
+<p id="开战！"><a name="开战！"></a><span id="To War!"></span><span id="To_War"></span><STRONG><FONT color=#800000>开战！ To War!</FONT></STRONG><BR><EM>先决：5级，督军龙血统</EM><BR>
+你善于运筹帷幄、排兵布阵，使盟友得以更迅捷地推进。当你即将投先攻时，如果你事先有时间观察战场并制定计划，你可以改为进行一次历史检定并将该结果作为你的先攻数值。若你如此做，在本次遭遇的第一轮中，每个在你之后行动且由你选择的生物，其速度获得+10尺加值，直至其该回合结束。</p>
+<p id="毒刺鳞甲"><a name="毒刺鳞甲"></a><span id="Venomous Spikes"></span><span id="Venomous_Spikes"></span><STRONG><FONT color=#800000>毒刺鳞甲 Venomous Spikes</FONT></STRONG><BR><EM>先决：5级，狩猎龙血统</EM><BR>
+当你周围5尺内的一个生物以近战攻击命中你时，你可以用反应用身上的毒刺鳞甲扎刺该生物。该生物受到1d8毒素伤害，且必须成功通过一次对抗你吐息武器DC的体质豁免，否则陷入中毒状态，持续1分钟。在其每个回合结束时，该生物都必须重复进行此豁免：豁免失败时，该生物额外受到1d8毒素伤害；豁免成功时，其中毒状态结束。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<p id="强健翼挡"><a name="强健翼挡"></a><span id="Vigorous Parry"></span><span id="Vigorous_Parry"></span><STRONG><FONT color=#800000>强健翼挡 Vigorous Parry</FONT></STRONG><BR><EM>先决：5级，巨龙蹂躏者范型，翼卫格挡龙之馈赠</EM><BR>
+你将充沛活力灌注进翼卫格挡之中，强化其防御效果。只要你有一只空余的手，且你的当前生命值大于或等于生命值上限的一半，当你使用翼卫格挡时，你的AC增加2点（而非1点），直至你的下一回合开始。</p>
+<p id="翼盾护身"><a name="翼盾护身"></a><span id="Wing Shield"></span><span id="Wing_Shield"></span><STRONG><FONT color=#800000>翼盾护身 Wing Shield</FONT></STRONG><BR><EM>先决：5级，督军龙血统，翼卫格挡龙之馈赠</EM><BR>
+你可以用龙翼遮护自身以免受伤害。当你处于翼卫格挡馈赠的效应下，即将因一次攻击受到钝击、穿刺或挥砍伤害时，你可以用反应使触发该反应的伤害减少等同于5 + 你的巨龙等级的数值。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。<BR>
+<strong>特殊：</strong>如果你拥有掩护盟友馈赠且正在使用翼卫格挡保护另一个生物，当该生物即将受到钝击、穿刺或挥砍伤害时，你可以使用翼盾护身，减少该生物即将受到的伤害。</p>
+<hr>
+<h2 id="9级"><FONT color=#800000>9级龙之馈赠 9th-Level Draconic Gifts</FONT></h2>
+<p id="猎物悬赏"><a name="猎物悬赏"></a><span id="Bounty of Prey"></span><span id="Bounty_of_Prey"></span><STRONG><FONT color=#800000>猎物悬赏 Bounty of Prey</FONT></STRONG><BR><EM>先决：9级，狩猎龙血统</EM><BR>
+你深知有时领先赏金猎人一步的最佳方式就是自己成为赏金猎人，而狩猎龙与赏金猎人之间唯一的真正区别在于：狩猎龙会自己拟定悬赏名单而非听命于他人——而且不论死活他们统统都要！你可以花费1分钟观察单个生物，将该生物指定为你的猎物。你在为寻找、追踪该猎物或回忆其相关信息而进行的技能检定上具有优势。你同一时间只能将一个生物指定为你的猎物。你可以再花费1分钟观察一个新生物，从而更换你的猎物。</p>
+<p id="灵伴低语者"><a name="灵伴低语者"></a><span id="Companion Whisperer"></span><span id="Companion_Whisperer"></span><STRONG><FONT color=#800000>灵伴低语者 Companion Whisperer</FONT></STRONG><BR><EM>先决：9级，督军龙血统，驯兽熟练</EM><BR>
+你极为精通驾驭动物之道，尤其擅长与动物伙伴及坐骑打交道，并能从容统率盟友。每当你为影响驯养动物（例如乘用马或看门犬）而进行驯兽检定时，你在检定中加上两倍熟练加值，而非正常的熟练加值。此外，你获得游侠的“游侠伙伴”职业特性。</p>
+<p id="挫志战吼"><a name="挫志战吼"></a><span id="Demoralizing Cry"></span><span id="Demoralizing_Cry"></span><STRONG><FONT color=#800000>挫志战吼 Demoralizing Cry</FONT></STRONG><BR><EM>先决：9级，决斗龙血统，巨龙蹂躏者范型，吐息武器</EM><BR>
+你可以改变吐息武器的声响，在杀伤敌人的同时令其胆寒。当你使用吐息武器时，你可以选择只造成正常伤害骰数一半的伤害。若如此做，任何对抗你吐息武器豁免失败的生物还会对你陷入恐慌状态，直至你的下个回合结束。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="豁免条款"><a name="豁免条款"></a><span id="Exclusion Clause"></span><span id="Exclusion_Clause"></span><STRONG><FONT color=#800000>豁免条款 Exclusion Clause</FONT></STRONG><BR><EM>先决：9级，佣兵龙血统，巨龙法师范型</EM><BR>
+你可以使用一个附赠动作，避免误伤受你保护的生物——无论是基于一份正式契约，还是仅仅基于你与盟友间的默契约定。在你的当前回合结束前，当你下一次施展具有作用区域且无持续时间的法术时，你可以指定区域内你可见的若干生物，数量至多等于你的施法属性调整值（至少一个生物）。被指定的生物不会受到该法术影响，如同他们原本就不在初始区域内一般。（如果该法术留下了任何后续环境影响，例如震裂地面并造成困难地形，这些后续效应仍会影响被指定的生物。）<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="威慑爪牙"><a name="威慑爪牙"></a><span id="Frighten Minions"></span><span id="Frighten_Minions"></span><STRONG><FONT color=#800000>威慑爪牙 Frighten Minions</FONT></STRONG><BR><EM>先决：9级，督军龙血统，威吓熟练</EM><BR>
+你能让敌人的爪牙陷入彻骨的恐惧。你可以使用一个动作，迫使你周围30尺内每个由你选择的、且已察觉到你的生物进行一次感知豁免，与你的魅力（威吓）检定进行对抗。等级或CR等于或高于你巨龙等级的生物自动在对抗中获胜。每个在对抗中落败的生物都会对你陷入恐慌状态，持续1分钟。以此方式陷入恐慌的生物必须在其每个回合执行疾走动作，并沿最安全的可行路线远离你。在该生物每个回合结束时，它可以重复该豁免，成功则终止自身承受的该效应。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="狂怒施法"><a name="狂怒施法"></a><span id="Furious Spellcasting"></span><span id="Furious_Spellcasting"></span><STRONG><FONT color=#800000>狂怒施法 Furious Spellcasting</FONT></STRONG><BR><EM>先决：9级，狂怒龙血统，巨龙法师范型</EM><BR>
+你可以使用一个附赠动作将怒火倾注于法术之中。直至你的下个回合开始前，对你发动的攻击检定具有优势。作为回报，在你的当前回合结束前，当你下一次施展造成伤害的法术时，你可以选择该法术的一个目标或处于该法术区域内的一个生物；随着你炽燃的怒火在魔法中奔涌，该生物额外受到等同于该法术环阶的火焰伤害。</p>
+<p id="渐涨狂怒"><a name="渐涨狂怒"></a><span id="Growing Rage"></span><span id="Growing_Rage"></span><STRONG><FONT color=#800000>渐涨狂怒 Growing Rage</FONT></STRONG><BR><EM>先决：9级，狂怒龙血统</EM><BR>
+尽管你或许无法像巨龙蹂躏者那样迅速而轻易地唤醒怒火之力，但无论好坏，谁也无法剥夺你与生俱来的天赋本能。如果你尚未拥有野蛮人的“狂暴”职业特性，你将获得该特性。在计算该特性的效应时，你的野蛮人等级视为等同于你巨龙等级的一半，且无论你的等级如何，你每天只能进入狂暴两次。如果你已经拥有“狂暴”职业特性，则改为额外获得两次狂暴的使用次数。</p>
+<p id="狩猎战利品"><a name="狩猎战利品"></a><span id="Hunting Trophy"></span><span id="Hunting_Trophy"></span><STRONG><FONT color=#800000>狩猎战利品 Hunting Trophy</FONT></STRONG><BR><EM>先决：9级，狩猎龙血统</EM><BR>
+你会收集被你亲手猎杀的强敌遗骸部件，将其制成战利品。当你处于一具生物尸体周围5尺内，且该生物是在过去1小时内被你将生命值降至0、同时等级或CR至少等于你巨龙等级一半时，你可以使用一个动作从该生物身上取下一件战利品，并获得等同于你巨龙等级两倍的临时生命值。一旦你从某具尸体上取走过战利品，便无法再次从同一具尸体上获取战利品。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="怒火充能吐息"><a name="怒火充能吐息"></a><span id="Rage-Charged Breath"></span><span id="Rage_Charged_Breath"></span><STRONG><FONT color=#800000>怒火充能吐息 Rage-Charged Breath</FONT></STRONG><BR><EM>先决：9级，狂怒龙血统，巨龙蹂躏者范型，吐息武器</EM><BR>
+你可以将怒火注入吐息武器之中，沿途烧出一条直抵爆发中心的火线并将敌人点燃。当你使用吐息武器时，你可以选择改变其区域，使其额外包含一条通往爆发中心、宽5尺的线状区域。若你如此做，除了吐息的其他效应外，对抗该次吐息豁免失败的生物还会起火燃烧1分钟。着火期间，该生物在其每个回合开始时受到1d6火焰伤害。生物可以用一个动作扑灭自己或周围5尺内另一个生物身上的火焰。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<p id="以礼还礼"><a name="以礼还礼"></a><span id="Return the Gesture"></span><span id="Return_the_Gesture"></span><STRONG><FONT color=#800000>以礼还礼 Return the Gesture</FONT></STRONG><BR><EM>先决：9级，决斗龙血统</EM><BR>
+当敌人的奇思妙想令你赞叹时，你也会回敬以自己的巧技。当一个你能看见的生物使用其动作或附赠动作进行一次属性检定并成功时，你可以用反应对该生物进行一次同类型的属性检定。</p>
+<p id="嗅探恐惧"><a name="嗅探恐惧"></a><span id="Smell Fear"></span><span id="Smell_Fear"></span><STRONG><FONT color=#800000>嗅探恐惧 Smell Fear</FONT></STRONG><BR><EM>先决：9级，狩猎龙血统，恐惧感知</EM><BR>
+恐惧在你的感官中清晰可辨，使你能够更轻易地察觉并寻获当前正陷入恐惧的生物。你可以通过气味精准定位你周围120尺内处于恐慌状态的生物的确切位置（而非仅知晓其大致方向），并且你获得仅对以此方式被你嗅出恐惧的生物生效的盲视。</p>
+<hr>
+<h2 id="13级"><FONT color=#800000>13级龙之馈赠 13th-Level Draconic Gifts</FONT></h2>
+<p id="宣示凯旋"><a name="宣示凯旋"></a><span id="Display Triumph"></span><span id="Display_Triumph"></span><STRONG><FONT color=#800000>宣示凯旋 Display Triumph</FONT></STRONG><BR><EM>先决：13级，督军龙血统，巨龙法师范型</EM><BR>
+当你将一个生物的生命值降至0时，你可以使用反应高声宣示你的胜利，并将自身魔力灌注于宣告之中。若如此做，你周围60尺内每个由你选择的生物获得由你二选一的一项增益：攻击检定与伤害掷骰获得+1加值，或者AC与豁免检定获得+1加值。该加值持续至你的下个回合开始。<BR>
+<strong>特殊：</strong>如果你拥有骇人威仪进化，每当你使用宣示凯旋时，你都可以消耗一次该进化的使用次数。若如此做，该区域内每个由你选择的生物都必须进行一次对抗你骇人威仪的感知豁免，即使该生物当前暂时免疫你的骇人威仪也不例外。</p>
+<p id="脱身条款"><a name="脱身条款"></a><span id="Escape Clause"></span><span id="Escape_Clause"></span><STRONG><FONT color=#800000>脱身条款 Escape Clause</FONT></STRONG><BR><EM>先决：13级，佣兵龙血统</EM><BR>
+当你投掷先攻时，你可以向盟友立下绝不抛弃他们的誓言，或是向自己许下此战之后尚有要事待办的承诺。在本次遭遇期间，当你首次生命值降至0且并未直接死亡时，你的生命值改为降至1点。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="旋身卸力"><a name="旋身卸力"></a><span id="Flick Turn"></span><span id="Flick_Turn"></span><STRONG><FONT color=#800000>旋身卸力 Flick Turn</FONT></STRONG><BR><EM>先决：13级，决斗龙血统，巨龙蹂躏者范型，强化天生武器进化（尾击）</EM><BR>
+当一个你可见的生物对你发动近战攻击时，你可以使用反应转身面向该生物，使你对抗此次触发攻击的AC增加2点。随后，你可以对你触及范围内的另一个不同生物发动一次尾击攻击。</p>
+<p id="力场墙吐息"><a name="力场墙吐息"></a><span id="Force Wall Breath"></span><span id="Force_Wall_Breath"></span><STRONG><FONT color=#800000>力场墙吐息 Force Wall Breath</FONT></STRONG><BR><EM>先决：13级，佣兵龙血统，巨龙蹂躏者范型，吐息武器</EM><BR>
+当你使用吐息武器时，你可以选择将吐息转化为一道临时的力场墙。若如此做，锥状区域的前端边缘会化作一道持续至你下个回合开始的力场墙。区域内的每个生物都必须成功通过一次力量豁免，否则会被沿锥状区域的方向推离至多等同于锥状长度的距离。如果此次推动会使该生物穿过该力场墙，该生物改为撞在墙上，且剩余每有5尺未推动的距离就会使其受到1d6点钝击伤害。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="骇人炫示"><a name="骇人炫示"></a><span id="Gruesome Display"></span><span id="Gruesome_Display"></span><STRONG><FONT color=#800000>骇人炫示 Gruesome Display</FONT></STRONG><BR><EM>先决：13级，狩猎龙血统，巨龙蹂躏者范型，狩猎战利品龙之馈赠，威吓熟练</EM><BR>
+如果你自上次完成长休以来已经使用过狩猎战利品，你可以使用一个附赠动作高举你的战利品，傲然宣告这也将是众敌的下场。若如此做，你周围30尺内每个能看见你的生物都必须进行一次感知豁免，与你的魅力（威吓）检定进行对抗。每个在对抗中落败的生物都会对你陷入恐慌状态，持续1分钟。如果该生物在距你超过30尺处结束其回合，该效应会提前终止。若某个生物豁免成功或身上的该效应终止，则该生物在接下来的24小时内免疫骇人炫示。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你无法再次使用。</p>
+<p id="嗜杀狂喜"><a name="嗜杀狂喜"></a><span id="Murderous Euphoria"></span><span id="Murderous_Euphoria"></span><STRONG><FONT color=#800000>嗜杀狂喜 Murderous Euphoria</FONT></STRONG><BR><EM>先决：13级，狩猎龙血统，巨龙蹂躏者范型</EM><BR>
+近身亲手猎杀值得一战的猎物会令你的嗜血狂热奔涌沸腾。当你将一个等级或挑战等级（CR）至少为你巨龙等级一半的生物降至0生命值时，你可以用反应在1分钟内使自己的攻击检定和豁免检定获得+1加值。如果你已经拥有来自嗜杀狂喜的加值，你可以改为选择刷新其持续时间，或是将该加值从+1提升至+2。</p>
+<p id="自然陷阱"><a name="自然陷阱"></a><span id="Natural Trap"></span><span id="Natural_Trap"></span><STRONG><FONT color=#800000>自然陷阱 Natural Trap</FONT></STRONG><BR><EM>先决：13级，巨龙蹂躏者范型，借机啃咬、龙角招架、鞭击长尾、缠阻之尾或振翅偏斜龙之馈赠</EM><BR>
+你可以用一个动作，在你周围60尺内你能看见的地面上魔法般地布下一片15尺×15尺区域的致命毒刺荆棘陷阱。在接下来的1分钟内，或直至你用附赠动作提前结束该效应为止，陷阱所在区域变为困难地形。任何在该区域内开始其回合、或在一个回合内首次进入该区域的生物，都必须成功通过一次对抗你法术豁免DC的敏捷豁免，否则受到2d8穿刺伤害与2d8毒素伤害。此伤害在14级时提升至3d8穿刺伤害与3d8毒素伤害，并在18级时提升至4d8穿刺伤害与4d8毒素伤害。<BR>
+一旦你使用了此馈赠，在完成一次长休前你不能再次使用。</p>
+<p id="掠食学识"><a name="掠食学识"></a><span id="Predatory Lore"></span><span id="Predatory_Lore"></span><STRONG><FONT color=#800000>掠食学识 Predatory Lore</FONT></STRONG><BR><EM>先决：13级，狩猎龙血统，巨龙蹂躏者范型，宿敌猎物，猎物悬赏龙之馈赠</EM><BR>
+你对猎物的认知超越了物种与类别的界限。你的宿命猎物种族特质的增益范围扩展至包含你使用猎物悬赏馈赠指定为猎物的任何生物。</p>
+<p id="立约许诺"><a name="立约许诺"></a><span id="Promises Made"></span><span id="Promises_Made"></span><STRONG><FONT color=#800000>立约许诺 Promises Made</FONT></STRONG><BR><EM>先决：13级，佣兵龙血统，巨龙法师范型</EM><BR>
+你深谙如何开出恰到好处的筹码，诱使他人替你效劳乃至并肩作战……当然，一点魔法总能让这笔交易更加诱人！以一个动作，选择你周围60尺内一个你能看见的生物，向该生物许以诱人的奖赏，以换取其执行你所要求的行动。如果该生物能听见并理解你的话语，它必须进行一次对抗你法术豁免DC的感知豁免。若所许诺的奖赏对该生物毫无价值，或是与所要求的任务价值不相称，GM可以决定令该生物在此豁免中具有优势。生物可以自愿在此豁免中失败。免疫魅惑状态的生物自动通过此豁免，除非其自愿选择失败。<BR>
+豁免失败时，该生物同意你的提议，并在接下来的1分钟内由你控制其行动。受控期间，该生物只会执行你选择的行动，且不会做出任何未经你允许的举动。在此期间，你还可以令该生物使用反应，但这同样需要消耗你自己的反应。<BR>
+若该生物愿意，它可以在其每个回合结束时重复进行该豁免，成功则提前结束该效应。如果你控制该生物满1分钟，该生物便会获得所许诺的奖赏。如果你拒绝向该生物兑现所许诺的奖赏（或许下了自己无法兑现的诺言），你将遭受诅咒，直至你兑现承诺，或直至该诅咒被<em>移除诅咒</em>法术解除为止。此诅咒的具体效应由GM决定。<BR>
+一旦你使用了此馈赠，在完成一次长休前你不能再次使用。</p>
+<p id="扬翼架势"><a name="扬翼架势"></a><span id="Raised Wing Stance"></span><span id="Raised_Wing_Stance"></span><STRONG><FONT color=#800000>扬翼架势 Raised Wing Stance</FONT></STRONG><BR><EM>先决：13级，决斗龙或督军龙血统，巨龙蹂躏者范型，翼卫格挡龙之馈赠</EM><BR>
+当你在战斗遭遇中使用翼卫格挡时，其增益将持续1分钟，直至你陷入昏迷，或直至你选择结束该效应（无需动作）为止。</p>
+<p id="厚实坚皮"><a name="厚实坚皮"></a><span id="Thick Hide"></span><span id="Thick_Hide"></span><STRONG><FONT color=#800000>厚实坚皮 Thick Hide</FONT></STRONG><BR><EM>先决：13级，决斗龙血统，增厚坚皮</EM><BR>
+你改良了自身外皮愈合与增厚的方式，使自己的一条手臂长得愈发粗壮坚韧，不过代价是对死灵能量的抗御更为脆弱。即使你的当前生命值并未低于生命值上限的一半，你也拥有对非魔法穿刺与挥砍伤害的抗性，以及对黯蚀伤害的易伤。当你的当前生命值低于生命值上限的一半时，你还获得对魔法穿刺与挥砍伤害的抗性，但你在对抗黯蚀伤害所作的豁免检定中具有劣势。</p>
+<p id="真言通语者"><a name="真言通语者"></a><span id="Truespeaker"></span><STRONG><FONT color=#800000>真言通语者 Truespeaker</FONT></STRONG><BR><EM>先决：13级，狩猎龙、佣兵龙或督军龙血统</EM><BR>
+你可以借助魔法与其他生物交流。你可以随意施展<em>巧言术</em>法术，且无需消耗法术位。当你以此方式施展<em>巧言术</em>时，该法术的射程变为自身。</p>
+<p id="督军集结"><a name="督军集结"></a><span id="Warlord's Rally"></span><span id="Warlord_s_Rally"></span><STRONG><FONT color=#800000>督军集结 Warlord's Rally</FONT></STRONG><BR><EM>先决：13级，督军龙血统</EM><BR>
+以一个附赠动作，你可以号令集结盟友向你靠拢。选择你周围60尺内至多四个能听见你的生物；每个所选生物都可以用其反应向靠近你的方向移动至多等同于其速度一半的距离，且此次移动不会引发借机攻击。或者，你也可以改用一个动作来集结盟友；若你如此做，每个所选生物可以改用其反应径直朝你移动至多等同于其速度的距离（此次移动如常引发借机攻击）。<BR>
+一旦你使用了此馈赠，在完成一次短休或长休前你不能再次使用。</p>
+<p id="怒火显化"><a name="怒火显化"></a><span id="Wrath Made Manifest"></span><span id="Wrath_Made_Manifest"></span><STRONG><FONT color=#800000>怒火显化 Wrath Made Manifest</FONT></STRONG><BR><EM>先决：13级，狂怒龙血统</EM><BR>
+你可以用一个动作将内心的狂怒显化为实质的护身烈焰。在接下来的1分钟内，你对火焰伤害具有抗性；此外，每当你周围5尺内的一个生物触碰你或以近战攻击命中你时，该生物都会受到2d8火焰伤害。你可以用一个附赠动作提前结束该效应。<BR>
+一旦你使用了此馈赠，在完成一次长休前你不能再次使用。</p>
+<hr>
+<h2 id="19级"><FONT color=#800000>19级龙之馈赠 19th-Level Draconic Gifts</FONT></h2>
+<p id="战意激昂"><a name="战意激昂"></a><span id="Battle Invigorated"></span><span id="Battle_Invigorated"></span><STRONG><FONT color=#800000>战意激昂 Battle Invigorated</FONT></STRONG><BR><EM>先决：19级，决斗龙或狂怒龙血统</EM><BR>
+你可以使用一个动作激发自身的天生自愈能力（如果你是决斗龙），或是煽旺你胸中炽燃的怒火（如果你是狂怒龙）。在接下来的1分钟内，你在自己每个回合开始时恢复15点生命值。每次你以此方式恢复生命值时，都能重新长出一处被斩断的身体部位。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="生死沙场"><a name="生死沙场"></a><span id="Battlefield of Life"></span><span id="Battlefield_of_Life"></span><STRONG><FONT color=#800000>生死沙场 Battlefield of Life</FONT></STRONG><BR><EM>先决：19级，督军龙血统</EM><BR>
+当你生命值降至0且并未直接死亡时，你可以使用反应令神圣能量从你体内荡漾而出。即便对你而言或许为时已晚，对你的盟友却仍有转机。只要你处于濒死状态，每个由你选择的、在你周围60尺内开始其回合的生物都会恢复1d10点生命值。如果你死亡，该治疗量提高至3d10点生命值。该效应持续1分钟，但如果你伤势稳定或恢复了生命值，效应会提前终止。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="狂怒冲锋"><a name="狂怒冲锋"></a><span id="Enraged Charge"></span><span id="Enraged_Charge"></span><STRONG><FONT color=#800000>狂怒冲锋 Enraged Charge</FONT></STRONG><BR><EM>先决：19级，狂怒龙血统，巨龙蹂躏者范型</EM><BR>
+如果你的当前生命值低于生命值上限的一半，或者你是一名正处于狂暴状态的野蛮人，又或者你正处于怒火显化馈赠的效应影响下，你可以使用一个动作挟怒火猛冲向前并横扫四周。移动至多等同于你速度的距离，随后在移动结束时对你触及范围内的每个生物各发动一次爪击攻击。</p>
+<p id="狂怒焚身"><a name="狂怒焚身"></a><span id="Furious Immolation"></span><span id="Furious_Immolation"></span><STRONG><FONT color=#800000>狂怒焚身 Furious Immolation</FONT></STRONG><BR><EM>先决：19级，狂怒龙血统</EM><BR>
+如果你是一名正处于狂暴状态的野蛮人，或者你正处于怒火显化馈赠的效应影响下，当你生命值降至0且并未直接死亡时，你可以使用反应释放怒火，吞噬周围区域的生机来治愈自身。若如此做，你的生命值改为降至1点。此外，你周围20尺内每个由你选择的生物都必须进行一次对抗你吐息武器DC的体质豁免，豁免失败时受到4d8点火焰伤害，豁免成功则伤害减半。随后，每有一个等级或CR至少为你巨龙等级一半的生物在该次豁免中失败，你便获得1d10点临时生命值（若10个或更多此类生物豁免失败，则达到上限10d10点临时生命值）。<BR>
+一旦你使用了此馈赠，在完成一次长休前你无法再次使用。</p>
+<p id="完美伪装"><a name="完美伪装"></a><span id="Perfect Camouflage"></span><span id="Perfect_Camouflage"></span><STRONG><FONT color=#800000>完美伪装 Perfect Camouflage</FONT></STRONG><BR><EM>先决：19级，狩猎龙血统</EM><BR>
+身处自然环境中时，即便你完全暴露在视线之内，也可以执行躲藏动作。以此方式隐匿期间，你不需要掩护或遮蔽，并且在发动攻击时也不会显露身形。你会一直保持隐匿，直至经过10分钟、你发出声响、你被一次攻击重击，或你主动选择结束该效应为止（以最先发生者为准）。其他生物可以用一个动作进行一次察觉检定来识破你的行踪，DC等于你最初那次敏捷（隐匿）检定的结果；一旦某个生物发现了你，对该生物而言你便不再处于隐匿状态。</p>
+<p id="永续条款"><a name="永续条款"></a><span id="Perpetuity Clause"></span><span id="Perpetuity_Clause"></span><STRONG><FONT color=#800000>永续条款 Perpetuity Clause</FONT></STRONG><BR><EM>先决：19级，佣兵龙血统</EM><BR>
+你可以将魂灵寄宿于宝石之中以欺瞒死亡，不过在此期间你也会十分脆弱。每30日一次，当你即将死亡时，你可以选择改为将自己流逝的生命力与灵魂送入你宝库中一颗事先准备好用以容纳它的宝石内。若你如此做，你将在2d4日后于该宝石旁以满生命值复活。如果在此期间有生物打碎了这颗宝石，你便会死亡。除了摧毁宝石之外，生物也可以花费10分钟并成功通过一次智力（奥秘或宗教）检定来将你封印在宝石内部，检定DC等于8 + 你的熟练加值 + 你的智力、感知或魅力调整值（在选择此馈赠时择定该属性）。若检定失败，该生物便不能再次尝试此检定。一旦被封印在宝石内部，你无法自行脱困，但其他生物可以花费10分钟并成功通过同样的属性检定来尝试打破封印。</p>
+<p id="蹂躏者活力"><a name="蹂躏者活力"></a><span id="Ravager's Vigor"></span><span id="Ravager_s_Vigor"></span><STRONG><FONT color=#800000>蹂躏者活力 Ravager's Vigor</FONT></STRONG><BR><EM>先决：19级，决斗龙血统，巨龙蹂躏者范型</EM><BR>
+你作为蹂躏者的武勇使你能够超越寻常永光决斗龙的极限，重振自身活力。每当你恢复生命值时，你可以针对当前影响你的一个可通过豁免结束的状态重新进行一次豁免检定，成功则结束你身上的该效应。</p>
+<p id="战利品大师"><a name="战利品大师"></a><span id="Trophy Master"></span><span id="Trophy_Master"></span><STRONG><FONT color=#800000>战利品大师 Trophy Master</FONT></STRONG><BR><EM>先决：19级，狩猎龙血统，狩猎战利品龙之馈赠</EM><BR>
+你尤其擅长制作狩猎战利品。你可以在完成一次短休后（而非长休后）再次使用狩猎战利品。此外，当你使用狩猎战利品时，你可以选择获得等同于你巨龙等级三倍的临时生命值；若你如此做，这些临时生命值会在1分钟后消失。</p>
+<p id="狂怒啃咬"><a name="狂怒啃咬"></a><span id="Wrathful Bite"></span><span id="Wrathful_Bite"></span><STRONG><FONT color=#800000>狂怒啃咬 Wrathful Bite</FONT></STRONG><BR><EM>先决：19级，狂怒龙血统，毁灭啃咬龙之馈赠</EM><BR>
+你毁灭性的啃咬会将你内心的狂怒传染给敌人。当你的啃咬攻击打出重击时，你可以选择令被命中的生物感染狂怒。若你如此做，该生物必须进行一次对抗你吐息武器DC的感知豁免。豁免失败时，该生物陷入狂怒1分钟：处于狂怒期间，该生物进行的攻击检定具有优势，但针对该生物发动的攻击同样具有优势，且该生物无法维持法术专注。目标可以在其每个回合结束时重复进行该豁免，成功则结束该状态。<BR>
+如果你拥有爆裂啃咬馈赠，当你的啃咬攻击打出重击时请选择使用其中之一；你不能在同一次啃咬中同时使用这两项馈赠。</p>
+</body>
+</html>
